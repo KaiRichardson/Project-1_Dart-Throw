@@ -1,0 +1,21 @@
+.jumbotron {
+    text-align: center;
+}
+
+#globe-button {
+    text-align: left;
+}
+
+
+
+#row1 {
+    text-align: center;
+    align-content: center;
+}
+
+#contact {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+

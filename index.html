@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dart Throw</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-jumbo">
+                <h1 class="display-4">Dart Throw</h1>
+                <p class="lead">Your dream destination awaits..</p>
+            </div>
+        </div>
+        <div id="row0" class="row">
+            <div class="col-md-12">
+                <div class="card text-center">
+                    <div class="card-header">
+                        FEATURED
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="assets/images/globe-dart-throw.png" alt="Globe" width="240" height="240"></a>
+                        <p>Throw the dart at the globe to discover the your dream getaway.</p>
+                        <a href="#" class="btn btn-primary">Take Me There</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="row1" class="row">
+            <div class="col-md-4">
+                <div class="card0" style="width: 18rem;">
+                    <img id="deal-pic0" src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="city0" class="card-title">Austin,TX</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1" style="width: 18rem;">
+                    <img id="deal-pic1" src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="city1" class="card-title">Moscow, Russia</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card2" style="width: 18rem;">
+                    <img id="deal-pic2" src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="city2" class="card-title">Dublin, Ireland</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Create a Trip:</h1>
+            </div>
+            <div class="col-md-6">
+                <h1>Contact us:</h1>
+            </div>
+        </div>
+
+
+        
+        <div class="row">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Origin</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="City">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Destination</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="City">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Departing</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Returning</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="mm/dd/yyyy">
+                </div>
+
+                <div class="form-group col-md-8">
+                    <label for="inputState">Number of Travelers</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            I would like to add a hotel
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+
+                <div class="col-sm-6">
+                    <div id="contact" class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action">Contact
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">FAQ</button>
+                        <button type="button" class="list-group-item list-group-item-action">About us</button>
+
+                    </div>
+                </div>
+            
+        </div>
+
+        <footer class="footer">
+            <div class="container" id="footer-text">
+                <p class="text-muted">Travel Boiz Inc.</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

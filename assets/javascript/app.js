@@ -1,8 +1,16 @@
+var city1 = 0;
+var city2 = 0;
+var city3 = 0;
 
+function randomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function googleLocation() {
 
-    
+    city1 = randomInt();
 
     var googleAPIKey = "AIzaSyDK9NSTXldOANLayzALzg1Aufdw4Yn1GNE";
     var gif = currentBtn;
@@ -16,7 +24,7 @@ function googleLocation() {
     $.ajax({
         url: queryURL,
         method: "GET"
-    }).then(function (response) {        
+    }).then(function (response) {
         var results = response.data;
 
         console.log(response);

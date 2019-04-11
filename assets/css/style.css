@@ -2,6 +2,9 @@
 .jumbotron {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
+    background-color: white;
+    margin-top: -20px;
+    margin-bottom: -40px;
 
 }
 
@@ -11,7 +14,21 @@
 
 #row0 {
     font-family: 'Saira', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 300px;
+}
+
+#card-header {
+    background-color: white;
+    border-color: white;
+    margin-top: -20px;
+}
+
+.card {
+    border: 0px;
+}
+
+#globe {
+    border-bottom-color: white;
 }
 
 

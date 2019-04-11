@@ -14,6 +14,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Saira" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +23,8 @@
 
 </head>
 
-<body>
+<body id="body">
+      <!-- HEADER -->
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container-jumbo">
@@ -30,6 +32,8 @@
                 <p class="lead">Your dream destination awaits..</p>
             </div>
         </div>
+
+        <!-- USER DART THROW SECTION  -->
         <div id="row0" class="row">
             <div class="col-md-12">
                 <div class="card text-center">
@@ -40,7 +44,7 @@
                         <a href="#">
                             <img src="assets/images/globe-dart-throw.png" alt="Globe" width="240" height="240"></a>
                         <p>Throw the dart at the globe to discover the your dream getaway.</p>
-                        <a href="#" class="btn btn-primary">Take Me There</a>
+                        <a href="#" class="btn btn-info">Take Me There</a>
                     </div>
                     <div class="card-footer text-muted">
                     </div>
@@ -48,16 +52,16 @@
             </div>
         </div>
 
-
+        <!-- FEATURED DEALS (THERE WILL BE 3 DEALS THAT WILL POPULATE) -->
         <div id="row1" class="row">
             <div class="col-md-4">
                 <div class="card0" style="width: 18rem;">
                     <img id="deal-pic0" src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="city0" class="card-title">Austin,TX</h5>
+                        <h5 id="city0" class="card-title">RANDOM CITY</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a href="#" class="btn btn-info">Details</a>
                     </div>
                 </div>
             </div>
@@ -65,46 +69,48 @@
                 <div class="card1" style="width: 18rem;">
                     <img id="deal-pic1" src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="city1" class="card-title">Moscow, Russia</h5>
+                        <h5 id="city1" class="card-title">RANDOM CITY</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a href="#" class="btn btn-info">Details</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card2" style="width: 18rem;">
-                    <img id="deal-pic2" src="..." class="card-img-top" alt="...">
+                    <img id="deal-pic2" src="#" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="city2" class="card-title">Dublin, Ireland</h5>
+                        <h5 id="city2" class="card-title">RANDOM CITY</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a href="#" class="btn btn-info">Details</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        
+        <!-- HEADLINES  -->
+        <div id="row2" class="row">
             <div class="col-md-6">
-                <h1>Create a Trip:</h1>
+                <h1>Create a Trip</h1>
             </div>
             <div class="col-md-6">
-                <h1>Contact us:</h1>
+                <h1>Contact us</h1>
             </div>
         </div>
 
 
         
-        <div class="row">
+        <div id="row3" class="row">
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Origin</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="City">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="City">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputPassword4">Destination</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="City">
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="City">
                     </div>
                 </div>
                 <div class="form-group">
@@ -136,7 +142,7 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-info">Search</button>
             </form>
 
                 <div class="col-sm-6">
@@ -144,7 +150,7 @@
                         <button type="button" class="list-group-item list-group-item-action">Contact
                         </button>
                         <button type="button" class="list-group-item list-group-item-action">FAQ</button>
-                        <button type="button" class="list-group-item list-group-item-action">About us</button>
+                        <button type="button" class="list-group-item list-group-item-action">About Us</button>
 
                     </div>
                 </div>
@@ -153,7 +159,7 @@
 
         <footer class="footer">
             <div class="container" id="footer-text">
-                <p class="text-muted">Travel Boiz Inc.</p>
+                <p class="text-muted">Travel Boiz Inc. 2019</p>
             </div>
         </footer>
 

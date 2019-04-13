@@ -15,7 +15,7 @@ function randCity() {
     var cityNum = randomInt(0, 3592);
     randName = cityNames[cityNum].city;
     randCode = cityNames[cityNum].name;
-    randDetails = initMap(randName);
+    // randDetails = initMap(randName);
 
 
     console.log(cityNames[cityNum].city);
@@ -26,7 +26,7 @@ function randCity() {
 function addCity() {
     randCity();
     $("#city0").text(randName);
-    $("#text0").text(randDetails);
+    // $("#text0").text(randDetails);
 
 
     randCity();

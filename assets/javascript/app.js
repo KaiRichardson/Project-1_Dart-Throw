@@ -4,6 +4,7 @@ var city2 = 0;
 var randName = "";
 var randCode = "";
 var randDetails = "";
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 function randomInt(min, max) {
     min = Math.ceil(min);
@@ -37,45 +38,48 @@ function addCity() {
 
 }
 
-var map;
-var service;
-var infowindow;
-
-function initMap(name) {
-  var request = {
-    query: name,
-    fields: ["name", "geometry", "place_id"],
-  };
-
-  service = new google.maps.places.PlacesService(map);
-
-  service.findPlaceFromQuery(request, function(results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-
-      map.setCenter(results[0].geometry.location);
-    }
-  });
-}
-
-var APIkey = "71bffe063e7e7b08081853a39bb1a26e324af8bafbf84cb28f79e4f75b19cab6";
-
-var queryURL = "https://api.unsplash.com/photos/?client_id=" + APIkey;
-
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function (response) {
-        console.log(queryURL);
-        console.log(response);
-
-
-        $("#deal_pic0").attr(src, response.query.per_page);
-
-
+$(document).on("click", "#btn0", function () {
+	mymap.flyTo([48.8, 2.4], 10, {
+        animate: true,
+        duration: 2 // in seconds
     });
+});
+
+$(document).on("click", "#btn1", function () {
+	mymap.flyTo([51.5, 0], 10, {
+        animate: true,
+        duration: 2 // in seconds
+    });
+});
+
+$(document).on("click", "#btn2", function () {
+	mymap.flyTo([51.5, 0], 10, {
+        animate: true,
+        duration: 2 // in seconds
+    });
+});
 
 
 addCity();
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1Ijoia2FpcmljaGFyZHNvbiIsImEiOiJjanVmdGZwY2EwZTA5NDRucThtbjkwdXNoIn0.5SVT37RtNOBEEcyU2umFAQ'
+}).addTo(mymap);
+
+
+var queryURL = "http://api.geonames.org/searchJSON?username=ksuhiyp&country=us&maxRows=1000";
+
+function city(params) {
+  
+}
+$.ajax({
+  url: queryURL,
+  method: "GET"
+}).then(function (response) {        
+  var results = response.data;
+
+  console.log(response);
+});

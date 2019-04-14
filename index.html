@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
@@ -13,7 +16,7 @@
 </head>
 
 <body id="body">
-      <!-- HEADER -->
+    <!-- HEADER -->
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container-jumbo">
@@ -27,11 +30,10 @@
             <div class="col-md-12">
                 <div class="card text-center">
                     <div id="card-header" class="card-header">
-                    
+
                     </div>
                     <div class="card-body">
-                        <a href="#">
-                            <img src="assets/images/globe-dart-throw.png" alt="Globe" width="440" height="440"></a>
+                        <div id="mapid"></div>
                         <p>Throw the dart at the globe to discover your dream getaway.</p>
                         <!-- <a href="#" class="btn btn-info">Take Me There</a> -->
                     </div>
@@ -47,9 +49,10 @@
                     <img id="deal-pic0" src="#" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 id="city0" class="card-title">RANDOM CITY</h5>
-                        <p id="text0" class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p id="text0" class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-info">Details</a>
+                        <a href="#" class="btn btn-info" id="btn0">Details</a>
                     </div>
                 </div>
             </div>
@@ -58,9 +61,10 @@
                     <img id="deal-pic1" src="#" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 id="city1" class="card-title">RANDOM CITY</h5>
-                        <p id="text1" class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p id="text1" class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-info">Details</a>
+                        <a href="#" class="btn btn-info" id="btn1">Details</a>
                     </div>
                 </div>
             </div>
@@ -69,14 +73,15 @@
                     <img id="deal-pic2" src="#" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 id="city2" class="card-title">RANDOM CITY</h5>
-                        <p id="text2" class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p id="text2" class="card-text">Some quick example text to build on the card title and make up
+                            the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-info">Details</a>
+                        <a href="#" class="btn btn-info" id="btn2">Details</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- HEADLINES  -->
         <div id="row2" class="row">
             <div class="col-md-6">
@@ -88,7 +93,7 @@
         </div>
 
 
-        
+
         <div id="row3" class="row">
             <form>
                 <div class="form-row">
@@ -154,7 +159,9 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK9NSTXldOANLayzALzg1Aufdw4Yn1GNE&libraries=places&callback=initMap" async defer></script>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
         <script type="text/javascript" src="./assets/javascript/city-names.js"></script>
         <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>

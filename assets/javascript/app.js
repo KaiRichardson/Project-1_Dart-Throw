@@ -26,7 +26,7 @@ var cityArr = [{
 var randName = "";
 var randCode = "";
 var randDetails = "";
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([31.7917, 7.0926], 2);
 var cityPic = "";
 
 function randomInt(min, max) {
@@ -122,6 +122,7 @@ $(document).on("click", "#btn1", function () {
 
 $(document).on("click", "#btn2", function () {
   gotToSkyscanner(cityArr[2].lat, cityArr[2].lng);
+
 });
 
 function gotToSkyscanner(lat, lng) {

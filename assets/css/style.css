@@ -1,16 +1,32 @@
-#mapid { height: 400px; }
+#mapid {
+    height: 400px;
+}
+
 /* HOME PAGE */
 
 * {
-    cursor: url("//assets/images/dart-cursor.png"), default;
-  }
+    /* cursor: url("/assets/images/dart-cursor.png"), default; */
+}
+
+.navbar {
+    background: linear-gradient(to top, transparent, rgba(30, 87, 153, 1) );
+}
+
+body {
+    background: url("../images/map_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 .jumbotron {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: white;
-    margin-top: -20px;
-    margin-bottom: -40px;
+    background-color: transparent;
+    padding: 60px;
+}
+
+.btn {
+    max-height: 50px;
 }
 
 #globe-button {
@@ -19,45 +35,51 @@
 
 #row0 {
     font-family: 'Saira', sans-serif;
-    margin-bottom: 300px;
 }
 
 #card-header {
-    background-color: white;
-    border-color: white;
-    margin-top: -20px;
+    background-color: transparent;
 }
 
+#formGroup {
+    margin: 20px;
+    text-align: center;
+}
+
+.randLocCard {
+    margin: 10px;
+    width: 250px;
+    background-color: #e7e7e7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top{
+    margin-top: 20px;
+    height: 150px;
+    width: 200px;
+}
 .card {
     border: 0px;
 }
-
-#globe {
-    border-bottom-color: white;
-}
-
 
 #row1 {
     text-align: center;
     align-content: center;
     font-family: 'Saira', sans-serif;
-    margin-bottom: 40px;
-    
+    margin: 20px;
+    padding: 20px;
 }
 
 #row2 {
     text-align: center;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #e7e7e7;
     font-family: 'Saira', sans-serif;
     margin-bottom: 60px;
 }
 
-
 #row3 {
     font-family: 'Saira', sans-serif;
 }
-
-
 
 .footer {
     margin-top: 55px;
@@ -69,9 +91,7 @@
     text-align: center;
     padding: 70px;
     margin-left: 80px;
-    
 }
-
 
 /* SUBMISSION PAGE */
 
@@ -81,15 +101,12 @@
     display: block;
 }
 
-
 /* FAQ PAGE */
 
 #faq {
     font-family: 'Saira', sans-serif;
-
 }
 
 .submission-section {
     font-family: 'Saira', sans-serif;
-
 }

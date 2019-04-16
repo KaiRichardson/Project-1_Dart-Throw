@@ -16,9 +16,26 @@
     <title>Home</title>
 </head>
 
-<body id="body">
+<body id="bodyDiv">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="./index.html">Dart Throw</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="./billing.html">Details</a>
+                <a class="nav-item nav-link" href="./faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- HEADER -->
     <div class="container">
+
         <div class="jumbotron jumbotron-fluid">
             <div class="container-jumbo">
                 <h1 class="display-4">Dart Throw</h1>
@@ -26,151 +43,92 @@
             </div>
         </div>
 
+
+        <!-- inputs from user to firebase  -->
+
+        <form class="form-row" id="formGroup">
+            <div class="form-group col-md-3">
+                <label for="origin_input">Where are you?</label>
+                <input type="text" class="form-control" id="origin_input" placeholder="City">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="leave_input">When you wanna leave?</label>
+                <input type="date" class="form-control" id="leave_input">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="return_input">What about coming back?</label>
+                <input type="date" class="form-control" id="return_input">
+            </div>
+            <button type="submit" class="btn btn-info">Search</button>
+        </form>
+
+
         <!-- USER DART THROW SECTION  -->
         <div id="row0" class="row">
             <div class="col-md-12">
                 <div class="card text-center">
-                    <div id="card-header" class="card-header">
-
-                    </div>
-                    <div class="card-body">
-                        <div id="mapid"></div>
-                        <p>Throw the dart at the globe to discover your dream getaway.</p>
-                        <!-- <a href="#" class="btn btn-info">Take Me There</a> -->
-                    </div>
-
+                    <div id="mapid"></div>
                 </div>
             </div>
         </div>
 
         <!-- FEATURED DEALS (THERE WILL BE 3 DEALS THAT WILL POPULATE) -->
         <div id="row1" class="row">
-            <div class="col-md-4">
-                <div class="card0" style="width: 18rem;">
+                <div class="col-md-1"></div>
+            <div class="col-md-3 randLocCard">
+                <div class="card0">
                     <img id="deal-pic0" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="city_image">
                     <div class="card-body">
-                        <h5 id="city0" class="card-title">RANDOM CITY</h5>
-                        <p id="text0" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
+                        <h5 id="city0" class="card-title"></h5>
+                        <p id="text0" class="card-text"></p>
                         <a href="#" class="btn btn-info" id="btn0">Details</a>
                         <a href="#" class="btn btn-info" id="btn0Loca">location</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card1" style="width: 18rem;">
-                    <img id="deal-pic1" src="#https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg class="
-                        card-img-top alt="...">
+            <div class="col-md-3 randLocCard">
+                <div class="card1">
+                    <img id="deal-pic1" src="#https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
+                        class="card-img-top" alt="city_image">
                     <div class="card-body">
-                        <h5 id="city1" class="card-title">RANDOM CITY</h5>
-                        <p id="text1" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
+                        <h5 id="city1" class="card-title"></h5>
+                        <p id="text1" class="card-text"></p>
                         <a href="#" class="btn btn-info" id="btn1">Details</a>
                         <a href="#" class="btn btn-info" id="btn1Loca">location</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card2" style="width: 18rem;">
+            <div class="col-md-3 randLocCard">
+                <div class="card2">
                     <img id="deal-pic2" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="city_image">
                     <div class="card-body">
-                        <h5 id="city2" class="card-title">RANDOM CITY</h5>
-                        <p id="text2" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
+                        <h5 id="city2" class="card-title"></h5>
+                        <p id="text2" class="card-text"></p>
                         <a href="#" class="btn btn-info" id="btn2">Details</a>
                         <a href="#" class="btn btn-info" id="btn2Loca">location</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-1"></div>
         </div>
+    </div>
 
-        <!-- HEADLINES  -->
-        <div id="row2" class="row">
-            <div class="col-md-6">
-                <h1>Create a Trip</h1>
-            </div>
-            <div class="col-md-6">
-                <h1>Contact us</h1>
-            </div>
+    <footer class="footer">
+        <div class="container" id="footer-text">
+            <p class="text-muted">Travel Boiz Inc. 2019</p>
         </div>
+    </footer>
 
 
-
-        <div id="row3" class="row">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Origin</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Destination</label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="City">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress">Departing</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="mm/dd/yyyy">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Returning</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="mm/dd/yyyy">
-                </div>
-
-                <div class="form-group col-md-8">
-                    <label for="inputState">Number of Travelers</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            I would like to add a hotel
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-info">Search</button>
-            </form>
-
-            <div class="col-sm-6">
-                <div id="contact" class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">Contact
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">FAQ</button>
-                    <button type="button" class="list-group-item list-group-item-action">About us</button>
-
-                </div>
-            </div>
-
-        </div>
-
-        <footer class="footer">
-            <div class="container" id="footer-text">
-                <p class="text-muted">Travel Boiz Inc. 2019</p>
-            </div>
-        </footer>
-
-
-        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
-        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-            crossorigin=""></script>
-        <script type="text/javascript" src="./assets/javascript/city-names.js"></script>
-        <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <script type="text/javascript" src="./assets/javascript/city-names.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

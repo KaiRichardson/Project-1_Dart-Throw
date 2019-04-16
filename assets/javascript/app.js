@@ -1,3 +1,19 @@
+function fbFunc() {
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
+      authDomain: "dart-throw.firebaseapp.com",
+      databaseURL: "https://dart-throw.firebaseio.com",
+      projectId: "dart-throw",
+      storageBucket: "dart-throw.appspot.com",
+      messagingSenderId: "554192496798"
+    };
+    firebase.initializeApp(config);
+  
+    var database = firebase.database();
+  };
+  
+
 var cityArr = [{
   city: "",
   country: "",
@@ -91,6 +107,8 @@ function addCity() {
 
 }
 
+
+
 $(document).on("click", "#btn0Loca", function () {
   mymap.flyTo([cityArr[0].lat, cityArr[0].lng], 10, {
     animate: true,
@@ -114,14 +132,27 @@ $(document).on("click", "#btn2Loca", function () {
 
 $(document).on("click", "#btn0", function () {
   gotToSkyscanner(cityArr[0].lat, cityArr[0].lng);
+  localStorage.setItem("city", cityArr[0].city);
+  localStorage.setItem("country", cityArr[0].country);
+  window.location.replace("./billing.html");
+  locationPic();
+  console.log('');
 });
 
 $(document).on("click", "#btn1", function () {
   gotToSkyscanner(cityArr[1].lat, cityArr[1].lng);
+  localStorage.setItem("city", cityArr[1].city);
+  localStorage.setItem("country", cityArr[1].country);
+  window.location.replace("./billing.html");
+locationPic();
 });
 
 $(document).on("click", "#btn2", function () {
   gotToSkyscanner(cityArr[2].lat, cityArr[2].lng);
+  localStorage.setItem("city", cityArr[2].city);
+  localStorage.setItem("country", cityArr[2].country);
+  window.location.replace("./billing.html");
+  locationPic();
 });
 
 function gotToSkyscanner(lat, lng) {
@@ -168,15 +199,17 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoia2FpcmljaGFyZHNvbiIsImEiOiJjanVmdGZwY2EwZTA5NDRucThtbjkwdXNoIn0.5SVT37RtNOBEEcyU2umFAQ'
 }).addTo(mymap);
 
+
+
 function locationPic() {
   for (let i = 0; i < cityArr.length; i++) {
 
 
-    var randCitySplit = cityArr[i].city;
+    // var randCitySplit = cityArr[i].city;
 
     var APIkey = "71bffe063e7e7b08081853a39bb1a26e324af8bafbf84cb28f79e4f75b19cab6";
 
-    var queryURL = "https://api.unsplash.com/search/photos?query=" + randCitySplit + "&client_id=" + APIkey;
+    var queryURL = "https://api.unsplash.com/search/photos?query=" + localStorage.getItem("country") + "&client_id=" + APIkey;
     console.log("my query is:" + queryURL);
 
 
@@ -188,7 +221,7 @@ function locationPic() {
       .then(function (response) {
         // var results = response.data;
 
-        console.log(response);
+        console.log("this is locationPic function:" + response);
         // console.log(results);
 
         // if I dont get any results from city I want an ajax call for the country. I can get the city name by randCitySplit[0], and country from randCitySplit[1]
@@ -196,9 +229,11 @@ function locationPic() {
 
 
 
-        cityPic = response.results[0].urls.thumb;
+        cityPic = response.results[0].urls.raw;
         // console.log("This is cityPic:" + cityPic);
-        $("#deal-pic" + i).attr("src", cityPic);
+        $("#detailPic" + i).attr("src", cityPic);
+
+        // ("<div class='carousel-item active'><img src='assets/images/clouds-background.jpeg' class='d-block w-100' alt='...'></div>");
         // $("#deal-pic1").attr("src", cityPic);
         // $("#deal-pic2").attr("src", cityPic);
 
@@ -207,17 +242,3 @@ function locationPic() {
   }
 };
 
-function fbFunc() {
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
-    authDomain: "dart-throw.firebaseapp.com",
-    databaseURL: "https://dart-throw.firebaseio.com",
-    projectId: "dart-throw",
-    storageBucket: "dart-throw.appspot.com",
-    messagingSenderId: "554192496798"
-  };
-  firebase.initializeApp(config);
-
-  var database = firebase.database();
-};

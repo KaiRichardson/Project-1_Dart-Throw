@@ -1,11 +1,16 @@
 #mapid { height: 400px; }
+/* HOME PAGE */
+
+* {
+    cursor: url("//assets/images/dart-cursor.png"), default;
+  }
+
 .jumbotron {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
     background-color: white;
     margin-top: -20px;
     margin-bottom: -40px;
-
 }
 
 #globe-button {
@@ -37,13 +42,14 @@
     align-content: center;
     font-family: 'Saira', sans-serif;
     margin-bottom: 40px;
+    
 }
 
 #row2 {
     text-align: center;
     border-bottom: 1px solid #cccccc;
     font-family: 'Saira', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 
@@ -54,6 +60,7 @@
 
 
 .footer {
+    margin-top: 55px;
     font-family: 'Saira', sans-serif;
     text-align: center;
 }
@@ -62,5 +69,27 @@
     text-align: center;
     padding: 70px;
     margin-left: 80px;
+    
 }
 
+
+/* SUBMISSION PAGE */
+
+#flight-submit-button {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+}
+
+
+/* FAQ PAGE */
+
+#faq {
+    font-family: 'Saira', sans-serif;
+
+}
+
+.submission-section {
+    font-family: 'Saira', sans-serif;
+
+}

@@ -1,49 +1,102 @@
-#mapid {
-    height: 400px;
-}
-
-/* HOME PAGE */
-
 * {
     /* cursor: url("/assets/images/dart-cursor.png"), default; */
 }
 
-.navbar {
-    background: linear-gradient(to top, transparent, rgba(30, 87, 153, 1) );
-}
+/* FIRST SECTION
+head with date search */
 
-body {
-    background: url("../images/map_background.jpg");
+#first_section {
+    background: url("../images/top-tower.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    min-height: 70vw;
+    height: auto;
 }
 
-.jumbotron {
+#main_head {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: transparent;
     padding: 60px;
 }
 
-.btn {
-    max-height: 50px;
+#main_title {
+    margin-top: 10vw;
 }
 
-#globe-button {
-    text-align: left;
+#search_btn {
+    width: 100px;
+    margin: 20px;
 }
 
-#row0 {
-    font-family: 'Saira', sans-serif;
+.firstLabels {
+    margin: 20px 0 20px 0;
 }
 
-#card-header {
-    background-color: transparent;
+.form-control {
+    margin: 20px 0 20px 0;
+}
+
+.col-md-1 {
+    line-height: 40px;
+    text-align: right;
 }
 
 #formGroup {
-    margin: 20px;
+    margin: 0;
     text-align: center;
+}
+
+#myHeader {
+    z-index: 100000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+#second_section {
+    padding-top: 60px;
+}
+
+/* SECOND SECTION
+map with flight info */
+
+#second_section {
+    background-color: beige;
+    padding: 50px 0;
+}
+
+#mapid {
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.info_div {
+    text-align: center;
+}
+
+.info_row {
+    margin-top: 70px;
+}
+
+/* THIRD SECTION
+picked destinations with info */
+
+#third_section {
+    background: url("../images/city-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+#header_3{
+padding: 20px;
 }
 
 .randLocCard {
@@ -51,40 +104,67 @@ body {
     width: 250px;
     background-color: #e7e7e7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
 }
 
-.card-img-top{
+.card-img-top {
     margin-top: 20px;
     height: 150px;
-    width: 200px;
-}
-.card {
-    border: 0px;
+    width: 100%;
+    object-fit: cover;
 }
 
-#row1 {
+/* FORTH SECTION
+city info with pictures slides */
+
+#forth_section {
+    padding: 70px 0 0 0;
+    background-color: beige;
+}
+
+.carousel-inner {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#flight-submit-button {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*  FITH SECTION
+FAQ */
+
+#fith_section {
+    background: url("../images/beach_glasses.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.list-group-item {
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+#faq_head {
+    padding: 60px 0 20px 0;
     text-align: center;
-    align-content: center;
-    font-family: 'Saira', sans-serif;
-    margin: 20px;
-    padding: 20px;
 }
 
-#row2 {
-    text-align: center;
-    border-bottom: 1px solid #e7e7e7;
-    font-family: 'Saira', sans-serif;
-    margin-bottom: 60px;
-}
-
-#row3 {
+#faq {
     font-family: 'Saira', sans-serif;
 }
 
-.footer {
-    margin-top: 55px;
-    font-family: 'Saira', sans-serif;
-    text-align: center;
+/* SIXTH SECTION
+contact form */
+
+#sixth_section {
+    padding: 40px;
+    margin-top: 40px;
+    background-color: beige;
 }
 
 #contact {
@@ -93,20 +173,16 @@ body {
     margin-left: 80px;
 }
 
-/* SUBMISSION PAGE */
-
-#flight-submit-button {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: block;
-}
-
-/* FAQ PAGE */
-
-#faq {
-    font-family: 'Saira', sans-serif;
-}
-
 .submission-section {
     font-family: 'Saira', sans-serif;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: coral;
+    color: aliceblue;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px 0;
 }

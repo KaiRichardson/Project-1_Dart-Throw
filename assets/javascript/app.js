@@ -206,3 +206,18 @@ function locationPic() {
       });
   }
 };
+
+function fbFunc() {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
+    authDomain: "dart-throw.firebaseapp.com",
+    databaseURL: "https://dart-throw.firebaseio.com",
+    projectId: "dart-throw",
+    storageBucket: "dart-throw.appspot.com",
+    messagingSenderId: "554192496798"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+};

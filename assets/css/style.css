@@ -1,5 +1,5 @@
 * {
-    /* cursor: url("/assets/images/dart-cursor.png"), default; */
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 /* FIRST SECTION
@@ -16,8 +16,9 @@ head with date search */
 
 #main_head {
     text-align: center;
-    font-family: 'Julius Sans One', sans-serif;
     padding: 60px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
 }
 
 #main_title {
@@ -187,9 +188,18 @@ contact form */
 /* FOOTER */
 
 .footer {
-    background-color: coral;
-    color: aliceblue;
+    background-color: white;
+    color: black;
     font-family: 'Saira', sans-serif;
     text-align: center;
     padding: 20px 0;
+}
+
+
+/* BILLING PAGE */
+
+.jumbotron {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: white;
+    text-align: center;
 }

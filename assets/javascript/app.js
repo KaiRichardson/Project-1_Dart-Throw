@@ -1,18 +1,47 @@
-function fbFunc() {
-  // Initialize Firebase
+
+      // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
-    authDomain: "dart-throw.firebaseapp.com",
-    databaseURL: "https://dart-throw.firebaseio.com",
-    projectId: "dart-throw",
-    storageBucket: "dart-throw.appspot.com",
-    messagingSenderId: "554192496798"
+    apiKey: "AIzaSyBrbkBG7yWT3b_SyomTkIvRR42M1JMo-Rk",
+    authDomain: "dart-throw-75c09.firebaseapp.com",
+    databaseURL: "https://dart-throw-75c09.firebaseio.com",
+    projectId: "dart-throw-75c09",
+    storageBucket: "dart-throw-75c09.appspot.com",
+    messagingSenderId: "559350308558"
   };
   firebase.initializeApp(config);
 
-  var database = firebase.database();
-};
+    var database = firebase.database();
 
+    //ON-CLICK FOR USER'S TRIP DETAILS//
+    $("#search_btn").on("click", function(){
+        
+        var userFrom =  $("#origin_input").val();
+        var userLeave = $("#leave_input").val();
+        var userBack = $("#return_input").val();
+
+        database.ref().set({
+            startCity: userFrom,
+            startTrip: userLeave,
+            endTrip: userBack,
+        });
+    
+    })
+    //ON-CLICK FOR FAQ TO FIREBASE//
+    $("#faq-button").on("click", function(){
+
+        var userEmail = $("#faq-email").val();
+        var userQuestion = $("#faq-question").val();
+    
+        database.ref().set({
+            faqEmail: userEmail,
+            faqQuestion: userQuestion,
+
+    })
+    });
+
+
+
+     
 
 var cityArr = [{
   city: "",
@@ -67,11 +96,11 @@ function scrollFunc() {
   }
 }
 
-$(".scrollBtn").click(function () {
-  $('html,body').animate({
-    scrollTop: $($(this).attr('href')).offset().top
-  },
-    'slow');
+$(".scrollBtn").on("click", function () {
+    $('html,body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    },
+        'slow');
 });
 
 function randomInt(min, max) {
@@ -166,17 +195,17 @@ $(document).on("click", "#btn2Loca", function () {
 
 $(document).on("click", "#btn0", function () {
   toIata = cityArr[0].atai;
-  locationPic();
+  locationPic(cityArr[0].country);
 });
 
 $(document).on("click", "#btn1", function () {
   toIata = cityArr[0].atai;
-  locationPic();
+  locationPic(cityArr[1].country);
 });
 
 $(document).on("click", "#btn2", function () {
   toIata = cityArr[0].atai;
-  locationPic();
+  locationPic(cityArr[2].country);
 });
 
 
@@ -219,44 +248,41 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 
 
-function locationPic() {
-  for (let i = 0; i < cityArr.length; i++) {
+function locationPic(countryIn) {
+    // for (let i = 0; i < cityArr.length; i++) {
+
 
     // var randCitySplit = cityArr[i].city;
-
+    console.log(countryIn);
     var APIkey = "71bffe063e7e7b08081853a39bb1a26e324af8bafbf84cb28f79e4f75b19cab6";
 
-    var queryURL = "https://api.unsplash.com/search/photos?query=" + localStorage.getItem("country") + "&client_id=" + APIkey;
+    var queryURL = "https://api.unsplash.com/search/photos?query=" + countryIn + "&client_id=" + APIkey;
     console.log("my query is:" + queryURL);
 
 
     $.ajax({
-      url: queryURL,
-      method: "GET"
+        url: queryURL,
+        method: "GET"
     })
 
-      .then(function (response) {
-        // var results = response.data;
+        .then(function (response) {
+            // var results = response.data;
 
-        console.log("this is locationPic function:" + response);
-        // console.log(results);
+            // console.log("this is locationPic function:" + response);
+            // console.log(results);
+            console.log("this is response" + response.results[0].urls.small);
 
-        // if I dont get any results from city I want an ajax call for the country. I can get the city name by randCitySplit[0], and country from randCitySplit[1]
-        // if (randCitySplit[0]) {};
+            // cityPic = response.results[0].urls.large;
+            // console.log("This is cityPic:" + cityPic);
 
-
-
-        cityPic = response.results[0].urls.raw;
-        // console.log("This is cityPic:" + cityPic);
-        $("#detailPic" + i).attr("src", cityPic);
-
-        // ("<div class='carousel-item active'><img src='assets/images/clouds-background.jpeg' class='d-block w-100' alt='...'></div>");
-        // $("#deal-pic1").attr("src", cityPic);
-        // $("#deal-pic2").attr("src", cityPic);
+            $("#detailPic0").attr("src", response.results[0].urls.raw);
+            $("#detailPic1").attr("src", response.results[1].urls.raw);
+            $("#detailPic2").attr("src", response.results[2].urls.raw);
 
 
-      });
-  }
+
+        });
+    // }
 };
 
 $(document).on("click", "#search_btn", randCity);

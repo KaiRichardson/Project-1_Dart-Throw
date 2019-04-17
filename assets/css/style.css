@@ -1,94 +1,186 @@
-/* HOME PAGE */
 
-* {
-    cursor: url("//assets/images/dart-cursor.png"), default;
-  }
 
-.jumbotron {
+/* FIRST SECTION
+head with date search */
+
+#first_section {
+    background: url("../images/top-tower.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    min-height: 70vw;
+    height: auto;
+}
+
+#main_head {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: white;
-    margin-top: -20px;
-    margin-bottom: -40px;
+    padding: 60px;
 }
 
-#globe-button {
-    text-align: left;
+#main_title {
+    margin-top: 10vw;
 }
 
-#row0 {
-    font-family: 'Saira', sans-serif;
-    margin-bottom: 300px;
+#search_btn {
+    width: 100px;
+    margin: 20px;
 }
 
-#card-header {
-    background-color: white;
-    border-color: white;
-    margin-top: -20px;
+.firstLabels {
+    margin: 20px 0 20px 0;
 }
 
-.card {
-    border: 0px;
+.form-control {
+    margin: 20px 0 20px 0;
 }
 
-#globe {
-    border-bottom-color: white;
+.col-md-1 {
+    line-height: 40px;
+    text-align: right;
 }
 
-
-#row1 {
+#formGroup {
+    margin: 0;
     text-align: center;
-    align-content: center;
-    font-family: 'Saira', sans-serif;
-    margin-bottom: 40px;
-    
 }
 
-#row2 {
+#myHeader {
+    z-index: 100000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+#second_section {
+    padding-top: 60px;
+}
+
+/* SECOND SECTION
+map with flight info */
+
+#second_section {
+    background-color: beige;
+    padding: 50px 0;
+}
+
+#mapid {
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.info_div {
     text-align: center;
-    border-bottom: 1px solid #cccccc;
-    font-family: 'Saira', sans-serif;
-    margin-bottom: 60px;
 }
 
-
-#row3 {
-    font-family: 'Saira', sans-serif;
+.info_row {
+    margin-top: 70px;
 }
 
+/* THIRD SECTION
+picked destinations with info */
 
-
-.footer {
-    margin-top: 50px;
-    font-family: 'Saira', sans-serif;
+#third_section {
+    background: url("../images/city-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
     text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+#header_3{
+padding: 20px;
+}
+
+.randLocCard {
+    margin: 10px;
+    width: 250px;
+    background-color: #e7e7e7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.card-img-top {
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* FORTH SECTION
+city info with pictures slides */
+
+#forth_section {
+    padding: 70px 0 0 0;
+    background-color: beige;
+}
+
+.carousel-inner {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#flight-submit-button {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*  FITH SECTION
+FAQ */
+
+#fith_section {
+    background: url("../images/beach_glasses.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.list-group-item {
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+#faq_head {
+    padding: 60px 0 20px 0;
+    text-align: center;
+}
+
+#faq {
+    font-family: 'Saira', sans-serif;
+}
+
+/* SIXTH SECTION
+contact form */
+
+#sixth_section {
+    padding: 40px;
+    margin-top: 40px;
+    background-color: beige;
 }
 
 #contact {
     text-align: center;
     padding: 70px;
     margin-left: 80px;
-    
-}
-
-
-/* SUBMISSION PAGE */
-
-#flight-submit-button {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: block;
-}
-
-
-/* FAQ PAGE */
-
-#faq {
-    font-family: 'Saira', sans-serif;
-
 }
 
 .submission-section {
     font-family: 'Saira', sans-serif;
+}
 
+/* FOOTER */
+
+.footer {
+    background-color: coral;
+    color: aliceblue;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px 0;
 }

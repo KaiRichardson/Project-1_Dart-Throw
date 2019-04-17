@@ -1,14370 +1,6489 @@
 var cityNames = [
   {
-    "city": "Aalborg, Denmark",
-    "name": "AAL"
+    "city": "Tokyo",
+    "city_ascii": "Tokyo",
+    "lat": 35.685,
+    "lng": 139.7514,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Tōkyō",
+    "capital": "primary",
+    "population": 35676000,
+    "id": 1392685764
+  },
+  {
+    "city": "New York",
+    "city_ascii": "New York",
+    "lat": 40.6943,
+    "lng": -73.9249,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "New York",
+    "capital": "",
+    "population": 19164071,
+    "id": 1840034016
+  },
+  {
+    "city": "Mexico City",
+    "city_ascii": "Mexico City",
+    "lat": 19.4424,
+    "lng": -99.131,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Ciudad de México",
+    "capital": "primary",
+    "population": 19028000,
+    "id": 1484247881
+  },
+  {
+    "city": "Mumbai",
+    "city_ascii": "Mumbai",
+    "lat": 19.017,
+    "lng": 72.857,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "admin",
+    "population": 18978000,
+    "id": 1356226629
+  },
+  {
+    "city": "São Paulo",
+    "city_ascii": "Sao Paulo",
+    "lat": -23.5587,
+    "lng": -46.625,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "São Paulo",
+    "capital": "admin",
+    "population": 18845000,
+    "id": 1076532519
+  },
+  {
+    "city": "Delhi",
+    "city_ascii": "Delhi",
+    "lat": 28.67,
+    "lng": 77.23,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Delhi",
+    "capital": "admin",
+    "population": 15926000,
+    "id": 1356872604
+  },
+  {
+    "city": "Shanghai",
+    "city_ascii": "Shanghai",
+    "lat": 31.2165,
+    "lng": 121.4365,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shanghai",
+    "capital": "admin",
+    "population": 14987000,
+    "id": 1156073548
+  },
+  {
+    "city": "Kolkata",
+    "city_ascii": "Kolkata",
+    "lat": 22.495,
+    "lng": 88.3247,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "West Bengal",
+    "capital": "admin",
+    "population": 14787000,
+    "id": 1356060520
+  },
+  {
+    "city": "Dhaka",
+    "city_ascii": "Dhaka",
+    "lat": 23.7231,
+    "lng": 90.4086,
+    "country": "Bangladesh",
+    "iso2": "BD",
+    "iso3": "BGD",
+    "admin_name": "Dhaka",
+    "capital": "primary",
+    "population": 12797394,
+    "id": 1050529279
+  },
+  {
+    "city": "Buenos Aires",
+    "city_ascii": "Buenos Aires",
+    "lat": -34.6025,
+    "lng": -58.3975,
+    "country": "Argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "admin_name": "Buenos Aires, Ciudad Autónoma de",
+    "capital": "primary",
+    "population": 12795000,
+    "id": 1032717330
+  },
+  {
+    "city": "Los Angeles",
+    "city_ascii": "Los Angeles",
+    "lat": 34.114,
+    "lng": -118.4068,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "",
+    "population": 12740381,
+    "id": 1840020491
+  },
+  {
+    "city": "Karachi",
+    "city_ascii": "Karachi",
+    "lat": 24.87,
+    "lng": 66.99,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Sindh",
+    "capital": "admin",
+    "population": 12130000,
+    "id": 1586129469
+  },
+  {
+    "city": "Cairo",
+    "city_ascii": "Cairo",
+    "lat": 30.05,
+    "lng": 31.25,
+    "country": "Egypt",
+    "iso2": "EG",
+    "iso3": "EGY",
+    "admin_name": "Al Qāhirah",
+    "capital": "primary",
+    "population": 11893000,
+    "id": 1818253931
+  },
+  {
+    "city": "Rio de Janeiro",
+    "city_ascii": "Rio de Janeiro",
+    "lat": -22.925,
+    "lng": -43.225,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Rio de Janeiro",
+    "capital": "admin",
+    "population": 11748000,
+    "id": 1076887657
+  },
+  {
+    "city": "Ōsaka",
+    "city_ascii": "Osaka",
+    "lat": 34.75,
+    "lng": 135.4601,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Ōsaka",
+    "capital": "admin",
+    "population": 11294000,
+    "id": 1392419823
+  },
+  {
+    "city": "Beijing",
+    "city_ascii": "Beijing",
+    "lat": 39.9289,
+    "lng": 116.3883,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Beijing",
+    "capital": "primary",
+    "population": 11106000,
+    "id": 1156228865
+  },
+  {
+    "city": "Manila",
+    "city_ascii": "Manila",
+    "lat": 14.6042,
+    "lng": 120.9822,
+    "country": "Philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 11100000,
+    "id": 1608618140
+  },
+  {
+    "city": "Moscow",
+    "city_ascii": "Moscow",
+    "lat": 55.7522,
+    "lng": 37.6155,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Moskva",
+    "capital": "primary",
+    "population": 10452000,
+    "id": 1643318494
+  },
+  {
+    "city": "Istanbul",
+    "city_ascii": "Istanbul",
+    "lat": 41.105,
+    "lng": 29.01,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "İstanbul",
+    "capital": "admin",
+    "population": 10061000,
+    "id": 1792756324
+  },
+  {
+    "city": "Paris",
+    "city_ascii": "Paris",
+    "lat": 48.8667,
+    "lng": 2.3333,
+    "country": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "admin_name": "Île-de-France",
+    "capital": "primary",
+    "population": 9904000,
+    "id": 1250015082
+  },
+  {
+    "city": "Seoul",
+    "city_ascii": "Seoul",
+    "lat": 37.5663,
+    "lng": 126.9997,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Seoul",
+    "capital": "primary",
+    "population": 9796000,
+    "id": 1410836482
+  },
+  {
+    "city": "Lagos",
+    "city_ascii": "Lagos",
+    "lat": 6.4433,
+    "lng": 3.3915,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Lagos",
+    "capital": "minor",
+    "population": 9466000,
+    "id": 1566593751
+  },
+  {
+    "city": "Jakarta",
+    "city_ascii": "Jakarta",
+    "lat": -6.1744,
+    "lng": 106.8294,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jakarta",
+    "capital": "primary",
+    "population": 9125000,
+    "id": 1360771077
+  },
+  {
+    "city": "Guangzhou",
+    "city_ascii": "Guangzhou",
+    "lat": 23.145,
+    "lng": 113.325,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "admin",
+    "population": 8829000,
+    "id": 1156237133
+  },
+  {
+    "city": "Chicago",
+    "city_ascii": "Chicago",
+    "lat": 41.8373,
+    "lng": -87.6861,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Illinois",
+    "capital": "",
+    "population": 8639278,
+    "id": 1840000494
+  },
+  {
+    "city": "London",
+    "city_ascii": "London",
+    "lat": 51.5,
+    "lng": -0.1167,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 8567000,
+    "id": 1826645935
+  },
+  {
+    "city": "Lima",
+    "city_ascii": "Lima",
+    "lat": -12.048,
+    "lng": -77.0501,
+    "country": "Peru",
+    "iso2": "PE",
+    "iso3": "PER",
+    "admin_name": "Lima",
+    "capital": "primary",
+    "population": 8012000,
+    "id": 1604728603
+  },
+  {
+    "city": "Tehran",
+    "city_ascii": "Tehran",
+    "lat": 35.6719,
+    "lng": 51.4243,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Tehrān",
+    "capital": "primary",
+    "population": 7873000,
+    "id": 1364305026
+  },
+  {
+    "city": "Kinshasa",
+    "city_ascii": "Kinshasa",
+    "lat": -4.3297,
+    "lng": 15.315,
+    "country": "Congo (Kinshasa)",
+    "iso2": "CD",
+    "iso3": "COD",
+    "admin_name": "Kinshasa",
+    "capital": "primary",
+    "population": 7843000,
+    "id": 1180000363
+  },
+  {
+    "city": "Bogota",
+    "city_ascii": "Bogota",
+    "lat": 4.5964,
+    "lng": -74.0833,
+    "country": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "admin_name": "Bogotá",
+    "capital": "primary",
+    "population": 7772000,
+    "id": 1170483426
+  },
+  {
+    "city": "Shenzhen",
+    "city_ascii": "Shenzhen",
+    "lat": 22.5524,
+    "lng": 114.1221,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "minor",
+    "population": 7581000,
+    "id": 1156158707
+  },
+  {
+    "city": "Wuhan",
+    "city_ascii": "Wuhan",
+    "lat": 30.58,
+    "lng": 114.27,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hubei",
+    "capital": "admin",
+    "population": 7243000,
+    "id": 1156117184
+  },
+  {
+    "city": "Hong Kong",
+    "city_ascii": "Hong Kong",
+    "lat": 22.305,
+    "lng": 114.185,
+    "country": "Hong Kong",
+    "iso2": "HK",
+    "iso3": "HKG",
+    "admin_name": "",
+    "capital": "",
+    "population": 7206000,
+    "id": 1344982653
+  },
+  {
+    "city": "Tianjin",
+    "city_ascii": "Tianjin",
+    "lat": 39.13,
+    "lng": 117.2,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Tianjin",
+    "capital": "admin",
+    "population": 7180000,
+    "id": 1156174046
+  },
+  {
+    "city": "Chennai",
+    "city_ascii": "Chennai",
+    "lat": 13.09,
+    "lng": 80.28,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Tamil Nādu",
+    "capital": "admin",
+    "population": 7163000,
+    "id": 1356374944
+  },
+  {
+    "city": "Taipei",
+    "city_ascii": "Taipei",
+    "lat": 25.0358,
+    "lng": 121.5683,
+    "country": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "admin_name": "Taipei",
+    "capital": "primary",
+    "population": 6900273,
+    "id": 1158881289
+  },
+  {
+    "city": "Bangalore",
+    "city_ascii": "Bangalore",
+    "lat": 12.97,
+    "lng": 77.56,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Karnātaka",
+    "capital": "admin",
+    "population": 6787000,
+    "id": 1356410365
+  },
+  {
+    "city": "Bangkok",
+    "city_ascii": "Bangkok",
+    "lat": 13.75,
+    "lng": 100.5166,
+    "country": "Thailand",
+    "iso2": "TH",
+    "iso3": "THA",
+    "admin_name": "Krung Thep Maha Nakhon",
+    "capital": "primary",
+    "population": 6704000,
+    "id": 1764068610
+  },
+  {
+    "city": "Lahore",
+    "city_ascii": "Lahore",
+    "lat": 31.56,
+    "lng": 74.35,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Punjab",
+    "capital": "admin",
+    "population": 6577000,
+    "id": 1586801463
+  },
+  {
+    "city": "Chongqing",
+    "city_ascii": "Chongqing",
+    "lat": 29.565,
+    "lng": 106.595,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Chongqing",
+    "capital": "admin",
+    "population": 6461000,
+    "id": 1156936556
+  },
+  {
+    "city": "Hyderabad",
+    "city_ascii": "Hyderabad",
+    "lat": 17.4,
+    "lng": 78.48,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Andhra Pradesh",
+    "capital": "admin",
+    "population": 6376000,
+    "id": 1356871768
+  },
+  {
+    "city": "Miami",
+    "city_ascii": "Miami",
+    "lat": 25.784,
+    "lng": -80.2102,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Florida",
+    "capital": "",
+    "population": 6247425,
+    "id": 1840015149
+  },
+  {
+    "city": "Santiago",
+    "city_ascii": "Santiago",
+    "lat": -33.45,
+    "lng": -70.667,
+    "country": "Chile",
+    "iso2": "CL",
+    "iso3": "CHL",
+    "admin_name": "Región Metropolitana",
+    "capital": "primary",
+    "population": 5720000,
+    "id": 1152554349
+  },
+  {
+    "city": "Dallas",
+    "city_ascii": "Dallas",
+    "lat": 32.7938,
+    "lng": -96.7659,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Texas",
+    "capital": "",
+    "population": 5634307,
+    "id": 1840019440
+  },
+  {
+    "city": "Philadelphia",
+    "city_ascii": "Philadelphia",
+    "lat": 40.0076,
+    "lng": -75.134,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Pennsylvania",
+    "capital": "",
+    "population": 5591554,
+    "id": 1840000673
+  },
+  {
+    "city": "Belo Horizonte",
+    "city_ascii": "Belo Horizonte",
+    "lat": -19.915,
+    "lng": -43.915,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Minas Gerais",
+    "capital": "admin",
+    "population": 5575000,
+    "id": 1076967355
+  },
+  {
+    "city": "Madrid",
+    "city_ascii": "Madrid",
+    "lat": 40.4,
+    "lng": -3.6834,
+    "country": "Spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "admin_name": "Madrid",
+    "capital": "primary",
+    "population": 5567000,
+    "id": 1724616994
+  },
+  {
+    "city": "Houston",
+    "city_ascii": "Houston",
+    "lat": 29.7871,
+    "lng": -95.3936,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Texas",
+    "capital": "",
+    "population": 5424720,
+    "id": 1840020925
+  },
+  {
+    "city": "Ahmedabad",
+    "city_ascii": "Ahmedabad",
+    "lat": 23.0301,
+    "lng": 72.58,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Gujarāt",
+    "capital": "minor",
+    "population": 5375000,
+    "id": 1356304381
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "city_ascii": "Ho Chi Minh City",
+    "lat": 10.78,
+    "lng": 106.695,
+    "country": "Vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "admin_name": "Hồ Chí Minh",
+    "capital": "admin",
+    "population": 5314000,
+    "id": 1704774326
+  },
+  {
+    "city": "Toronto",
+    "city_ascii": "Toronto",
+    "lat": 43.7,
+    "lng": -79.42,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "Ontario",
+    "capital": "admin",
+    "population": 5213000,
+    "id": 1124279679
+  },
+  {
+    "city": "Washington",
+    "city_ascii": "Washington",
+    "lat": 38.9047,
+    "lng": -77.0163,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "District of Columbia",
+    "capital": "primary",
+    "population": 5191844,
+    "id": 1840006060
+  },
+  {
+    "city": "Singapore",
+    "city_ascii": "Singapore",
+    "lat": 1.293,
+    "lng": 103.8558,
+    "country": "Singapore",
+    "iso2": "SG",
+    "iso3": "SGP",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 5183700,
+    "id": 1702341327
+  },
+  {
+    "city": "Luanda",
+    "city_ascii": "Luanda",
+    "lat": -8.8383,
+    "lng": 13.2344,
+    "country": "Angola",
+    "iso2": "AO",
+    "iso3": "AGO",
+    "admin_name": "Luanda",
+    "capital": "primary",
+    "population": 5172900,
+    "id": 1024949724
+  },
+  {
+    "city": "Atlanta",
+    "city_ascii": "Atlanta",
+    "lat": 33.7627,
+    "lng": -84.4231,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Georgia",
+    "capital": "admin",
+    "population": 5080712,
+    "id": 1840013660
+  },
+  {
+    "city": "Baghdad",
+    "city_ascii": "Baghdad",
+    "lat": 33.3386,
+    "lng": 44.3939,
+    "country": "Iraq",
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "admin_name": "Baghdād",
+    "capital": "primary",
+    "population": 5054000,
+    "id": 1368596238
+  },
+  {
+    "city": "Barcelona",
+    "city_ascii": "Barcelona",
+    "lat": 41.3833,
+    "lng": 2.1834,
+    "country": "Spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "admin_name": "Catalonia",
+    "capital": "admin",
+    "population": 4920000,
+    "id": 1724594040
+  },
+  {
+    "city": "Haora",
+    "city_ascii": "Haora",
+    "lat": 22.5804,
+    "lng": 88.3299,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "West Bengal",
+    "capital": "",
+    "population": 4841638,
+    "id": 1356986516
+  },
+  {
+    "city": "Shenyeng",
+    "city_ascii": "Shenyeng",
+    "lat": 41.805,
+    "lng": 123.45,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "admin",
+    "population": 4787000,
+    "id": 1156309382
+  },
+  {
+    "city": "Khartoum",
+    "city_ascii": "Khartoum",
+    "lat": 15.5881,
+    "lng": 32.5342,
+    "country": "Sudan",
+    "iso2": "SD",
+    "iso3": "SDN",
+    "admin_name": "Khartoum",
+    "capital": "primary",
+    "population": 4754000,
+    "id": 1729268475
+  },
+  {
+    "city": "Pune",
+    "city_ascii": "Pune",
+    "lat": 18.53,
+    "lng": 73.85,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 4672000,
+    "id": 1356081074
+  },
+  {
+    "city": "Sydney",
+    "city_ascii": "Sydney",
+    "lat": -33.92,
+    "lng": 151.1852,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "New South Wales",
+    "capital": "admin",
+    "population": 4630000,
+    "id": 1036074917
+  },
+  {
+    "city": "Boston",
+    "city_ascii": "Boston",
+    "lat": 42.3189,
+    "lng": -71.0838,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Massachusetts",
+    "capital": "admin",
+    "population": 4556916,
+    "id": 1840000455
+  },
+  {
+    "city": "St. Petersburg",
+    "city_ascii": "St. Petersburg",
+    "lat": 59.939,
+    "lng": 30.316,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Sankt-Peterburg",
+    "capital": "admin",
+    "population": 4553000,
+    "id": 1643616350
+  },
+  {
+    "city": "Chittagong",
+    "city_ascii": "Chittagong",
+    "lat": 22.33,
+    "lng": 91.8,
+    "country": "Bangladesh",
+    "iso2": "BD",
+    "iso3": "BGD",
+    "admin_name": "Chittagong",
+    "capital": "admin",
+    "population": 4529000,
+    "id": 1050830722
+  },
+  {
+    "city": "Dongguan",
+    "city_ascii": "Dongguan",
+    "lat": 23.0489,
+    "lng": 113.7447,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "minor",
+    "population": 4528000,
+    "id": 1156478242
+  },
+  {
+    "city": "Riyadh",
+    "city_ascii": "Riyadh",
+    "lat": 24.6408,
+    "lng": 46.7727,
+    "country": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "admin_name": "Ar Riyāḑ",
+    "capital": "primary",
+    "population": 4465000,
+    "id": 1682999334
+  },
+  {
+    "city": "Hanoi",
+    "city_ascii": "Hanoi",
+    "lat": 21.0333,
+    "lng": 105.85,
+    "country": "Vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "admin_name": "Hà Nội",
+    "capital": "primary",
+    "population": 4378000,
+    "id": 1704413791
+  },
+  {
+    "city": "Guadalajara",
+    "city_ascii": "Guadalajara",
+    "lat": 20.67,
+    "lng": -103.33,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Jalisco",
+    "capital": "admin",
+    "population": 4198000,
+    "id": 1484950208
+  },
+  {
+    "city": "Melbourne",
+    "city_ascii": "Melbourne",
+    "lat": -37.82,
+    "lng": 144.975,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "Victoria",
+    "capital": "admin",
+    "population": 4170000,
+    "id": 1036533631
+  },
+  {
+    "city": "Alexandria",
+    "city_ascii": "Alexandria",
+    "lat": 31.2,
+    "lng": 29.95,
+    "country": "Egypt",
+    "iso2": "EG",
+    "iso3": "EGY",
+    "admin_name": "Al Iskandarīyah",
+    "capital": "admin",
+    "population": 4165000,
+    "id": 1818695837
+  },
+  {
+    "city": "Chengdu",
+    "city_ascii": "Chengdu",
+    "lat": 30.67,
+    "lng": 104.07,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "admin",
+    "population": 4123000,
+    "id": 1156421555
+  },
+  {
+    "city": "Rangoon",
+    "city_ascii": "Rangoon",
+    "lat": 16.7834,
+    "lng": 96.1667,
+    "country": "Burma",
+    "iso2": "MM",
+    "iso3": "MMR",
+    "admin_name": "Yangon",
+    "capital": "primary",
+    "population": 4088000,
+    "id": 1104616656
+  },
+  {
+    "city": "Phoenix",
+    "city_ascii": "Phoenix",
+    "lat": 33.5722,
+    "lng": -112.0891,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Arizona",
+    "capital": "admin",
+    "population": 4054083,
+    "id": 1840020568
+  },
+  {
+    "city": "Xian",
+    "city_ascii": "Xian",
+    "lat": 34.275,
+    "lng": 108.895,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shaanxi",
+    "capital": "admin",
+    "population": 4009000,
+    "id": 1156244079
+  },
+  {
+    "city": "Porto Alegre",
+    "city_ascii": "Porto Alegre",
+    "lat": -30.05,
+    "lng": -51.2,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Rio Grande do Sul",
+    "capital": "admin",
+    "population": 3917000,
+    "id": 1076658221
+  },
+  {
+    "city": "Surat",
+    "city_ascii": "Surat",
+    "lat": 21.2,
+    "lng": 72.84,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Gujarāt",
+    "capital": "",
+    "population": 3842000,
+    "id": 1356758738
+  },
+  {
+    "city": "Hechi",
+    "city_ascii": "Hechi",
+    "lat": 23.0965,
+    "lng": 109.6091,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangxi",
+    "capital": "",
+    "population": 3830000,
+    "id": 1156868701
+  },
+  {
+    "city": "Abidjan",
+    "city_ascii": "Abidjan",
+    "lat": 5.32,
+    "lng": -4.04,
+    "country": "C𴥠DӉvoire",
+    "iso2": "CI",
+    "iso3": "CIV",
+    "admin_name": "Abidjan",
+    "capital": "admin",
+    "population": 3802000,
+    "id": 1384207980
+  },
+  {
+    "city": "Brasília",
+    "city_ascii": "Brasilia",
+    "lat": -15.7833,
+    "lng": -47.9161,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Distrito Federal",
+    "capital": "primary",
+    "population": 3716996,
+    "id": 1076144436
+  },
+  {
+    "city": "Ankara",
+    "city_ascii": "Ankara",
+    "lat": 39.9272,
+    "lng": 32.8644,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "Ankara",
+    "capital": "primary",
+    "population": 3716000,
+    "id": 1792572891
+  },
+  {
+    "city": "Monterrey",
+    "city_ascii": "Monterrey",
+    "lat": 25.67,
+    "lng": -100.33,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Nuevo León",
+    "capital": "admin",
+    "population": 3712000,
+    "id": 1484559591
+  },
+  {
+    "city": "Yokohama",
+    "city_ascii": "Yokohama",
+    "lat": 35.32,
+    "lng": 139.58,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Kanagawa",
+    "capital": "admin",
+    "population": 3697894,
+    "id": 1392118339
+  },
+  {
+    "city": "Nanjing",
+    "city_ascii": "Nanjing",
+    "lat": 32.05,
+    "lng": 118.78,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "admin",
+    "population": 3679000,
+    "id": 1156644065
+  },
+  {
+    "city": "Montréal",
+    "city_ascii": "Montreal",
+    "lat": 45.5,
+    "lng": -73.5833,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "Québec",
+    "capital": "",
+    "population": 3678000,
+    "id": 1124586170
+  },
+  {
+    "city": "Guiyang",
+    "city_ascii": "Guiyang",
+    "lat": 26.58,
+    "lng": 106.72,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guizhou",
+    "capital": "admin",
+    "population": 3662000,
+    "id": 1156932620
+  },
+  {
+    "city": "Recife",
+    "city_ascii": "Recife",
+    "lat": -8.0756,
+    "lng": -34.9156,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Pernambuco",
+    "capital": "admin",
+    "population": 3651000,
+    "id": 1076137337
+  },
+  {
+    "city": "Harbin",
+    "city_ascii": "Harbin",
+    "lat": 45.75,
+    "lng": 126.65,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Heilongjiang",
+    "capital": "admin",
+    "population": 3621000,
+    "id": 1156241528
+  },
+  {
+    "city": "Fortaleza",
+    "city_ascii": "Fortaleza",
+    "lat": -3.75,
+    "lng": -38.58,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Ceará",
+    "capital": "admin",
+    "population": 3602319,
+    "id": 1076567885
+  },
+  {
+    "city": "San Francisco",
+    "city_ascii": "San Francisco",
+    "lat": 37.7561,
+    "lng": -122.4429,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "",
+    "population": 3548847,
+    "id": 1840021543
+  },
+  {
+    "city": "Seattle",
+    "city_ascii": "Seattle",
+    "lat": 47.6217,
+    "lng": -122.3238,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Washington",
+    "capital": "",
+    "population": 3541236,
+    "id": 1840021117
+  },
+  {
+    "city": "Zhangzhou",
+    "city_ascii": "Zhangzhou",
+    "lat": 24.5204,
+    "lng": 117.67,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Fujian",
+    "capital": "minor",
+    "population": 3531147,
+    "id": 1156241637
+  },
+  {
+    "city": "Detroit",
+    "city_ascii": "Detroit",
+    "lat": 42.3834,
+    "lng": -83.1024,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Michigan",
+    "capital": "",
+    "population": 3520589,
+    "id": 1840003971
+  },
+  {
+    "city": "Salvador",
+    "city_ascii": "Salvador",
+    "lat": -12.97,
+    "lng": -38.48,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Bahia",
+    "capital": "admin",
+    "population": 3484000,
+    "id": 1076923789
+  },
+  {
+    "city": "Busan",
+    "city_ascii": "Busan",
+    "lat": 35.0951,
+    "lng": 129.01,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Busan",
+    "capital": "admin",
+    "population": 3480000,
+    "id": 1410601465
+  },
+  {
+    "city": "Johannesburg",
+    "city_ascii": "Johannesburg",
+    "lat": -26.17,
+    "lng": 28.03,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Gauteng",
+    "capital": "admin",
+    "population": 3435000,
+    "id": 1710550792
+  },
+  {
+    "city": "Berlin",
+    "city_ascii": "Berlin",
+    "lat": 52.5218,
+    "lng": 13.4015,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Berlin",
+    "capital": "primary",
+    "population": 3406000,
+    "id": 1276451290
+  },
+  {
+    "city": "Algiers",
+    "city_ascii": "Algiers",
+    "lat": 36.7631,
+    "lng": 3.0506,
+    "country": "Algeria",
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "admin_name": "Alger",
+    "capital": "primary",
+    "population": 3354000,
+    "id": 1012973369
+  },
+  {
+    "city": "Rome",
+    "city_ascii": "Rome",
+    "lat": 41.896,
+    "lng": 12.4833,
+    "country": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "admin_name": "Lazio",
+    "capital": "primary",
+    "population": 3339000,
+    "id": 1380382862
+  },
+  {
+    "city": "Pyongyang",
+    "city_ascii": "Pyongyang",
+    "lat": 39.0194,
+    "lng": 125.7547,
+    "country": "Korea, North",
+    "iso2": "KP",
+    "iso3": "PRK",
+    "admin_name": "P’yŏngyang",
+    "capital": "primary",
+    "population": 3300000,
+    "id": 1408738594
+  },
+  {
+    "city": "Medellín",
+    "city_ascii": "Medellin",
+    "lat": 6.275,
+    "lng": -75.575,
+    "country": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "admin_name": "Antioquia",
+    "capital": "admin",
+    "population": 3297000,
+    "id": 1170680389
+  },
+  {
+    "city": "Kabul",
+    "city_ascii": "Kabul",
+    "lat": 34.5167,
+    "lng": 69.1833,
+    "country": "Afghanistan",
+    "iso2": "AF",
+    "iso3": "AFG",
+    "admin_name": "Kābul",
+    "capital": "primary",
+    "population": 3277000,
+    "id": 1004993580
+  },
+  {
+    "city": "Athens",
+    "city_ascii": "Athens",
+    "lat": 37.9833,
+    "lng": 23.7333,
+    "country": "Greece",
+    "iso2": "GR",
+    "iso3": "GRC",
+    "admin_name": "Attikí",
+    "capital": "primary",
+    "population": 3242000,
+    "id": 1300715560
+  },
+  {
+    "city": "Nagoya",
+    "city_ascii": "Nagoya",
+    "lat": 35.155,
+    "lng": 136.915,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Aichi",
+    "capital": "admin",
+    "population": 3230000,
+    "id": 1392407472
+  },
+  {
+    "city": "Cape Town",
+    "city_ascii": "Cape Town",
+    "lat": -33.92,
+    "lng": 18.435,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Western Cape",
+    "capital": "primary",
+    "population": 3215000,
+    "id": 1710680650
+  },
+  {
+    "city": "Changchun",
+    "city_ascii": "Changchun",
+    "lat": 43.865,
+    "lng": 125.34,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jilin",
+    "capital": "admin",
+    "population": 3183000,
+    "id": 1156078103
+  },
+  {
+    "city": "San Diego",
+    "city_ascii": "San Diego",
+    "lat": 32.8312,
+    "lng": -117.1225,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "",
+    "population": 3181172,
+    "id": 1840021990
+  },
+  {
+    "city": "Casablanca",
+    "city_ascii": "Casablanca",
+    "lat": 33.6,
+    "lng": -7.6164,
+    "country": "Morocco",
+    "iso2": "MA",
+    "iso3": "MAR",
+    "admin_name": "Casablanca-Settat",
+    "capital": "admin",
+    "population": 3181000,
+    "id": 1504175315
+  },
+  {
+    "city": "Dalian",
+    "city_ascii": "Dalian",
+    "lat": 38.9228,
+    "lng": 121.6298,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "",
+    "population": 3167000,
+    "id": 1156175472
+  },
+  {
+    "city": "Kanpur",
+    "city_ascii": "Kanpur",
+    "lat": 26.46,
+    "lng": 80.32,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 3162000,
+    "id": 1356575238
+  },
+  {
+    "city": "Kano",
+    "city_ascii": "Kano",
+    "lat": 12,
+    "lng": 8.52,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Kano",
+    "capital": "admin",
+    "population": 3140000,
+    "id": 1566422868
+  },
+  {
+    "city": "Tel Aviv-Yafo",
+    "city_ascii": "Tel Aviv-Yafo",
+    "lat": 32.08,
+    "lng": 34.77,
+    "country": "Israel",
+    "iso2": "IL",
+    "iso3": "ISR",
+    "admin_name": "Tel Aviv",
+    "capital": "admin",
+    "population": 3112000,
+    "id": 1376401542
+  },
+  {
+    "city": "Addis Ababa",
+    "city_ascii": "Addis Ababa",
+    "lat": 9.0333,
+    "lng": 38.7,
+    "country": "Ethiopia",
+    "iso2": "ET",
+    "iso3": "ETH",
+    "admin_name": "Ādīs Ābeba",
+    "capital": "primary",
+    "population": 3100000,
+    "id": 1231824991
+  },
+  {
+    "city": "Curitiba",
+    "city_ascii": "Curitiba",
+    "lat": -25.42,
+    "lng": -49.32,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Paraná",
+    "capital": "admin",
+    "population": 3084000,
+    "id": 1076701712
+  },
+  {
+    "city": "Zibo",
+    "city_ascii": "Zibo",
+    "lat": 36.8,
+    "lng": 118.05,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 3061000,
+    "id": 1156381094
+  },
+  {
+    "city": "Jeddah",
+    "city_ascii": "Jeddah",
+    "lat": 21.5169,
+    "lng": 39.2192,
+    "country": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "admin_name": "Makkah al Mukarramah",
+    "capital": "",
+    "population": 3012000,
+    "id": 1682926944
+  },
+  {
+    "city": "Nairobi",
+    "city_ascii": "Nairobi",
+    "lat": -1.2833,
+    "lng": 36.8167,
+    "country": "Kenya",
+    "iso2": "KE",
+    "iso3": "KEN",
+    "admin_name": "Nairobi City",
+    "capital": "primary",
+    "population": 3010000,
+    "id": 1404000661
+  },
+  {
+    "city": "Hangzhou",
+    "city_ascii": "Hangzhou",
+    "lat": 30.25,
+    "lng": 120.17,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Zhejiang",
+    "capital": "admin",
+    "population": 3007000,
+    "id": 1156275243
+  },
+  {
+    "city": "Benoni",
+    "city_ascii": "Benoni",
+    "lat": -26.1496,
+    "lng": 28.3299,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Gauteng",
+    "capital": "",
+    "population": 2986000,
+    "id": 1710880986
+  },
+  {
+    "city": "Caracas",
+    "city_ascii": "Caracas",
+    "lat": 10.501,
+    "lng": -66.917,
+    "country": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "admin_name": "Distrito Capital",
+    "capital": "primary",
+    "population": 2985000,
+    "id": 1862748204
+  },
+  {
+    "city": "Milan",
+    "city_ascii": "Milan",
+    "lat": 45.47,
+    "lng": 9.205,
+    "country": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "admin_name": "Lombardy",
+    "capital": "admin",
+    "population": 2945000,
+    "id": 1380724377
+  },
+  {
+    "city": "Stuttgart",
+    "city_ascii": "Stuttgart",
+    "lat": 48.78,
+    "lng": 9.2,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Baden-Württemberg",
+    "capital": "admin",
+    "population": 2944700,
+    "id": 1276171358
+  },
+  {
+    "city": "Kunming",
+    "city_ascii": "Kunming",
+    "lat": 25.07,
+    "lng": 102.68,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Yunnan",
+    "capital": "admin",
+    "population": 2931000,
+    "id": 1156477539
+  },
+  {
+    "city": "Dar es Salaam",
+    "city_ascii": "Dar es Salaam",
+    "lat": -6.8,
+    "lng": 39.2683,
+    "country": "Tanzania",
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 2930000,
+    "id": 1834843853
+  },
+  {
+    "city": "Jaipur",
+    "city_ascii": "Jaipur",
+    "lat": 26.9211,
+    "lng": 75.81,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Rājasthān",
+    "capital": "admin",
+    "population": 2917000,
+    "id": 1356293537
+  },
+  {
+    "city": "Taiyuan",
+    "city_ascii": "Taiyuan",
+    "lat": 37.875,
+    "lng": 112.5451,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shanxi",
+    "capital": "admin",
+    "population": 2913000,
+    "id": 1156632014
+  },
+  {
+    "city": "Frankfurt",
+    "city_ascii": "Frankfurt",
+    "lat": 50.1,
+    "lng": 8.675,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Hesse",
+    "capital": "minor",
+    "population": 2895000,
+    "id": 1276054552
+  },
+  {
+    "city": "Minneapolis",
+    "city_ascii": "Minneapolis",
+    "lat": 44.9635,
+    "lng": -93.2679,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Minnesota",
+    "capital": "",
+    "population": 2866604,
+    "id": 1840007830
+  },
+  {
+    "city": "Qingdao",
+    "city_ascii": "Qingdao",
+    "lat": 36.09,
+    "lng": 120.33,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "minor",
+    "population": 2866000,
+    "id": 1156112588
+  },
+  {
+    "city": "Surabaya",
+    "city_ascii": "Surabaya",
+    "lat": -7.2492,
+    "lng": 112.7508,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jawa Timur",
+    "capital": "admin",
+    "population": 2845000,
+    "id": 1360484663
+  },
+  {
+    "city": "Lisbon",
+    "city_ascii": "Lisbon",
+    "lat": 38.7227,
+    "lng": -9.1449,
+    "country": "Portugal",
+    "iso2": "PT",
+    "iso3": "PRT",
+    "admin_name": "Lisboa",
+    "capital": "primary",
+    "population": 2812000,
+    "id": 1620619017
+  },
+  {
+    "city": "Jinan",
+    "city_ascii": "Jinan",
+    "lat": 36.675,
+    "lng": 116.995,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "admin",
+    "population": 2798000,
+    "id": 1156972469
+  },
+  {
+    "city": "Fukuoka",
+    "city_ascii": "Fukuoka",
+    "lat": 33.595,
+    "lng": 130.41,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Fukuoka",
+    "capital": "admin",
+    "population": 2792000,
+    "id": 1392576294
+  },
+  {
+    "city": "Campinas",
+    "city_ascii": "Campinas",
+    "lat": -22.9,
+    "lng": -47.1,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "São Paulo",
+    "capital": "",
+    "population": 2791000,
+    "id": 1076145766
+  },
+  {
+    "city": "Kaohsiung",
+    "city_ascii": "Kaohsiung",
+    "lat": 22.6333,
+    "lng": 120.2666,
+    "country": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "admin_name": "Kaohsiung",
+    "capital": "admin",
+    "population": 2769072,
+    "id": 1158331334
+  },
+  {
+    "city": "Quezon City",
+    "city_ascii": "Quezon City",
+    "lat": 14.6504,
+    "lng": 121.03,
+    "country": "Philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "admin_name": "Quezon",
+    "capital": "admin",
+    "population": 2761720,
+    "id": 1608974097
+  },
+  {
+    "city": "Katowice",
+    "city_ascii": "Katowice",
+    "lat": 50.2604,
+    "lng": 19.02,
+    "country": "Poland",
+    "iso2": "PL",
+    "iso3": "POL",
+    "admin_name": "Śląskie",
+    "capital": "admin",
+    "population": 2746000,
+    "id": 1616798495
+  },
+  {
+    "city": "Tampa",
+    "city_ascii": "Tampa",
+    "lat": 27.9937,
+    "lng": -82.4454,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Florida",
+    "capital": "",
+    "population": 2744107,
+    "id": 1840015982
+  },
+  {
+    "city": "Denver",
+    "city_ascii": "Denver",
+    "lat": 39.7621,
+    "lng": -104.8759,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Colorado",
+    "capital": "admin",
+    "population": 2741534,
+    "id": 1840018789
+  },
+  {
+    "city": "Aleppo",
+    "city_ascii": "Aleppo",
+    "lat": 36.23,
+    "lng": 37.17,
+    "country": "Syria",
+    "iso2": "SY",
+    "iso3": "SYR",
+    "admin_name": "Ḩalab",
+    "capital": "admin",
+    "population": 2738000,
+    "id": 1760366651
+  },
+  {
+    "city": "Durban",
+    "city_ascii": "Durban",
+    "lat": -29.865,
+    "lng": 30.98,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "KwaZulu-Natal",
+    "capital": "",
+    "population": 2729000,
+    "id": 1710149138
+  },
+  {
+    "city": "Kiev",
+    "city_ascii": "Kiev",
+    "lat": 50.4334,
+    "lng": 30.5166,
+    "country": "Ukraine",
+    "iso2": "UA",
+    "iso3": "UKR",
+    "admin_name": "Kyyiv, Misto",
+    "capital": "primary",
+    "population": 2709000,
+    "id": 1804382913
+  },
+  {
+    "city": "Lucknow",
+    "city_ascii": "Lucknow",
+    "lat": 26.855,
+    "lng": 80.915,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "admin",
+    "population": 2695000,
+    "id": 1356891790
+  },
+  {
+    "city": "El Giza",
+    "city_ascii": "El Giza",
+    "lat": 30.01,
+    "lng": 31.19,
+    "country": "Egypt",
+    "iso2": "EG",
+    "iso3": "EGY",
+    "admin_name": "Al Jīzah",
+    "capital": "admin",
+    "population": 2681863,
+    "id": 1818925479
+  },
+  {
+    "city": "Zhengzhou",
+    "city_ascii": "Zhengzhou",
+    "lat": 34.755,
+    "lng": 113.6651,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Henan",
+    "capital": "admin",
+    "population": 2636000,
+    "id": 1156183137
+  },
+  {
+    "city": "Taichung",
+    "city_ascii": "Taichung",
+    "lat": 24.1521,
+    "lng": 120.6817,
+    "country": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "admin_name": "Taichung",
+    "capital": "admin",
+    "population": 2629323,
+    "id": 1158689622
+  },
+  {
+    "city": "Brooklyn",
+    "city_ascii": "Brooklyn",
+    "lat": 40.6501,
+    "lng": -73.9496,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "New York",
+    "capital": "",
+    "population": 2629150,
+    "id": 1840034030
+  },
+  {
+    "city": "Ibadan",
+    "city_ascii": "Ibadan",
+    "lat": 7.38,
+    "lng": 3.93,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Oyo",
+    "capital": "admin",
+    "population": 2628000,
+    "id": 1566366407
+  },
+  {
+    "city": "Faisalabad",
+    "city_ascii": "Faisalabad",
+    "lat": 31.41,
+    "lng": 73.11,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Punjab",
+    "capital": "minor",
+    "population": 2617000,
+    "id": 1586323916
+  },
+  {
+    "city": "Fuzhou",
+    "city_ascii": "Fuzhou",
+    "lat": 26.08,
+    "lng": 119.3,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Fujian",
+    "capital": "admin",
+    "population": 2606000,
+    "id": 1156188037
+  },
+  {
+    "city": "Dakar",
+    "city_ascii": "Dakar",
+    "lat": 14.7158,
+    "lng": -17.4731,
+    "country": "Senegal",
+    "iso2": "SN",
+    "iso3": "SEN",
+    "admin_name": "Dakar",
+    "capital": "primary",
+    "population": 2604000,
+    "id": 1686604760
+  },
+  {
+    "city": "Changsha",
+    "city_ascii": "Changsha",
+    "lat": 28.2,
+    "lng": 112.97,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "admin",
+    "population": 2604000,
+    "id": 1156961497
+  },
+  {
+    "city": "İzmir",
+    "city_ascii": "Izmir",
+    "lat": 38.4361,
+    "lng": 27.1518,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "İzmir",
+    "capital": "admin",
+    "population": 2587000,
+    "id": 1792725579
+  },
+  {
+    "city": "Xiangtan",
+    "city_ascii": "Xiangtan",
+    "lat": 27.8504,
+    "lng": 112.9,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "",
+    "population": 2586948,
+    "id": 1156195684
+  },
+  {
+    "city": "Lanzhou",
+    "city_ascii": "Lanzhou",
+    "lat": 36.056,
+    "lng": 103.792,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Gansu",
+    "capital": "admin",
+    "population": 2561000,
+    "id": 1156280566
+  },
+  {
+    "city": "Incheon",
+    "city_ascii": "Incheon",
+    "lat": 37.4761,
+    "lng": 126.6422,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Incheon",
+    "capital": "admin",
+    "population": 2550000,
+    "id": 1410160313
+  },
+  {
+    "city": "Sapporo",
+    "city_ascii": "Sapporo",
+    "lat": 43.075,
+    "lng": 141.34,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Hokkaidō",
+    "capital": "admin",
+    "population": 2544000,
+    "id": 1392000195
+  },
+  {
+    "city": "Xiamen",
+    "city_ascii": "Xiamen",
+    "lat": 24.45,
+    "lng": 118.08,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Fujian",
+    "capital": "minor",
+    "population": 2519000,
+    "id": 1156212809
+  },
+  {
+    "city": "Guayaquil",
+    "city_ascii": "Guayaquil",
+    "lat": -2.22,
+    "lng": -79.92,
+    "country": "Ecuador",
+    "iso2": "EC",
+    "iso3": "ECU",
+    "admin_name": "Guayas",
+    "capital": "admin",
+    "population": 2514000,
+    "id": 1218802178
+  },
+  {
+    "city": "George Town",
+    "city_ascii": "George Town",
+    "lat": 5.4136,
+    "lng": 100.3294,
+    "country": "Malaysia",
+    "iso2": "MY",
+    "iso3": "MYS",
+    "admin_name": "Pulau Pinang",
+    "capital": "admin",
+    "population": 2500000,
+    "id": 1458236750
+  },
+  {
+    "city": "Mashhad",
+    "city_ascii": "Mashhad",
+    "lat": 36.27,
+    "lng": 59.57,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Khorāsān-e Raẕavī",
+    "capital": "admin",
+    "population": 2469000,
+    "id": 1364123206
+  },
+  {
+    "city": "Damascus",
+    "city_ascii": "Damascus",
+    "lat": 33.5,
+    "lng": 36.3,
+    "country": "Syria",
+    "iso2": "SY",
+    "iso3": "SYR",
+    "admin_name": "Dimashq",
+    "capital": "primary",
+    "population": 2466000,
+    "id": 1760685964
+  },
+  {
+    "city": "Daegu",
+    "city_ascii": "Daegu",
+    "lat": 35.8668,
+    "lng": 128.607,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Daegu",
+    "capital": "admin",
+    "population": 2460000,
+    "id": 1410095252
+  },
+  {
+    "city": "Nagpur",
+    "city_ascii": "Nagpur",
+    "lat": 21.17,
+    "lng": 79.09,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 2454000,
+    "id": 1356365743
+  },
+  {
+    "city": "Jinxi",
+    "city_ascii": "Jinxi",
+    "lat": 40.7503,
+    "lng": 120.83,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "minor",
+    "population": 2426000,
+    "id": 1156046704
+  },
+  {
+    "city": "Shijianzhuang",
+    "city_ascii": "Shijianzhuang",
+    "lat": 38.05,
+    "lng": 114.48,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "admin",
+    "population": 2417000,
+    "id": 1156217541
+  },
+  {
+    "city": "Tunis",
+    "city_ascii": "Tunis",
+    "lat": 36.8028,
+    "lng": 10.1797,
+    "country": "Tunisia",
+    "iso2": "TN",
+    "iso3": "TUN",
+    "admin_name": "Tunis",
+    "capital": "primary",
+    "population": 2412500,
+    "id": 1788742103
+  },
+  {
+    "city": "Vienna",
+    "city_ascii": "Vienna",
+    "lat": 48.2,
+    "lng": 16.3666,
+    "country": "Austria",
+    "iso2": "AT",
+    "iso3": "AUT",
+    "admin_name": "Wien",
+    "capital": "primary",
+    "population": 2400000,
+    "id": 1040261752
+  },
+  {
+    "city": "Jilin",
+    "city_ascii": "Jilin",
+    "lat": 43.85,
+    "lng": 126.55,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jilin",
+    "capital": "",
+    "population": 2396000,
+    "id": 1156646448
+  },
+  {
+    "city": "Omdurman",
+    "city_ascii": "Omdurman",
+    "lat": 15.6167,
+    "lng": 32.48,
+    "country": "Sudan",
+    "iso2": "SD",
+    "iso3": "SDN",
+    "admin_name": "Khartoum",
+    "capital": "",
+    "population": 2395159,
+    "id": 1729912179
+  },
+  {
+    "city": "Bandung",
+    "city_ascii": "Bandung",
+    "lat": -6.95,
+    "lng": 107.57,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jawa Barat",
+    "capital": "admin",
+    "population": 2394000,
+    "id": 1360313023
+  },
+  {
+    "city": "Bekasi",
+    "city_ascii": "Bekasi",
+    "lat": -6.2173,
+    "lng": 106.9723,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jawa Barat",
+    "capital": "",
+    "population": 2378211,
+    "id": 1360006015
+  },
+  {
+    "city": "Mannheim",
+    "city_ascii": "Mannheim",
+    "lat": 49.5004,
+    "lng": 8.47,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Baden-Württemberg",
+    "capital": "minor",
+    "population": 2362000,
+    "id": 1276150104
+  },
+  {
+    "city": "Nanchang",
+    "city_ascii": "Nanchang",
+    "lat": 28.68,
+    "lng": 115.88,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangxi",
+    "capital": "admin",
+    "population": 2350000,
+    "id": 1156198892
+  },
+  {
+    "city": "Wenzhou",
+    "city_ascii": "Wenzhou",
+    "lat": 28.02,
+    "lng": 120.6501,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Zhejiang",
+    "capital": "",
+    "population": 2350000,
+    "id": 1156188829
+  },
+  {
+    "city": "Queens",
+    "city_ascii": "Queens",
+    "lat": 40.7498,
+    "lng": -73.7976,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "New York",
+    "capital": "",
+    "population": 2333054,
+    "id": 1840034002
+  },
+  {
+    "city": "Vancouver",
+    "city_ascii": "Vancouver",
+    "lat": 49.2734,
+    "lng": -123.1216,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "British Columbia",
+    "capital": "",
+    "population": 2313328,
+    "id": 1124825478
+  },
+  {
+    "city": "Birmingham",
+    "city_ascii": "Birmingham",
+    "lat": 52.475,
+    "lng": -1.92,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "Birmingham",
+    "capital": "admin",
+    "population": 2285000,
+    "id": 1826423213
+  },
+  {
+    "city": "Cali",
+    "city_ascii": "Cali",
+    "lat": 3.4,
+    "lng": -76.5,
+    "country": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "admin_name": "Valle del Cauca",
+    "capital": "admin",
+    "population": 2254000,
+    "id": 1170417589
+  },
+  {
+    "city": "Naples",
+    "city_ascii": "Naples",
+    "lat": 40.84,
+    "lng": 14.245,
+    "country": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "admin_name": "Campania",
+    "capital": "admin",
+    "population": 2250000,
+    "id": 1380646673
+  },
+  {
+    "city": "Sendai",
+    "city_ascii": "Sendai",
+    "lat": 38.2871,
+    "lng": 141.0217,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Miyagi",
+    "capital": "admin",
+    "population": 2250000,
+    "id": 1392457903
+  },
+  {
+    "city": "Manchester",
+    "city_ascii": "Manchester",
+    "lat": 53.5004,
+    "lng": -2.248,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "Manchester",
+    "capital": "admin",
+    "population": 2230000,
+    "id": 1826246335
+  },
+  {
+    "city": "Puebla",
+    "city_ascii": "Puebla",
+    "lat": 19.05,
+    "lng": -98.2,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Puebla",
+    "capital": "admin",
+    "population": 2195000,
+    "id": 1484416394
+  },
+  {
+    "city": "Tripoli",
+    "city_ascii": "Tripoli",
+    "lat": 32.8925,
+    "lng": 13.18,
+    "country": "Libya",
+    "iso2": "LY",
+    "iso3": "LBY",
+    "admin_name": "Ţarābulus",
+    "capital": "primary",
+    "population": 2189000,
+    "id": 1434201852
+  },
+  {
+    "city": "Tashkent",
+    "city_ascii": "Tashkent",
+    "lat": 41.3117,
+    "lng": 69.2949,
+    "country": "Uzbekistan",
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "admin_name": "Toshkent",
+    "capital": "primary",
+    "population": 2184000,
+    "id": 1860331871
+  },
+  {
+    "city": "Baltimore",
+    "city_ascii": "Baltimore",
+    "lat": 39.3051,
+    "lng": -76.6144,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Maryland",
+    "capital": "",
+    "population": 2181206,
+    "id": 1840001592
+  },
+  {
+    "city": "Nanchong",
+    "city_ascii": "Nanchong",
+    "lat": 30.7804,
+    "lng": 106.13,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "minor",
+    "population": 2174000,
+    "id": 1156522457
+  },
+  {
+    "city": "Havana",
+    "city_ascii": "Havana",
+    "lat": 23.132,
+    "lng": -82.3642,
+    "country": "Cuba",
+    "iso2": "CU",
+    "iso3": "CUB",
+    "admin_name": "La Habana",
+    "capital": "primary",
+    "population": 2174000,
+    "id": 1192752771
+  },
+  {
+    "city": "Belém",
+    "city_ascii": "Belem",
+    "lat": -1.45,
+    "lng": -48.48,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Pará",
+    "capital": "admin",
+    "population": 2167000,
+    "id": 1076646823
+  },
+  {
+    "city": "Nanning",
+    "city_ascii": "Nanning",
+    "lat": 22.82,
+    "lng": 108.32,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangxi",
+    "capital": "admin",
+    "population": 2167000,
+    "id": 1156605439
+  },
+  {
+    "city": "Patna",
+    "city_ascii": "Patna",
+    "lat": 25.625,
+    "lng": 85.13,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Bihār",
+    "capital": "admin",
+    "population": 2158000,
+    "id": 1356821429
+  },
+  {
+    "city": "Santo Domingo",
+    "city_ascii": "Santo Domingo",
+    "lat": 18.4701,
+    "lng": -69.9001,
+    "country": "Dominican Republic",
+    "iso2": "DO",
+    "iso3": "DOM",
+    "admin_name": "Ozama",
+    "capital": "primary",
+    "population": 2154000,
+    "id": 1214636202
+  },
+  {
+    "city": "Ürümqi",
+    "city_ascii": "Urumqi",
+    "lat": 43.805,
+    "lng": 87.575,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Xinjiang",
+    "capital": "admin",
+    "population": 2151000,
+    "id": 1156051276
+  },
+  {
+    "city": "Zaozhuang",
+    "city_ascii": "Zaozhuang",
+    "lat": 34.88,
+    "lng": 117.57,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 2145000,
+    "id": 1156796454
+  },
+  {
+    "city": "Baku",
+    "city_ascii": "Baku",
+    "lat": 40.3953,
+    "lng": 49.8622,
+    "country": "Azerbaijan",
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "admin_name": "Bakı",
+    "capital": "primary",
+    "population": 2122300,
+    "id": 1031946365
+  },
+  {
+    "city": "Accra",
+    "city_ascii": "Accra",
+    "lat": 5.55,
+    "lng": -0.2167,
+    "country": "Ghana",
+    "iso2": "GH",
+    "iso3": "GHA",
+    "admin_name": "Greater Accra",
+    "capital": "primary",
+    "population": 2121000,
+    "id": 1288299415
+  },
+  {
+    "city": "Yantai",
+    "city_ascii": "Yantai",
+    "lat": 37.5304,
+    "lng": 121.4,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 2116000,
+    "id": 1156932948
+  },
+  {
+    "city": "Medan",
+    "city_ascii": "Medan",
+    "lat": 3.58,
+    "lng": 98.65,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Sumatera Utara",
+    "capital": "admin",
+    "population": 2115000,
+    "id": 1360543171
+  },
+  {
+    "city": "Santa Cruz",
+    "city_ascii": "Santa Cruz",
+    "lat": -17.7539,
+    "lng": -63.226,
+    "country": "Bolivia",
+    "iso2": "BO",
+    "iso3": "BOL",
+    "admin_name": "Santa Cruz",
+    "capital": "",
+    "population": 2102998,
+    "id": 1068002564
+  },
+  {
+    "city": "Saint Louis",
+    "city_ascii": "Saint Louis",
+    "lat": 38.6358,
+    "lng": -90.2451,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Missouri",
+    "capital": "",
+    "population": 2096990,
+    "id": 1840001651
+  },
+  {
+    "city": "Xuzhou",
+    "city_ascii": "Xuzhou",
+    "lat": 34.28,
+    "lng": 117.18,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "minor",
+    "population": 2091000,
+    "id": 1156241678
+  },
+  {
+    "city": "Linyi",
+    "city_ascii": "Linyi",
+    "lat": 35.08,
+    "lng": 118.33,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 2082000,
+    "id": 1156086320
+  },
+  {
+    "city": "Maracaibo",
+    "city_ascii": "Maracaibo",
+    "lat": 10.73,
+    "lng": -71.66,
+    "country": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "admin_name": "Zulia",
+    "capital": "admin",
+    "population": 2072000,
+    "id": 1862072711
+  },
+  {
+    "city": "Riverside",
+    "city_ascii": "Riverside",
+    "lat": 33.9382,
+    "lng": -117.3949,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "",
+    "population": 2065627,
+    "id": 1840020551
+  },
+  {
+    "city": "Kuwait",
+    "city_ascii": "Kuwait",
+    "lat": 29.3697,
+    "lng": 47.9783,
+    "country": "Kuwait",
+    "iso2": "KW",
+    "iso3": "KWT",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 2063000,
+    "id": 1414102075
+  },
+  {
+    "city": "Ad Damman",
+    "city_ascii": "Ad Damman",
+    "lat": 26.4282,
+    "lng": 50.0997,
+    "country": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "admin_name": "Ash Sharqīyah",
+    "capital": "admin",
+    "population": 2054710,
+    "id": 1682452296
+  },
+  {
+    "city": "Haikou",
+    "city_ascii": "Haikou",
+    "lat": 20.05,
+    "lng": 110.32,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hainan",
+    "capital": "admin",
+    "population": 2046189,
+    "id": 1156183327
+  },
+  {
+    "city": "Hiroshima",
+    "city_ascii": "Hiroshima",
+    "lat": 34.3878,
+    "lng": 132.4429,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Hiroshima",
+    "capital": "admin",
+    "population": 2045000,
+    "id": 1392373695
+  },
+  {
+    "city": "Las Vegas",
+    "city_ascii": "Las Vegas",
+    "lat": 36.2288,
+    "lng": -115.2603,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Nevada",
+    "capital": "",
+    "population": 2044731,
+    "id": 1840020364
+  },
+  {
+    "city": "Baotou",
+    "city_ascii": "Baotou",
+    "lat": 40.6522,
+    "lng": 109.822,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Inner Mongolia",
+    "capital": "",
+    "population": 2036000,
+    "id": 1156032751
+  },
+  {
+    "city": "Hefei",
+    "city_ascii": "Hefei",
+    "lat": 31.85,
+    "lng": 117.28,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Anhui",
+    "capital": "admin",
+    "population": 2035000,
+    "id": 1156332710
+  },
+  {
+    "city": "Portland",
+    "city_ascii": "Portland",
+    "lat": 45.5372,
+    "lng": -122.65,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Oregon",
+    "capital": "",
+    "population": 2027629,
+    "id": 1840019941
+  },
+  {
+    "city": "Indore",
+    "city_ascii": "Indore",
+    "lat": 22.7151,
+    "lng": 75.865,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Madhya Pradesh",
+    "capital": "",
+    "population": 2026000,
+    "id": 1356402812
+  },
+  {
+    "city": "Goiânia",
+    "city_ascii": "Goiania",
+    "lat": -16.72,
+    "lng": -49.3,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Goiás",
+    "capital": "admin",
+    "population": 2022000,
+    "id": 1076034054
+  },
+  {
+    "city": "Sanaa",
+    "city_ascii": "Sanaa",
+    "lat": 15.3547,
+    "lng": 44.2066,
+    "country": "Yemen",
+    "iso2": "YE",
+    "iso3": "YEM",
+    "admin_name": "Amānat al ‘Āşimah",
+    "capital": "primary",
+    "population": 2008000,
+    "id": 1887750814
+  },
+  {
+    "city": "Port-au-Prince",
+    "city_ascii": "Port-au-Prince",
+    "lat": 18.541,
+    "lng": -72.336,
+    "country": "Haiti",
+    "iso2": "HT",
+    "iso3": "HTI",
+    "admin_name": "Ouest",
+    "capital": "primary",
+    "population": 1998000,
+    "id": 1332401940
+  },
+  {
+    "city": "San Antonio",
+    "city_ascii": "San Antonio",
+    "lat": 29.4722,
+    "lng": -98.5247,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Texas",
+    "capital": "",
+    "population": 1976787,
+    "id": 1840022220
+  },
+  {
+    "city": "Haiphong",
+    "city_ascii": "Haiphong",
+    "lat": 20.83,
+    "lng": 106.6801,
+    "country": "Vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "admin_name": "Hải Phòng",
+    "capital": "admin",
+    "population": 1969000,
+    "id": 1704000623
+  },
+  {
+    "city": "Suzhou",
+    "city_ascii": "Suzhou",
+    "lat": 33.6361,
+    "lng": 116.9789,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Anhui",
+    "capital": "",
+    "population": 1964000,
+    "id": 1156871297
+  },
+  {
+    "city": "Nanyang",
+    "city_ascii": "Nanyang",
+    "lat": 33.0004,
+    "lng": 112.53,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Henan",
+    "capital": "",
+    "population": 1944000,
+    "id": 1156192287
+  },
+  {
+    "city": "Bucharest",
+    "city_ascii": "Bucharest",
+    "lat": 44.4334,
+    "lng": 26.0999,
+    "country": "Romania",
+    "iso2": "RO",
+    "iso3": "ROU",
+    "admin_name": "Bucureşti",
+    "capital": "primary",
+    "population": 1942000,
+    "id": 1642414442
+  },
+  {
+    "city": "Ningbo",
+    "city_ascii": "Ningbo",
+    "lat": 29.88,
+    "lng": 121.55,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Zhejiang",
+    "capital": "minor",
+    "population": 1923000,
+    "id": 1156170787
+  },
+  {
+    "city": "Douala",
+    "city_ascii": "Douala",
+    "lat": 4.0604,
+    "lng": 9.71,
+    "country": "Cameroon",
+    "iso2": "CM",
+    "iso3": "CMR",
+    "admin_name": "Littoral",
+    "capital": "admin",
+    "population": 1906000,
+    "id": 1120494607
+  },
+  {
+    "city": "Tangshan",
+    "city_ascii": "Tangshan",
+    "lat": 39.6243,
+    "lng": 118.1944,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "",
+    "population": 1879000,
+    "id": 1156904299
+  },
+  {
+    "city": "Tainan",
+    "city_ascii": "Tainan",
+    "lat": 23,
+    "lng": 120.2,
+    "country": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "admin_name": "Tainan",
+    "capital": "admin",
+    "population": 1876312,
+    "id": 1158061376
+  },
+  {
+    "city": "Datong",
+    "city_ascii": "Datong",
+    "lat": 40.08,
+    "lng": 113.3,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shanxi",
+    "capital": "",
+    "population": 1873000,
+    "id": 1156029637
+  },
+  {
+    "city": "Asunción",
+    "city_ascii": "Asuncion",
+    "lat": -25.2964,
+    "lng": -57.6415,
+    "country": "Paraguay",
+    "iso2": "PY",
+    "iso3": "PRY",
+    "admin_name": "Asunción",
+    "capital": "primary",
+    "population": 1870000,
+    "id": 1600057911
+  },
+  {
+    "city": "Saidu",
+    "city_ascii": "Saidu",
+    "lat": 34.75,
+    "lng": 72.35,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Khyber Pakhtunkhwa",
+    "capital": "minor",
+    "population": 1860310,
+    "id": 1586619596
+  },
+  {
+    "city": "Brisbane",
+    "city_ascii": "Brisbane",
+    "lat": -27.455,
+    "lng": 153.0351,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "Queensland",
+    "capital": "admin",
+    "population": 1860000,
+    "id": 1036192929
+  },
+  {
+    "city": "Rawalpindi",
+    "city_ascii": "Rawalpindi",
+    "lat": 33.6,
+    "lng": 73.04,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Punjab",
+    "capital": "minor",
+    "population": 1858000,
+    "id": 1586344001
+  },
+  {
+    "city": "Beirut",
+    "city_ascii": "Beirut",
+    "lat": 33.872,
+    "lng": 35.5097,
+    "country": "Lebanon",
+    "iso2": "LB",
+    "iso3": "LBN",
+    "admin_name": "Beyrouth",
+    "capital": "primary",
+    "population": 1846000,
+    "id": 1422847713
+  },
+  {
+    "city": "Sacramento",
+    "city_ascii": "Sacramento",
+    "lat": 38.5666,
+    "lng": -121.4683,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "admin",
+    "population": 1830061,
+    "id": 1840021491
+  },
+  {
+    "city": "Minsk",
+    "city_ascii": "Minsk",
+    "lat": 53.9,
+    "lng": 27.5666,
+    "country": "Belarus",
+    "iso2": "BY",
+    "iso3": "BLR",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 1805000,
+    "id": 1112348503
+  },
+  {
+    "city": "Kyoto",
+    "city_ascii": "Kyoto",
+    "lat": 35.03,
+    "lng": 135.75,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Kyōto",
+    "capital": "admin",
+    "population": 1805000,
+    "id": 1392622735
+  },
+  {
+    "city": "San Jose",
+    "city_ascii": "San Jose",
+    "lat": 37.302,
+    "lng": -121.8488,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "California",
+    "capital": "",
+    "population": 1804359,
+    "id": 1840021570
+  },
+  {
+    "city": "Barranquilla",
+    "city_ascii": "Barranquilla",
+    "lat": 10.96,
+    "lng": -74.8,
+    "country": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "admin_name": "Atlántico",
+    "capital": "admin",
+    "population": 1798000,
+    "id": 1170179113
+  },
+  {
+    "city": "Valencia",
+    "city_ascii": "Valencia",
+    "lat": 10.23,
+    "lng": -67.98,
+    "country": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "admin_name": "Carabobo",
+    "capital": "admin",
+    "population": 1770000,
+    "id": 1862309871
+  },
+  {
+    "city": "Shuyang",
+    "city_ascii": "Shuyang",
+    "lat": 34.1299,
+    "lng": 118.7734,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "",
+    "population": 1770000,
+    "id": 1156051957
+  },
+  {
+    "city": "Orlando",
+    "city_ascii": "Orlando",
+    "lat": 28.4801,
+    "lng": -81.3448,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Florida",
+    "capital": "",
+    "population": 1757288,
+    "id": 1840015099
+  },
+  {
+    "city": "Hamburg",
+    "city_ascii": "Hamburg",
+    "lat": 53.55,
+    "lng": 10,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Hamburg",
+    "capital": "admin",
+    "population": 1757000,
+    "id": 1276041799
+  },
+  {
+    "city": "Vadodara",
+    "city_ascii": "Vadodara",
+    "lat": 22.31,
+    "lng": 73.18,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Gujarāt",
+    "capital": "",
+    "population": 1756000,
+    "id": 1356705249
+  },
+  {
+    "city": "Manaus",
+    "city_ascii": "Manaus",
+    "lat": -3.1,
+    "lng": -60,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Amazonas",
+    "capital": "admin",
+    "population": 1753000,
+    "id": 1076607274
+  },
+  {
+    "city": "Shangqiu",
+    "city_ascii": "Shangqiu",
+    "lat": 34.4504,
+    "lng": 115.65,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Henan",
+    "capital": "",
+    "population": 1753000,
+    "id": 1156805441
+  },
+  {
+    "city": "Wuxi",
+    "city_ascii": "Wuxi",
+    "lat": 31.58,
+    "lng": 120.3,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "minor",
+    "population": 1749000,
+    "id": 1156019650
+  },
+  {
+    "city": "Palembang",
+    "city_ascii": "Palembang",
+    "lat": -2.98,
+    "lng": 104.75,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Sumatera Selatan",
+    "capital": "admin",
+    "population": 1749000,
+    "id": 1360902897
+  },
+  {
+    "city": "Brussels",
+    "city_ascii": "Brussels",
+    "lat": 50.8333,
+    "lng": 4.3333,
+    "country": "Belgium",
+    "iso2": "BE",
+    "iso3": "BEL",
+    "admin_name": "Brussels-Capital Region",
+    "capital": "primary",
+    "population": 1743000,
+    "id": 1056469830
+  },
+  {
+    "city": "Essen",
+    "city_ascii": "Essen",
+    "lat": 51.45,
+    "lng": 7.0166,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "North Rhine-Westphalia",
+    "capital": "minor",
+    "population": 1742135,
+    "id": 1276769247
+  },
+  {
+    "city": "Cleveland",
+    "city_ascii": "Cleveland",
+    "lat": 41.4766,
+    "lng": -81.6805,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Ohio",
+    "capital": "",
+    "population": 1731637,
+    "id": 1840000596
+  },
+  {
+    "city": "Bhopal",
+    "city_ascii": "Bhopal",
+    "lat": 23.25,
+    "lng": 77.41,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Madhya Pradesh",
+    "capital": "admin",
+    "population": 1727000,
+    "id": 1356734039
+  },
+  {
+    "city": "Hohhot",
+    "city_ascii": "Hohhot",
+    "lat": 40.82,
+    "lng": 111.66,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Inner Mongolia",
+    "capital": "admin",
+    "population": 1726000,
+    "id": 1156210167
+  },
+  {
+    "city": "Pittsburgh",
+    "city_ascii": "Pittsburgh",
+    "lat": 40.4396,
+    "lng": -79.9763,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Pennsylvania",
+    "capital": "",
+    "population": 1722206,
+    "id": 1840001254
+  },
+  {
+    "city": "Luoyang",
+    "city_ascii": "Luoyang",
+    "lat": 34.68,
+    "lng": 112.4701,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Henan",
+    "capital": "",
+    "population": 1715000,
+    "id": 1156069315
+  },
+  {
+    "city": "Santos",
+    "city_ascii": "Santos",
+    "lat": -23.9537,
+    "lng": -46.3329,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "São Paulo",
+    "capital": "",
+    "population": 1709000,
+    "id": 1076033299
+  },
+  {
+    "city": "Jianmen",
+    "city_ascii": "Jianmen",
+    "lat": 30.6501,
+    "lng": 113.16,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hubei",
+    "capital": "",
+    "population": 1708000,
+    "id": 1156060544
+  },
+  {
+    "city": "Warsaw",
+    "city_ascii": "Warsaw",
+    "lat": 52.25,
+    "lng": 21,
+    "country": "Poland",
+    "iso2": "PL",
+    "iso3": "POL",
+    "admin_name": "Mazowieckie",
+    "capital": "primary",
+    "population": 1707000,
+    "id": 1616024847
+  },
+  {
+    "city": "Rabat",
+    "city_ascii": "Rabat",
+    "lat": 34.0253,
+    "lng": -6.8361,
+    "country": "Morocco",
+    "iso2": "MA",
+    "iso3": "MAR",
+    "admin_name": "Rabat-Salé-Kénitra",
+    "capital": "primary",
+    "population": 1705000,
+    "id": 1504023252
+  },
+  {
+    "city": "Vitória",
+    "city_ascii": "Vitoria",
+    "lat": -20.324,
+    "lng": -40.366,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Espírito Santo",
+    "capital": "admin",
+    "population": 1704000,
+    "id": 1076376829
+  },
+  {
+    "city": "Quito",
+    "city_ascii": "Quito",
+    "lat": -0.215,
+    "lng": -78.5001,
+    "country": "Ecuador",
+    "iso2": "EC",
+    "iso3": "ECU",
+    "admin_name": "Pichincha",
+    "capital": "primary",
+    "population": 1701000,
+    "id": 1218441993
+  },
+  {
+    "city": "Antananarivo",
+    "city_ascii": "Antananarivo",
+    "lat": -18.9166,
+    "lng": 47.5166,
+    "country": "Madagascar",
+    "iso2": "MG",
+    "iso3": "MDG",
+    "admin_name": "Antananarivo",
+    "capital": "primary",
+    "population": 1697000,
+    "id": 1450978461
+  },
+  {
+    "city": "Coimbatore",
+    "city_ascii": "Coimbatore",
+    "lat": 11,
+    "lng": 76.95,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Tamil Nādu",
+    "capital": "",
+    "population": 1696000,
+    "id": 1356999503
+  },
+  {
+    "city": "Daqing",
+    "city_ascii": "Daqing",
+    "lat": 46.58,
+    "lng": 125,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Heilongjiang",
+    "capital": "",
+    "population": 1693000,
+    "id": 1156403962
+  },
+  {
+    "city": "Luan",
+    "city_ascii": "Luan",
+    "lat": 31.7503,
+    "lng": 116.48,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Anhui",
+    "capital": "minor",
+    "population": 1690000,
+    "id": 1156499624
+  },
+  {
+    "city": "Wanzhou",
+    "city_ascii": "Wanzhou",
+    "lat": 30.82,
+    "lng": 108.4,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Chongqing",
+    "capital": "",
+    "population": 1680000,
+    "id": 1156025536
+  },
+  {
+    "city": "Budapest",
+    "city_ascii": "Budapest",
+    "lat": 47.5,
+    "lng": 19.0833,
+    "country": "Hungary",
+    "iso2": "HU",
+    "iso3": "HUN",
+    "admin_name": "Budapest",
+    "capital": "primary",
+    "population": 1679000,
+    "id": 1348611435
+  },
+  {
+    "city": "Turin",
+    "city_ascii": "Turin",
+    "lat": 45.0704,
+    "lng": 7.67,
+    "country": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "admin_name": "Piedmont",
+    "capital": "admin",
+    "population": 1652000,
+    "id": 1380244627
+  },
+  {
+    "city": "Suzhou",
+    "city_ascii": "Suzhou",
+    "lat": 31.3005,
+    "lng": 120.62,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "minor",
+    "population": 1650000,
+    "id": 1156029196
+  },
+  {
+    "city": "Ludhiana",
+    "city_ascii": "Ludhiana",
+    "lat": 30.9278,
+    "lng": 75.8723,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Punjab",
+    "capital": "",
+    "population": 1649000,
+    "id": 1356929498
+  },
+  {
+    "city": "Kumasi",
+    "city_ascii": "Kumasi",
+    "lat": 6.69,
+    "lng": -1.63,
+    "country": "Ghana",
+    "iso2": "GH",
+    "iso3": "GHA",
+    "admin_name": "Ashanti",
+    "capital": "admin",
+    "population": 1646000,
+    "id": 1288181103
+  },
+  {
+    "city": "Manhattan",
+    "city_ascii": "Manhattan",
+    "lat": 40.7834,
+    "lng": -73.9662,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "New York",
+    "capital": "",
+    "population": 1643734,
+    "id": 1840034000
+  },
+  {
+    "city": "Qiqihar",
+    "city_ascii": "Qiqihar",
+    "lat": 47.345,
+    "lng": 123.99,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Heilongjiang",
+    "capital": "minor",
+    "population": 1641000,
+    "id": 1156775905
+  },
+  {
+    "city": "Anshan",
+    "city_ascii": "Anshan",
+    "lat": 41.115,
+    "lng": 122.94,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "",
+    "population": 1639000,
+    "id": 1156901825
+  },
+  {
+    "city": "Cincinnati",
+    "city_ascii": "Cincinnati",
+    "lat": 39.1412,
+    "lng": -84.506,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Ohio",
+    "capital": "",
+    "population": 1634573,
+    "id": 1840003814
+  },
+  {
+    "city": "Austin",
+    "city_ascii": "Austin",
+    "lat": 30.3038,
+    "lng": -97.7545,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Texas",
+    "capital": "admin",
+    "population": 1633847,
+    "id": 1840019590
+  },
+  {
+    "city": "Zhongli",
+    "city_ascii": "Zhongli",
+    "lat": 24.965,
+    "lng": 121.2168,
+    "country": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "admin_name": "Taoyuan",
+    "capital": "",
+    "population": 1632616,
+    "id": 1158025380
+  },
+  {
+    "city": "Handan",
+    "city_ascii": "Handan",
+    "lat": 36.58,
+    "lng": 114.48,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "",
+    "population": 1631000,
+    "id": 1156957080
+  },
+  {
+    "city": "Taian",
+    "city_ascii": "Taian",
+    "lat": 36.2,
+    "lng": 117.1201,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 1629000,
+    "id": 1156095188
+  },
+  {
+    "city": "Isfahan",
+    "city_ascii": "Isfahan",
+    "lat": 32.7,
+    "lng": 51.7,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Eşfahān",
+    "capital": "admin",
+    "population": 1628000,
+    "id": 1364023865
+  },
+  {
+    "city": "Yaounde",
+    "city_ascii": "Yaounde",
+    "lat": 3.8667,
+    "lng": 11.5167,
+    "country": "Cameroon",
+    "iso2": "CM",
+    "iso3": "CMR",
+    "admin_name": "Centre",
+    "capital": "primary",
+    "population": 1611000,
+    "id": 1120298240
+  },
+  {
+    "city": "Shantou",
+    "city_ascii": "Shantou",
+    "lat": 23.37,
+    "lng": 116.67,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "minor",
+    "population": 1601000,
+    "id": 1156457499
+  },
+  {
+    "city": "Agra",
+    "city_ascii": "Agra",
+    "lat": 27.1704,
+    "lng": 78.015,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 1592000,
+    "id": 1356187395
+  },
+  {
+    "city": "Kansas City",
+    "city_ascii": "Kansas City",
+    "lat": 39.1239,
+    "lng": -94.5541,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Missouri",
+    "capital": "",
+    "population": 1590762,
+    "id": 1840008535
+  },
+  {
+    "city": "La Paz",
+    "city_ascii": "La Paz",
+    "lat": -16.498,
+    "lng": -68.15,
+    "country": "Bolivia",
+    "iso2": "BO",
+    "iso3": "BOL",
+    "admin_name": "La Paz",
+    "capital": "primary",
+    "population": 1590000,
+    "id": 1068000064
+  },
+  {
+    "city": "Zhanjiang",
+    "city_ascii": "Zhanjiang",
+    "lat": 21.2,
+    "lng": 110.38,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "minor",
+    "population": 1590000,
+    "id": 1156502170
+  },
+  {
+    "city": "Kalyan",
+    "city_ascii": "Kalyan",
+    "lat": 19.2502,
+    "lng": 73.1602,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 1576614,
+    "id": 1356172246
+  },
+  {
+    "city": "Abuja",
+    "city_ascii": "Abuja",
+    "lat": 9.0833,
+    "lng": 7.5333,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Federal Capital Territory",
+    "capital": "primary",
+    "population": 1576000,
+    "id": 1566342270
+  },
+  {
+    "city": "Harare",
+    "city_ascii": "Harare",
+    "lat": -17.8178,
+    "lng": 31.0447,
+    "country": "Zimbabwe",
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "admin_name": "Harare",
+    "capital": "primary",
+    "population": 1572000,
+    "id": 1716196799
+  },
+  {
+    "city": "Xiantao",
+    "city_ascii": "Xiantao",
+    "lat": 30.3704,
+    "lng": 113.44,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hubei",
+    "capital": "",
+    "population": 1556000,
+    "id": 1156216927
+  },
+  {
+    "city": "Tijuana",
+    "city_ascii": "Tijuana",
+    "lat": 32.5,
+    "lng": -117.08,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Baja California",
+    "capital": "minor",
+    "population": 1553000,
+    "id": 1484708778
+  },
+  {
+    "city": "Khulna",
+    "city_ascii": "Khulna",
+    "lat": 22.84,
+    "lng": 89.56,
+    "country": "Bangladesh",
+    "iso2": "BD",
+    "iso3": "BGD",
+    "admin_name": "Khulna",
+    "capital": "admin",
+    "population": 1553000,
+    "id": 1050667339
+  },
+  {
+    "city": "Weifang",
+    "city_ascii": "Weifang",
+    "lat": 36.7204,
+    "lng": 119.1001,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 1553000,
+    "id": 1156912965
+  },
+  {
+    "city": "Santiago",
+    "city_ascii": "Santiago",
+    "lat": 19.5,
+    "lng": -70.67,
+    "country": "Dominican Republic",
+    "iso2": "DO",
+    "iso3": "DOM",
+    "admin_name": "Cibao Norte",
+    "capital": "admin",
+    "population": 1550753,
+    "id": 1214985348
+  },
+  {
+    "city": "Indianapolis",
+    "city_ascii": "Indianapolis",
+    "lat": 39.7771,
+    "lng": -86.1458,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Indiana",
+    "capital": "admin",
+    "population": 1550488,
+    "id": 1840030084
+  },
+  {
+    "city": "Xinyang",
+    "city_ascii": "Xinyang",
+    "lat": 32.1304,
+    "lng": 114.07,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Henan",
+    "capital": "",
+    "population": 1541000,
+    "id": 1156273453
+  },
+  {
+    "city": "Luzhou",
+    "city_ascii": "Luzhou",
+    "lat": 28.88,
+    "lng": 105.38,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "minor",
+    "population": 1537000,
+    "id": 1156582079
+  },
+  {
+    "city": "Perth",
+    "city_ascii": "Perth",
+    "lat": -31.955,
+    "lng": 115.84,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "Western Australia",
+    "capital": "admin",
+    "population": 1532000,
+    "id": 1036178956
+  },
+  {
+    "city": "Toluca",
+    "city_ascii": "Toluca",
+    "lat": 19.3304,
+    "lng": -99.67,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "México",
+    "capital": "admin",
+    "population": 1531000,
+    "id": 1484124846
+  },
+  {
+    "city": "Leeds",
+    "city_ascii": "Leeds",
+    "lat": 53.83,
+    "lng": -1.58,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "Leeds",
+    "capital": "admin",
+    "population": 1529000,
+    "id": 1826343963
+  },
+  {
+    "city": "Vishakhapatnam",
+    "city_ascii": "Vishakhapatnam",
+    "lat": 17.73,
+    "lng": 83.305,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Andhra Pradesh",
+    "capital": "",
+    "population": 1529000,
+    "id": 1356692563
+  },
+  {
+    "city": "Kōbe",
+    "city_ascii": "Kobe",
+    "lat": 34.68,
+    "lng": 135.17,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Hyōgo",
+    "capital": "admin",
+    "population": 1528478,
+    "id": 1392978082
+  },
+  {
+    "city": "Multan",
+    "city_ascii": "Multan",
+    "lat": 30.2,
+    "lng": 71.455,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Punjab",
+    "capital": "minor",
+    "population": 1522000,
+    "id": 1586256291
+  },
+  {
+    "city": "Kochi",
+    "city_ascii": "Kochi",
+    "lat": 10.015,
+    "lng": 76.2239,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Kerala",
+    "capital": "",
+    "population": 1519000,
+    "id": 1356707865
+  },
+  {
+    "city": "Gujranwala",
+    "city_ascii": "Gujranwala",
+    "lat": 32.1604,
+    "lng": 74.185,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Punjab",
+    "capital": "minor",
+    "population": 1513000,
+    "id": 1586400472
+  },
+  {
+    "city": "Montevideo",
+    "city_ascii": "Montevideo",
+    "lat": -34.858,
+    "lng": -56.1711,
+    "country": "Uruguay",
+    "iso2": "UY",
+    "iso3": "URY",
+    "admin_name": "Montevideo",
+    "capital": "primary",
+    "population": 1513000,
+    "id": 1858107000
+  },
+  {
+    "city": "Niterói",
+    "city_ascii": "Niteroi",
+    "lat": -22.9,
+    "lng": -43.1,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Rio de Janeiro",
+    "capital": "",
+    "population": 1500513,
+    "id": 1076501425
+  },
+  {
+    "city": "Ganzhou",
+    "city_ascii": "Ganzhou",
+    "lat": 25.92,
+    "lng": 114.95,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangxi",
+    "capital": "minor",
+    "population": 1500000,
+    "id": 1156832475
+  },
+  {
+    "city": "Florence",
+    "city_ascii": "Florence",
+    "lat": 43.78,
+    "lng": 11.25,
+    "country": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "admin_name": "Tuscany",
+    "capital": "admin",
+    "population": 1500000,
+    "id": 1380726561
+  },
+  {
+    "city": "Liuzhou",
+    "city_ascii": "Liuzhou",
+    "lat": 24.28,
+    "lng": 109.25,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangxi",
+    "capital": "minor",
+    "population": 1497000,
+    "id": 1156360785
+  },
+  {
+    "city": "Columbus",
+    "city_ascii": "Columbus",
+    "lat": 39.9859,
+    "lng": -82.9852,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Ohio",
+    "capital": "admin",
+    "population": 1495146,
+    "id": 1840003760
+  },
+  {
+    "city": "Bamako",
+    "city_ascii": "Bamako",
+    "lat": 12.65,
+    "lng": -8,
+    "country": "Mali",
+    "iso2": "ML",
+    "iso3": "MLI",
+    "admin_name": "Bamako",
+    "capital": "primary",
+    "population": 1494000,
+    "id": 1466965925
+  },
+  {
+    "city": "Conakry",
+    "city_ascii": "Conakry",
+    "lat": 9.5315,
+    "lng": -13.6802,
+    "country": "Guinea",
+    "iso2": "GN",
+    "iso3": "GIN",
+    "admin_name": "Conakry",
+    "capital": "primary",
+    "population": 1494000,
+    "id": 1324568159
+  },
+  {
+    "city": "Bursa",
+    "city_ascii": "Bursa",
+    "lat": 40.2,
+    "lng": 29.07,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "Bursa",
+    "capital": "admin",
+    "population": 1492000,
+    "id": 1792903330
+  },
+  {
+    "city": "León",
+    "city_ascii": "Leon",
+    "lat": 21.15,
+    "lng": -101.7,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Guanajuato",
+    "capital": "minor",
+    "population": 1488000,
+    "id": 1484811199
+  },
+  {
+    "city": "Virginia Beach",
+    "city_ascii": "Virginia Beach",
+    "lat": 36.7335,
+    "lng": -76.0435,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Virginia",
+    "capital": "",
+    "population": 1487505,
+    "id": 1840003871
+  },
+  {
+    "city": "Nasik",
+    "city_ascii": "Nasik",
+    "lat": 20.0004,
+    "lng": 73.78,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 1473000,
+    "id": 1356562598
+  },
+  {
+    "city": "Fushun",
+    "city_ascii": "Fushun",
+    "lat": 41.8654,
+    "lng": 123.87,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "",
+    "population": 1470000,
+    "id": 1156857743
+  },
+  {
+    "city": "Changde",
+    "city_ascii": "Changde",
+    "lat": 29.03,
+    "lng": 111.68,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "minor",
+    "population": 1469000,
+    "id": 1156449091
+  },
+  {
+    "city": "Daejeon",
+    "city_ascii": "Daejeon",
+    "lat": 36.3355,
+    "lng": 127.425,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Daejeon",
+    "capital": "admin",
+    "population": 1468000,
+    "id": 1410993875
+  },
+  {
+    "city": "Neijiang",
+    "city_ascii": "Neijiang",
+    "lat": 29.5804,
+    "lng": 105.05,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "minor",
+    "population": 1466000,
+    "id": 1156516335
+  },
+  {
+    "city": "Phnom Penh",
+    "city_ascii": "Phnom Penh",
+    "lat": 11.55,
+    "lng": 104.9166,
+    "country": "Cambodia",
+    "iso2": "KH",
+    "iso3": "KHM",
+    "admin_name": "Phnom Penh",
+    "capital": "primary",
+    "population": 1466000,
+    "id": 1116260534
+  },
+  {
+    "city": "Quanzhou",
+    "city_ascii": "Quanzhou",
+    "lat": 24.9,
+    "lng": 118.58,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Fujian",
+    "capital": "minor",
+    "population": 1463000,
+    "id": 1156829655
+  },
+  {
+    "city": "Kharkiv",
+    "city_ascii": "Kharkiv",
+    "lat": 50,
+    "lng": 36.25,
+    "country": "Ukraine",
+    "iso2": "UA",
+    "iso3": "UKR",
+    "admin_name": "Kharkivs’ka Oblast’",
+    "capital": "admin",
+    "population": 1461000,
+    "id": 1804588111
+  },
+  {
+    "city": "Hyderabad",
+    "city_ascii": "Hyderabad",
+    "lat": 25.38,
+    "lng": 68.375,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Sindh",
+    "capital": "",
+    "population": 1459000,
+    "id": 1586427790
+  },
+  {
+    "city": "Bronx",
+    "city_ascii": "Bronx",
+    "lat": 40.8501,
+    "lng": -73.8662,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "New York",
+    "capital": "",
+    "population": 1455720,
+    "id": 1840033999
+  },
+  {
+    "city": "Lomé",
+    "city_ascii": "Lome",
+    "lat": 6.1319,
+    "lng": 1.2228,
+    "country": "Togo",
+    "iso2": "TG",
+    "iso3": "TGO",
+    "admin_name": "Maritime",
+    "capital": "primary",
+    "population": 1452000,
+    "id": 1768409132
+  },
+  {
+    "city": "Córdoba",
+    "city_ascii": "Cordoba",
+    "lat": -31.4,
+    "lng": -64.1823,
+    "country": "Argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "admin_name": "Córdoba",
+    "capital": "admin",
+    "population": 1452000,
+    "id": 1032803249
+  },
+  {
+    "city": "Huainan",
+    "city_ascii": "Huainan",
+    "lat": 32.63,
+    "lng": 116.98,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Anhui",
+    "capital": "",
+    "population": 1451000,
+    "id": 1156877299
+  },
+  {
+    "city": "Doha",
+    "city_ascii": "Doha",
+    "lat": 25.2866,
+    "lng": 51.533,
+    "country": "Qatar",
+    "iso2": "QA",
+    "iso3": "QAT",
+    "admin_name": "Ad Dawḩah",
+    "capital": "primary",
+    "population": 1450000,
+    "id": 1634459660
+  },
+  {
+    "city": "Kuala Lumpur",
+    "city_ascii": "Kuala Lumpur",
+    "lat": 3.1667,
+    "lng": 101.7,
+    "country": "Malaysia",
+    "iso2": "MY",
+    "iso3": "MYS",
+    "admin_name": "Kuala Lumpur",
+    "capital": "primary",
+    "population": 1448000,
+    "id": 1458988644
+  },
+  {
+    "city": "Maputo",
+    "city_ascii": "Maputo",
+    "lat": -25.9553,
+    "lng": 32.5892,
+    "country": "Mozambique",
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "admin_name": "Maputo",
+    "capital": "primary",
+    "population": 1446000,
+    "id": 1508074843
+  },
+  {
+    "city": "Kaduna",
+    "city_ascii": "Kaduna",
+    "lat": 10.52,
+    "lng": 7.44,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Kaduna",
+    "capital": "admin",
+    "population": 1442000,
+    "id": 1566368729
+  },
+  {
+    "city": "Gwangju",
+    "city_ascii": "Gwangju",
+    "lat": 35.171,
+    "lng": 126.9104,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Gwangju",
+    "capital": "admin",
+    "population": 1440000,
+    "id": 1410000087
+  },
+  {
+    "city": "Charlotte",
+    "city_ascii": "Charlotte",
+    "lat": 35.208,
+    "lng": -80.8308,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "North Carolina",
+    "capital": "",
+    "population": 1438351,
+    "id": 1840014557
+  },
+  {
+    "city": "Kawasaki",
+    "city_ascii": "Kawasaki",
+    "lat": 35.53,
+    "lng": 139.705,
+    "country": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "admin_name": "Kanagawa",
+    "capital": "",
+    "population": 1437266,
+    "id": 1392879600
+  },
+  {
+    "city": "San Salvador",
+    "city_ascii": "San Salvador",
+    "lat": 13.71,
+    "lng": -89.203,
+    "country": "El Salvador",
+    "iso2": "SV",
+    "iso3": "SLV",
+    "admin_name": "San Salvador",
+    "capital": "primary",
+    "population": 1433000,
+    "id": 1222647454
+  },
+  {
+    "city": "Suining",
+    "city_ascii": "Suining",
+    "lat": 30.5333,
+    "lng": 105.5333,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "minor",
+    "population": 1425000,
+    "id": 1156655650
+  },
+  {
+    "city": "Lyon",
+    "city_ascii": "Lyon",
+    "lat": 45.77,
+    "lng": 4.83,
+    "country": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "admin_name": "Auvergne-Rhône-Alpes",
+    "capital": "admin",
+    "population": 1423000,
+    "id": 1250196189
+  },
+  {
+    "city": "Karaj",
+    "city_ascii": "Karaj",
+    "lat": 35.8004,
+    "lng": 50.97,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Alborz",
+    "capital": "admin",
+    "population": 1423000,
+    "id": 1364258511
+  },
+  {
+    "city": "Kampala",
+    "city_ascii": "Kampala",
+    "lat": 0.3167,
+    "lng": 32.5833,
+    "country": "Uganda",
+    "iso2": "UG",
+    "iso3": "UGA",
+    "admin_name": "Kampala",
+    "capital": "primary",
+    "population": 1420000,
+    "id": 1800406299
+  },
+  {
+    "city": "Tabriz",
+    "city_ascii": "Tabriz",
+    "lat": 38.0863,
+    "lng": 46.3012,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Āz̄arbāyjān-e Sharqī",
+    "capital": "admin",
+    "population": 1413000,
+    "id": 1364141756
+  },
+  {
+    "city": "The Hague",
+    "city_ascii": "The Hague",
+    "lat": 52.08,
+    "lng": 4.27,
+    "country": "Netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "admin_name": "Zuid-Holland",
+    "capital": "primary",
+    "population": 1406000,
+    "id": 1528799905
+  },
+  {
+    "city": "Davao",
+    "city_ascii": "Davao",
+    "lat": 7.11,
+    "lng": 125.63,
+    "country": "Philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "admin_name": "Davao",
+    "capital": "admin",
+    "population": 1402000,
+    "id": 1608906877
+  },
+  {
+    "city": "Marseille",
+    "city_ascii": "Marseille",
+    "lat": 43.29,
+    "lng": 5.375,
+    "country": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "admin_name": "Provence-Alpes-Côte d’Azur",
+    "capital": "admin",
+    "population": 1400000,
+    "id": 1250774071
+  },
+  {
+    "city": "Meerut",
+    "city_ascii": "Meerut",
+    "lat": 29.0004,
+    "lng": 77.7,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 1398000,
+    "id": 1356390476
+  },
+  {
+    "city": "Mianyang",
+    "city_ascii": "Mianyang",
+    "lat": 31.47,
+    "lng": 104.77,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "minor",
+    "population": 1396000,
+    "id": 1156417758
+  },
+  {
+    "city": "Semarang",
+    "city_ascii": "Semarang",
+    "lat": -6.9666,
+    "lng": 110.42,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jawa Tengah",
+    "capital": "admin",
+    "population": 1396000,
+    "id": 1360745537
+  },
+  {
+    "city": "Faridabad",
+    "city_ascii": "Faridabad",
+    "lat": 28.4333,
+    "lng": 77.3167,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Haryāna",
+    "capital": "",
+    "population": 1394000,
+    "id": 1356013205
+  },
+  {
+    "city": "Novosibirsk",
+    "city_ascii": "Novosibirsk",
+    "lat": 55.03,
+    "lng": 82.96,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Novosibirskaya Oblast’",
+    "capital": "admin",
+    "population": 1389000,
+    "id": 1643399240
+  },
+  {
+    "city": "Makkah",
+    "city_ascii": "Makkah",
+    "lat": 21.43,
+    "lng": 39.82,
+    "country": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "admin_name": "Makkah al Mukarramah",
+    "capital": "admin",
+    "population": 1385000,
+    "id": 1682169241
+  },
+  {
+    "city": "Dubai",
+    "city_ascii": "Dubai",
+    "lat": 25.23,
+    "lng": 55.28,
+    "country": "United Arab Emirates",
+    "iso2": "AE",
+    "iso3": "ARE",
+    "admin_name": "Dubayy",
+    "capital": "admin",
+    "population": 1379000,
+    "id": 1784736618
+  },
+  {
+    "city": "Auckland",
+    "city_ascii": "Auckland",
+    "lat": -36.8481,
+    "lng": 174.763,
+    "country": "New Zealand",
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "admin_name": "Auckland",
+    "capital": "",
+    "population": 1377200,
+    "id": 1554435911
+  },
+  {
+    "city": "Milwaukee",
+    "city_ascii": "Milwaukee",
+    "lat": 43.064,
+    "lng": -87.9669,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Wisconsin",
+    "capital": "",
+    "population": 1377104,
+    "id": 1840003046
+  },
+  {
+    "city": "Maanshan",
+    "city_ascii": "Maanshan",
+    "lat": 31.7304,
+    "lng": 118.48,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Anhui",
+    "capital": "minor",
+    "population": 1366302,
+    "id": 1156847452
+  },
+  {
+    "city": "Brazzaville",
+    "city_ascii": "Brazzaville",
+    "lat": -4.2592,
+    "lng": 15.2847,
+    "country": "Congo (Brazzaville)",
+    "iso2": "CG",
+    "iso3": "COG",
+    "admin_name": "Brazzaville",
+    "capital": "primary",
+    "population": 1355000,
+    "id": 1178340306
+  },
+  {
+    "city": "Lubumbashi",
+    "city_ascii": "Lubumbashi",
+    "lat": -11.68,
+    "lng": 27.48,
+    "country": "Congo (Kinshasa)",
+    "iso2": "CD",
+    "iso3": "COD",
+    "admin_name": "Haut-Katanga",
+    "capital": "admin",
+    "population": 1352000,
+    "id": 1180506234
+  },
+  {
+    "city": "Yiyang",
+    "city_ascii": "Yiyang",
+    "lat": 28.6004,
+    "lng": 112.33,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "",
+    "population": 1352000,
+    "id": 1156218615
+  },
+  {
+    "city": "Varanasi",
+    "city_ascii": "Varanasi",
+    "lat": 25.33,
+    "lng": 83,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 1352000,
+    "id": 1356145782
+  },
+  {
+    "city": "Ciudad Juárez",
+    "city_ascii": "Ciudad Juarez",
+    "lat": 31.6904,
+    "lng": -106.49,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Chihuahua",
+    "capital": "minor",
+    "population": 1343000,
+    "id": 1484840083
+  },
+  {
+    "city": "Ghaziabad",
+    "city_ascii": "Ghaziabad",
+    "lat": 28.6604,
+    "lng": 77.4084,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 1341000,
+    "id": 1356691871
+  },
+  {
+    "city": "Pretoria",
+    "city_ascii": "Pretoria",
+    "lat": -25.7069,
+    "lng": 28.2294,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Gauteng",
+    "capital": "primary",
+    "population": 1338000,
+    "id": 1710176249
+  },
+  {
+    "city": "Heze",
+    "city_ascii": "Heze",
+    "lat": 35.23,
+    "lng": 115.45,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "minor",
+    "population": 1338000,
+    "id": 1156225008
+  },
+  {
+    "city": "Porto",
+    "city_ascii": "Porto",
+    "lat": 41.15,
+    "lng": -8.62,
+    "country": "Portugal",
+    "iso2": "PT",
+    "iso3": "PRT",
+    "admin_name": "Porto",
+    "capital": "admin",
+    "population": 1337000,
+    "id": 1620356810
+  },
+  {
+    "city": "Lusaka",
+    "city_ascii": "Lusaka",
+    "lat": -15.4166,
+    "lng": 28.2833,
+    "country": "Zambia",
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "admin_name": "Lusaka",
+    "capital": "primary",
+    "population": 1328000,
+    "id": 1894157390
+  },
+  {
+    "city": "Asansol",
+    "city_ascii": "Asansol",
+    "lat": 23.6833,
+    "lng": 86.9833,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "West Bengal",
+    "capital": "",
+    "population": 1328000,
+    "id": 1356093694
+  },
+  {
+    "city": "Changzhou",
+    "city_ascii": "Changzhou",
+    "lat": 31.78,
+    "lng": 119.97,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "minor",
+    "population": 1327000,
+    "id": 1156185511
+  },
+  {
+    "city": "Mosul",
+    "city_ascii": "Mosul",
+    "lat": 36.345,
+    "lng": 43.145,
+    "country": "Iraq",
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "admin_name": "Nīnawá",
+    "capital": "admin",
+    "population": 1316000,
+    "id": 1368194914
+  },
+  {
+    "city": "Yekaterinburg",
+    "city_ascii": "Yekaterinburg",
+    "lat": 56.85,
+    "lng": 60.6,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Sverdlovskaya Oblast’",
+    "capital": "admin",
+    "population": 1313000,
+    "id": 1643582706
+  },
+  {
+    "city": "Peshawar",
+    "city_ascii": "Peshawar",
+    "lat": 34.005,
+    "lng": 71.535,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Khyber Pakhtunkhwa",
+    "capital": "admin",
+    "population": 1303000,
+    "id": 1586851102
+  },
+  {
+    "city": "Mandalay",
+    "city_ascii": "Mandalay",
+    "lat": 21.97,
+    "lng": 96.085,
+    "country": "Burma",
+    "iso2": "MM",
+    "iso3": "MMR",
+    "admin_name": "Mandalay",
+    "capital": "admin",
+    "population": 1300000,
+    "id": 1104468217
+  },
+  {
+    "city": "Jamshedpur",
+    "city_ascii": "Jamshedpur",
+    "lat": 22.7875,
+    "lng": 86.1975,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Jharkhand",
+    "capital": "",
+    "population": 1300000,
+    "id": 1356501259
+  },
+  {
+    "city": "Mbuji-Mayi",
+    "city_ascii": "Mbuji-Mayi",
+    "lat": -6.15,
+    "lng": 23.6,
+    "country": "Congo (Kinshasa)",
+    "iso2": "CD",
+    "iso3": "COD",
+    "admin_name": "Kasaï Oriental",
+    "capital": "admin",
+    "population": 1295000,
+    "id": 1180399586
+  },
+  {
+    "city": "Madurai",
+    "city_ascii": "Madurai",
+    "lat": 9.92,
+    "lng": 78.12,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Tamil Nādu",
+    "capital": "",
+    "population": 1294000,
+    "id": 1356257289
+  },
+  {
+    "city": "Adana",
+    "city_ascii": "Adana",
+    "lat": 36.995,
+    "lng": 35.32,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "Adana",
+    "capital": "admin",
+    "population": 1293000,
+    "id": 1792783772
+  },
+  {
+    "city": "Sheffield",
+    "city_ascii": "Sheffield",
+    "lat": 53.3667,
+    "lng": -1.5,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "Sheffield",
+    "capital": "admin",
+    "population": 1292900,
+    "id": 1826289852
+  },
+  {
+    "city": "Jabalpur",
+    "city_ascii": "Jabalpur",
+    "lat": 23.1751,
+    "lng": 79.9551,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Madhya Pradesh",
+    "capital": "",
+    "population": 1285000,
+    "id": 1356115460
+  },
+  {
+    "city": "San José",
+    "city_ascii": "San Jose",
+    "lat": 9.935,
+    "lng": -84.0841,
+    "country": "Costa Rica",
+    "iso2": "CR",
+    "iso3": "CRI",
+    "admin_name": "San José",
+    "capital": "primary",
+    "population": 1284000,
+    "id": 1188749877
+  },
+  {
+    "city": "Panama City",
+    "city_ascii": "Panama City",
+    "lat": 8.968,
+    "lng": -79.533,
+    "country": "Panama",
+    "iso2": "PA",
+    "iso3": "PAN",
+    "admin_name": "Panamá",
+    "capital": "primary",
+    "population": 1281000,
+    "id": 1591672475
+  },
+  {
+    "city": "Nizhny Novgorod",
+    "city_ascii": "Nizhny Novgorod",
+    "lat": 56.333,
+    "lng": 44.0001,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Nizhegorodskaya Oblast’",
+    "capital": "admin",
+    "population": 1278000,
+    "id": 1643012126
+  },
+  {
+    "city": "Chifeng",
+    "city_ascii": "Chifeng",
+    "lat": 42.27,
+    "lng": 118.95,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Inner Mongolia",
+    "capital": "minor",
+    "population": 1277000,
+    "id": 1156277458
+  },
+  {
+    "city": "Duisburg",
+    "city_ascii": "Duisburg",
+    "lat": 51.43,
+    "lng": 6.75,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "North Rhine-Westphalia",
+    "capital": "minor",
+    "population": 1276757,
+    "id": 1276977172
+  },
+  {
+    "city": "Munich",
+    "city_ascii": "Munich",
+    "lat": 48.1299,
+    "lng": 11.575,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "Bavaria",
+    "capital": "admin",
+    "population": 1275000,
+    "id": 1276692352
+  },
+  {
+    "city": "Stockholm",
+    "city_ascii": "Stockholm",
+    "lat": 59.3508,
+    "lng": 18.0973,
+    "country": "Sweden",
+    "iso2": "SE",
+    "iso3": "SWE",
+    "admin_name": "Stockholm",
+    "capital": "primary",
+    "population": 1264000,
+    "id": 1752425602
+  },
+  {
+    "city": "Huaiyin",
+    "city_ascii": "Huaiyin",
+    "lat": 33.58,
+    "lng": 119.03,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangsu",
+    "capital": "",
+    "population": 1264000,
+    "id": 1156662372
+  },
+  {
+    "city": "Ujungpandang",
+    "city_ascii": "Ujungpandang",
+    "lat": -5.14,
+    "lng": 119.432,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Sulawesi Selatan",
+    "capital": "admin",
+    "population": 1262000,
+    "id": 1360051337
+  },
+  {
+    "city": "Rajkot",
+    "city_ascii": "Rajkot",
+    "lat": 22.31,
+    "lng": 70.8,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Gujarāt",
+    "capital": "",
+    "population": 1260000,
+    "id": 1356317190
+  },
+  {
+    "city": "Dhanbad",
+    "city_ascii": "Dhanbad",
+    "lat": 23.8004,
+    "lng": 86.42,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Jharkhand",
+    "capital": "",
+    "population": 1246000,
+    "id": 1356103392
+  },
+  {
+    "city": "Mudangiang",
+    "city_ascii": "Mudangiang",
+    "lat": 44.575,
+    "lng": 129.59,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Heilongjiang",
+    "capital": "minor",
+    "population": 1244000,
+    "id": 1156249698
+  },
+  {
+    "city": "Geneva",
+    "city_ascii": "Geneva",
+    "lat": 46.21,
+    "lng": 6.14,
+    "country": "Switzerland",
+    "iso2": "CH",
+    "iso3": "CHE",
+    "admin_name": "Genève",
+    "capital": "admin",
+    "population": 1240000,
+    "id": 1756810813
+  },
+  {
+    "city": "Shiraz",
+    "city_ascii": "Shiraz",
+    "lat": 29.63,
+    "lng": 52.57,
+    "country": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "admin_name": "Fārs",
+    "capital": "admin",
+    "population": 1240000,
+    "id": 1364432238
+  },
+  {
+    "city": "Huzhou",
+    "city_ascii": "Huzhou",
+    "lat": 30.8704,
+    "lng": 120.1,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Zhejiang",
+    "capital": "minor",
+    "population": 1231000,
+    "id": 1156335543
+  },
+  {
+    "city": "Tianshui",
+    "city_ascii": "Tianshui",
+    "lat": 34.6,
+    "lng": 105.92,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Gansu",
+    "capital": "minor",
+    "population": 1225000,
+    "id": 1156137209
+  },
+  {
+    "city": "Lupanshui",
+    "city_ascii": "Lupanshui",
+    "lat": 26.5944,
+    "lng": 104.8333,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guizhou",
+    "capital": "",
+    "population": 1221000,
+    "id": 1156070389
+  },
+  {
+    "city": "Düsseldorf",
+    "city_ascii": "Dusseldorf",
+    "lat": 51.2204,
+    "lng": 6.78,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "North Rhine-Westphalia",
+    "capital": "admin",
+    "population": 1220000,
+    "id": 1276615258
+  },
+  {
+    "city": "Maoming",
+    "city_ascii": "Maoming",
+    "lat": 21.9204,
+    "lng": 110.87,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "",
+    "population": 1217715,
+    "id": 1156785303
+  },
+  {
+    "city": "Seville",
+    "city_ascii": "Seville",
+    "lat": 37.405,
+    "lng": -5.98,
+    "country": "Spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "admin_name": "Andalusia",
+    "capital": "admin",
+    "population": 1212045,
+    "id": 1724991838
+  },
+  {
+    "city": "Amritsar",
+    "city_ascii": "Amritsar",
+    "lat": 31.64,
+    "lng": 74.87,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Punjab",
+    "capital": "",
+    "population": 1212000,
+    "id": 1356926507
+  },
+  {
+    "city": "Vila Velha",
+    "city_ascii": "Vila Velha",
+    "lat": -20.3676,
+    "lng": -40.318,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Espírito Santo",
+    "capital": "",
+    "population": 1209091,
+    "id": 1076404077
+  },
+  {
+    "city": "Vila Velha",
+    "city_ascii": "Vila Velha",
+    "lat": 3.2167,
+    "lng": -51.2167,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Amapá",
+    "capital": "",
+    "population": 1209091,
+    "id": 1076575691
+  },
+  {
+    "city": "Almaty",
+    "city_ascii": "Almaty",
+    "lat": 43.325,
+    "lng": 76.915,
+    "country": "Kazakhstan",
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "admin_name": "Almaty",
+    "capital": "admin",
+    "population": 1209000,
+    "id": 1398351701
+  },
+  {
+    "city": "Warangal",
+    "city_ascii": "Warangal",
+    "lat": 18.01,
+    "lng": 79.58,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Andhra Pradesh",
+    "capital": "",
+    "population": 1203853,
+    "id": 1356851618
+  },
+  {
+    "city": "Rosario",
+    "city_ascii": "Rosario",
+    "lat": -32.9511,
+    "lng": -60.6663,
+    "country": "Argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "admin_name": "Santa Fe",
+    "capital": "minor",
+    "population": 1203000,
+    "id": 1032770677
+  },
+  {
+    "city": "Allahabad",
+    "city_ascii": "Allahabad",
+    "lat": 25.455,
+    "lng": 81.84,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Uttar Pradesh",
+    "capital": "",
+    "population": 1201000,
+    "id": 1356718332
+  },
+  {
+    "city": "Providence",
+    "city_ascii": "Providence",
+    "lat": 41.8229,
+    "lng": -71.4186,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Rhode Island",
+    "capital": "admin",
+    "population": 1198789,
+    "id": 1840003289
+  },
+  {
+    "city": "Benin City",
+    "city_ascii": "Benin City",
+    "lat": 6.3405,
+    "lng": 5.62,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Edo",
+    "capital": "admin",
+    "population": 1190000,
+    "id": 1566080151
+  },
+  {
+    "city": "Maceió",
+    "city_ascii": "Maceio",
+    "lat": -9.62,
+    "lng": -35.73,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Alagoas",
+    "capital": "admin",
+    "population": 1186000,
+    "id": 1076440479
+  },
+  {
+    "city": "Jining",
+    "city_ascii": "Jining",
+    "lat": 35.4004,
+    "lng": 116.55,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "",
+    "population": 1186000,
+    "id": 1156504601
+  },
+  {
+    "city": "Sofia",
+    "city_ascii": "Sofia",
+    "lat": 42.6833,
+    "lng": 23.3167,
+    "country": "Bulgaria",
+    "iso2": "BG",
+    "iso3": "BGR",
+    "admin_name": "Sofia-Grad",
+    "capital": "primary",
+    "population": 1185000,
+    "id": 1100762037
+  },
+  {
+    "city": "Abbottabad",
+    "city_ascii": "Abbottabad",
+    "lat": 34.1495,
+    "lng": 73.1995,
+    "country": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "admin_name": "Khyber Pakhtunkhwa",
+    "capital": "minor",
+    "population": 1183647,
+    "id": 1586788758
+  },
+  {
+    "city": "Banghazi",
+    "city_ascii": "Banghazi",
+    "lat": 32.1167,
+    "lng": 20.0667,
+    "country": "Libya",
+    "iso2": "LY",
+    "iso3": "LBY",
+    "admin_name": "Banghāzī",
+    "capital": "admin",
+    "population": 1180000,
+    "id": 1434915572
+  },
+  {
+    "city": "Cilacap",
+    "city_ascii": "Cilacap",
+    "lat": -7.7188,
+    "lng": 109.0154,
+    "country": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "admin_name": "Jawa Tengah",
+    "capital": "minor",
+    "population": 1174964,
+    "id": 1360503809
+  },
+  {
+    "city": "Prague",
+    "city_ascii": "Prague",
+    "lat": 50.0833,
+    "lng": 14.466,
+    "country": "Czechia",
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "admin_name": "Praha, Hlavní Město",
+    "capital": "primary",
+    "population": 1162000,
+    "id": 1203744823
+  },
+  {
+    "city": "Glasgow",
+    "city_ascii": "Glasgow",
+    "lat": 55.8744,
+    "lng": -4.2507,
+    "country": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "admin_name": "Glasgow City",
+    "capital": "admin",
+    "population": 1160000,
+    "id": 1826836462
+  },
+  {
+    "city": "Leshan",
+    "city_ascii": "Leshan",
+    "lat": 29.5671,
+    "lng": 103.7333,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "",
+    "population": 1157000,
+    "id": 1156203130
+  },
+  {
+    "city": "Ouagadougou",
+    "city_ascii": "Ouagadougou",
+    "lat": 12.3703,
+    "lng": -1.5247,
+    "country": "Burkina Faso",
+    "iso2": "BF",
+    "iso3": "BFA",
+    "admin_name": "Centre",
+    "capital": "primary",
+    "population": 1149000,
+    "id": 1854029208
+  },
+  {
+    "city": "Adelaide",
+    "city_ascii": "Adelaide",
+    "lat": -34.935,
+    "lng": 138.6,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "South Australia",
+    "capital": "admin",
+    "population": 1145000,
+    "id": 1036538171
+  },
+  {
+    "city": "Ottawa",
+    "city_ascii": "Ottawa",
+    "lat": 45.4167,
+    "lng": -75.7,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "Ontario",
+    "capital": "primary",
+    "population": 1145000,
+    "id": 1124399363
+  },
+  {
+    "city": "Shangrao",
+    "city_ascii": "Shangrao",
+    "lat": 28.4704,
+    "lng": 117.97,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Jiangxi",
+    "capital": "minor",
+    "population": 1144577,
+    "id": 1156405492
+  },
+  {
+    "city": "Torreón",
+    "city_ascii": "Torreon",
+    "lat": 25.5701,
+    "lng": -103.42,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "Coahuila de Zaragoza",
+    "capital": "minor",
+    "population": 1144000,
+    "id": 1484215762
+  },
+  {
+    "city": "Jacksonville",
+    "city_ascii": "Jacksonville",
+    "lat": 30.3322,
+    "lng": -81.6749,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Florida",
+    "capital": "",
+    "population": 1141459,
+    "id": 1840015031
+  },
+  {
+    "city": "Srinagar",
+    "city_ascii": "Srinagar",
+    "lat": 34.1,
+    "lng": 74.815,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Jammu and Kashmīr",
+    "capital": "admin",
+    "population": 1140000,
+    "id": 1356442950
+  },
+  {
+    "city": "Samara",
+    "city_ascii": "Samara",
+    "lat": 53.195,
+    "lng": 50.1513,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Samarskaya Oblast’",
+    "capital": "admin",
+    "population": 1137000,
+    "id": 1643205757
+  },
+  {
+    "city": "Vijayawada",
+    "city_ascii": "Vijayawada",
+    "lat": 16.52,
+    "lng": 80.63,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Andhra Pradesh",
+    "capital": "",
+    "population": 1137000,
+    "id": 1356807575
+  },
+  {
+    "city": "Omsk",
+    "city_ascii": "Omsk",
+    "lat": 54.99,
+    "lng": 73.4,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Omskaya Oblast’",
+    "capital": "admin",
+    "population": 1135000,
+    "id": 1643360863
+  },
+  {
+    "city": "Newcastle",
+    "city_ascii": "Newcastle",
+    "lat": -32.8453,
+    "lng": 151.815,
+    "country": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "admin_name": "New South Wales",
+    "capital": "",
+    "population": 1134616,
+    "id": 1036468001
+  },
+  {
+    "city": "Yulin",
+    "city_ascii": "Yulin",
+    "lat": 22.63,
+    "lng": 110.15,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangxi",
+    "capital": "",
+    "population": 1127000,
+    "id": 1156901312
+  },
+  {
+    "city": "Nampo",
+    "city_ascii": "Nampo",
+    "lat": 38.7669,
+    "lng": 125.4524,
+    "country": "Korea, North",
+    "iso2": "KP",
+    "iso3": "PRK",
+    "admin_name": "",
+    "capital": "admin",
+    "population": 1127000,
+    "id": 1408892768
+  },
+  {
+    "city": "Xianyang",
+    "city_ascii": "Xianyang",
+    "lat": 34.3456,
+    "lng": 108.7147,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shaanxi",
+    "capital": "minor",
+    "population": 1126000,
+    "id": 1156120117
+  },
+  {
+    "city": "Cagayan de Oro",
+    "city_ascii": "Cagayan de Oro",
+    "lat": 8.4508,
+    "lng": 124.6853,
+    "country": "Philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "admin_name": "Cagayan de Oro",
+    "capital": "admin",
+    "population": 1121561,
+    "id": 1608831546
+  },
+  {
+    "city": "Can Tho",
+    "city_ascii": "Can Tho",
+    "lat": 10.05,
+    "lng": 105.77,
+    "country": "Vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "admin_name": "Cần Thơ",
+    "capital": "admin",
+    "population": 1121000,
+    "id": 1704783472
+  },
+  {
+    "city": "Barquisimeto",
+    "city_ascii": "Barquisimeto",
+    "lat": 10.05,
+    "lng": -69.3,
+    "country": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "admin_name": "Lara",
+    "capital": "admin",
+    "population": 1116000,
+    "id": 1862860739
+  },
+  {
+    "city": "Kazan",
+    "city_ascii": "Kazan",
+    "lat": 55.7499,
+    "lng": 49.1263,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Tatarstan",
+    "capital": "admin",
+    "population": 1115000,
+    "id": 1643101260
+  },
+  {
+    "city": "Helsinki",
+    "city_ascii": "Helsinki",
+    "lat": 60.1756,
+    "lng": 24.9341,
+    "country": "Finland",
+    "iso2": "FI",
+    "iso3": "FIN",
+    "admin_name": "Uusimaa",
+    "capital": "primary",
+    "population": 1115000,
+    "id": 1246177997
+  },
+  {
+    "city": "Aurangabad",
+    "city_ascii": "Aurangabad",
+    "lat": 19.8957,
+    "lng": 75.3203,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 1113000,
+    "id": 1356840670
+  },
+  {
+    "city": "Calgary",
+    "city_ascii": "Calgary",
+    "lat": 51.083,
+    "lng": -114.08,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "Alberta",
+    "capital": "",
+    "population": 1110000,
+    "id": 1124690423
+  },
+  {
+    "city": "Nezahualcoyotl",
+    "city_ascii": "Nezahualcoyotl",
+    "lat": 19.41,
+    "lng": -99.03,
+    "country": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "admin_name": "México",
+    "capital": "",
+    "population": 1109363,
+    "id": 1484016661
+  },
+  {
+    "city": "Zürich",
+    "city_ascii": "Zurich",
+    "lat": 47.38,
+    "lng": 8.55,
+    "country": "Switzerland",
+    "iso2": "CH",
+    "iso3": "CHE",
+    "admin_name": "Zürich",
+    "capital": "admin",
+    "population": 1108000,
+    "id": 1756539143
+  },
+  {
+    "city": "Baoding",
+    "city_ascii": "Baoding",
+    "lat": 38.8704,
+    "lng": 115.48,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "",
+    "population": 1107000,
+    "id": 1156256829
+  },
+  {
+    "city": "Zigong",
+    "city_ascii": "Zigong",
+    "lat": 29.4,
+    "lng": 104.78,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Sichuan",
+    "capital": "",
+    "population": 1105000,
+    "id": 1156023354
+  },
+  {
+    "city": "Sharjah",
+    "city_ascii": "Sharjah",
+    "lat": 25.3714,
+    "lng": 55.4065,
+    "country": "United Arab Emirates",
+    "iso2": "AE",
+    "iso3": "ARE",
+    "admin_name": "Ash Shāriqah",
+    "capital": "admin",
+    "population": 1103027,
+    "id": 1784152993
+  },
+  {
+    "city": "Yerevan",
+    "city_ascii": "Yerevan",
+    "lat": 40.1812,
+    "lng": 44.5136,
+    "country": "Armenia",
+    "iso2": "AM",
+    "iso3": "ARM",
+    "admin_name": "Yerevan",
+    "capital": "primary",
+    "population": 1102000,
+    "id": 1051074169
+  },
+  {
+    "city": "Mogadishu",
+    "city_ascii": "Mogadishu",
+    "lat": 2.0667,
+    "lng": 45.3667,
+    "country": "Somalia",
+    "iso2": "SO",
+    "iso3": "SOM",
+    "admin_name": "Banaadir",
+    "capital": "primary",
+    "population": 1100000,
+    "id": 1706893395
+  },
+  {
+    "city": "Huambo",
+    "city_ascii": "Huambo",
+    "lat": -12.75,
+    "lng": 15.76,
+    "country": "Angola",
+    "iso2": "AO",
+    "iso3": "AGO",
+    "admin_name": "Huambo",
+    "capital": "admin",
+    "population": 1100000,
+    "id": 1024079828
+  },
+  {
+    "city": "Ankang",
+    "city_ascii": "Ankang",
+    "lat": 32.68,
+    "lng": 109.02,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shaanxi",
+    "capital": "",
+    "population": 1100000,
+    "id": 1156255711
+  },
+  {
+    "city": "Tbilisi",
+    "city_ascii": "Tbilisi",
+    "lat": 41.725,
+    "lng": 44.7908,
+    "country": "Georgia",
+    "iso2": "GE",
+    "iso3": "GEO",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 1100000,
+    "id": 1268203191
+  },
+  {
+    "city": "Ikare",
+    "city_ascii": "Ikare",
+    "lat": 7.5304,
+    "lng": 5.76,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Ondo",
+    "capital": "minor",
+    "population": 1099931,
+    "id": 1566683694
+  },
+  {
+    "city": "Belgrade",
+    "city_ascii": "Belgrade",
+    "lat": 44.8186,
+    "lng": 20.468,
+    "country": "Serbia",
+    "iso2": "RS",
+    "iso3": "SRB",
+    "admin_name": "",
+    "capital": "primary",
+    "population": 1099000,
+    "id": 1688374696
+  },
+  {
+    "city": "Bhilai",
+    "city_ascii": "Bhilai",
+    "lat": 21.2167,
+    "lng": 81.4333,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Chhattīsgarh",
+    "capital": "",
+    "population": 1097000,
+    "id": 1356071083
+  },
+  {
+    "city": "Jinhua",
+    "city_ascii": "Jinhua",
+    "lat": 29.12,
+    "lng": 119.65,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Zhejiang",
+    "capital": "minor",
+    "population": 1092852,
+    "id": 1156547188
+  },
+  {
+    "city": "Chelyabinsk",
+    "city_ascii": "Chelyabinsk",
+    "lat": 55.155,
+    "lng": 61.4387,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Chelyabinskaya Oblast’",
+    "capital": "admin",
+    "population": 1091000,
+    "id": 1643224011
+  },
+  {
+    "city": "Natal",
+    "city_ascii": "Natal",
+    "lat": -5.78,
+    "lng": -35.24,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Rio Grande do Norte",
+    "capital": "admin",
+    "population": 1088000,
+    "id": 1076697777
+  },
+  {
+    "city": "Dushanbe",
+    "city_ascii": "Dushanbe",
+    "lat": 38.56,
+    "lng": 68.7739,
+    "country": "Tajikistan",
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "admin_name": "Dushanbe",
+    "capital": "primary",
+    "population": 1086244,
+    "id": 1762930616
+  },
+  {
+    "city": "København",
+    "city_ascii": "Kobenhavn",
+    "lat": 55.6786,
+    "lng": 12.5635,
+    "country": "Denmark",
+    "iso2": "DK",
+    "iso3": "DNK",
+    "admin_name": "Hovedstaden",
+    "capital": "primary",
+    "population": 1085000,
+    "id": 1208763942
+  },
+  {
+    "city": "Changwon",
+    "city_ascii": "Changwon",
+    "lat": 35.2191,
+    "lng": 128.5836,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Gyeongnam",
+    "capital": "admin",
+    "population": 1081499,
+    "id": 1410592618
+  },
+  {
+    "city": "Zhuzhou",
+    "city_ascii": "Zhuzhou",
+    "lat": 27.83,
+    "lng": 113.15,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "minor",
+    "population": 1080000,
+    "id": 1156041962
+  },
+  {
+    "city": "Suwon",
+    "city_ascii": "Suwon",
+    "lat": 37.2578,
+    "lng": 127.0109,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Gyeonggi",
+    "capital": "admin",
+    "population": 1078000,
+    "id": 1410679777
+  },
+  {
+    "city": "Vereeniging",
+    "city_ascii": "Vereeniging",
+    "lat": -26.6496,
+    "lng": 27.96,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Gauteng",
+    "capital": "",
+    "population": 1074000,
+    "id": 1710271883
+  },
+  {
+    "city": "Memphis",
+    "city_ascii": "Memphis",
+    "lat": 35.1047,
+    "lng": -89.9773,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Tennessee",
+    "capital": "",
+    "population": 1069661,
+    "id": 1840015457
+  },
+  {
+    "city": "Xiangfan",
+    "city_ascii": "Xiangfan",
+    "lat": 32.02,
+    "lng": 112.13,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hubei",
+    "capital": "minor",
+    "population": 1069000,
+    "id": 1156107325
+  },
+  {
+    "city": "Nashville",
+    "city_ascii": "Nashville",
+    "lat": 36.1714,
+    "lng": -86.7844,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Tennessee",
+    "capital": "admin",
+    "population": 1065078,
+    "id": 1840036155
+  },
+  {
+    "city": "Salt Lake City",
+    "city_ascii": "Salt Lake City",
+    "lat": 40.7774,
+    "lng": -111.9301,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Utah",
+    "capital": "admin",
+    "population": 1061156,
+    "id": 1840021383
+  },
+  {
+    "city": "Ulsan",
+    "city_ascii": "Ulsan",
+    "lat": 35.5467,
+    "lng": 129.317,
+    "country": "Korea, South",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "admin_name": "Ulsan",
+    "capital": "admin",
+    "population": 1061000,
+    "id": 1410134602
+  },
+  {
+    "city": "Zhucheng",
+    "city_ascii": "Zhucheng",
+    "lat": 35.99,
+    "lng": 119.3801,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Shandong",
+    "capital": "minor",
+    "population": 1060000,
+    "id": 1156935002
+  },
+  {
+    "city": "Amman",
+    "city_ascii": "Amman",
+    "lat": 31.95,
+    "lng": 35.9333,
+    "country": "Jordan",
+    "iso2": "JO",
+    "iso3": "JOR",
+    "admin_name": "Al ‘Āşimah",
+    "capital": "primary",
+    "population": 1060000,
+    "id": 1400522593
+  },
+  {
+    "city": "Dublin",
+    "city_ascii": "Dublin",
+    "lat": 53.3331,
+    "lng": -6.2489,
+    "country": "Ireland",
+    "iso2": "IE",
+    "iso3": "IRL",
+    "admin_name": "Dublin",
+    "capital": "primary",
+    "population": 1059000,
+    "id": 1372595407
+  },
+  {
+    "city": "Edmonton",
+    "city_ascii": "Edmonton",
+    "lat": 53.55,
+    "lng": -113.5,
+    "country": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "admin_name": "Alberta",
+    "capital": "admin",
+    "population": 1058000,
+    "id": 1124290735
+  },
+  {
+    "city": "Sholapur",
+    "city_ascii": "Sholapur",
+    "lat": 17.6704,
+    "lng": 75.9,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Mahārāshtra",
+    "capital": "",
+    "population": 1057000,
+    "id": 1356314385
+  },
+  {
+    "city": "Rostov",
+    "city_ascii": "Rostov",
+    "lat": 47.2346,
+    "lng": 39.7127,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Rostovskaya Oblast’",
+    "capital": "admin",
+    "population": 1052000,
+    "id": 1643013518
+  },
+  {
+    "city": "Dnipro",
+    "city_ascii": "Dnipro",
+    "lat": 48.48,
+    "lng": 35,
+    "country": "Ukraine",
+    "iso2": "UA",
+    "iso3": "UKR",
+    "admin_name": "Dnipropetrovs’ka Oblast’",
+    "capital": "admin",
+    "population": 1050000,
+    "id": 1804152933
+  },
+  {
+    "city": "Xining",
+    "city_ascii": "Xining",
+    "lat": 36.62,
+    "lng": 101.77,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Qinghai",
+    "capital": "admin",
+    "population": 1048000,
+    "id": 1156081448
+  },
+  {
+    "city": "Zhangjiakou",
+    "city_ascii": "Zhangjiakou",
+    "lat": 40.83,
+    "lng": 114.93,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "",
+    "population": 1046000,
+    "id": 1156800221
+  },
+  {
+    "city": "Gaziantep",
+    "city_ascii": "Gaziantep",
+    "lat": 37.075,
+    "lng": 37.385,
+    "country": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "admin_name": "Gaziantep",
+    "capital": "admin",
+    "population": 1044000,
+    "id": 1792911843
+  },
+  {
+    "city": "Lille",
+    "city_ascii": "Lille",
+    "lat": 50.65,
+    "lng": 3.08,
+    "country": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "admin_name": "Hauts-de-France",
+    "capital": "admin",
+    "population": 1044000,
+    "id": 1250071961
+  },
+  {
+    "city": "Ranchi",
+    "city_ascii": "Ranchi",
+    "lat": 23.37,
+    "lng": 85.33,
+    "country": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "admin_name": "Jharkhand",
+    "capital": "admin",
+    "population": 1044000,
+    "id": 1356110588
+  },
+  {
+    "city": "Richmond",
+    "city_ascii": "Richmond",
+    "lat": 37.5294,
+    "lng": -77.4755,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Virginia",
+    "capital": "admin",
+    "population": 1041877,
+    "id": 1840001698
+  },
+  {
+    "city": "Monrovia",
+    "city_ascii": "Monrovia",
+    "lat": 6.3106,
+    "lng": -10.8048,
+    "country": "Liberia",
+    "iso2": "LR",
+    "iso3": "LBR",
+    "admin_name": "Montserrado",
+    "capital": "primary",
+    "population": 1041000,
+    "id": 1430477826
+  },
+  {
+    "city": "São Luís",
+    "city_ascii": "Sao Luis",
+    "lat": -2.516,
+    "lng": -44.266,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Maranhão",
+    "capital": "admin",
+    "population": 1038000,
+    "id": 1076819308
+  },
+  {
+    "city": "Amsterdam",
+    "city_ascii": "Amsterdam",
+    "lat": 52.35,
+    "lng": 4.9166,
+    "country": "Netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "admin_name": "Noord-Holland",
+    "capital": "primary",
+    "population": 1031000,
+    "id": 1528355309
+  },
+  {
+    "city": "Jerusalem",
+    "city_ascii": "Jerusalem",
+    "lat": 31.7784,
+    "lng": 35.2066,
+    "country": "Israel",
+    "iso2": "IL",
+    "iso3": "ISR",
+    "admin_name": "",
+    "capital": "",
+    "population": 1029300,
+    "id": 1376261644
+  },
+  {
+    "city": "New Orleans",
+    "city_ascii": "New Orleans",
+    "lat": 30.0687,
+    "lng": -89.9288,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Louisiana",
+    "capital": "",
+    "population": 1024421,
+    "id": 1840001839
+  },
+  {
+    "city": "Guatemala",
+    "city_ascii": "Guatemala",
+    "lat": 14.6211,
+    "lng": -90.527,
+    "country": "Guatemala",
+    "iso2": "GT",
+    "iso3": "GTM",
+    "admin_name": "Guatemala",
+    "capital": "primary",
+    "population": 1024000,
+    "id": 1320197916
+  },
+  {
+    "city": "Florianópolis",
+    "city_ascii": "Florianopolis",
+    "lat": -27.58,
+    "lng": -48.52,
+    "country": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "admin_name": "Santa Catarina",
+    "capital": "admin",
+    "population": 1023000,
+    "id": 1076190259
+  },
+  {
+    "city": "Zhuhai",
+    "city_ascii": "Zhuhai",
+    "lat": 22.2769,
+    "lng": 113.5678,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Guangdong",
+    "capital": "minor",
+    "population": 1023000,
+    "id": 1156722242
+  },
+  {
+    "city": "Port Elizabeth",
+    "city_ascii": "Port Elizabeth",
+    "lat": -33.97,
+    "lng": 25.6,
+    "country": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "admin_name": "Eastern Cape",
+    "capital": "",
+    "population": 1021000,
+    "id": 1710918997
+  },
+  {
+    "city": "Port Harcourt",
+    "city_ascii": "Port Harcourt",
+    "lat": 4.81,
+    "lng": 7.01,
+    "country": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "admin_name": "Rivers",
+    "capital": "admin",
+    "population": 1020000,
+    "id": 1566070649
+  },
+  {
+    "city": "Jiamusi",
+    "city_ascii": "Jiamusi",
+    "lat": 46.83,
+    "lng": 130.35,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Heilongjiang",
+    "capital": "minor",
+    "population": 1020000,
+    "id": 1156350864
+  },
+  {
+    "city": "Ufa",
+    "city_ascii": "Ufa",
+    "lat": 54.79,
+    "lng": 56.04,
+    "country": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "admin_name": "Bashkortostan",
+    "capital": "admin",
+    "population": 1018000,
+    "id": 1643722928
+  },
+  {
+    "city": "Hengyang",
+    "city_ascii": "Hengyang",
+    "lat": 26.88,
+    "lng": 112.59,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hunan",
+    "capital": "",
+    "population": 1016000,
+    "id": 1156696884
+  },
+  {
+    "city": "Benxi",
+    "city_ascii": "Benxi",
+    "lat": 41.3304,
+    "lng": 123.75,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Liaoning",
+    "capital": "",
+    "population": 1012000,
+    "id": 1156097909
+  },
+  {
+    "city": "Haifa",
+    "city_ascii": "Haifa",
+    "lat": 32.8204,
+    "lng": 34.98,
+    "country": "Israel",
+    "iso2": "IL",
+    "iso3": "ISR",
+    "admin_name": "Haifa",
+    "capital": "admin",
+    "population": 1011000,
+    "id": 1376133727
+  },
+  {
+    "city": "Medina",
+    "city_ascii": "Medina",
+    "lat": 24.5,
+    "lng": 39.58,
+    "country": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "admin_name": "Al Madīnah al Munawwarah",
+    "capital": "admin",
+    "population": 1010000,
+    "id": 1682345785
+  },
+  {
+    "city": "Bucaramanga",
+    "city_ascii": "Bucaramanga",
+    "lat": 7.1301,
+    "lng": -73.1259,
+    "country": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "admin_name": "Santander",
+    "capital": "admin",
+    "population": 1009000,
+    "id": 1170940590
+  },
+  {
+    "city": "Maracay",
+    "city_ascii": "Maracay",
+    "lat": 10.2469,
+    "lng": -67.5958,
+    "country": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "admin_name": "Aragua",
+    "capital": "admin",
+    "population": 1007000,
+    "id": 1862284350
+  },
+  {
+    "city": "Raleigh",
+    "city_ascii": "Raleigh",
+    "lat": 35.8323,
+    "lng": -78.6441,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "North Carolina",
+    "capital": "admin",
+    "population": 1005457,
+    "id": 1840014497
+  },
+  {
+    "city": "Rotterdam",
+    "city_ascii": "Rotterdam",
+    "lat": 51.92,
+    "lng": 4.48,
+    "country": "Netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "admin_name": "Zuid-Holland",
+    "capital": "minor",
+    "population": 1005000,
+    "id": 1528892850
+  },
+  {
+    "city": "Hims",
+    "city_ascii": "Hims",
+    "lat": 34.73,
+    "lng": 36.72,
+    "country": "Syria",
+    "iso2": "SY",
+    "iso3": "SYR",
+    "admin_name": "Ḩimş",
+    "capital": "admin",
+    "population": 1005000,
+    "id": 1760013934
+  },
+  {
+    "city": "Cologne",
+    "city_ascii": "Cologne",
+    "lat": 50.93,
+    "lng": 6.95,
+    "country": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "admin_name": "North Rhine-Westphalia",
+    "capital": "",
+    "population": 1004000,
+    "id": 1276015998
+  },
+  {
+    "city": "Louisville",
+    "city_ascii": "Louisville",
+    "lat": 38.1662,
+    "lng": -85.6488,
+    "country": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "admin_name": "Kentucky",
+    "capital": "",
+    "population": 1003412,
+    "id": 1840030815
+  },
+  {
+    "city": "Qinhuangdao",
+    "city_ascii": "Qinhuangdao",
+    "lat": 39.9304,
+    "lng": 119.62,
+    "country": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "admin_name": "Hebei",
+    "capital": "",
+    "population": 1003000,
+    "id": 1156091093
+  },
+  {
+    "city": "Fez",
+    "city_ascii": "Fez",
+    "lat": 34.0546,
+    "lng": -5.0004,
+    "country": "Morocco",
+    "iso2": "MA",
+    "iso3": "MAR",
+    "admin_name": "Fès-Meknès",
+    "capital": "admin",
+    "population": 1002000,
+    "id": 1504861997
+  },
+  {
+    "city": "Aden",
+    "city_ascii": "Aden",
+    "lat": 12.7797,
+    "lng": 45.0095,
+    "country": "Yemen",
+    "iso2": "YE",
+    "iso3": "YEM",
+    "admin_name": "‘Adan",
+    "capital": "admin",
+    "population": 1000000,
+    "id": 1887867886
   },
-  {
-    "city": "Aalesund, Norway",
-    "name": "AES"
-  },
-  {
-    "city": "Aarhus, Denmark - Bus service",
-    "name": "ZID"
-  },
-  {
-    "city": "Aarhus, Denmark - Tirstrup",
-    "name": "AAR"
-  },
-  {
-    "city": "Aasiaat, Greenland",
-    "name": "JEG"
-  },
-  {
-    "city": "Abadan, Iran",
-    "name": "ABD"
-  },
-  {
-    "city": "Abakan, Russia",
-    "name": "ABA"
-  },
-  {
-    "city": "Abbotsford, BC",
-    "name": "YXX"
-  },
-  {
-    "city": "Aberdeen, SD",
-    "name": "ABR"
-  },
-  {
-    "city": "Aberdeen, United Kingdom",
-    "name": "ABZ"
-  },
-  {
-    "city": "Abha, Saudi Arabia",
-    "name": "AHB"
-  },
-  {
-    "city": "Abidjan, Cote d'Ivoire",
-    "name": "ABJ"
-  },
-  {
-    "city": "Abilene, TX",
-    "name": "ABI"
-  },
-  {
-    "city": "Abu Dhabi, United Arab Emirates",
-    "name": "AUH"
-  },
-  {
-    "city": "Abu Simbel, Egypt",
-    "name": "ABS"
-  },
-  {
-    "city": "Abuja, Nigeria",
-    "name": "ABV"
-  },
-  {
-    "city": "Acapulco, Mexico",
-    "name": "ACA"
-  },
-  {
-    "city": "Acarigua, Venezuela",
-    "name": "AGV"
-  },
-  {
-    "city": "Accra, Ghana",
-    "name": "ACC"
-  },
-  {
-    "city": "Adak Island, AK",
-    "name": "ADK"
-  },
-  {
-    "city": "Adana, Turkey",
-    "name": "ADA"
-  },
-  {
-    "city": "Addis Ababa, Ethopia",
-    "name": "ADD"
-  },
-  {
-    "city": "Adelaide, Australia",
-    "name": "ADL"
-  },
-  {
-    "city": "Aden, Yemen",
-    "name": "ADE"
-  },
-  {
-    "city": "Adler/Sochi, Russia",
-    "name": "AER"
-  },
-  {
-    "city": "Adrar, Algeria",
-    "name": "AZR"
-  },
-  {
-    "city": "Afutara, Soloman Islands",
-    "name": "AFT"
-  },
-  {
-    "city": "Agadir, Morocco",
-    "name": "AGA"
-  },
-  {
-    "city": "Agartala, India",
-    "name": "IXA"
-  },
-  {
-    "city": "Agaun, Papua New Guinea",
-    "name": "AUP"
-  },
-  {
-    "city": "Agen, France",
-    "name": "AGF"
-  },
-  {
-    "city": "Agra, India",
-    "name": "AGR"
-  },
-  {
-    "city": "Agri, Turkey",
-    "name": "AJI"
-  },
-  {
-    "city": "Aguadilla, Puerto Rico",
-    "name": "BQN"
-  },
-  {
-    "city": "Aguascalientes, Mexico",
-    "name": "AGU"
-  },
-  {
-    "city": "Aguni, Japan",
-    "name": "AGJ"
-  },
-  {
-    "city": "Ahmedabad, India",
-    "name": "AMD"
-  },
-  {
-    "city": "Ahwaz, Iran",
-    "name": "AWZ"
-  },
-  {
-    "city": "Ailuk Island, Marshall Islands",
-    "name": "AIM"
-  },
-  {
-    "city": "Aioun El Atrouss, Mauritania",
-    "name": "AEO"
-  },
-  {
-    "city": "Airok, Marshall Islands",
-    "name": "AIC"
-  },
-  {
-    "city": "Aitutaki, Cook Islands",
-    "name": "AIT"
-  },
-  {
-    "city": "Aizawl, India",
-    "name": "AJL"
-  },
-  {
-    "city": "Ajaccio, France",
-    "name": "AJA"
-  },
-  {
-    "city": "Akiachak, AK",
-    "name": "KKI"
-  },
-  {
-    "city": "Akiak, AK",
-    "name": "AKI"
-  },
-  {
-    "city": "Akita, Japan",
-    "name": "AXT"
-  },
-  {
-    "city": "Akron/Canton, OH",
-    "name": "CAK"
-  },
-  {
-    "city": "Aksu, China",
-    "name": "AKU"
-  },
-  {
-    "city": "Aktyubinsk, Kazakhstan",
-    "name": "AKX"
-  },
-  {
-    "city": "Akulivik, QC",
-    "name": "AKV"
-  },
-  {
-    "city": "Akureyri, Iceland",
-    "name": "AEY"
-  },
-  {
-    "city": "Akuton, AK",
-    "name": "KQA"
-  },
-  {
-    "city": "Al Ain, United Arab Emirates",
-    "name": "AAN"
-  },
-  {
-    "city": "Al Arish, Egypt",
-    "name": "AAC"
-  },
-  {
-    "city": "Al Ghaydah, Yemen",
-    "name": "AAY"
-  },
-  {
-    "city": "Al Hoceima, Morocco",
-    "name": "AHU"
-  },
-  {
-    "city": "Alakanuk, AK",
-    "name": "AUK"
-  },
-  {
-    "city": "Alamogordo, NM",
-    "name": "ALM"
-  },
-  {
-    "city": "Alamosa, CO",
-    "name": "ALS"
-  },
-  {
-    "city": "Al-Baha, Saudi Arabia",
-    "name": "ABT"
-  },
-  {
-    "city": "Albany, NY",
-    "name": "ALB"
-  },
-  {
-    "city": "Albany, OR - Bus service",
-    "name": "CVO"
-  },
-  {
-    "city": "Albany, OR - Bus service",
-    "name": "QWY"
-  },
-  {
-    "city": "Albuquerque, NM",
-    "name": "ABQ"
-  },
-  {
-    "city": "Albury, Australia",
-    "name": "ABX"
-  },
-  {
-    "city": "Alderney, United Kingdom",
-    "name": "ACI"
-  },
-  {
-    "city": "Aldershot, ON - Rail service",
-    "name": "XLY"
-  },
-  {
-    "city": "Aleknagik, AK",
-    "name": "WKK"
-  },
-  {
-    "city": "Aleppo, Syrian Arab Republic",
-    "name": "ALP"
-  },
-  {
-    "city": "Alexander Bay, South Africa",
-    "name": "ALJ"
-  },
-  {
-    "city": "Alexandria, Egypt",
-    "name": "ALY"
-  },
-  {
-    "city": "Alexandria, LA",
-    "name": "AEX"
-  },
-  {
-    "city": "Alexandria,ON - Rail service",
-    "name": "XFS"
-  },
-  {
-    "city": "Alexandroupolis, Greece",
-    "name": "AXD"
-  },
-  {
-    "city": "Al-Fujairah, United Arab Emirates",
-    "name": "FJR"
-  },
-  {
-    "city": "Alghero, Italy",
-    "name": "AHO"
-  },
-  {
-    "city": "Algiers, Algeria",
-    "name": "ALG"
-  },
-  {
-    "city": "Alicante, Spain",
-    "name": "ALC"
-  },
-  {
-    "city": "Alice Springs, Australia",
-    "name": "ASP"
-  },
-  {
-    "city": "Allakaket, AK",
-    "name": "AET"
-  },
-  {
-    "city": "Allentown, PA",
-    "name": "ABE"
-  },
-  {
-    "city": "Alliance, NE",
-    "name": "AIA"
-  },
-  {
-    "city": "Alma, QC",
-    "name": "YTF"
-  },
-  {
-    "city": "Almaty, Kazakhstan",
-    "name": "AKX"
-  },
-  {
-    "city": "Almeria, Spain",
-    "name": "LEI"
-  },
-  {
-    "city": "Alor Island, Indonesia",
-    "name": "ARD"
-  },
-  {
-    "city": "Alorsetar, Malaysia",
-    "name": "AOR"
-  },
-  {
-    "city": "Alotau, Papua New Guinea",
-    "name": "GUR"
-  },
-  {
-    "city": "Alpena, MI",
-    "name": "APN"
-  },
-  {
-    "city": "Alta, Norway",
-    "name": "ALF"
-  },
-  {
-    "city": "Altamira, Brazil",
-    "name": "ATM"
-  },
-  {
-    "city": "Altay, China",
-    "name": "AAT"
-  },
-  {
-    "city": "Altenrhein, Switzerland",
-    "name": "ACH"
-  },
-  {
-    "city": "Alto Rio Senguerr, Argentina",
-    "name": "ARR"
-  },
-  {
-    "city": "Altoona, PA",
-    "name": "AOO"
-  },
-  {
-    "city": "Amami O Shima, Japan",
-    "name": "ASJ"
-  },
-  {
-    "city": "Amarillo, TX",
-    "name": "AMA"
-  },
-  {
-    "city": "Amazon Bay, Papua New Guinea",
-    "name": "AZB"
-  },
-  {
-    "city": "Ambanja, Madagascar",
-    "name": "IVA"
-  },
-  {
-    "city": "Ambatomainty, Madagascar",
-    "name": "AMY"
-  },
-  {
-    "city": "Ambatondrazaka, Madagascar",
-    "name": "WAM"
-  },
-  {
-    "city": "Ambler, AK",
-    "name": "ABL"
-  },
-  {
-    "city": "Ambon, Indonesia",
-    "name": "AMQ"
-  },
-  {
-    "city": "Amboseli, Kenya",
-    "name": "ASV"
-  },
-  {
-    "city": "Amderma, Russia",
-    "name": "AMV"
-  },
-  {
-    "city": "Amman, Jordan - Civil/Marka Airport",
-    "name": "ADJ"
-  },
-  {
-    "city": "Amman, Jordan - Queen Alia International",
-    "name": "AMM"
-  },
-  {
-    "city": "Amritsar, India",
-    "name": "ATQ"
-  },
-  {
-    "city": "Amsterdam, Netherlands",
-    "name": "AMS"
-  },
-  {
-    "city": "Anadyr, Russia",
-    "name": "DYR"
-  },
-  {
-    "city": "Anahim Lake, BC",
-    "name": "YAA"
-  },
-  {
-    "city": "Anaktueuk, AK",
-    "name": "AKP"
-  },
-  {
-    "city": "Analalava, Madagascar",
-    "name": "HVA"
-  },
-  {
-    "city": "Anapa, Russia",
-    "name": "AAQ"
-  },
-  {
-    "city": "Anchorage, AK",
-    "name": "ANC"
-  },
-  {
-    "city": "Ancona, Italy",
-    "name": "AOI"
-  },
-  {
-    "city": "Andenes, Norway",
-    "name": "ANX"
-  },
-  {
-    "city": "Andizhan, Uzbekistan",
-    "name": "AZN"
-  },
-  {
-    "city": "Aneityum, Vanuatu",
-    "name": "AUY"
-  },
-  {
-    "city": "Angelholm/Helsingborg, Sweden",
-    "name": "JHE"
-  },
-  {
-    "city": "Angers, France - Marce",
-    "name": "ANE"
-  },
-  {
-    "city": "Angers, France - Rail service",
-    "name": "QXG"
-  },
-  {
-    "city": "Anggi, Indonesia",
-    "name": "AGD"
-  },
-  {
-    "city": "Anging, China",
-    "name": "AQG"
-  },
-  {
-    "city": "Angling Lake, ON",
-    "name": "YAX"
-  },
-  {
-    "city": "Angoon, AK",
-    "name": "AGN"
-  },
-  {
-    "city": "Angouleme, France",
-    "name": "ANG"
-  },
-  {
-    "city": "Anguilla, Anguilla",
-    "name": "AXA"
-  },
-  {
-    "city": "Aniak, AK",
-    "name": "ANI"
-  },
-  {
-    "city": "Aniwa, Vanuatu",
-    "name": "AWD"
-  },
-  {
-    "city": "Ankang, China",
-    "name": "AKA"
-  },
-  {
-    "city": "Ankara, Turkey - Esenboga",
-    "name": "ESB"
-  },
-  {
-    "city": "Ankara, Turkey - Etimesqut",
-    "name": "ANK"
-  },
-  {
-    "city": "Ankavandra, Madagascar",
-    "name": "JVA"
-  },
-  {
-    "city": "Annaba, Algeria",
-    "name": "AAE"
-  },
-  {
-    "city": "Annecy, France",
-    "name": "NCY"
-  },
-  {
-    "city": "Antalaha, Madagascar",
-    "name": "ANM"
-  },
-  {
-    "city": "Antalya, Turkey",
-    "name": "AYT"
-  },
-  {
-    "city": "Antaninvarivo, Madgascar",
-    "name": "TNR"
-  },
-  {
-    "city": "Antigua, Antigua and Barbuda",
-    "name": "ANU"
-  },
-  {
-    "city": "Antofagasta, Chile",
-    "name": "ANF"
-  },
-  {
-    "city": "Antsalova, Madagascar",
-    "name": "WAQ"
-  },
-  {
-    "city": "Antsiranana, Madagascar",
-    "name": "DIE"
-  },
-  {
-    "city": "Antsohihy, Madagascar",
-    "name": "WAI"
-  },
-  {
-    "city": "Antwerp, Belgium - Bus service",
-    "name": "ZAY"
-  },
-  {
-    "city": "Antwerp, Belgium - Deurne Airport",
-    "name": "ANR"
-  },
-  {
-    "city": "Anvik, AK",
-    "name": "ANV"
-  },
-  {
-    "city": "Aomori, Japan",
-    "name": "AOJ"
-  },
-  {
-    "city": "Aosta, Italy",
-    "name": "AOT"
-  },
-  {
-    "city": "Apartado, Colombia",
-    "name": "APO"
-  },
-  {
-    "city": "Apia, Western Samoa",
-    "name": "APW"
-  },
-  {
-    "city": "Apia, Western Samoa",
-    "name": "FGI"
-  },
-  {
-    "city": "Appleton, WI",
-    "name": "ATW"
-  },
-  {
-    "city": "Aqaba, Jordan",
-    "name": "AQJ"
-  },
-  {
-    "city": "Araca, Brazil",
-    "name": "AJU"
-  },
-  {
-    "city": "Aracatuba, Brazil",
-    "name": "ARU"
-  },
-  {
-    "city": "Arad, Romania",
-    "name": "ARW"
-  },
-  {
-    "city": "Aragip, Papua New Guinea",
-    "name": "ARP"
-  },
-  {
-    "city": "Araguaina, Brazil",
-    "name": "AUX"
-  },
-  {
-    "city": "Arapoti, Brazil",
-    "name": "AAG"
-  },
-  {
-    "city": "Arar, Saudi Arabia",
-    "name": "RAE"
-  },
-  {
-    "city": "Arauca, Colombia",
-    "name": "AUC"
-  },
-  {
-    "city": "Arba Mintch, Ethiopia",
-    "name": "AMH"
-  },
-  {
-    "city": "Arcata, CA",
-    "name": "ACV"
-  },
-  {
-    "city": "Arctic Bay, NU",
-    "name": "YAB"
-  },
-  {
-    "city": "Arctic Village, AK",
-    "name": "ARC"
-  },
-  {
-    "city": "Ardabil, Iran",
-    "name": "ADU"
-  },
-  {
-    "city": "Arequipa, Peru",
-    "name": "AQP"
-  },
-  {
-    "city": "Argelholm/Helsingborg, Sweden",
-    "name": "AGH"
-  },
-  {
-    "city": "Argyle, Australia",
-    "name": "GYL"
-  },
-  {
-    "city": "Arica, Chile",
-    "name": "ARI"
-  },
-  {
-    "city": "Arkangelsk, Russia",
-    "name": "ARH"
-  },
-  {
-    "city": "Armenia, Colombia",
-    "name": "AXM"
-  },
-  {
-    "city": "Armidale, Australia",
-    "name": "ARM"
-  },
-  {
-    "city": "Arthur's Town, Bahamas",
-    "name": "ATC"
-  },
-  {
-    "city": "Arua, Uganda",
-    "name": "RUA"
-  },
-  {
-    "city": "Aruba, Aruba",
-    "name": "AUA"
-  },
-  {
-    "city": "Arusha, Tanzania",
-    "name": "ARK"
-  },
-  {
-    "city": "Arviat, NU",
-    "name": "YEK"
-  },
-  {
-    "city": "Arvidsjaur, Sweden",
-    "name": "AJR"
-  },
-  {
-    "city": "Asahikawa, Japan",
-    "name": "AKJ"
-  },
-  {
-    "city": "Asheville, NC",
-    "name": "AVL"
-  },
-  {
-    "city": "Ashgabat, Turkmenistan",
-    "name": "ASB"
-  },
-  {
-    "city": "Ashland, KY/Huntington, WV",
-    "name": "HTS"
-  },
-  {
-    "city": "Asmara, Eritrea",
-    "name": "ASM"
-  },
-  {
-    "city": "Asosa, Ethopia",
-    "name": "ASO"
-  },
-  {
-    "city": "Aspen, CO",
-    "name": "ASE"
-  },
-  {
-    "city": "Assiut, Egypt",
-    "name": "ATZ"
-  },
-  {
-    "city": "Astana, Kazakhstan",
-    "name": "TSE"
-  },
-  {
-    "city": "Astrakhan, Russia",
-    "name": "ASF"
-  },
-  {
-    "city": "Asturias, Spain and Canary Islands",
-    "name": "OVD"
-  },
-  {
-    "city": "Asuncion, Paraguay",
-    "name": "ASU"
-  },
-  {
-    "city": "Aswan, Egypt",
-    "name": "ASW"
-  },
-  {
-    "city": "Ataq, Yemen",
-    "name": "AXK"
-  },
-  {
-    "city": "Athens, GA",
-    "name": "AHN"
-  },
-  {
-    "city": "Athens, Greece",
-    "name": "ATH"
-  },
-  {
-    "city": "Atiu Island, Cook Islands",
-    "name": "AIU"
-  },
-  {
-    "city": "Atka, AK",
-    "name": "AKB"
-  },
-  {
-    "city": "Atlanta, GA",
-    "name": "ATL"
-  },
-  {
-    "city": "Atlantic City, NJ",
-    "name": "AIY"
-  },
-  {
-    "city": "Atoifi, Solomon Islands",
-    "name": "ATD"
-  },
-  {
-    "city": "Atqasuk, AK",
-    "name": "ATK"
-  },
-  {
-    "city": "Attawapiskat, ON",
-    "name": "YAT"
-  },
-  {
-    "city": "Atuona, French Polynesia",
-    "name": "AUQ"
-  },
-  {
-    "city": "Atyrau, Kazakhstan",
-    "name": "GUW"
-  },
-  {
-    "city": "Auckland, New Zealand",
-    "name": "AKL"
-  },
-  {
-    "city": "Augsburg/Munich, Germany",
-    "name": "AGB"
-  },
-  {
-    "city": "Augusta, GA",
-    "name": "AGS"
-  },
-  {
-    "city": "Augusta, ME",
-    "name": "AUG"
-  },
-  {
-    "city": "Auki, Solomon Islands",
-    "name": "AKS"
-  },
-  {
-    "city": "Aupaluk, QC",
-    "name": "YPJ"
-  },
-  {
-    "city": "Aur Island, Marshall Islands",
-    "name": "AUL"
-  },
-  {
-    "city": "Aurangabad, India",
-    "name": "IXU"
-  },
-  {
-    "city": "Aurillac, France",
-    "name": "AUR"
-  },
-  {
-    "city": "Aurukun, Australia",
-    "name": "AUU"
-  },
-  {
-    "city": "Austin, TX",
-    "name": "AUS"
-  },
-  {
-    "city": "Avignon, France",
-    "name": "AVN"
-  },
-  {
-    "city": "Ayawaki, Indonesia",
-    "name": "AYW"
-  },
-  {
-    "city": "Ayers Rock, Australia",
-    "name": "AYQ"
-  },
-  {
-    "city": "Babo, Indonesia",
-    "name": "BXB"
-  },
-  {
-    "city": "Bacolod, Philippines",
-    "name": "BCD"
-  },
-  {
-    "city": "Badajcz, Spain",
-    "name": "BJZ"
-  },
-  {
-    "city": "Bade, Indonesia",
-    "name": "BXD"
-  },
-  {
-    "city": "Badu Island, Australia",
-    "name": "BDD"
-  },
-  {
-    "city": "Bagdogra, India",
-    "name": "IXB"
-  },
-  {
-    "city": "Bagotville, QC",
-    "name": "YBG"
-  },
-  {
-    "city": "Baharpar, Ethiopia",
-    "name": "BJR"
-  },
-  {
-    "city": "Bahawalpur, Pakistan",
-    "name": "BHV"
-  },
-  {
-    "city": "Bahia Blanca, Argentina",
-    "name": "BHI"
-  },
-  {
-    "city": "Bahia Pinas, Panama",
-    "name": "BFQ"
-  },
-  {
-    "city": "Bahia Solano, Colombia",
-    "name": "BSC"
-  },
-  {
-    "city": "Bahrain, Bahrain",
-    "name": "BAH"
-  },
-  {
-    "city": "Baia Mare, Romania",
-    "name": "BAY"
-  },
-  {
-    "city": "Baie Comeau, QC",
-    "name": "YBC"
-  },
-  {
-    "city": "Baimuru, Papua New Guinea",
-    "name": "VMU"
-  },
-  {
-    "city": "Baker Lake, NU",
-    "name": "YBK"
-  },
-  {
-    "city": "Bakersfield, CA",
-    "name": "BFL"
-  },
-  {
-    "city": "Baku, Azerbaijan",
-    "name": "GYD"
-  },
-  {
-    "city": "Balalae, Solomon Islands",
-    "name": "BAS"
-  },
-  {
-    "city": "Balikesir, Turkey",
-    "name": "BZI"
-  },
-  {
-    "city": "Balikpapan, Indonesia",
-    "name": "BPN"
-  },
-  {
-    "city": "Balimo, Papua New Guinea",
-    "name": "OPU"
-  },
-  {
-    "city": "Ballina, Australia",
-    "name": "BNK"
-  },
-  {
-    "city": "Balmaceda, Chile",
-    "name": "BBA"
-  },
-  {
-    "city": "Baltimore, MD",
-    "name": "BWI"
-  },
-  {
-    "city": "Bam, Iran",
-    "name": "BXR"
-  },
-  {
-    "city": "Bamaga, Australia",
-    "name": "ABM"
-  },
-  {
-    "city": "Bamako, Mali",
-    "name": "BKO"
-  },
-  {
-    "city": "Banda Aceh, Indonesia",
-    "name": "BTJ"
-  },
-  {
-    "city": "Bandar Abbas, Iran",
-    "name": "BND"
-  },
-  {
-    "city": "Bandar Lampung, Indonesia - Branti",
-    "name": "TKG"
-  },
-  {
-    "city": "Bandar Lengeh, Iran",
-    "name": "BDH"
-  },
-  {
-    "city": "Bandar Seri Begawan, Brunei",
-    "name": "BWN"
-  },
-  {
-    "city": "Bandung, Indonesia",
-    "name": "BDO"
-  },
-  {
-    "city": "Bangalore, India",
-    "name": "BLR"
-  },
-  {
-    "city": "Bangda, China",
-    "name": "BPX"
-  },
-  {
-    "city": "Bangkok, Thailand",
-    "name": "BKK"
-  },
-  {
-    "city": "Bangor, ME",
-    "name": "BGR"
-  },
-  {
-    "city": "Banja Luka, Bosnia Herzegovina",
-    "name": "BNX"
-  },
-  {
-    "city": "Banjarmasin, Indonesia",
-    "name": "BDJ"
-  },
-  {
-    "city": "Banjul, Gambia",
-    "name": "BJL"
-  },
-  {
-    "city": "Banmethuot, Viet Nam - Phung-Doc",
-    "name": "BMV"
-  },
-  {
-    "city": "Bannu, Pakistan",
-    "name": "BNP"
-  },
-  {
-    "city": "Banqui, Central African Republic",
-    "name": "BGF"
-  },
-  {
-    "city": "Baoshan, China",
-    "name": "BSD"
-  },
-  {
-    "city": "Baotou, China",
-    "name": "BAV"
-  },
-  {
-    "city": "Bar Harbour, ME",
-    "name": "BHB"
-  },
-  {
-    "city": "Baracoa, Cuba",
-    "name": "BCA"
-  },
-  {
-    "city": "Barcaldine, Australia",
-    "name": "BCI"
-  },
-  {
-    "city": "Barcelona, Spain",
-    "name": "BCN"
-  },
-  {
-    "city": "Barcelona, Venezuela",
-    "name": "BLA"
-  },
-  {
-    "city": "Bardufoss, Norway",
-    "name": "BDU"
-  },
-  {
-    "city": "Bari, Italy",
-    "name": "BRI"
-  },
-  {
-    "city": "Barinas, Venezuela",
-    "name": "BNS"
-  },
-  {
-    "city": "Bario, Malaysia",
-    "name": "BBN"
-  },
-  {
-    "city": "Barisal, Bangladesh",
-    "name": "BZL"
-  },
-  {
-    "city": "Barnaul, Russia",
-    "name": "BAX"
-  },
-  {
-    "city": "Barquisimeto, Venezuela",
-    "name": "BRM"
-  },
-  {
-    "city": "Barra Colorado, Costa Rica",
-    "name": "BCL"
-  },
-  {
-    "city": "Barra, United Kingdom",
-    "name": "BRR"
-  },
-  {
-    "city": "Barran Cabermeja, Colombia",
-    "name": "EJA"
-  },
-  {
-    "city": "Barranquilla, Colombia",
-    "name": "BAQ"
-  },
-  {
-    "city": "Barreiras, Brazil",
-    "name": "BRA"
-  },
-  {
-    "city": "Barrow, AK",
-    "name": "BRW"
-  },
-  {
-    "city": "Barter Island, AK",
-    "name": "BTI"
-  },
-  {
-    "city": "Basco, Philippines",
-    "name": "BSO"
-  },
-  {
-    "city": "Basel, Switzerland",
-    "name": "BSL"
-  },
-  {
-    "city": "Basel/Mulhouse Railway Station, Switzerland",
-    "name": "ZDH"
-  },
-  {
-    "city": "Bashehr, Iran",
-    "name": "BUZ"
-  },
-  {
-    "city": "Bastia, France",
-    "name": "BIA"
-  },
-  {
-    "city": "Batam, Indonesia",
-    "name": "BTH"
-  },
-  {
-    "city": "Bathhurst, NB",
-    "name": "ZBF"
-  },
-  {
-    "city": "Bathurst Island, Australia",
-    "name": "BRT"
-  },
-  {
-    "city": "Bathurst, Australia",
-    "name": "BHS"
-  },
-  {
-    "city": "Batman, Turkey",
-    "name": "BAL"
-  },
-  {
-    "city": "Batna, Algeria",
-    "name": "BLJ"
-  },
-  {
-    "city": "Batom, Indonesia",
-    "name": "BXM"
-  },
-  {
-    "city": "Baton Rouge, LA",
-    "name": "BTR"
-  },
-  {
-    "city": "Batsfijord, Norway",
-    "name": "BJF"
-  },
-  {
-    "city": "Battambang, Cambodia",
-    "name": "BBM"
-  },
-  {
-    "city": "Batumi, Georgia",
-    "name": "BUS"
-  },
-  {
-    "city": "Batuna, Solomon Islands",
-    "name": "BPF"
-  },
-  {
-    "city": "Bauru, Brazil",
-    "name": "BAU"
-  },
-  {
-    "city": "Bay City, MI",
-    "name": "MBS"
-  },
-  {
-    "city": "Bayamo, Cuba",
-    "name": "BYM"
-  },
-  {
-    "city": "Bayreuth, Germany",
-    "name": "BYU"
-  },
-  {
-    "city": "Bearskin Lake, ON",
-    "name": "XBE"
-  },
-  {
-    "city": "Beaumont/Port Arthur, TX",
-    "name": "BPT"
-  },
-  {
-    "city": "Beaver Creek, CO - Van service",
-    "name": "ZBV"
-  },
-  {
-    "city": "Beaver, AK",
-    "name": "WBQ"
-  },
-  {
-    "city": "Bechar, Algeria",
-    "name": "CBH"
-  },
-  {
-    "city": "Beckley, WV",
-    "name": "BKW"
-  },
-  {
-    "city": "Bedford, MA",
-    "name": "BED"
-  },
-  {
-    "city": "Bedourie, Australia",
-    "name": "BEU"
-  },
-  {
-    "city": "Beef Island, British Virgin Islands",
-    "name": "EIS"
-  },
-  {
-    "city": "Beica, Ethiopia",
-    "name": "BEI"
-  },
-  {
-    "city": "Beida, Libya - La Braq",
-    "name": "LAQ"
-  },
-  {
-    "city": "Beihai, China",
-    "name": "BHY"
-  },
-  {
-    "city": "Beijing, China",
-    "name": "PEK"
-  },
-  {
-    "city": "Beira, Mozambique",
-    "name": "BEW"
-  },
-  {
-    "city": "Beirut, Lebanon",
-    "name": "BEY"
-  },
-  {
-    "city": "Bejaia, Algeria",
-    "name": "BJA"
-  },
-  {
-    "city": "Belaga, Mozambique",
-    "name": "BLG"
-  },
-  {
-    "city": "Belem, Brazil",
-    "name": "BEL"
-  },
-  {
-    "city": "Belep Island, New Caledonia",
-    "name": "BMY"
-  },
-  {
-    "city": "Belfast, Northern Ireland, United Kingdom",
-    "name": "BFS"
-  },
-  {
-    "city": "Belfast, United Kingdom",
-    "name": "BHD"
-  },
-  {
-    "city": "Belgorod, Russia",
-    "name": "EGO"
-  },
-  {
-    "city": "Belgrade, Serbia and Montenegro - Beograd",
-    "name": "BEG"
-  },
-  {
-    "city": "Belize City, Belize - International",
-    "name": "BZE"
-  },
-  {
-    "city": "Belize City, Belize - Municipal",
-    "name": "TZA"
-  },
-  {
-    "city": "Bella Bella, BC",
-    "name": "ZEL"
-  },
-  {
-    "city": "Bella Coola, BC",
-    "name": "QBC"
-  },
-  {
-    "city": "Belleville, IL",
-    "name": "BLV"
-  },
-  {
-    "city": "Belleville, ON - Rail service",
-    "name": "XVV"
-  },
-  {
-    "city": "Bellingham, WA",
-    "name": "BLI"
-  },
-  {
-    "city": "Bellona, Solomon Islands",
-    "name": "BNY"
-  },
-  {
-    "city": "Belo Horizonte, Brazil - Pampulha",
-    "name": "PLU"
-  },
-  {
-    "city": "Belo Horizonte, Brazil - Tancredo Neves Intl.",
-    "name": "CNF"
-  },
-  {
-    "city": "Belo, Madagascar",
-    "name": "BMD"
-  },
-  {
-    "city": "Bemidji, MN",
-    "name": "BJI"
-  },
-  {
-    "city": "Benbecula, United Kingdom",
-    "name": "BEB"
-  },
-  {
-    "city": "Benghazi, Libya",
-    "name": "BEN"
-  },
-  {
-    "city": "Bengkulu, Indonesia",
-    "name": "BKS"
-  },
-  {
-    "city": "Benton Harbor, MI",
-    "name": "BEH"
-  },
-  {
-    "city": "Berau, Indonesia",
-    "name": "BEJ"
-  },
-  {
-    "city": "Berbera, Somalia",
-    "name": "BBO"
-  },
-  {
-    "city": "Berens River, MB",
-    "name": "YBV"
-  },
-  {
-    "city": "Bergen, Norway",
-    "name": "BGO"
-  },
-  {
-    "city": "Bergerac, France",
-    "name": "EGC"
-  },
-  {
-    "city": "Berlevag, Norway",
-    "name": "BVG"
-  },
-  {
-    "city": "Berlin, Germany - All airports",
-    "name": "BER"
-  },
-  {
-    "city": "Berlin, Germany - Schoenefeld",
-    "name": "SXF"
-  },
-  {
-    "city": "Berlin, Germany - Tegel",
-    "name": "TXL"
-  },
-  {
-    "city": "Berlin, Germany - Tempelhof",
-    "name": "THF"
-  },
-  {
-    "city": "Bermuda, Bermuda",
-    "name": "BDA"
-  },
-  {
-    "city": "Berne, Switzerland - Belp Airport",
-    "name": "BRN"
-  },
-  {
-    "city": "Berne, Switzerland - Rail service",
-    "name": "ZDJ"
-  },
-  {
-    "city": "Besalampy, Madagascar",
-    "name": "BPY"
-  },
-  {
-    "city": "Bethel, AK",
-    "name": "BET"
-  },
-  {
-    "city": "Bethlehem, PA",
-    "name": "ABE"
-  },
-  {
-    "city": "Bettles, AK",
-    "name": "BTT"
-  },
-  {
-    "city": "Beziers, France",
-    "name": "BZR"
-  },
-  {
-    "city": "Bhadrapur, Nepal",
-    "name": "BDP"
-  },
-  {
-    "city": "Bhairawa, Nepal",
-    "name": "BWA"
-  },
-  {
-    "city": "Bhamo, Myanmar",
-    "name": "BMO"
-  },
-  {
-    "city": "Bharatpur, Nepal",
-    "name": "BHR"
-  },
-  {
-    "city": "Bhavnagar, India",
-    "name": "BHU"
-  },
-  {
-    "city": "Bhopal, India",
-    "name": "BHO"
-  },
-  {
-    "city": "Bhubaneswar, India",
-    "name": "BBI"
-  },
-  {
-    "city": "Bhuj, India",
-    "name": "BHJ"
-  },
-  {
-    "city": "Biak, Indonesia",
-    "name": "BIK"
-  },
-  {
-    "city": "Biarritz, France",
-    "name": "BIQ"
-  },
-  {
-    "city": "Big Trout, ON",
-    "name": "YTL"
-  },
-  {
-    "city": "Bikini Atoll, Marshall Islands",
-    "name": "BII"
-  },
-  {
-    "city": "Bilbao, Spain",
-    "name": "BIO"
-  },
-  {
-    "city": "Billings, MT",
-    "name": "BIL"
-  },
-  {
-    "city": "Billund, Denmark",
-    "name": "BLL"
-  },
-  {
-    "city": "Biloxi/Gulfport, MS",
-    "name": "GPT"
-  },
-  {
-    "city": "Bima, Indonesia",
-    "name": "BMU"
-  },
-  {
-    "city": "Bimini, Bahamas",
-    "name": "BIM"
-  },
-  {
-    "city": "Bimini, Bahamas",
-    "name": "NSB"
-  },
-  {
-    "city": "Binghamton, NY",
-    "name": "BGM"
-  },
-  {
-    "city": "Bintulu, Malaysia",
-    "name": "BTU"
-  },
-  {
-    "city": "Bintuni, Indonesia",
-    "name": "NTI"
-  },
-  {
-    "city": "Biratragar, Nepal",
-    "name": "BIR"
-  },
-  {
-    "city": "Birch Creek, AK",
-    "name": "KBC"
-  },
-  {
-    "city": "Birdsville, Australia",
-    "name": "BVI"
-  },
-  {
-    "city": "Birmingham, AL",
-    "name": "BHM"
-  },
-  {
-    "city": "Birmingham, United Kingdom",
-    "name": "BHX"
-  },
-  {
-    "city": "Bisha, Saudi Arabia",
-    "name": "BHH"
-  },
-  {
-    "city": "Bishkek, Kyrgyzstan",
-    "name": "FRU"
-  },
-  {
-    "city": "Biskra, Algeria",
-    "name": "BSK"
-  },
-  {
-    "city": "Bismarck, ND",
-    "name": "BIS"
-  },
-  {
-    "city": "Bissau, Guinea-Bissau",
-    "name": "OXB"
-  },
-  {
-    "city": "Black Tickle, NL",
-    "name": "YBI"
-  },
-  {
-    "city": "Blackall, Australia",
-    "name": "BKQ"
-  },
-  {
-    "city": "Blackpool, United Kingdom",
-    "name": "BLK"
-  },
-  {
-    "city": "Blackwater, Australia",
-    "name": "BLT"
-  },
-  {
-    "city": "Blagoveschensk, Russia",
-    "name": "BQS"
-  },
-  {
-    "city": "Blanc Sablon, QC",
-    "name": "YBX"
-  },
-  {
-    "city": "Blantyre, Malawi",
-    "name": "BLZ"
-  },
-  {
-    "city": "Blenheim, New Zealand",
-    "name": "BHE"
-  },
-  {
-    "city": "Blo Horizonte, Brazil",
-    "name": "CNF"
-  },
-  {
-    "city": "Block Island, RI",
-    "name": "BID"
-  },
-  {
-    "city": "Bloemfontein, South Africa",
-    "name": "BFN"
-  },
-  {
-    "city": "Bloomington, IL",
-    "name": "BMI"
-  },
-  {
-    "city": "Bluefield, WV",
-    "name": "BLF"
-  },
-  {
-    "city": "Boa Vista, Cape Verde",
-    "name": "BVC"
-  },
-  {
-    "city": "Boang, Papua New Guinea",
-    "name": "BOV"
-  },
-  {
-    "city": "Boavista, Brazil",
-    "name": "BVB"
-  },
-  {
-    "city": "Bocas Del Toro, Panama",
-    "name": "BOC"
-  },
-  {
-    "city": "Bodo, Norway",
-    "name": "BOO"
-  },
-  {
-    "city": "Bodrum, Turkey",
-    "name": "BJV"
-  },
-  {
-    "city": "Bogota, Colombia",
-    "name": "BOG"
-  },
-  {
-    "city": "Boiju Island, Australia",
-    "name": "GIC"
-  },
-  {
-    "city": "Boise, ID",
-    "name": "BOI"
-  },
-  {
-    "city": "Bojnord, Iran",
-    "name": "BJB"
-  },
-  {
-    "city": "Bokondini, Indonesia",
-    "name": "BUI"
-  },
-  {
-    "city": "Bol, Croatia",
-    "name": "BWK"
-  },
-  {
-    "city": "Bolzano, Italy",
-    "name": "BZO"
-  },
-  {
-    "city": "Boma, Congo",
-    "name": "BOA"
-  },
-  {
-    "city": "Bombay, India",
-    "name": "BOM"
-  },
-  {
-    "city": "Bonaire, Netherlands Antilles",
-    "name": "BON"
-  },
-  {
-    "city": "Bonaventure, QC",
-    "name": "YVB"
-  },
-  {
-    "city": "Bonn, Germany",
-    "name": "BNJ"
-  },
-  {
-    "city": "Bora Bora, French Polynesia",
-    "name": "BOB"
-  },
-  {
-    "city": "Bordeaux, France",
-    "name": "BOD"
-  },
-  {
-    "city": "Borg El Arab, Egypt",
-    "name": "HBE"
-  },
-  {
-    "city": "Borkum, Germany",
-    "name": "BMK"
-  },
-  {
-    "city": "Borlange, Sweden",
-    "name": "BLE"
-  },
-  {
-    "city": "Bornholm, Denmark",
-    "name": "RNN"
-  },
-  {
-    "city": "Borroloola, Australia",
-    "name": "BOX"
-  },
-  {
-    "city": "Bossaro, Somalia",
-    "name": "BSA"
-  },
-  {
-    "city": "Boston, MA",
-    "name": "BOS"
-  },
-  {
-    "city": "Boulder, CO - Bus service",
-    "name": "XHH"
-  },
-  {
-    "city": "Boulder, CO - Hiltons Har H",
-    "name": "WHH"
-  },
-  {
-    "city": "Boulder, CO - Municipal Airport",
-    "name": "WBU"
-  },
-  {
-    "city": "Boulia, Australia",
-    "name": "BQL"
-  },
-  {
-    "city": "Boundary, AK",
-    "name": "BYA"
-  },
-  {
-    "city": "Bourgas, Bulgaria",
-    "name": "BOJ"
-  },
-  {
-    "city": "Bourke, Australia",
-    "name": "BRK"
-  },
-  {
-    "city": "Bournemouth, United Kingdom",
-    "name": "BOH"
-  },
-  {
-    "city": "Bowling Green, KY",
-    "name": "BWG"
-  },
-  {
-    "city": "Bozeman, MT",
-    "name": "BZN"
-  },
-  {
-    "city": "Brack, Libya",
-    "name": "BCQ"
-  },
-  {
-    "city": "Bradford, PA",
-    "name": "BFD"
-  },
-  {
-    "city": "Brainerd, MN",
-    "name": "BRD"
-  },
-  {
-    "city": "Brampton Island, Australia",
-    "name": "BMP"
-  },
-  {
-    "city": "Brampton, ON - Rail service",
-    "name": "XPN"
-  },
-  {
-    "city": "Brandon, MB",
-    "name": "YBR"
-  },
-  {
-    "city": "Brantford, ON - Rail service",
-    "name": "XFV"
-  },
-  {
-    "city": "Brasilia, DF, Brazil",
-    "name": "BSB"
-  },
-  {
-    "city": "Bratislava, Slovakia",
-    "name": "BTS"
-  },
-  {
-    "city": "Bratsk, Russia",
-    "name": "BTK"
-  },
-  {
-    "city": "Braunschweig, Denmark",
-    "name": "BWE"
-  },
-  {
-    "city": "Brawnwood, TX",
-    "name": "BWD"
-  },
-  {
-    "city": "Brazzaville, Congo",
-    "name": "BZV"
-  },
-  {
-    "city": "Breckenridge, CO - Van service",
-    "name": "QKB"
-  },
-  {
-    "city": "Bremen, Germany",
-    "name": "BRE"
-  },
-  {
-    "city": "Brest, France",
-    "name": "BES"
-  },
-  {
-    "city": "Brewarrina, Australia",
-    "name": "BWQ"
-  },
-  {
-    "city": "Bridgetown, Barbados",
-    "name": "BGI"
-  },
-  {
-    "city": "Brindisi, Italy",
-    "name": "BDS"
-  },
-  {
-    "city": "Brisbane, Queensland, Australia",
-    "name": "BNE"
-  },
-  {
-    "city": "Bristol, United Kingdom",
-    "name": "BRS"
-  },
-  {
-    "city": "Bristol, VA",
-    "name": "TRI"
-  },
-  {
-    "city": "Brive-La-Gaillarde, France - Laroche",
-    "name": "BVE"
-  },
-  {
-    "city": "Brno, Czech Republic - Bus service",
-    "name": "ZDN"
-  },
-  {
-    "city": "Brno, Czech Republic - Turany",
-    "name": "BRQ"
-  },
-  {
-    "city": "Brochet, MB",
-    "name": "YBT"
-  },
-  {
-    "city": "Brockville, ON",
-    "name": "XBR"
-  },
-  {
-    "city": "Broken Hill, Australia",
-    "name": "BHQ"
-  },
-  {
-    "city": "Bronnoysund, Norway",
-    "name": "BNN"
-  },
-  {
-    "city": "Brookings, SD",
-    "name": "BKX"
-  },
-  {
-    "city": "Brooks Lodge, AK",
-    "name": "RBH"
-  },
-  {
-    "city": "Broome, Australia",
-    "name": "BME"
-  },
-  {
-    "city": "Brownsville, TX",
-    "name": "BRO"
-  },
-  {
-    "city": "Brunswick, GA",
-    "name": "BQK"
-  },
-  {
-    "city": "Brus Laguna, Honduras",
-    "name": "BHG"
-  },
-  {
-    "city": "Brussels, Belgium - National",
-    "name": "BRU"
-  },
-  {
-    "city": "Brussels, Belgium - Rail service",
-    "name": "ZYR"
-  },
-  {
-    "city": "Brussels, Belguim - Charleroi",
-    "name": "CRL"
-  },
-  {
-    "city": "Bucaramanga, Colombia",
-    "name": "BGA"
-  },
-  {
-    "city": "Bucharest, Romania - Baneasa",
-    "name": "BBU"
-  },
-  {
-    "city": "Bucharest, Romania - Otopeni International",
-    "name": "OTP"
-  },
-  {
-    "city": "Buckland, AK",
-    "name": "BKC"
-  },
-  {
-    "city": "Budapest, Hungary",
-    "name": "BUD"
-  },
-  {
-    "city": "Buenos Aires, Argentina - Jorge Newbery",
-    "name": "AEP"
-  },
-  {
-    "city": "Buenos Aires, Argentina - Ministro Pistarini",
-    "name": "EZE"
-  },
-  {
-    "city": "Buffalo, NY",
-    "name": "BUF"
-  },
-  {
-    "city": "Bugulma, Russia",
-    "name": "UUA"
-  },
-  {
-    "city": "Bujumbura, Burundi",
-    "name": "BJM"
-  },
-  {
-    "city": "Buka, Papua New Guinea",
-    "name": "BUA"
-  },
-  {
-    "city": "Bukhara, Uzbekistan",
-    "name": "BHK"
-  },
-  {
-    "city": "Bukoba, Malaysia",
-    "name": "BKZ"
-  },
-  {
-    "city": "Bulawayo, Zimbabwe",
-    "name": "BUQ"
-  },
-  {
-    "city": "Bulgulma, Russia",
-    "name": "UUA"
-  },
-  {
-    "city": "Bullhead City/Laughlin, AZ",
-    "name": "IFP"
-  },
-  {
-    "city": "Bundaberg, Australia",
-    "name": "BDB"
-  },
-  {
-    "city": "Bunsil, Papua New Guinea",
-    "name": "BXZ"
-  },
-  {
-    "city": "Burao, Somalia",
-    "name": "BUO"
-  },
-  {
-    "city": "Burbank, CA",
-    "name": "BUR"
-  },
-  {
-    "city": "Bureta, Fiji",
-    "name": "LEV"
-  },
-  {
-    "city": "Buri Ram, Thailand",
-    "name": "BFV"
-  },
-  {
-    "city": "Burketown, Australia",
-    "name": "BUC"
-  },
-  {
-    "city": "Burlington, IA",
-    "name": "BRL"
-  },
-  {
-    "city": "Burlington, VT",
-    "name": "BTV"
-  },
-  {
-    "city": "Burnie, Australia",
-    "name": "BWT"
-  },
-  {
-    "city": "Burns Lake, BC",
-    "name": "YPZ"
-  },
-  {
-    "city": "Busan, South Korea - Gimhae",
-    "name": "PUS"
-  },
-  {
-    "city": "Butte, MT",
-    "name": "BTM"
-  },
-  {
-    "city": "Butuan, Philippines",
-    "name": "BXU"
-  },
-  {
-    "city": "Bydgoszcz, Poland",
-    "name": "BZG"
-  },
-  {
-    "city": "Cabo San Lucas, 'Los Cabos', Mexico",
-    "name": "SJD"
-  },
-  {
-    "city": "Caen, France",
-    "name": "CFR"
-  },
-  {
-    "city": "Cagayan De Oro, Philippines - Lumbia",
-    "name": "CGY"
-  },
-  {
-    "city": "Cagliari, Italy",
-    "name": "CAG"
-  },
-  {
-    "city": "Cairns, Australia",
-    "name": "CNS"
-  },
-  {
-    "city": "Cairo, Egypt",
-    "name": "CAI"
-  },
-  {
-    "city": "Cajamarca, Peru",
-    "name": "CJA"
-  },
-  {
-    "city": "Calabar, Nigeria",
-    "name": "CBQ"
-  },
-  {
-    "city": "Calama, Chile",
-    "name": "CJC"
-  },
-  {
-    "city": "Calcutta, India",
-    "name": "CCU"
-  },
-  {
-    "city": "Calgary, AB",
-    "name": "YYC"
-  },
-  {
-    "city": "Cali, Colombia",
-    "name": "CLO"
-  },
-  {
-    "city": "Calvi, France",
-    "name": "CLY"
-  },
-  {
-    "city": "Camaguey, Cuba",
-    "name": "CMW"
-  },
-  {
-    "city": "Cambridge Bay, NU",
-    "name": "YCB"
-  },
-  {
-    "city": "Cambridge, United Kingdom",
-    "name": "CBG"
-  },
-  {
-    "city": "Camodoro, Argentina",
-    "name": "CRD"
-  },
-  {
-    "city": "Campbell River, BC",
-    "name": "YBL"
-  },
-  {
-    "city": "Campbellton, NB - Rail service",
-    "name": "XAZ"
-  },
-  {
-    "city": "Campbeltown, United Kingdom",
-    "name": "CAL"
-  },
-  {
-    "city": "Campeche, Mexico",
-    "name": "CPE"
-  },
-  {
-    "city": "Campina Grande, Brazil",
-    "name": "CPV"
-  },
-  {
-    "city": "Campinas, Brazil",
-    "name": "CPQ"
-  },
-  {
-    "city": "Campo Grande, Brazil",
-    "name": "CGR"
-  },
-  {
-    "city": "Campos, Brazil",
-    "name": "CAW"
-  },
-  {
-    "city": "Canaima, Venezuela",
-    "name": "CAS"
-  },
-  {
-    "city": "Canberra, Australia",
-    "name": "CBR"
-  },
-  {
-    "city": "Cancun, Mexico",
-    "name": "CUN"
-  },
-  {
-    "city": "Cannes, France - Coisette Heliport",
-    "name": "JCA"
-  },
-  {
-    "city": "Cannes, France - Mandelieu",
-    "name": "CEQ"
-  },
-  {
-    "city": "Cannes, France - Vieux Port",
-    "name": "QYW"
-  },
-  {
-    "city": "Canouan, Saint Vincent and the Grenadines",
-    "name": "CIW"
-  },
-  {
-    "city": "Canton/Akron, OH",
-    "name": "CAK"
-  },
-  {
-    "city": "Cap Haitien, Haiti",
-    "name": "CAP"
-  },
-  {
-    "city": "Cape Dorset, NU",
-    "name": "YTE"
-  },
-  {
-    "city": "Cape Girardeau, MO",
-    "name": "CGI"
-  },
-  {
-    "city": "Cape Lisburne, AK",
-    "name": "LUR"
-  },
-  {
-    "city": "Cape Newenham, AK",
-    "name": "EHM"
-  },
-  {
-    "city": "Cape Orford, Papua New Guinea",
-    "name": "CPI"
-  },
-  {
-    "city": "Cape Town, South Africa",
-    "name": "CPT"
-  },
-  {
-    "city": "Cape Vogel, Papua New Guinea",
-    "name": "CVL"
-  },
-  {
-    "city": "Capreol, ON - Rail service",
-    "name": "XAW"
-  },
-  {
-    "city": "Caracas, Venezuela",
-    "name": "CCS"
-  },
-  {
-    "city": "Carajas, Brazil",
-    "name": "CKS"
-  },
-  {
-    "city": "Carbondale, IL",
-    "name": "MDH"
-  },
-  {
-    "city": "Carcassonne, France",
-    "name": "CCF"
-  },
-  {
-    "city": "Cardiff, United Kingdom",
-    "name": "CWL"
-  },
-  {
-    "city": "Carlsbad, CA",
-    "name": "CLD"
-  },
-  {
-    "city": "Carlsbad, NM",
-    "name": "CNM"
-  },
-  {
-    "city": "Carmel, CA",
-    "name": "MRY"
-  },
-  {
-    "city": "Carnarvon, Australia",
-    "name": "CVQ"
-  },
-  {
-    "city": "Carrillo, Costa Rica",
-    "name": "RIK"
-  },
-  {
-    "city": "Cartagena, Colombia",
-    "name": "CTG"
-  },
-  {
-    "city": "Cartwright, NL",
-    "name": "YRF"
-  },
-  {
-    "city": "Carupani, Venezuela",
-    "name": "CUP"
-  },
-  {
-    "city": "Casablanca, Morocco - Anfa",
-    "name": "CAS"
-  },
-  {
-    "city": "Casablanca, Morocco - Mohamed V",
-    "name": "CMN"
-  },
-  {
-    "city": "Cascavel, Brazil",
-    "name": "CAC"
-  },
-  {
-    "city": "Casino, Australia",
-    "name": "CSI"
-  },
-  {
-    "city": "Casper, WY",
-    "name": "CPR"
-  },
-  {
-    "city": "Casselman, ON - Rail service",
-    "name": "XZB"
-  },
-  {
-    "city": "Castaway, Fiji",
-    "name": "CST"
-  },
-  {
-    "city": "Castlegar, BC",
-    "name": "YCG"
-  },
-  {
-    "city": "Castres, France",
-    "name": "DCM"
-  },
-  {
-    "city": "Cat Lake, ON",
-    "name": "YAC"
-  },
-  {
-    "city": "Catamarca, Argentina",
-    "name": "CTC"
-  },
-  {
-    "city": "Catania, Italy",
-    "name": "CTA"
-  },
-  {
-    "city": "Caucasia, Colombia",
-    "name": "CAQ"
-  },
-  {
-    "city": "Caxias Do Sul, Brazil",
-    "name": "CXJ"
-  },
-  {
-    "city": "Cayenne, French Guiana",
-    "name": "CAY"
-  },
-  {
-    "city": "Cayman Brac Is, Cambodia",
-    "name": "CYB"
-  },
-  {
-    "city": "Cayo Largo Del Sur, Cuba",
-    "name": "CYO"
-  },
-  {
-    "city": "Cebu, Philippines - Matan International",
-    "name": "CEB"
-  },
-  {
-    "city": "Cedar City, UT",
-    "name": "CDC"
-  },
-  {
-    "city": "Cedar Rapids, IA",
-    "name": "CID"
-  },
-  {
-    "city": "Cedun, Australia",
-    "name": "CED"
-  },
-  {
-    "city": "Central, AK",
-    "name": "CEM"
-  },
-  {
-    "city": "Ceuta, Spain and Canary Islands",
-    "name": "JCU"
-  },
-  {
-    "city": "Chadron, NE",
-    "name": "CDR"
-  },
-  {
-    "city": "Chah-Bahar, Iran",
-    "name": "ZBR"
-  },
-  {
-    "city": "Chalkyitsik, AK",
-    "name": "CIK"
-  },
-  {
-    "city": "Chambery, France",
-    "name": "CMF"
-  },
-  {
-    "city": "Chambord, QC - Rail service",
-    "name": "XCI"
-  },
-  {
-    "city": "Champaign/Urbana, IL",
-    "name": "CMI"
-  },
-  {
-    "city": "Chandigarh, India",
-    "name": "IXC"
-  },
-  {
-    "city": "Chandler, QC - Rail service",
-    "name": "XDL"
-  },
-  {
-    "city": "Changchun, China",
-    "name": "CGQ"
-  },
-  {
-    "city": "Changde, China",
-    "name": "CGD"
-  },
-  {
-    "city": "Changuinda, Panama",
-    "name": "CHX"
-  },
-  {
-    "city": "Changzhou, China",
-    "name": "CZX"
-  },
-  {
-    "city": "Chania, Greece",
-    "name": "CHQ"
-  },
-  {
-    "city": "Chaoyang, China",
-    "name": "CHG"
-  },
-  {
-    "city": "Chapeco, Brazil",
-    "name": "XAP"
-  },
-  {
-    "city": "Chapleau, ON",
-    "name": "YLD"
-  },
-  {
-    "city": "Charleston, SC",
-    "name": "CHS"
-  },
-  {
-    "city": "Charleston, WV",
-    "name": "CRW"
-  },
-  {
-    "city": "Charleville, Australia",
-    "name": "CTL"
-  },
-  {
-    "city": "Charlotte, NC",
-    "name": "CLT"
-  },
-  {
-    "city": "Charlottesville, VA",
-    "name": "CHO"
-  },
-  {
-    "city": "Charlottetown, NL",
-    "name": "YHG"
-  },
-  {
-    "city": "Charlottetown, PE",
-    "name": "YYG"
-  },
-  {
-    "city": "Chatham Island, New Zealand",
-    "name": "CHT"
-  },
-  {
-    "city": "Chatham, ON",
-    "name": "XCM"
-  },
-  {
-    "city": "Chattanooga, TN",
-    "name": "CHA"
-  },
-  {
-    "city": "Cheboksary, Russia",
-    "name": "CSY"
-  },
-  {
-    "city": "Chefornak, AK",
-    "name": "CYF"
-  },
-  {
-    "city": "Chelybinsk, Russia",
-    "name": "CEK"
-  },
-  {
-    "city": "Chemainus, BC - Rail service",
-    "name": "XHS"
-  },
-  {
-    "city": "Chennai, India",
-    "name": "MAA"
-  },
-  {
-    "city": "Cheongju, South Korea",
-    "name": "CJJ"
-  },
-  {
-    "city": "Cherepovets, Russia",
-    "name": "CEE"
-  },
-  {
-    "city": "Chergdu, China",
-    "name": "CTU"
-  },
-  {
-    "city": "Chester, United Kingdom",
-    "name": "CEG"
-  },
-  {
-    "city": "Chesterfield Inlet, NU",
-    "name": "YCS"
-  },
-  {
-    "city": "Chetumal, Mexico",
-    "name": "CTM"
-  },
-  {
-    "city": "Chevak, AK",
-    "name": "VAK"
-  },
-  {
-    "city": "Chevepovets, Russia",
-    "name": "CEE"
-  },
-  {
-    "city": "Chevery, QC",
-    "name": "YHR"
-  },
-  {
-    "city": "Cheyenne, WY",
-    "name": "CYS"
-  },
-  {
-    "city": "Chi Mei, Taiwan",
-    "name": "CMJ"
-  },
-  {
-    "city": "Chiang Mai, Thailand",
-    "name": "CNX"
-  },
-  {
-    "city": "Chiang Rai, Thailand",
-    "name": "CEI"
-  },
-  {
-    "city": "Chiayi, Taiwan",
-    "name": "CYI"
-  },
-  {
-    "city": "Chibougamau, QC",
-    "name": "YMT"
-  },
-  {
-    "city": "Chicago, IL - All airports",
-    "name": "CHI"
-  },
-  {
-    "city": "Chicago, IL - Midway",
-    "name": "MDW"
-  },
-  {
-    "city": "Chicago, IL - O'Hare",
-    "name": "ORD"
-  },
-  {
-    "city": "Chicayo, Peru",
-    "name": "CIX"
-  },
-  {
-    "city": "Chicken, AK",
-    "name": "CKX"
-  },
-  {
-    "city": "Chico, CA",
-    "name": "CIC"
-  },
-  {
-    "city": "Chifeng, China",
-    "name": "CIF"
-  },
-  {
-    "city": "Chignik, AK -",
-    "name": "KCQ"
-  },
-  {
-    "city": "Chignik, AK - Fisheries",
-    "name": "KCG"
-  },
-  {
-    "city": "Chignik, AK - Lagoon",
-    "name": "KCL"
-  },
-  {
-    "city": "Chihuahua, Mexico",
-    "name": "CUU"
-  },
-  {
-    "city": "Chillan, Chile",
-    "name": "YAI"
-  },
-  {
-    "city": "Chipata, Zambia",
-    "name": "CIP"
-  },
-  {
-    "city": "Chisana, AK",
-    "name": "CZN"
-  },
-  {
-    "city": "Chisasibi, QC",
-    "name": "YKU"
-  },
-  {
-    "city": "Chisholm/Hibbing, MN",
-    "name": "HIB"
-  },
-  {
-    "city": "Chisinau, Republic of Moldova",
-    "name": "KIV"
-  },
-  {
-    "city": "Chita, Russia",
-    "name": "HTA"
-  },
-  {
-    "city": "Chitral, Pakistan",
-    "name": "CJL"
-  },
-  {
-    "city": "Chitre, Panama",
-    "name": "CTD"
-  },
-  {
-    "city": "Chittagong, Bangladesh",
-    "name": "CGP"
-  },
-  {
-    "city": "Choiseul Bay, Solomon Islands",
-    "name": "CHY"
-  },
-  {
-    "city": "Chongqing, China",
-    "name": "CKG"
-  },
-  {
-    "city": "Christchurch, New Zealand",
-    "name": "CHC"
-  },
-  {
-    "city": "Christmas Island, Christmas Island",
-    "name": "XCH"
-  },
-  {
-    "city": "Chuathbaluk, AK",
-    "name": "CHU"
-  },
-  {
-    "city": "Churchill Falls, NL",
-    "name": "ZUM"
-  },
-  {
-    "city": "Churchill, MB",
-    "name": "YYQ"
-  },
-  {
-    "city": "Churchill, MB - Rail service",
-    "name": "XAD"
-  },
-  {
-    "city": "Cicia, Fiji",
-    "name": "ICI"
-  },
-  {
-    "city": "Ciego De Avila, Cuba",
-    "name": "AVI"
-  },
-  {
-    "city": "Cincinnati, OH",
-    "name": "CVG"
-  },
-  {
-    "city": "Circle Hot Springs, AK",
-    "name": "CHP"
-  },
-  {
-    "city": "Circle, AK",
-    "name": "IRC"
-  },
-  {
-    "city": "Ciudad Bolivar, Venezuela",
-    "name": "CBL"
-  },
-  {
-    "city": "Ciudad Del Carmen, Mexico",
-    "name": "CME"
-  },
-  {
-    "city": "Ciudad del Este, Paraguay",
-    "name": "AGT"
-  },
-  {
-    "city": "Ciudad Juarez, Mexico",
-    "name": "CJS"
-  },
-  {
-    "city": "Ciudad Obregon, Mexico",
-    "name": "CEN"
-  },
-  {
-    "city": "Ciudad Victoria, Mexico",
-    "name": "CVM"
-  },
-  {
-    "city": "Clarks Point, AK",
-    "name": "CLP"
-  },
-  {
-    "city": "Clarksburg, WV",
-    "name": "CKB"
-  },
-  {
-    "city": "Clearwater/St Petersburg, FL",
-    "name": "PIE"
-  },
-  {
-    "city": "Clermont-ferrand, France",
-    "name": "CFE"
-  },
-  {
-    "city": "Cleve, Australia",
-    "name": "CVC"
-  },
-  {
-    "city": "Cleveland, OH",
-    "name": "CLE"
-  },
-  {
-    "city": "Cloncurry, Australia",
-    "name": "CNJ"
-  },
-  {
-    "city": "Clovis, NM",
-    "name": "CVN"
-  },
-  {
-    "city": "Club Makokola, Malawi",
-    "name": "CMK"
-  },
-  {
-    "city": "Cluj, Romania",
-    "name": "CLJ"
-  },
-  {
-    "city": "Clyde River, NU",
-    "name": "YCY"
-  },
-  {
-    "city": "Cobar, Australia",
-    "name": "CAZ"
-  },
-  {
-    "city": "Cobija, Bolivia",
-    "name": "CIJ"
-  },
-  {
-    "city": "Cobourg, ON - Rail service",
-    "name": "XGJ"
-  },
-  {
-    "city": "Cochabamba, Bolivia",
-    "name": "CBB"
-  },
-  {
-    "city": "Cochin, India",
-    "name": "COK"
-  },
-  {
-    "city": "Coconut Island, Australia",
-    "name": "CNC"
-  },
-  {
-    "city": "Cocos Islands, Cocos",
-    "name": "Keeling"
-  },
-  {
-    "city": "Cody/Yellowstone, WY",
-    "name": "COD"
-  },
-  {
-    "city": "Coen, Australia",
-    "name": "CUQ"
-  },
-  {
-    "city": "Coffee Point, AK",
-    "name": "CFA"
-  },
-  {
-    "city": "Coffman Cove, AK",
-    "name": "KCC"
-  },
-  {
-    "city": "Coffs Harbor, Australia",
-    "name": "CFS"
-  },
-  {
-    "city": "Coimbatore, India",
-    "name": "CJB"
-  },
-  {
-    "city": "Cold Bay, AK",
-    "name": "CDB"
-  },
-  {
-    "city": "Colima, Mexico",
-    "name": "CLQ"
-  },
-  {
-    "city": "College Station, TX",
-    "name": "CLL"
-  },
-  {
-    "city": "Cologne, Germany - Cologne/Bonn",
-    "name": "CGN"
-  },
-  {
-    "city": "Cologne, Germany - Rail service",
-    "name": "QKL"
-  },
-  {
-    "city": "Colombo, Sri Lanka",
-    "name": "CMB"
-  },
-  {
-    "city": "Colon, Panama",
-    "name": "ONX"
-  },
-  {
-    "city": "Colorado Springs, CO",
-    "name": "COS"
-  },
-  {
-    "city": "Columbia, MO",
-    "name": "COU"
-  },
-  {
-    "city": "Columbia, SC",
-    "name": "CAE"
-  },
-  {
-    "city": "Columbus, GA",
-    "name": "CSG"
-  },
-  {
-    "city": "Columbus, MS",
-    "name": "GTR"
-  },
-  {
-    "city": "Columbus, OH",
-    "name": "CMH"
-  },
-  {
-    "city": "Colville Lake, NT",
-    "name": "YCK"
-  },
-  {
-    "city": "Comox, BC",
-    "name": "YQQ"
-  },
-  {
-    "city": "Conakry, Guinea",
-    "name": "CKY"
-  },
-  {
-    "city": "Concepcion, Chile",
-    "name": "CCP"
-  },
-  {
-    "city": "Concord, CA",
-    "name": "CCR"
-  },
-  {
-    "city": "Concordia, Argentina",
-    "name": "COC"
-  },
-  {
-    "city": "Concordia, KS",
-    "name": "CNK"
-  },
-  {
-    "city": "Condoto, Colombia",
-    "name": "COG"
-  },
-  {
-    "city": "Constanta, Romania",
-    "name": "CND"
-  },
-  {
-    "city": "Constantine, Algeria",
-    "name": "CZL"
-  },
-  {
-    "city": "Contadora, Panama",
-    "name": "OTD"
-  },
-  {
-    "city": "Coober Pedy, Australia",
-    "name": "CPD"
-  },
-  {
-    "city": "Cooktown, Australia",
-    "name": "CTN"
-  },
-  {
-    "city": "Cooma, NS, Australia",
-    "name": "OOM"
-  },
-  {
-    "city": "Coonamble, Australia",
-    "name": "CNB"
-  },
-  {
-    "city": "Copenhagen, Denmark",
-    "name": "CPH"
-  },
-  {
-    "city": "Copiapo, Chile",
-    "name": "CPO"
-  },
-  {
-    "city": "Copper Mountain, CO - Van service",
-    "name": "QCE"
-  },
-  {
-    "city": "Coral Harbour, NU",
-    "name": "YZS"
-  },
-  {
-    "city": "Cordoba, Argentina",
-    "name": "COR"
-  },
-  {
-    "city": "Cordova, AK",
-    "name": "CDV"
-  },
-  {
-    "city": "Cork, Ireland",
-    "name": "ORK"
-  },
-  {
-    "city": "Cornwall, ON",
-    "name": "YCC"
-  },
-  {
-    "city": "Coro, Venezuela",
-    "name": "CZE"
-  },
-  {
-    "city": "Corozal, Belize",
-    "name": "CZH"
-  },
-  {
-    "city": "Corpus Christi, TX",
-    "name": "CRP"
-  },
-  {
-    "city": "Corrientes, Argentina",
-    "name": "CNQ"
-  },
-  {
-    "city": "Cortez, CO",
-    "name": "CEZ"
-  },
-  {
-    "city": "Corumba, Brazil",
-    "name": "CMG"
-  },
-  {
-    "city": "Corvo Island, Portugal",
-    "name": "CVU"
-  },
-  {
-    "city": "Cotabato, Philippines",
-    "name": "CBO"
-  },
-  {
-    "city": "Cotarou, Benin",
-    "name": "COC"
-  },
-  {
-    "city": "Coteau, QC - Rail service",
-    "name": "XGK"
-  },
-  {
-    "city": "Courtenay, BC",
-    "name": "YCA"
-  },
-  {
-    "city": "Cox's Bazar, Bangladesh",
-    "name": "CXB"
-  },
-  {
-    "city": "Cozumel, Mexico",
-    "name": "CZM"
-  },
-  {
-    "city": "Craig Cove, Vanuatu",
-    "name": "CCV"
-  },
-  {
-    "city": "Craig, AK",
-    "name": "CGA"
-  },
-  {
-    "city": "Cranbrook, BC",
-    "name": "YXC"
-  },
-  {
-    "city": "Crescent City, CA",
-    "name": "CEC"
-  },
-  {
-    "city": "Criciuma, Brazil",
-    "name": "CCM"
-  },
-  {
-    "city": "Croker Island, Australia",
-    "name": "CKI"
-  },
-  {
-    "city": "Crooked Creek, AK",
-    "name": "CKO"
-  },
-  {
-    "city": "Crooked Island, Bahamas",
-    "name": "CRI"
-  },
-  {
-    "city": "Cross Lake, MB",
-    "name": "YCR"
-  },
-  {
-    "city": "Crotone, Italy",
-    "name": "CRV"
-  },
-  {
-    "city": "Cruzeiro Do Sul, Brazil",
-    "name": "CZS"
-  },
-  {
-    "city": "Cube Cove, AK",
-    "name": "CUW"
-  },
-  {
-    "city": "Cucata, Colombia",
-    "name": "CUC"
-  },
-  {
-    "city": "Cuenca, Ecuador",
-    "name": "CUE"
-  },
-  {
-    "city": "Cuernavaca, Mexico",
-    "name": "CVJ"
-  },
-  {
-    "city": "Cuiaba, Brazil",
-    "name": "CGB"
-  },
-  {
-    "city": "Culiacan, Mexico",
-    "name": "CUL"
-  },
-  {
-    "city": "Cumana, Venezuela",
-    "name": "CUM"
-  },
-  {
-    "city": "Cumberland, MD",
-    "name": "CBE"
-  },
-  {
-    "city": "Cunnamulla, Australia",
-    "name": "CMA"
-  },
-  {
-    "city": "Curacao, Netherlands Antilles",
-    "name": "CUR"
-  },
-  {
-    "city": "Curitiba, Brazil",
-    "name": "CWB"
-  },
-  {
-    "city": "Cuzco, Peru",
-    "name": "CUZ"
-  },
-  {
-    "city": "Da Nang, Viet Nam",
-    "name": "DAD"
-  },
-  {
-    "city": "Dabra, Indonesia",
-    "name": "DRH"
-  },
-  {
-    "city": "Daegu, South Korea",
-    "name": "TAE"
-  },
-  {
-    "city": "Dakar, Senegal",
-    "name": "DKR"
-  },
-  {
-    "city": "Dakhla, Morocco",
-    "name": "VIL"
-  },
-  {
-    "city": "Dalaman, Turkey",
-    "name": "DLM"
-  },
-  {
-    "city": "Dalat, Viet Nam - Lienkhang DLI)",
-    "name": ""
-  },
-  {
-    "city": "Dali City, China",
-    "name": "DLU"
-  },
-  {
-    "city": "Dalian, China",
-    "name": "DLC"
-  },
-  {
-    "city": "Dallas, TX - Dallas/Ft Worth Intl.",
-    "name": "DFW"
-  },
-  {
-    "city": "Dallas, TX - Love Field",
-    "name": "DAL"
-  },
-  {
-    "city": "Damascus, Syrian Arab Republic",
-    "name": "DAM"
-  },
-  {
-    "city": "Dammam, Saudi Arabia",
-    "name": "DMM"
-  },
-  {
-    "city": "Dangriga, Belize",
-    "name": "DGA"
-  },
-  {
-    "city": "Dar Es Salaam, Tanzania",
-    "name": "DAR"
-  },
-  {
-    "city": "Darnley Island, QL, Australia",
-    "name": "NLF"
-  },
-  {
-    "city": "Daru, Papua New Guinea",
-    "name": "DAU"
-  },
-  {
-    "city": "Darwin, Northern Territory, Australia",
-    "name": "DRW"
-  },
-  {
-    "city": "Datadawai, Indonesia",
-    "name": "DTD"
-  },
-  {
-    "city": "Dauphin, MB",
-    "name": "YDN"
-  },
-  {
-    "city": "Davao, Philipines - Mati",
-    "name": "DVO"
-  },
-  {
-    "city": "David, Panama",
-    "name": "DAV"
-  },
-  {
-    "city": "Davis Inlet, NL",
-    "name": "YDI"
-  },
-  {
-    "city": "Dawe, Myanmar",
-    "name": "TVY"
-  },
-  {
-    "city": "Dawson City, YT",
-    "name": "YDA"
-  },
-  {
-    "city": "Dawson Creek, BC",
-    "name": "YDQ"
-  },
-  {
-    "city": "Daxian, China",
-    "name": "DAX"
-  },
-  {
-    "city": "Dayang, China",
-    "name": "DYG"
-  },
-  {
-    "city": "Daydream Is, Australia",
-    "name": "DDI"
-  },
-  {
-    "city": "Dayton, OH",
-    "name": "DAY"
-  },
-  {
-    "city": "Daytona Beach, FL",
-    "name": "DAB"
-  },
-  {
-    "city": "Deauville, France",
-    "name": "DOL"
-  },
-  {
-    "city": "Debra Marcos, Ethiopia",
-    "name": "DBM"
-  },
-  {
-    "city": "Debra Tabor, Ethiopia",
-    "name": "DBT"
-  },
-  {
-    "city": "Decatur, IL",
-    "name": "DEC"
-  },
-  {
-    "city": "Deer Lake, NL",
-    "name": "YDF"
-  },
-  {
-    "city": "Deer Lake, ON",
-    "name": "YVZ"
-  },
-  {
-    "city": "Deering, AK",
-    "name": "DRG"
-  },
-  {
-    "city": "Deirezzor, Syria - Al Jafrah",
-    "name": "DEZ"
-  },
-  {
-    "city": "Del Reo, TX",
-    "name": "DRT"
-  },
-  {
-    "city": "Delhi, India",
-    "name": "DEL"
-  },
-  {
-    "city": "Deline, NT",
-    "name": "YWJ"
-  },
-  {
-    "city": "Delta Junction, AK",
-    "name": "DJN"
-  },
-  {
-    "city": "Dembidollo, Ethiopia",
-    "name": "DEM"
-  },
-  {
-    "city": "Denham, Australia",
-    "name": "DNM"
-  },
-  {
-    "city": "Denizli, Turkey",
-    "name": "DNZ"
-  },
-  {
-    "city": "Denpasar Bali, Indonesia",
-    "name": "DPS"
-  },
-  {
-    "city": "Denver, CO - International",
-    "name": "DEN"
-  },
-  {
-    "city": "Denver, CO - Longmont Bus service",
-    "name": "QWM"
-  },
-  {
-    "city": "Dera Ghazi, Pakistan",
-    "name": "DEA"
-  },
-  {
-    "city": "Dera Ismail Khan, Pakistan",
-    "name": "DSK"
-  },
-  {
-    "city": "Derby, Australia",
-    "name": "DRB"
-  },
-  {
-    "city": "Derim, Papua New Guinea",
-    "name": "DER"
-  },
-  {
-    "city": "Des Moines, IA",
-    "name": "DSM"
-  },
-  {
-    "city": "Dessie, Ethiopia",
-    "name": "DSE"
-  },
-  {
-    "city": "Detroit, MI - All airports",
-    "name": "DTT"
-  },
-  {
-    "city": "Detroit, MI - Metro/Wayne County",
-    "name": "DTW"
-  },
-  {
-    "city": "Devil's Lake, ND",
-    "name": "DVL"
-  },
-  {
-    "city": "Devonport, Australia",
-    "name": "DPO"
-  },
-  {
-    "city": "Dhaka, Bangledesh - Zia International",
-    "name": "DAC"
-  },
-  {
-    "city": "Dibrugarn, India",
-    "name": "DIB"
-  },
-  {
-    "city": "Dickinson, ND",
-    "name": "DIK"
-  },
-  {
-    "city": "Dien Bien Phu, Viet Nam - Gialam",
-    "name": "DIN"
-  },
-  {
-    "city": "Dijon, France",
-    "name": "DIJ"
-  },
-  {
-    "city": "Dili, Indonesia",
-    "name": "DIL"
-  },
-  {
-    "city": "Dillingham, AK",
-    "name": "DLG"
-  },
-  {
-    "city": "Dillons Bay, Vanuata",
-    "name": "DLY"
-  },
-  {
-    "city": "Dimapur, India",
-    "name": "DMU"
-  },
-  {
-    "city": "Dinard, France",
-    "name": "DNR"
-  },
-  {
-    "city": "Dipolog, Philippines",
-    "name": "DPL"
-  },
-  {
-    "city": "Dire Dawa, Ethiopia",
-    "name": "DIR"
-  },
-  {
-    "city": "Div, India",
-    "name": "DIU"
-  },
-  {
-    "city": "Diyarbakir, Turkey",
-    "name": "DIY"
-  },
-  {
-    "city": "Djanet, Algeria",
-    "name": "DJG"
-  },
-  {
-    "city": "Djerba, Tunisia",
-    "name": "DJE"
-  },
-  {
-    "city": "Djibouti, Djibouti",
-    "name": "JIB"
-  },
-  {
-    "city": "Dnepropetrovsk, Ukraine",
-    "name": "DNK"
-  },
-  {
-    "city": "Dobo, Indonesia",
-    "name": "DOB"
-  },
-  {
-    "city": "Dodge City, KS",
-    "name": "DDC"
-  },
-  {
-    "city": "Dodoima, Papua New Guinea",
-    "name": "DDM"
-  },
-  {
-    "city": "Dodoma, Tanzania",
-    "name": "DOD"
-  },
-  {
-    "city": "Doha, Qatar",
-    "name": "DOH"
-  },
-  {
-    "city": "Dominica, Dominica - Cane Field",
-    "name": "DCF"
-  },
-  {
-    "city": "Dominica, Dominica - Melville Hall",
-    "name": "DOM"
-  },
-  {
-    "city": "Donegal, Ireland",
-    "name": "CFN"
-  },
-  {
-    "city": "Donetsk, Ukraine",
-    "name": "DOK"
-  },
-  {
-    "city": "Dongola, Sudan",
-    "name": "DOG"
-  },
-  {
-    "city": "Doomadgee, Australia",
-    "name": "DMD"
-  },
-  {
-    "city": "Dortmund, Germany",
-    "name": "DTM"
-  },
-  {
-    "city": "Dothan, AL",
-    "name": "DHN"
-  },
-  {
-    "city": "Dourados, Brazil",
-    "name": "DOU"
-  },
-  {
-    "city": "Dovala, Cameroon",
-    "name": "DLA"
-  },
-  {
-    "city": "Dresden, Germany",
-    "name": "DRS"
-  },
-  {
-    "city": "Drummondville, QC - Rail service",
-    "name": "XDM"
-  },
-  {
-    "city": "Dryden, ON",
-    "name": "YHD"
-  },
-  {
-    "city": "Dubai, United Arab Emirates - Bus Station",
-    "name": "XNB"
-  },
-  {
-    "city": "Dubai, United Arab Emirates - International",
-    "name": "DXB"
-  },
-  {
-    "city": "Dubbo, Australia",
-    "name": "DBO"
-  },
-  {
-    "city": "Dublin, Ireland",
-    "name": "DUB"
-  },
-  {
-    "city": "Dubois, PA",
-    "name": "DUJ"
-  },
-  {
-    "city": "Dubrovnik, Croatia",
-    "name": "DBV"
-  },
-  {
-    "city": "Dubuque, IA",
-    "name": "DBQ"
-  },
-  {
-    "city": "Duluth, MN",
-    "name": "DLH"
-  },
-  {
-    "city": "Dumaguete, Philippines",
-    "name": "DGT"
-  },
-  {
-    "city": "Dumai, Indonesia",
-    "name": "DUM"
-  },
-  {
-    "city": "Duncan/Quam, BC",
-    "name": "DUQ"
-  },
-  {
-    "city": "Dundee, United Kingdom",
-    "name": "DND"
-  },
-  {
-    "city": "Dunedin, New Zealand",
-    "name": "DUD"
-  },
-  {
-    "city": "Dunhuang, China",
-    "name": "DNH"
-  },
-  {
-    "city": "Dunk Island, Australia",
-    "name": "DKI"
-  },
-  {
-    "city": "Durango, CO",
-    "name": "DRO"
-  },
-  {
-    "city": "Durango, Mexico",
-    "name": "DGO"
-  },
-  {
-    "city": "Durban, South Africa",
-    "name": "DUR"
-  },
-  {
-    "city": "Durham, NC",
-    "name": "RDU"
-  },
-  {
-    "city": "Durham/Raleigh, NC",
-    "name": "RDU"
-  },
-  {
-    "city": "Dushanbe, Tajikistan",
-    "name": "DYU"
-  },
-  {
-    "city": "Dusseldorf, Germany - International",
-    "name": "DUS"
-  },
-  {
-    "city": "Dusseldorf, Germany - Moenchen-Gl.",
-    "name": "MGL"
-  },
-  {
-    "city": "Dusseldorf, Germany - Rail service",
-    "name": "QDU"
-  },
-  {
-    "city": "Dutch Harbor, AK",
-    "name": "DUT"
-  },
-  {
-    "city": "Dzaoudzi, Mayotte",
-    "name": "DZA"
-  },
-  {
-    "city": "East London, South Africa",
-    "name": "ELS"
-  },
-  {
-    "city": "East Main, QC",
-    "name": "ZEM"
-  },
-  {
-    "city": "Easton, PA",
-    "name": "ABE"
-  },
-  {
-    "city": "Eau Claire, WI",
-    "name": "EAU"
-  },
-  {
-    "city": "Ebon, Marshall Islands",
-    "name": "EBO"
-  },
-  {
-    "city": "Eday, United Kingdom",
-    "name": "EOI"
-  },
-  {
-    "city": "Edinburgh, United Kingdom",
-    "name": "EDI"
-  },
-  {
-    "city": "Edmonton, AB - International",
-    "name": "YEG"
-  },
-  {
-    "city": "Edmonton, AB - Rail service",
-    "name": "XZL"
-  },
-  {
-    "city": "Edna Bay, AK",
-    "name": "EDA"
-  },
-  {
-    "city": "Edremit, Turkey",
-    "name": "EDO"
-  },
-  {
-    "city": "Edward River, Australia",
-    "name": "EDR"
-  },
-  {
-    "city": "Eek, AK",
-    "name": "EEK"
-  },
-  {
-    "city": "Egilsstadir, Iceland",
-    "name": "EGS"
-  },
-  {
-    "city": "Eindhoven, Netherlands",
-    "name": "EIN"
-  },
-  {
-    "city": "Eisenach, Germany",
-    "name": "EIB"
-  },
-  {
-    "city": "Ekaterinburg, Russia",
-    "name": "SVX"
-  },
-  {
-    "city": "Ekuk, AK",
-    "name": "KKU"
-  },
-  {
-    "city": "Ekwok, AK",
-    "name": "KEK"
-  },
-  {
-    "city": "El Bolsan, Argentina",
-    "name": "EHL"
-  },
-  {
-    "city": "El Centro, CA",
-    "name": "IPL"
-  },
-  {
-    "city": "El Dorado, AR",
-    "name": "ELD"
-  },
-  {
-    "city": "El Fasher, Sudan",
-    "name": "ELF"
-  },
-  {
-    "city": "El Maiten, Argentina",
-    "name": "EMX"
-  },
-  {
-    "city": "El Obeid, Sudan",
-    "name": "EBD"
-  },
-  {
-    "city": "El Oved, Algeria",
-    "name": "ELU"
-  },
-  {
-    "city": "El Paso, TX",
-    "name": "ELP"
-  },
-  {
-    "city": "El Portillo/Samana, Dominician Republic - El Portillo",
-    "name": "EPS"
-  },
-  {
-    "city": "El Real, Panama",
-    "name": "ELE"
-  },
-  {
-    "city": "El Salvador, Chile",
-    "name": "ESR"
-  },
-  {
-    "city": "El Vigia, Venezuela",
-    "name": "VIG"
-  },
-  {
-    "city": "El Yopal, Colombia",
-    "name": "EYP"
-  },
-  {
-    "city": "Elat, Italy",
-    "name": "ETH"
-  },
-  {
-    "city": "Elazig, Turkey",
-    "name": "EZS"
-  },
-  {
-    "city": "Elba Island, Italy",
-    "name": "EBA"
-  },
-  {
-    "city": "Elcho Island, Australia",
-    "name": "ELC"
-  },
-  {
-    "city": "Eldoret, Kenya",
-    "name": "EDL"
-  },
-  {
-    "city": "Eleuthera Island, Bahamas",
-    "name": "ELH"
-  },
-  {
-    "city": "Elfin Cove, AK",
-    "name": "ELV"
-  },
-  {
-    "city": "Elim, AK",
-    "name": "ELI"
-  },
-  {
-    "city": "Elista, Russia",
-    "name": "ESL"
-  },
-  {
-    "city": "Elko, NV",
-    "name": "EKO"
-  },
-  {
-    "city": "Elmira, NY",
-    "name": "ELM"
-  },
-  {
-    "city": "Ely, MN",
-    "name": "LYU"
-  },
-  {
-    "city": "Emae, Vanuata",
-    "name": "EAE"
-  },
-  {
-    "city": "Embessa, Papua New Guinea",
-    "name": "EMS"
-  },
-  {
-    "city": "Emerald, Australia",
-    "name": "EMD"
-  },
-  {
-    "city": "Emmonak, AK",
-    "name": "EMK"
-  },
-  {
-    "city": "Emo, Papua New Guinea",
-    "name": "EMO"
-  },
-  {
-    "city": "Enarotali, Indonesia",
-    "name": "EWI"
-  },
-  {
-    "city": "Ende, Indonesia",
-    "name": "ENE"
-  },
-  {
-    "city": "Endicott, NY",
-    "name": "BGM"
-  },
-  {
-    "city": "Enewetak Island, Marshall Islands",
-    "name": "ENT"
-  },
-  {
-    "city": "Enid, OK",
-    "name": "WDG"
-  },
-  {
-    "city": "Enontekio, Finland",
-    "name": "ENF"
-  },
-  {
-    "city": "Enshi, China",
-    "name": "ENH"
-  },
-  {
-    "city": "Entebbe, Uganda",
-    "name": "EBB"
-  },
-  {
-    "city": "Enugu, Nigeria",
-    "name": "ENU"
-  },
-  {
-    "city": "Epinal, France",
-    "name": "EPL"
-  },
-  {
-    "city": "Ercan, Cyprus",
-    "name": "ECN"
-  },
-  {
-    "city": "Erfurt, Germany",
-    "name": "ERF"
-  },
-  {
-    "city": "Erie, PA",
-    "name": "ERI"
-  },
-  {
-    "city": "Erzincan, Turkey",
-    "name": "ERC"
-  },
-  {
-    "city": "Erzurum, Turkey",
-    "name": "ERZ"
-  },
-  {
-    "city": "Esbjerg, Denmark - Esbjerg Airport",
-    "name": "EBJ"
-  },
-  {
-    "city": "Esbjerg, Denmark - Rail service",
-    "name": "ZBB"
-  },
-  {
-    "city": "Escanaba, MI",
-    "name": "ESC"
-  },
-  {
-    "city": "Esmeraldas, Ecuador",
-    "name": "ESM"
-  },
-  {
-    "city": "Esperance, Australia",
-    "name": "EPR"
-  },
-  {
-    "city": "Espiritu Santo, Vanuatu",
-    "name": "SON"
-  },
-  {
-    "city": "Esquel, Argentina",
-    "name": "EQS"
-  },
-  {
-    "city": "Esquimalt, BC",
-    "name": "YPF"
-  },
-  {
-    "city": "Eugene, OR",
-    "name": "EUG"
-  },
-  {
-    "city": "Eureka, NV",
-    "name": "EUE"
-  },
-  {
-    "city": "Eureka/Arcata, CA",
-    "name": "ACV"
-  },
-  {
-    "city": "Evansville, IN",
-    "name": "EVV"
-  },
-  {
-    "city": "Eveter, United Kingdom",
-    "name": "EXT"
-  },
-  {
-    "city": "Ewer, Indonesia",
-    "name": "EWE"
-  },
-  {
-    "city": "Exmouth Gulf, Australia",
-    "name": "EXM"
-  },
-  {
-    "city": "Fagernes, Norway",
-    "name": "VDB"
-  },
-  {
-    "city": "Fair Isle, United Kingdom",
-    "name": "FIE"
-  },
-  {
-    "city": "Fairbanks, AK",
-    "name": "FAI"
-  },
-  {
-    "city": "Faisalabad, Pakistan",
-    "name": "LYP"
-  },
-  {
-    "city": "Fajard, Puerto Rico",
-    "name": "FAJ"
-  },
-  {
-    "city": "Fak Fak, Indonesia",
-    "name": "FKQ"
-  },
-  {
-    "city": "Fakarava, French Polynesia",
-    "name": "FAV"
-  },
-  {
-    "city": "Farafangana, Madagascar",
-    "name": "RVA"
-  },
-  {
-    "city": "Fargo, ND",
-    "name": "FAR"
-  },
-  {
-    "city": "Farmington, NM",
-    "name": "FMN"
-  },
-  {
-    "city": "Faro, Portugal",
-    "name": "FAO"
-  },
-  {
-    "city": "Faroe Islands, Faroe Islands",
-    "name": "FAE"
-  },
-  {
-    "city": "Fayetteville, AR - Municipal/Drake",
-    "name": "FYV"
-  },
-  {
-    "city": "Fayetteville, AR - Northwest Arkansas Regional",
-    "name": "XNA"
-  },
-  {
-    "city": "Fayetteville, NC",
-    "name": "FAY"
-  },
-  {
-    "city": "Fera Island, Solomon Islands",
-    "name": "FRE"
-  },
-  {
-    "city": "Fergana, Uzbekistan",
-    "name": "FEG"
-  },
-  {
-    "city": "Fernando De Noronha, Brazil",
-    "name": "FEN"
-  },
-  {
-    "city": "Fez, Morocco",
-    "name": "FEZ"
-  },
-  {
-    "city": "Fianarantsoa, Madagascar",
-    "name": "WFI"
-  },
-  {
-    "city": "Figari, France",
-    "name": "FSC"
-  },
-  {
-    "city": "Filton, United Kingdom",
-    "name": "FZO"
-  },
-  {
-    "city": "Finkenwerder, Germany",
-    "name": "XFW"
-  },
-  {
-    "city": "Fitzroy Crossing, Australia",
-    "name": "FIZ"
-  },
-  {
-    "city": "Flagstaff, AZ",
-    "name": "FLG"
-  },
-  {
-    "city": "Flensburg, Germany",
-    "name": "FLF"
-  },
-  {
-    "city": "Flin Flon, MB",
-    "name": "YFO"
-  },
-  {
-    "city": "Flint, MI",
-    "name": "FNT"
-  },
-  {
-    "city": "Florence, Italy - Gal Galilei",
-    "name": "PSA"
-  },
-  {
-    "city": "Florence, Italy - Peretola",
-    "name": "FLR"
-  },
-  {
-    "city": "Florence, SC",
-    "name": "FLO"
-  },
-  {
-    "city": "Florence/Muscle Shoals/Sheffield, AL",
-    "name": "MSL"
-  },
-  {
-    "city": "Florencia, Colombia",
-    "name": "FLA"
-  },
-  {
-    "city": "Flores Island, Portugal",
-    "name": "FLW"
-  },
-  {
-    "city": "Flores, Guatemala",
-    "name": "FRS"
-  },
-  {
-    "city": "Florianopolis, Brazil",
-    "name": "FLN"
-  },
-  {
-    "city": "Floro, Norway",
-    "name": "FRO"
-  },
-  {
-    "city": "Foggia, Italy",
-    "name": "FOG"
-  },
-  {
-    "city": "Fond du Lac, SK",
-    "name": "ZFD"
-  },
-  {
-    "city": "Forde, Norway",
-    "name": "FDE"
-  },
-  {
-    "city": "Formosa, Argentina",
-    "name": "FMA"
-  },
-  {
-    "city": "Fort Albany, ON",
-    "name": "YFA"
-  },
-  {
-    "city": "Fort Chipewyan, AB",
-    "name": "YPY"
-  },
-  {
-    "city": "Fort Collins/Loveland, CO - Bus service",
-    "name": "QWF"
-  },
-  {
-    "city": "Fort Collins/Loveland, CO - Municipal Airport",
-    "name": "FNL"
-  },
-  {
-    "city": "Fort Dauphin, Madagascar",
-    "name": "FTU"
-  },
-  {
-    "city": "Fort De France, Martinique",
-    "name": "FDF"
-  },
-  {
-    "city": "Fort Dodge, IA",
-    "name": "FOD"
-  },
-  {
-    "city": "Fort Frances, ON",
-    "name": "YAG"
-  },
-  {
-    "city": "Fort Good Hope, NT",
-    "name": "YGH"
-  },
-  {
-    "city": "Fort Hope, ON",
-    "name": "YFH"
-  },
-  {
-    "city": "Fort Lauderdale, FL",
-    "name": "FLL"
-  },
-  {
-    "city": "Fort Leonard Wood, MO",
-    "name": "TBN"
-  },
-  {
-    "city": "Fort Mcmurray, AB",
-    "name": "YMM"
-  },
-  {
-    "city": "Fort Myers, FL",
-    "name": "RSW"
-  },
-  {
-    "city": "Fort Nelson, BC",
-    "name": "YYE"
-  },
-  {
-    "city": "Fort Severn, ON",
-    "name": "YER"
-  },
-  {
-    "city": "Fort Simpson, NT",
-    "name": "YFS"
-  },
-  {
-    "city": "Fort Smith, AR",
-    "name": "FSM"
-  },
-  {
-    "city": "Fort Smith, NT",
-    "name": "YSM"
-  },
-  {
-    "city": "Fort St John, BC",
-    "name": "YXJ"
-  },
-  {
-    "city": "Fort Walton Beach, FL",
-    "name": "VPS"
-  },
-  {
-    "city": "Fort Wayne, IN",
-    "name": "FWA"
-  },
-  {
-    "city": "Fort Worth/Dallas, TX",
-    "name": "DFW"
-  },
-  {
-    "city": "Fortaleza, Brazil",
-    "name": "FOR"
-  },
-  {
-    "city": "Fox Harbour/St Lewis, NL",
-    "name": "YFX"
-  },
-  {
-    "city": "Franca, Brazil",
-    "name": "FRC"
-  },
-  {
-    "city": "Franceville, Gabon",
-    "name": "MVB"
-  },
-  {
-    "city": "Francistown, Botswana",
-    "name": "FRW"
-  },
-  {
-    "city": "Frankfurt, Germany - Hahn",
-    "name": "HHN"
-  },
-  {
-    "city": "Frankfurt, Germany - International",
-    "name": "FRA"
-  },
-  {
-    "city": "Franklin, PA",
-    "name": "FKL"
-  },
-  {
-    "city": "Fredericia, Denmark",
-    "name": "ZBJ"
-  },
-  {
-    "city": "Fredericton Junction, NB - Rail service",
-    "name": "XFC"
-  },
-  {
-    "city": "Fredericton, NB",
-    "name": "YFC"
-  },
-  {
-    "city": "Freeport, Bahamas",
-    "name": "FPO"
-  },
-  {
-    "city": "Freetown, Sierra Leone - Lungi Intl",
-    "name": "FNA"
-  },
-  {
-    "city": "Fresno, CA",
-    "name": "FAT"
-  },
-  {
-    "city": "Friedrichshafer, Germany",
-    "name": "FDH"
-  },
-  {
-    "city": "Fuerteventura, Spain",
-    "name": "FUE"
-  },
-  {
-    "city": "Fukue, Japan",
-    "name": "FUJ"
-  },
-  {
-    "city": "Fukuoka, Japan",
-    "name": "FUK"
-  },
-  {
-    "city": "Fukushima, Japan",
-    "name": "FKS"
-  },
-  {
-    "city": "Funafuti Atol, Tuvalu",
-    "name": "FUN"
-  },
-  {
-    "city": "Funchal, Portugal",
-    "name": "FNC"
-  },
-  {
-    "city": "Futuna Island, Vanuatu",
-    "name": "FTA"
-  },
-  {
-    "city": "Futuna Island, Wallis and Futuna Islands",
-    "name": "FUT"
-  },
-  {
-    "city": "Fuyang, China",
-    "name": "FUG"
-  },
-  {
-    "city": "Fuzhou, China",
-    "name": "FOC"
-  },
-  {
-    "city": "Gaborone, Botswana",
-    "name": "GBE"
-  },
-  {
-    "city": "Gafsa, Tunisia",
-    "name": "GAF"
-  },
-  {
-    "city": "Gagnoa, Cote D'Ivoire",
-    "name": "GGN"
-  },
-  {
-    "city": "Gainesville, FL",
-    "name": "GNV"
-  },
-  {
-    "city": "Galapagos, Ecuador",
-    "name": "GPS"
-  },
-  {
-    "city": "Gallivare, Sweden",
-    "name": "GEV"
-  },
-  {
-    "city": "Gallup, NM",
-    "name": "GUP"
-  },
-  {
-    "city": "Galway, Ireland",
-    "name": "GWY"
-  },
-  {
-    "city": "Gamba, Gabon",
-    "name": "GAX"
-  },
-  {
-    "city": "Gambela, Ethiopia",
-    "name": "GMB"
-  },
-  {
-    "city": "Gan Island, Maldives",
-    "name": "GAN"
-  },
-  {
-    "city": "Gander, NL",
-    "name": "YQX"
-  },
-  {
-    "city": "Gangneung, South Korea",
-    "name": "KAG"
-  },
-  {
-    "city": "Garachine, Panama",
-    "name": "GHE"
-  },
-  {
-    "city": "Garaina, Papua New Guinea",
-    "name": "GAR"
-  },
-  {
-    "city": "Garasa, Papua New Guinea",
-    "name": "GRL"
-  },
-  {
-    "city": "Garden City, KS",
-    "name": "GCK"
-  },
-  {
-    "city": "Garden Point, Australia",
-    "name": "GPN"
-  },
-  {
-    "city": "Garoua, Cameroon",
-    "name": "GOV"
-  },
-  {
-    "city": "Gary, IN",
-    "name": "GYY"
-  },
-  {
-    "city": "Gaspe, QC",
-    "name": "YGP"
-  },
-  {
-    "city": "Gaspe, QC - Rail service",
-    "name": "XDD"
-  },
-  {
-    "city": "Gassim, Saudi Arabia",
-    "name": "ELQ"
-  },
-  {
-    "city": "Gaua, Vanuatu",
-    "name": "ZGU"
-  },
-  {
-    "city": "Gawahati, India",
-    "name": "GAU"
-  },
-  {
-    "city": "Gaza City, Occupied Palestinian Territory",
-    "name": "GZA"
-  },
-  {
-    "city": "Gaziatep, Turkey",
-    "name": "GZT"
-  },
-  {
-    "city": "Gdansk, Poland",
-    "name": "GDN"
-  },
-  {
-    "city": "Gebe, Indonesia",
-    "name": "GEB"
-  },
-  {
-    "city": "Gelendzik, Russia",
-    "name": "GDZ"
-  },
-  {
-    "city": "Geneina, Sudan",
-    "name": "EGN"
-  },
-  {
-    "city": "General Santos, Philippines",
-    "name": "GES"
-  },
-  {
-    "city": "Geneva, Switzerland",
-    "name": "GVA"
-  },
-  {
-    "city": "Genoa, Italy",
-    "name": "GOA"
-  },
-  {
-    "city": "George Town, Bahamas",
-    "name": "GGT"
-  },
-  {
-    "city": "George, South Africa",
-    "name": "GRJ"
-  },
-  {
-    "city": "Georgetown, Guyana",
-    "name": "GEO"
-  },
-  {
-    "city": "Georgetown, ON - Rail service",
-    "name": "XHM"
-  },
-  {
-    "city": "Geraldton, Australia,",
-    "name": "GET"
-  },
-  {
-    "city": "Gerona, Spain",
-    "name": "GRO"
-  },
-  {
-    "city": "Gethsemani, QC",
-    "name": "ZGS"
-  },
-  {
-    "city": "Ghadames, Libya",
-    "name": "LTD"
-  },
-  {
-    "city": "Ghardala, Algeria",
-    "name": "GHA"
-  },
-  {
-    "city": "Ghat, Libya",
-    "name": "GHT"
-  },
-  {
-    "city": "Gibraltar, Gibraltar",
-    "name": "GIB"
-  },
-  {
-    "city": "Gilgit, Pakistan",
-    "name": "GIL"
-  },
-  {
-    "city": "Gillam, MB",
-    "name": "YGX"
-  },
-  {
-    "city": "Gillette, WY",
-    "name": "GCC"
-  },
-  {
-    "city": "Gillies Bay, BC",
-    "name": "YGB"
-  },
-  {
-    "city": "Gisborne, New Zealand",
-    "name": "GIS"
-  },
-  {
-    "city": "Gizan, Saudi Arabia",
-    "name": "GIZ"
-  },
-  {
-    "city": "Gizo, Solomon Islands",
-    "name": "GZO"
-  },
-  {
-    "city": "Gjoa Haven, NU",
-    "name": "YHK"
-  },
-  {
-    "city": "Gladewater/Kilgore, TX",
-    "name": "GGG"
-  },
-  {
-    "city": "Gladstone, Australia",
-    "name": "GLT"
-  },
-  {
-    "city": "Glasgow, MT",
-    "name": "GGW"
-  },
-  {
-    "city": "Glasgow, United Kingdom - Glasgow International",
-    "name": "GLA"
-  },
-  {
-    "city": "Glasgow, United Kingdom - Prestwick",
-    "name": "PIK"
-  },
-  {
-    "city": "Glen Innes, Australia",
-    "name": "GLI"
-  },
-  {
-    "city": "Glencoe, ON - Rail service",
-    "name": "XZC"
-  },
-  {
-    "city": "Glendive, MT",
-    "name": "GDV"
-  },
-  {
-    "city": "Goa, India",
-    "name": "GOI"
-  },
-  {
-    "city": "Goba, Ethiopia",
-    "name": "GOB"
-  },
-  {
-    "city": "Gobernador Gregores, Argentina",
-    "name": "GGS"
-  },
-  {
-    "city": "Gode/Iddidole, Ethopia",
-    "name": "GDE"
-  },
-  {
-    "city": "Gods Narrows, MB",
-    "name": "YGO"
-  },
-  {
-    "city": "Gods River, MB",
-    "name": "ZGI"
-  },
-  {
-    "city": "Goiania, Brazil",
-    "name": "GYN"
-  },
-  {
-    "city": "Gold Coast, QL, Australia",
-    "name": "OOL"
-  },
-  {
-    "city": "Golfito, Costa Rica",
-    "name": "GLF"
-  },
-  {
-    "city": "Golmud, China",
-    "name": "GOQ"
-  },
-  {
-    "city": "Golovin, AK",
-    "name": "GLV"
-  },
-  {
-    "city": "Gonalia, Papua New Guinea",
-    "name": "GOE"
-  },
-  {
-    "city": "Gondari, Ethiopia",
-    "name": "GDQ"
-  },
-  {
-    "city": "Goodnews Bay, AK",
-    "name": "GNU"
-  },
-  {
-    "city": "Goose Bay, NL",
-    "name": "YYR"
-  },
-  {
-    "city": "Gore, Ethiopia",
-    "name": "GOR"
-  },
-  {
-    "city": "Goroka, Papua New Guinea",
-    "name": "GKA"
-  },
-  {
-    "city": "Gorontalo, Indonesia",
-    "name": "GTO"
-  },
-  {
-    "city": "Gothenburg, Sweden - Landvetter",
-    "name": "GOT"
-  },
-  {
-    "city": "Gothenburg, Sweden - Saeve",
-    "name": "GSE"
-  },
-  {
-    "city": "Goulburn Island, Australia",
-    "name": "GBL"
-  },
-  {
-    "city": "Goundam, Mali",
-    "name": "GUD"
-  },
-  {
-    "city": "Gove, Australia",
-    "name": "GOV"
-  },
-  {
-    "city": "Governador Valadares, Brazil",
-    "name": "GVR"
-  },
-  {
-    "city": "Governors Harbour, Bahamas",
-    "name": "GHB"
-  },
-  {
-    "city": "Goya, CR, Argentina",
-    "name": "OYA"
-  },
-  {
-    "city": "Gozo, Malta",
-    "name": "GZM"
-  },
-  {
-    "city": "Graciosa Island, Portugal",
-    "name": "GRW"
-  },
-  {
-    "city": "Grafton, Australia",
-    "name": "GFN"
-  },
-  {
-    "city": "Granada, Spain",
-    "name": "GRX"
-  },
-  {
-    "city": "Grand Canyon, AZ - Heliport",
-    "name": "JGC"
-  },
-  {
-    "city": "Grand Canyon, AZ - National Park",
-    "name": "GCN"
-  },
-  {
-    "city": "Grand Cayman, Cayman Islands",
-    "name": "GCM"
-  },
-  {
-    "city": "Grand Forks, ND",
-    "name": "GFK"
-  },
-  {
-    "city": "Grand Island, NE",
-    "name": "GRI"
-  },
-  {
-    "city": "Grand Junction, CO",
-    "name": "GJT"
-  },
-  {
-    "city": "Grand Rapids, MI",
-    "name": "GRR"
-  },
-  {
-    "city": "Grand Rapids, MN",
-    "name": "GPZ"
-  },
-  {
-    "city": "Grand Turk Island, Turks and Caicos Islands",
-    "name": "GDT"
-  },
-  {
-    "city": "Grande Prairie, AB",
-    "name": "YQU"
-  },
-  {
-    "city": "Grayling, AK",
-    "name": "KGX"
-  },
-  {
-    "city": "Graz, Austria",
-    "name": "GRZ"
-  },
-  {
-    "city": "Great Falls, MT",
-    "name": "GTF"
-  },
-  {
-    "city": "Green Bay, WI",
-    "name": "GRB"
-  },
-  {
-    "city": "Greensboro, NC",
-    "name": "GSO"
-  },
-  {
-    "city": "Greenville, MS",
-    "name": "GLH"
-  },
-  {
-    "city": "Greenville, NC",
-    "name": "PGV"
-  },
-  {
-    "city": "Greenville/Spartanburg, SC",
-    "name": "GSP"
-  },
-  {
-    "city": "Grenada, Grenada,",
-    "name": "GND"
-  },
-  {
-    "city": "Grenoble, France",
-    "name": "GNB"
-  },
-  {
-    "city": "Griffith, Australia",
-    "name": "GFF"
-  },
-  {
-    "city": "Grimsby, ON",
-    "name": "XGY"
-  },
-  {
-    "city": "Grimsey, Iceland",
-    "name": "GRY"
-  },
-  {
-    "city": "Grise Fiord, NU",
-    "name": "YGZ"
-  },
-  {
-    "city": "Groennedal, Greenland",
-    "name": "JGR"
-  },
-  {
-    "city": "Groningen, Netherlands",
-    "name": "GRQ"
-  },
-  {
-    "city": "Groofe Eylandt, Australia",
-    "name": "GTE"
-  },
-  {
-    "city": "Groton/New London, CT",
-    "name": "GON"
-  },
-  {
-    "city": "Guadalajara, Mexico",
-    "name": "GDL"
-  },
-  {
-    "city": "Guam",
-    "name": "GUM"
-  },
-  {
-    "city": "Guanaja, Honduras",
-    "name": "GJA"
-  },
-  {
-    "city": "Guanajuato, Mexico",
-    "name": "BJX"
-  },
-  {
-    "city": "Guangzhou, China",
-    "name": "CAN"
-  },
-  {
-    "city": "Guantanamo, Cuba",
-    "name": "GAO"
-  },
-  {
-    "city": "Guatemala City, Guatemala",
-    "name": "GUA"
-  },
-  {
-    "city": "Guayaquil, Ecuador",
-    "name": "GYE"
-  },
-  {
-    "city": "Guayaramerin, Bolivia",
-    "name": "GYA"
-  },
-  {
-    "city": "Guaymas, Mexico",
-    "name": "GYM"
-  },
-  {
-    "city": "Guelph, ON - Rail service",
-    "name": "XIA"
-  },
-  {
-    "city": "Guernsey, United Kingdom",
-    "name": "GCI"
-  },
-  {
-    "city": "Guerrero Negro, Mexico",
-    "name": "GUB"
-  },
-  {
-    "city": "Guilin, China",
-    "name": "KWL"
-  },
-  {
-    "city": "Guiria, Venezuela",
-    "name": "GUI"
-  },
-  {
-    "city": "Gulfport, MS",
-    "name": "GPT"
-  },
-  {
-    "city": "Gulu, Uganda",
-    "name": "ULU"
-  },
-  {
-    "city": "Gulyang, China",
-    "name": "KWE"
-  },
-  {
-    "city": "Gunnison, CO",
-    "name": "GUC"
-  },
-  {
-    "city": "Gunsan, South Korea",
-    "name": "KUV"
-  },
-  {
-    "city": "Gurayat, Saudi Arabia",
-    "name": "URY"
-  },
-  {
-    "city": "Gustavus, AK",
-    "name": "GST"
-  },
-  {
-    "city": "Gwadar, Pakistan",
-    "name": "GWD"
-  },
-  {
-    "city": "Gwalior, India",
-    "name": "GWL"
-  },
-  {
-    "city": "Gwangju, South Korea",
-    "name": "KWJ"
-  },
-  {
-    "city": "Gyandzha, Azerbaijan",
-    "name": "KVD"
-  },
-  {
-    "city": "Gyourmri, Armenia",
-    "name": "LWN"
-  },
-  {
-    "city": "HaApa, Tonga",
-    "name": "HPA"
-  },
-  {
-    "city": "Hachijo Jima, Japan",
-    "name": "HAC"
-  },
-  {
-    "city": "Hagerstown, MD",
-    "name": "HGR"
-  },
-  {
-    "city": "Hagfors, Sweden",
-    "name": "HFS"
-  },
-  {
-    "city": "Haifa, Israel",
-    "name": "HFA"
-  },
-  {
-    "city": "Haikou, China",
-    "name": "HAK"
-  },
-  {
-    "city": "Hail, Saudi Arabia",
-    "name": "HAS"
-  },
-  {
-    "city": "Hailar, China",
-    "name": "HLD"
-  },
-  {
-    "city": "Hailey, ID",
-    "name": "SUN"
-  },
-  {
-    "city": "Haines, AK",
-    "name": "HNS"
-  },
-  {
-    "city": "Haiphong, Viet Nam - Catbi",
-    "name": "HPH"
-  },
-  {
-    "city": "Hakodate, Japan",
-    "name": "HKD"
-  },
-  {
-    "city": "Halberstadt, Germany",
-    "name": "ZHQ"
-  },
-  {
-    "city": "Halifax, NS - International",
-    "name": "YHZ"
-  },
-  {
-    "city": "Halifax, NS - Rail service",
-    "name": "XDG"
-  },
-  {
-    "city": "Hall Beach, NU",
-    "name": "YUX"
-  },
-  {
-    "city": "Halls Creek, Australia",
-    "name": "HCQ"
-  },
-  {
-    "city": "Halmstad, Sweden",
-    "name": "HAD"
-  },
-  {
-    "city": "Hamburg, Germany - Fuhisbuettel",
-    "name": "HAM"
-  },
-  {
-    "city": "Hamburg, Germany - Luebeck",
-    "name": "LBC"
-  },
-  {
-    "city": "Hamilton Island, Australia",
-    "name": "HTI"
-  },
-  {
-    "city": "Hamilton, Bermuda",
-    "name": "BDA"
-  },
-  {
-    "city": "Hamilton, New Zealand",
-    "name": "HLZ"
-  },
-  {
-    "city": "Hamilton, ON",
-    "name": "YHM"
-  },
-  {
-    "city": "Hammerfest, Norway",
-    "name": "HFT"
-  },
-  {
-    "city": "Hampton, VA",
-    "name": "PHF"
-  },
-  {
-    "city": "Hana, HI - Island of Maui",
-    "name": "HNM"
-  },
-  {
-    "city": "Hanapepe, HI",
-    "name": "PAK"
-  },
-  {
-    "city": "Hancock, MI",
-    "name": "CMX"
-  },
-  {
-    "city": "Hangzhou, China",
-    "name": "HGH"
-  },
-  {
-    "city": "Hanimaadhoo, Maldives",
-    "name": "HAQ"
-  },
-  {
-    "city": "Hanoi, Viet Nam - Noibai",
-    "name": "HAN"
-  },
-  {
-    "city": "Hanover, Germany",
-    "name": "HAJ"
-  },
-  {
-    "city": "Hanover, NH",
-    "name": "LEB"
-  },
-  {
-    "city": "Hanzhang, China",
-    "name": "HZG"
-  },
-  {
-    "city": "Harare, Zimbabwe",
-    "name": "HRE"
-  },
-  {
-    "city": "Harbin, China",
-    "name": "HRB"
-  },
-  {
-    "city": "Hargeisa, Somolia",
-    "name": "HGA"
-  },
-  {
-    "city": "Harlingen, TX",
-    "name": "HRL"
-  },
-  {
-    "city": "Harrisburg, PA",
-    "name": "MDT"
-  },
-  {
-    "city": "Harrison, AR",
-    "name": "HRO"
-  },
-  {
-    "city": "Harstad-Narvik, Norway",
-    "name": "EVE"
-  },
-  {
-    "city": "Hartford, CT",
-    "name": "BDL"
-  },
-  {
-    "city": "Hassi Messaoud, Algeria",
-    "name": "HME"
-  },
-  {
-    "city": "Hasvik, Norway",
-    "name": "HAA"
-  },
-  {
-    "city": "Hat Yai, Thailand",
-    "name": "HDY"
-  },
-  {
-    "city": "Hateruma, Japan",
-    "name": "HTR"
-  },
-  {
-    "city": "Haugesund, Norway",
-    "name": "HAU"
-  },
-  {
-    "city": "Havana, Cuba",
-    "name": "HAV"
-  },
-  {
-    "city": "Havasupai, AZ",
-    "name": "HAE"
-  },
-  {
-    "city": "Havre St Pierre, QC",
-    "name": "YGV"
-  },
-  {
-    "city": "Havre, MT",
-    "name": "HVR"
-  },
-  {
-    "city": "Hay River, NT",
-    "name": "YHY"
-  },
-  {
-    "city": "Hayden, CO",
-    "name": "HDN"
-  },
-  {
-    "city": "Hayman Island, Australia",
-    "name": "HIS"
-  },
-  {
-    "city": "Hays, KS",
-    "name": "HYS"
-  },
-  {
-    "city": "Healy Lake, AK",
-    "name": "HKB"
-  },
-  {
-    "city": "Hefei, China",
-    "name": "HFE"
-  },
-  {
-    "city": "Heidelberg, Germany",
-    "name": "HDB"
-  },
-  {
-    "city": "Helena, MT",
-    "name": "HLN"
-  },
-  {
-    "city": "Helgoland, Germany",
-    "name": "HGL"
-  },
-  {
-    "city": "Helsinki, Finland",
-    "name": "HEL"
-  },
-  {
-    "city": "Hendersonville, NC",
-    "name": "AVL"
-  },
-  {
-    "city": "Heno, Myanmar",
-    "name": "HEH"
-  },
-  {
-    "city": "Heraklian, Greece",
-    "name": "HER"
-  },
-  {
-    "city": "Heringsdorf, Germany",
-    "name": "HDF"
-  },
-  {
-    "city": "Hermavan, Sweden",
-    "name": "HMV"
-  },
-  {
-    "city": "Hermosillo, Mexico",
-    "name": "HMO"
-  },
-  {
-    "city": "Herning, Denmark",
-    "name": "XAK"
-  },
-  {
-    "city": "Hervey Bay, Australia",
-    "name": "HVB"
-  },
-  {
-    "city": "Hervey, QC - Rail service",
-    "name": "XDU"
-  },
-  {
-    "city": "Hibbing/Chisholm, MN",
-    "name": "HIB"
-  },
-  {
-    "city": "Hickory, NC",
-    "name": "HKY"
-  },
-  {
-    "city": "High Level, AB",
-    "name": "YOJ"
-  },
-  {
-    "city": "High Point, NC",
-    "name": "GSO"
-  },
-  {
-    "city": "Hilo, HI - Island of Hawaii",
-    "name": "ITO"
-  },
-  {
-    "city": "Hilton Head, SC",
-    "name": "HHH"
-  },
-  {
-    "city": "Hiroshima, Japan - Hiroshima West",
-    "name": "HIW"
-  },
-  {
-    "city": "Hiroshima, Japan - International",
-    "name": "HIJ"
-  },
-  {
-    "city": "Hivaro, Papua New Guinea",
-    "name": "HIT"
-  },
-  {
-    "city": "Ho Chi Minh City, Viet Nam",
-    "name": "SGN"
-  },
-  {
-    "city": "Hobart, Australia",
-    "name": "HBA"
-  },
-  {
-    "city": "Hobbs, NM",
-    "name": "HBB"
-  },
-  {
-    "city": "Hodeidah, Yemen",
-    "name": "HOD"
-  },
-  {
-    "city": "Hoedspruit, South Africa",
-    "name": "HDS"
-  },
-  {
-    "city": "Hof, Germany",
-    "name": "HOQ"
-  },
-  {
-    "city": "Hofuf, Saudi Arabia",
-    "name": "HOF"
-  },
-  {
-    "city": "Hohhot, China",
-    "name": "HET"
-  },
-  {
-    "city": "Hokitika, New Zealand",
-    "name": "HKK"
-  },
-  {
-    "city": "Holguin, Cuba",
-    "name": "HOG"
-  },
-  {
-    "city": "Hollis, AK",
-    "name": "HYL"
-  },
-  {
-    "city": "Holman, NT",
-    "name": "YHI"
-  },
-  {
-    "city": "Holy Cross, AK",
-    "name": "HCR"
-  },
-  {
-    "city": "Homer, AK",
-    "name": "HOM"
-  },
-  {
-    "city": "Hong Kong, Hong Kong",
-    "name": "HKG"
-  },
-  {
-    "city": "Honiara, Solomon Islands",
-    "name": "HIR"
-  },
-  {
-    "city": "Honningsvag, Norway",
-    "name": "HVG"
-  },
-  {
-    "city": "Honolulu, HI - Island of Oahu",
-    "name": "HNL"
-  },
-  {
-    "city": "Hooker, Australia",
-    "name": "HOK"
-  },
-  {
-    "city": "Hoolehua, HI - Island of Molokai",
-    "name": "MKK"
-  },
-  {
-    "city": "Hoonah, AK",
-    "name": "HNH"
-  },
-  {
-    "city": "Hooper Bay, AK",
-    "name": "HPB"
-  },
-  {
-    "city": "Hopedale, NL",
-    "name": "YHO"
-  },
-  {
-    "city": "Horn Island Australia",
-    "name": "HID"
-  },
-  {
-    "city": "Hornafjordur, Iceland",
-    "name": "HFN"
-  },
-  {
-    "city": "Horta, Portugal",
-    "name": "HOR"
-  },
-  {
-    "city": "Hoskins, Papua New Guinea",
-    "name": "HKN"
-  },
-  {
-    "city": "Hot Springs, AR",
-    "name": "HOT"
-  },
-  {
-    "city": "Hotan, China",
-    "name": "HTN"
-  },
-  {
-    "city": "Houeisay, Laos",
-    "name": "HOE"
-  },
-  {
-    "city": "Houn, Libya",
-    "name": "HUQ"
-  },
-  {
-    "city": "Houston, BC - Bus station",
-    "name": "ZHO"
-  },
-  {
-    "city": "Houston, TX - All airports",
-    "name": "HOU"
-  },
-  {
-    "city": "Houston, TX - Hobby",
-    "name": "HOU"
-  },
-  {
-    "city": "Houston, TX - Intercontinental",
-    "name": "IAH"
-  },
-  {
-    "city": "Huahine, French Polynesia",
-    "name": "HUH"
-  },
-  {
-    "city": "Hualien, Taiwan - Phi Bai",
-    "name": "HUN"
-  },
-  {
-    "city": "Hualtin, Thailand",
-    "name": "HHQ"
-  },
-  {
-    "city": "Huanuco, French Polynesia",
-    "name": "HUU"
-  },
-  {
-    "city": "Huargyan, China",
-    "name": "HYN"
-  },
-  {
-    "city": "Huatulco, Mexico",
-    "name": "HUX"
-  },
-  {
-    "city": "Hudiksvall, Sweden",
-    "name": "HUV"
-  },
-  {
-    "city": "Hudson Bay, SK",
-    "name": "YHB"
-  },
-  {
-    "city": "Hue, Viet Nam",
-    "name": "HUI"
-  },
-  {
-    "city": "Hughenden, Australia",
-    "name": "HGD"
-  },
-  {
-    "city": "Hughes, AK",
-    "name": "HUS"
-  },
-  {
-    "city": "Hultsfred, Sweden",
-    "name": "HLF"
-  },
-  {
-    "city": "Humberside, United Kingdom",
-    "name": "HUY"
-  },
-  {
-    "city": "Huntington, WV/Ashland, KY",
-    "name": "HTS"
-  },
-  {
-    "city": "Huntsville, AL",
-    "name": "HSV"
-  },
-  {
-    "city": "Hurghada, Egypt",
-    "name": "HRG"
-  },
-  {
-    "city": "Huron, SD",
-    "name": "HON"
-  },
-  {
-    "city": "Huslia, AK",
-    "name": "HSL"
-  },
-  {
-    "city": "Hwange Nat Park, Zimbabwe",
-    "name": "HWN"
-  },
-  {
-    "city": "Hyannis, MA",
-    "name": "HYA"
-  },
-  {
-    "city": "Hydaburg, AK",
-    "name": "HYG"
-  },
-  {
-    "city": "Hyderabad, India",
-    "name": "HYD"
-  },
-  {
-    "city": "Iasi, Romania",
-    "name": "IAS"
-  },
-  {
-    "city": "Ibague, Colombia",
-    "name": "IBE"
-  },
-  {
-    "city": "Ibiza, Spain",
-    "name": "IBZ"
-  },
-  {
-    "city": "Idaho Falls, ID",
-    "name": "IDA"
-  },
-  {
-    "city": "Igarka, Russia",
-    "name": "IAA"
-  },
-  {
-    "city": "Igiugig, AK",
-    "name": "IGG"
-  },
-  {
-    "city": "Igloolik, NU",
-    "name": "YGT"
-  },
-  {
-    "city": "Iguassu Falls, PR, Brazil",
-    "name": "IGU"
-  },
-  {
-    "city": "Iguazu, Argentina",
-    "name": "IGR"
-  },
-  {
-    "city": "Ihu, Papua New Guinea",
-    "name": "IHU"
-  },
-  {
-    "city": "Ile Des Pins, New Caledonia",
-    "name": "ILP"
-  },
-  {
-    "city": "Iles De La Madeleine, QC",
-    "name": "YGR"
-  },
-  {
-    "city": "Ilford, MB",
-    "name": "ILF"
-  },
-  {
-    "city": "Ilheus, Brazil",
-    "name": "IOS"
-  },
-  {
-    "city": "Iliamna, AK",
-    "name": "ILI"
-  },
-  {
-    "city": "Illaga, Indonesia",
-    "name": "ILA"
-  },
-  {
-    "city": "Iloilo, Philippines - Mandurriao",
-    "name": "ILO"
-  },
-  {
-    "city": "Ilu, Indonesia",
-    "name": "IUL"
-  },
-  {
-    "city": "Ilulissat, Greenland",
-    "name": "JAV"
-  },
-  {
-    "city": "Imperatriz, Brazil",
-    "name": "IMP"
-  },
-  {
-    "city": "Imperial, CA",
-    "name": "IPL"
-  },
-  {
-    "city": "Imphal, India",
-    "name": "IMF"
-  },
-  {
-    "city": "In Amenas, Algeria",
-    "name": "IAM"
-  },
-  {
-    "city": "Inagua, Bahamas",
-    "name": "IGA"
-  },
-  {
-    "city": "Inanwatan, Indonesia",
-    "name": "INX"
-  },
-  {
-    "city": "Indagen, Papua New Guinea",
-    "name": "IDN"
-  },
-  {
-    "city": "Indianapolis, IN",
-    "name": "IND"
-  },
-  {
-    "city": "Indore, India",
-    "name": "IDR"
-  },
-  {
-    "city": "Ingersoll, ON - Rail service",
-    "name": "XIB"
-  },
-  {
-    "city": "Innsbruck, Austria",
-    "name": "INN"
-  },
-  {
-    "city": "Inta, Russia",
-    "name": "INA"
-  },
-  {
-    "city": "International Falls, MN",
-    "name": "INL"
-  },
-  {
-    "city": "Inukjuak, QC",
-    "name": "YPH"
-  },
-  {
-    "city": "Inuvik, NT",
-    "name": "YEV"
-  },
-  {
-    "city": "Invercargill, New Zealand",
-    "name": "IVC"
-  },
-  {
-    "city": "Inverell, Australia",
-    "name": "IVR"
-  },
-  {
-    "city": "Inverness, United Kingdom",
-    "name": "INV"
-  },
-  {
-    "city": "Inyokern, CA",
-    "name": "IYK"
-  },
-  {
-    "city": "Ioannina, Greece",
-    "name": "IOA"
-  },
-  {
-    "city": "Ioma, Papua New Guinea",
-    "name": "IOP"
-  },
-  {
-    "city": "Ipatinga, Brazil",
-    "name": "IPN"
-  },
-  {
-    "city": "Ipiales, Colombia",
-    "name": "IPI"
-  },
-  {
-    "city": "Ipil, Philippines",
-    "name": "IPE"
-  },
-  {
-    "city": "Ipoh, Malaysia",
-    "name": "IPH"
-  },
-  {
-    "city": "Ipota, Vanuatu",
-    "name": "IPA"
-  },
-  {
-    "city": "Iqaluit, NU",
-    "name": "YFB"
-  },
-  {
-    "city": "Iquique, Chile",
-    "name": "IQQ"
-  },
-  {
-    "city": "Iquitos, Peru",
-    "name": "IQT"
-  },
-  {
-    "city": "Irkutsk, Russia",
-    "name": "IKT"
-  },
-  {
-    "city": "Iron Mountain, MI",
-    "name": "IMT"
-  },
-  {
-    "city": "Ironwood, MI",
-    "name": "IWD"
-  },
-  {
-    "city": "Isafjordur, Iceland",
-    "name": "IFJ"
-  },
-  {
-    "city": "Isfahan, Iran",
-    "name": "IFN"
-  },
-  {
-    "city": "Ishigakij, Japan",
-    "name": "ISG"
-  },
-  {
-    "city": "Islamabad, Pakistan",
-    "name": "ISB"
-  },
-  {
-    "city": "Island Lake/Garden Hill",
-    "name": "YIV"
-  },
-  {
-    "city": "Island Lake/Garden Hill, Canada",
-    "name": "YIV"
-  },
-  {
-    "city": "Islay, United Kingdom",
-    "name": "ILY"
-  },
-  {
-    "city": "Isle of Man, United Kingdom",
-    "name": "IOM"
-  },
-  {
-    "city": "Isles of Scilly, United Kingdom - St Marys",
-    "name": "ISC"
-  },
-  {
-    "city": "Isles of Scilly, United Kingdom - Tresco",
-    "name": "TSO"
-  },
-  {
-    "city": "Islip, NY",
-    "name": "ISP"
-  },
-  {
-    "city": "Istanbul, Turkey",
-    "name": "IST"
-  },
-  {
-    "city": "Itaituba, Brazil",
-    "name": "ITB"
-  },
-  {
-    "city": "Ithaca, NY",
-    "name": "ITH"
-  },
-  {
-    "city": "Itokama, Papua New Guinea",
-    "name": "ITK"
-  },
-  {
-    "city": "Ivalo, Finland",
-    "name": "IVL"
-  },
-  {
-    "city": "Ivano-Frankovsk, Ukraine",
-    "name": "IFO"
-  },
-  {
-    "city": "Ivujivik, QC",
-    "name": "YIK"
-  },
-  {
-    "city": "Iwami, Japan",
-    "name": "IWJ"
-  },
-  {
-    "city": "Ixtapa, Mexico",
-    "name": "ZIH"
-  },
-  {
-    "city": "Ixtepec, Mexico",
-    "name": "IZT"
-  },
-  {
-    "city": "Izmir, Turkey",
-    "name": "ADB"
-  },
-  {
-    "city": "Izumo, Japan",
-    "name": "IZO"
-  },
-  {
-    "city": "Jabor, Marshall Islands",
-    "name": "JAT"
-  },
-  {
-    "city": "Jacareacanga, Brazil",
-    "name": "JCR"
-  },
-  {
-    "city": "Jackson Hole, WY",
-    "name": "JAC"
-  },
-  {
-    "city": "Jackson, MS",
-    "name": "JAN"
-  },
-  {
-    "city": "Jackson, TN",
-    "name": "MKL"
-  },
-  {
-    "city": "Jacksonville, FL",
-    "name": "JAX"
-  },
-  {
-    "city": "Jacksonville, NC",
-    "name": "OAJ"
-  },
-  {
-    "city": "Jacobabad, Pakistan",
-    "name": "JAG"
-  },
-  {
-    "city": "Jacquinot Bay, Papua New Guinea",
-    "name": "JAQ"
-  },
-  {
-    "city": "Jaipur, India",
-    "name": "JAI"
-  },
-  {
-    "city": "Jakarta, Indonesia",
-    "name": "CGK"
-  },
-  {
-    "city": "Jalapa, Mexico",
-    "name": "JAL"
-  },
-  {
-    "city": "Jaluit Island, Marshall Islands",
-    "name": "UIT"
-  },
-  {
-    "city": "Jambi. Indonesia",
-    "name": "DJB"
-  },
-  {
-    "city": "Jamestown, ND",
-    "name": "JMS"
-  },
-  {
-    "city": "Jamestown, NY",
-    "name": "JHW"
-  },
-  {
-    "city": "Jamnagar, India",
-    "name": "JGA"
-  },
-  {
-    "city": "Janakpur, Nepal",
-    "name": "JKR"
-  },
-  {
-    "city": "Janesville, WI",
-    "name": "JVL"
-  },
-  {
-    "city": "Jaque, Panama",
-    "name": "JQE"
-  },
-  {
-    "city": "Jasper, AB - Rail service",
-    "name": "XDH"
-  },
-  {
-    "city": "Jayapura, Indonesia",
-    "name": "DJJ"
-  },
-  {
-    "city": "Jeddah, Saudi Arabia",
-    "name": "JED"
-  },
-  {
-    "city": "Jeh, Marshall Islands",
-    "name": "JEJ"
-  },
-  {
-    "city": "Jeju, South Korea - Jeju Airport, metro area",
-    "name": "CJU"
-  },
-  {
-    "city": "Jerez De La Frontere, Spain",
-    "name": "XRY"
-  },
-  {
-    "city": "Jersey, United Kingdom",
-    "name": "JER"
-  },
-  {
-    "city": "Jessore, Bangladesh",
-    "name": "JSR"
-  },
-  {
-    "city": "Jiamusi, China",
-    "name": "JMU"
-  },
-  {
-    "city": "Jiayuguan, China",
-    "name": "JGN"
-  },
-  {
-    "city": "Jijel, Algeria",
-    "name": "GJL"
-  },
-  {
-    "city": "Jijiga, Ethiopia",
-    "name": "JIJ"
-  },
-  {
-    "city": "Jimma, Ethiopia",
-    "name": "JIM"
-  },
-  {
-    "city": "Jinan, China",
-    "name": "TNA"
-  },
-  {
-    "city": "Jingdezhen, China",
-    "name": "JDZ"
-  },
-  {
-    "city": "Jinghong, China",
-    "name": "JHG"
-  },
-  {
-    "city": "Jinja, Uganda",
-    "name": "JIN"
-  },
-  {
-    "city": "Jinjiang, China",
-    "name": "JJN"
-  },
-  {
-    "city": "Jinju, South Korea - Sancheon",
-    "name": "HIN"
-  },
-  {
-    "city": "Jinka, Ethiopia",
-    "name": "BCO"
-  },
-  {
-    "city": "Jinzhou, China",
-    "name": "JNZ"
-  },
-  {
-    "city": "Ji-Parana, Brazil",
-    "name": "JPR"
-  },
-  {
-    "city": "Jiwani, Pakistan",
-    "name": "JIW"
-  },
-  {
-    "city": "Joao Pessoa, Brazil",
-    "name": "JPA"
-  },
-  {
-    "city": "Jodhpur, India",
-    "name": "JDH"
-  },
-  {
-    "city": "Joensuu, Finland",
-    "name": "JOE"
-  },
-  {
-    "city": "Johannesburg, South Africa",
-    "name": "JNB"
-  },
-  {
-    "city": "Johnson City, NY",
-    "name": "BGM"
-  },
-  {
-    "city": "Johnson City, TN",
-    "name": "TRI"
-  },
-  {
-    "city": "Johnston Island, US Minor Outlying Islands",
-    "name": "JON"
-  },
-  {
-    "city": "Johnstown, PA",
-    "name": "JST"
-  },
-  {
-    "city": "Johor, Malaysia",
-    "name": "JHB"
-  },
-  {
-    "city": "Joinville, Brazil",
-    "name": "JOI"
-  },
-  {
-    "city": "Joliette, QC - Rail service",
-    "name": "XJL"
-  },
-  {
-    "city": "Jommu, India",
-    "name": "IXJ"
-  },
-  {
-    "city": "Jomsom, Nepal",
-    "name": "JMO"
-  },
-  {
-    "city": "Jonesboro, AR",
-    "name": "JBR"
-  },
-  {
-    "city": "Jonkoping, Sweden",
-    "name": "JKG"
-  },
-  {
-    "city": "Jonquiere, QC - Rail service",
-    "name": "XJQ"
-  },
-  {
-    "city": "Joplin, MO",
-    "name": "JLN"
-  },
-  {
-    "city": "Jorhat, India",
-    "name": "JRH"
-  },
-  {
-    "city": "Jose De San Martin, Argentina",
-    "name": "JSM"
-  },
-  {
-    "city": "Jouf, Saudi Arabia",
-    "name": "AJF"
-  },
-  {
-    "city": "Juazeiro Do Norte, Brazil",
-    "name": "JDO"
-  },
-  {
-    "city": "Juist, Germany",
-    "name": "JUI"
-  },
-  {
-    "city": "Juiz De Fora, Brazil",
-    "name": "JDF"
-  },
-  {
-    "city": "Jujuy, Argentina",
-    "name": "JUJ"
-  },
-  {
-    "city": "Julia Creek, Australia",
-    "name": "JCK"
-  },
-  {
-    "city": "Juliaca, Peru",
-    "name": "JUL"
-  },
-  {
-    "city": "Juneau, AK",
-    "name": "JNU"
-  },
-  {
-    "city": "Juzha, China",
-    "name": "JUZ"
-  },
-  {
-    "city": "Jyvaskyla, Finland",
-    "name": "JYV"
-  },
-  {
-    "city": "Kaadedhdhoo, Maldives",
-    "name": "KDM"
-  },
-  {
-    "city": "Kaben, Marshall Islands",
-    "name": "KBT"
-  },
-  {
-    "city": "Kabri Dar, Ethiopia",
-    "name": "ABK"
-  },
-  {
-    "city": "Kabul, Afghanistan",
-    "name": "KBL"
-  },
-  {
-    "city": "Kabwun, Papua New Guinea",
-    "name": "KBM"
-  },
-  {
-    "city": "Kadanwari, Pakistan",
-    "name": "KCF"
-  },
-  {
-    "city": "Kadhonoo, Maldives",
-    "name": "KDO"
-  },
-  {
-    "city": "Kahramanmaras, Turkey",
-    "name": "KCM"
-  },
-  {
-    "city": "Kahului, HI - Island of Maui,",
-    "name": "OGG"
-  },
-  {
-    "city": "Kaintiba, Papua New Guinea",
-    "name": "KZF"
-  },
-  {
-    "city": "Kaitaia, New Zealand",
-    "name": "KAT"
-  },
-  {
-    "city": "Kajaani, Finland",
-    "name": "KAJ"
-  },
-  {
-    "city": "Kake, AK",
-    "name": "KAE"
-  },
-  {
-    "city": "Kakhonak, AK",
-    "name": "KNK"
-  },
-  {
-    "city": "Kalamazoo, MI",
-    "name": "AZO"
-  },
-  {
-    "city": "Kalaupapa, HI - Island of Molokai,",
-    "name": "LUP"
-  },
-  {
-    "city": "Kalbarri, Australia",
-    "name": "KAX"
-  },
-  {
-    "city": "Kaliningrad, Russia",
-    "name": "KGD"
-  },
-  {
-    "city": "Kalskag, AK",
-    "name": "KLG"
-  },
-  {
-    "city": "Kaltag, AK",
-    "name": "KAL"
-  },
-  {
-    "city": "Kambuaya, Indonesia",
-    "name": "KBX"
-  },
-  {
-    "city": "Kameshli, Syrian Arab Republic",
-    "name": "KAC"
-  },
-  {
-    "city": "Kamloops, BC",
-    "name": "YKA"
-  },
-  {
-    "city": "Kamuela, HI - Island of Hawaii,",
-    "name": "MUE"
-  },
-  {
-    "city": "Kamur, Indonesia",
-    "name": "KCD"
-  },
-  {
-    "city": "Kamusi, Papua New Guinea",
-    "name": "KUY"
-  },
-  {
-    "city": "Kangiqsualujjuaq, QC",
-    "name": "XGR"
-  },
-  {
-    "city": "Kangiqsujuaq, QC",
-    "name": "YWB"
-  },
-  {
-    "city": "Kangirsuk, QC",
-    "name": "YKG"
-  },
-  {
-    "city": "Kano, Nigeria",
-    "name": "KAN"
-  },
-  {
-    "city": "Kansas City, MO",
-    "name": "MCI"
-  },
-  {
-    "city": "Kapalua, HI - Island of Maui,",
-    "name": "JHM"
-  },
-  {
-    "city": "Kapuskasing, ON",
-    "name": "YYU"
-  },
-  {
-    "city": "Karachi, Pakistan - Quaid-E-Azam International",
-    "name": "KHI"
-  },
-  {
-    "city": "Kardia, Estonia",
-    "name": "KDL"
-  },
-  {
-    "city": "Kariba, Zimbabwe",
-    "name": "KAB"
-  },
-  {
-    "city": "Karlsruhe/Badern Baden, Germany",
-    "name": "FKB"
-  },
-  {
-    "city": "Karpathos, Greece",
-    "name": "AOK"
-  },
-  {
-    "city": "Karubaga, Indonesia",
-    "name": "KBF"
-  },
-  {
-    "city": "Kasaan, AK",
-    "name": "KXA"
-  },
-  {
-    "city": "Kasaba Bay, Zambia",
-    "name": "ZKB"
-  },
-  {
-    "city": "Kasabonika, ON",
-    "name": "XKS"
-  },
-  {
-    "city": "Kasama, Zambia",
-    "name": "KAA"
-  },
-  {
-    "city": "Kasane, Botswana",
-    "name": "BBK"
-  },
-  {
-    "city": "Kaschechewan, ON",
-    "name": "ZKE"
-  },
-  {
-    "city": "Kasigluk, AK",
-    "name": "KUK"
-  },
-  {
-    "city": "Katherine, NT, Australia",
-    "name": "KTR"
-  },
-  {
-    "city": "Kathmandu, Nepal",
-    "name": "KTM"
-  },
-  {
-    "city": "Katowice, Poland",
-    "name": "KTW"
-  },
-  {
-    "city": "Kauai Island/Lihue, HI",
-    "name": "LIH"
-  },
-  {
-    "city": "Kaunas, Lithuania",
-    "name": "KUN"
-  },
-  {
-    "city": "Kavala, Greece",
-    "name": "KVA"
-  },
-  {
-    "city": "Kavieng, Papua New Guinea",
-    "name": "KVG"
-  },
-  {
-    "city": "Kawthaung, Myanmar",
-    "name": "KAW"
-  },
-  {
-    "city": "Kayseri, Turkey",
-    "name": "ASR"
-  },
-  {
-    "city": "Kazan,, Russia",
-    "name": "KZN"
-  },
-  {
-    "city": "Kearney, NE",
-    "name": "EAR"
-  },
-  {
-    "city": "Keene, NH",
-    "name": "EEN"
-  },
-  {
-    "city": "Keewaywin, ON",
-    "name": "KEW"
-  },
-  {
-    "city": "Kefallinia, Greece",
-    "name": "EFL"
-  },
-  {
-    "city": "Kegaska, QC",
-    "name": "ZKG"
-  },
-  {
-    "city": "Kelowna, BC",
-    "name": "YLW"
-  },
-  {
-    "city": "Kenai, AK",
-    "name": "ENA"
-  },
-  {
-    "city": "Kendari, Indonesia",
-    "name": "KDI"
-  },
-  {
-    "city": "Kenora, ON",
-    "name": "YQK"
-  },
-  {
-    "city": "Kerkyra, Greece",
-    "name": "CFU"
-  },
-  {
-    "city": "Ketchikan, AK",
-    "name": "KTN"
-  },
-  {
-    "city": "Key West, FL",
-    "name": "EYW"
-  },
-  {
-    "city": "Keystone, CO - Van service",
-    "name": "QKS"
-  },
-  {
-    "city": "Khajuraho, India",
-    "name": "HJR"
-  },
-  {
-    "city": "Kharga, Egypt",
-    "name": "UVL"
-  },
-  {
-    "city": "Kharkov, Ukraine",
-    "name": "HRK"
-  },
-  {
-    "city": "Khudzhand, Tajikistan",
-    "name": "LBD"
-  },
-  {
-    "city": "Khuzdar, Pakistan",
-    "name": "KDD"
-  },
-  {
-    "city": "Kiana, AK",
-    "name": "IAN"
-  },
-  {
-    "city": "Kiev, Ukraine - Borispol",
-    "name": "KBP"
-  },
-  {
-    "city": "Kiev, Ukraine - Zhulhany",
-    "name": "IEV"
-  },
-  {
-    "city": "Kigali, Rwanda",
-    "name": "KGL"
-  },
-  {
-    "city": "Kigoma, Tanzania",
-    "name": "TKQ"
-  },
-  {
-    "city": "Kilgore/Gladewater, TX",
-    "name": "GGG"
-  },
-  {
-    "city": "Kilimanjaro, Tanzania",
-    "name": "JRO"
-  },
-  {
-    "city": "Killeen, TX",
-    "name": "ILE"
-  },
-  {
-    "city": "Kimmirut/Lake Harbour NU",
-    "name": "YLC"
-  },
-  {
-    "city": "Kimmirut/Lake Harbour, Canada",
-    "name": "YLC"
-  },
-  {
-    "city": "King Cove, AK",
-    "name": "KVC"
-  },
-  {
-    "city": "King Salmon, AK",
-    "name": "AKN"
-  },
-  {
-    "city": "Kingfisher Lake, ON",
-    "name": "KIF"
-  },
-  {
-    "city": "Kingman, AZ",
-    "name": "IGM"
-  },
-  {
-    "city": "Kingsport, TN",
-    "name": "TRI"
-  },
-  {
-    "city": "Kingston, Jamaica - Norman Manley",
-    "name": "KIN"
-  },
-  {
-    "city": "Kingston, Jamaica - Tinson",
-    "name": "KTP"
-  },
-  {
-    "city": "Kingston, ON - Norman Rogers Airport",
-    "name": "YGK"
-  },
-  {
-    "city": "Kingston, ON - Rail service",
-    "name": "XEG"
-  },
-  {
-    "city": "Kinshasa, Congo",
-    "name": "FIH"
-  },
-  {
-    "city": "Kipnuk, AK",
-    "name": "KPN"
-  },
-  {
-    "city": "Kirakira, Solomon Islands",
-    "name": "IRA"
-  },
-  {
-    "city": "Kirksville, MO",
-    "name": "IRK"
-  },
-  {
-    "city": "Kitadaito, Japan",
-    "name": "KTD"
-  },
-  {
-    "city": "Kitchener, ON",
-    "name": "YKF"
-  },
-  {
-    "city": "Kittila, Finland",
-    "name": "KTT"
-  },
-  {
-    "city": "Kiunga, Papua New Guinea",
-    "name": "UNG"
-  },
-  {
-    "city": "Kivalina, AK",
-    "name": "KVL"
-  },
-  {
-    "city": "Kiwayu, Kenya",
-    "name": "KWY"
-  },
-  {
-    "city": "Klamath Falls, OR",
-    "name": "LMT"
-  },
-  {
-    "city": "Klawock, AK",
-    "name": "KLW"
-  },
-  {
-    "city": "Klemtu, BC",
-    "name": "YKT"
-  },
-  {
-    "city": "Knock, Ireland",
-    "name": "NOC"
-  },
-  {
-    "city": "Knoxville, TN",
-    "name": "TYS"
-  },
-  {
-    "city": "Kobuk, AK",
-    "name": "OBU"
-  },
-  {
-    "city": "Kochi, Japan",
-    "name": "KCZ"
-  },
-  {
-    "city": "Kodiak, AK",
-    "name": "ADQ"
-  },
-  {
-    "city": "Koh Samui, Thailand",
-    "name": "USM"
-  },
-  {
-    "city": "Kolkata, India",
-    "name": "CCU"
-  },
-  {
-    "city": "Kolobrzeg, Poland",
-    "name": "QJY"
-  },
-  {
-    "city": "Komsomolsk Na Amure, Russia",
-    "name": "KXK"
-  },
-  {
-    "city": "Kona, HI - Island of Hawaii",
-    "name": "KOA"
-  },
-  {
-    "city": "Kongiganak, AK",
-    "name": "KKH"
-  },
-  {
-    "city": "Konya, Turkey",
-    "name": "KYA"
-  },
-  {
-    "city": "Koror, Palau",
-    "name": "ROR"
-  },
-  {
-    "city": "Koszalin, Poland",
-    "name": "OSZ"
-  },
-  {
-    "city": "Kota Bharu, Malaysia",
-    "name": "KBR"
-  },
-  {
-    "city": "Kota Kinabalu, Malaysia",
-    "name": "BKI"
-  },
-  {
-    "city": "Kotlik, AK",
-    "name": "KOT"
-  },
-  {
-    "city": "Kotzebue, AK",
-    "name": "OTZ"
-  },
-  {
-    "city": "Kowanyama, QL, Australia",
-    "name": "KWM"
-  },
-  {
-    "city": "Koyukuk, AK",
-    "name": "KYU"
-  },
-  {
-    "city": "Kozhikode, India",
-    "name": "CCJ"
-  },
-  {
-    "city": "Krabi, Thailand",
-    "name": "KBV"
-  },
-  {
-    "city": "Krakow, Poland",
-    "name": "KRK"
-  },
-  {
-    "city": "Krivoy Rog, Ukraine",
-    "name": "KWG"
-  },
-  {
-    "city": "Kuala Lumpur, Malaysia",
-    "name": "KUL"
-  },
-  {
-    "city": "Kuala Terengganu, Malaysia",
-    "name": "TGG"
-  },
-  {
-    "city": "Kuantan, Malaysia",
-    "name": "KUA"
-  },
-  {
-    "city": "Kubin Island, QL, Australia",
-    "name": "KUG"
-  },
-  {
-    "city": "Kuching, Malaysia",
-    "name": "KCH"
-  },
-  {
-    "city": "Kudat, Malaysia",
-    "name": "KUD"
-  },
-  {
-    "city": "Kufrah, Libya",
-    "name": "AKF"
-  },
-  {
-    "city": "Kugaaruk, NU",
-    "name": "YBB"
-  },
-  {
-    "city": "Kugluktuk/Coppermine, NU",
-    "name": "YCO"
-  },
-  {
-    "city": "Kulusuk, Greenland",
-    "name": "KUS"
-  },
-  {
-    "city": "Kumejima, Japan",
-    "name": "UEO"
-  },
-  {
-    "city": "Kundiawa, Papau New Guinea",
-    "name": "CMU"
-  },
-  {
-    "city": "Kuopio, Finland",
-    "name": "KUO"
-  },
-  {
-    "city": "Kuri, Papua New Guinea",
-    "name": "KUQ"
-  },
-  {
-    "city": "Kushiro, Japan",
-    "name": "KUH"
-  },
-  {
-    "city": "Kutaisi, Georgia",
-    "name": "KUT"
-  },
-  {
-    "city": "Kuujjuaq, QC",
-    "name": "YVP"
-  },
-  {
-    "city": "Kuujjuarapik, QC",
-    "name": "YGW"
-  },
-  {
-    "city": "Kuusamo, Finland",
-    "name": "KAO"
-  },
-  {
-    "city": "Kuwait, Kuwait",
-    "name": "KWI"
-  },
-  {
-    "city": "Kwajalein, Marshall Islands",
-    "name": "KWA"
-  },
-  {
-    "city": "Kwethluk, AK",
-    "name": "KWT"
-  },
-  {
-    "city": "Kwigillingok, AK",
-    "name": "KWK"
-  },
-  {
-    "city": "Kyzyl, Russia",
-    "name": "KYZ"
-  },
-  {
-    "city": "La Ceiba, Honduras",
-    "name": "LCE"
-  },
-  {
-    "city": "La Coruna, Spain",
-    "name": "LCG"
-  },
-  {
-    "city": "La Crosse, WI",
-    "name": "LSE"
-  },
-  {
-    "city": "La Grande, QC",
-    "name": "YGL"
-  },
-  {
-    "city": "La Palma, Panama",
-    "name": "PLP"
-  },
-  {
-    "city": "La Paz, Bolivia",
-    "name": "LPB"
-  },
-  {
-    "city": "La Paz, Mexico",
-    "name": "LAP"
-  },
-  {
-    "city": "La Rioja, Argentina",
-    "name": "IRJ"
-  },
-  {
-    "city": "La Romana, Dominican Republic",
-    "name": "LRM"
-  },
-  {
-    "city": "La Ronge, SK",
-    "name": "YVC"
-  },
-  {
-    "city": "La Serena, Chile",
-    "name": "LSC"
-  },
-  {
-    "city": "La Tabatiere, QC",
-    "name": "ZLT"
-  },
-  {
-    "city": "La Tuque, QC",
-    "name": "YLQ"
-  },
-  {
-    "city": "Laayoune, Morocco",
-    "name": "EUN"
-  },
-  {
-    "city": "Labasa, Fiji",
-    "name": "LBS"
-  },
-  {
-    "city": "Lablab, Papua New Guinea",
-    "name": "LAB"
-  },
-  {
-    "city": "Labuan Bajo, Indonesia",
-    "name": "LBJ"
-  },
-  {
-    "city": "Labuan, Malaysia",
-    "name": "LBU"
-  },
-  {
-    "city": "Lac Brochet, MB",
-    "name": "XLB"
-  },
-  {
-    "city": "Lac Edouard, QC - Rail service",
-    "name": "XEE"
-  },
-  {
-    "city": "Ladysmith, BC - Rail service",
-    "name": "XEH"
-  },
-  {
-    "city": "Lae Island, Marshall Islands",
-    "name": "LML"
-  },
-  {
-    "city": "Lae, Papua New Guinea",
-    "name": "LAE"
-  },
-  {
-    "city": "Lafayette, IN",
-    "name": "LAF"
-  },
-  {
-    "city": "Lafayette, LA",
-    "name": "LFT"
-  },
-  {
-    "city": "Lages, SC, Brazil",
-    "name": "LAJ"
-  },
-  {
-    "city": "Lago Agrio, Ecuador",
-    "name": "LGQ"
-  },
-  {
-    "city": "Lago Argentina, Argentina",
-    "name": "ING"
-  },
-  {
-    "city": "Lagos, Nigeria",
-    "name": "LOS"
-  },
-  {
-    "city": "Lahadbatu, Malaysia",
-    "name": "LDU"
-  },
-  {
-    "city": "Lahore, Pakistan",
-    "name": "LHE"
-  },
-  {
-    "city": "Lake Charles, LA",
-    "name": "LCH"
-  },
-  {
-    "city": "Lake Havasu City, AZ",
-    "name": "HII"
-  },
-  {
-    "city": "Lake Minchumina, AK",
-    "name": "LMA"
-  },
-  {
-    "city": "Lakeba, Fiji",
-    "name": "LKB"
-  },
-  {
-    "city": "Lakselv, Norway",
-    "name": "LKL"
-  },
-  {
-    "city": "Lalibela, Ethiopia",
-    "name": "LLI"
-  },
-  {
-    "city": "Lamap, Vanuatu",
-    "name": "LPM"
-  },
-  {
-    "city": "Lamen Bay, Vanuatu",
-    "name": "LNB"
-  },
-  {
-    "city": "Lamezia-Terme, Italy",
-    "name": "SUF"
-  },
-  {
-    "city": "Lampang, Thailand",
-    "name": "LPI"
-  },
-  {
-    "city": "Lampedusa, Italy",
-    "name": "LMP"
-  },
-  {
-    "city": "Lamu, Kenya",
-    "name": "LAU"
-  },
-  {
-    "city": "Lanai City, HI - Island of Lanai",
-    "name": "LNY"
-  },
-  {
-    "city": "Lancaster, PA",
-    "name": "LNS"
-  },
-  {
-    "city": "Lands End, United Kingdom",
-    "name": "LEQ"
-  },
-  {
-    "city": "Langford, BC - Rail service",
-    "name": "XEJ"
-  },
-  {
-    "city": "Langguri, Indonesia",
-    "name": "LUV"
-  },
-  {
-    "city": "Langkawi, Malaysia",
-    "name": "LGK"
-  },
-  {
-    "city": "Lannion, France",
-    "name": "LAI"
-  },
-  {
-    "city": "Lansdowne House, ON",
-    "name": "YLH"
-  },
-  {
-    "city": "Lansing, MI",
-    "name": "LAN"
-  },
-  {
-    "city": "Lanzarote, Spain",
-    "name": "ACE"
-  },
-  {
-    "city": "Lanzhau, Guinea",
-    "name": "LHW"
-  },
-  {
-    "city": "Lanzhou, China",
-    "name": "ZGC"
-  },
-  {
-    "city": "Laoag, Philippines",
-    "name": "LAO"
-  },
-  {
-    "city": "Lappeenranta, Finland",
-    "name": "LPP"
-  },
-  {
-    "city": "Laramie, WY",
-    "name": "LAR"
-  },
-  {
-    "city": "Larantuka, Indonesia",
-    "name": "LKA"
-  },
-  {
-    "city": "Laredo, TX",
-    "name": "LRD"
-  },
-  {
-    "city": "Larnaca, Cyprus",
-    "name": "LCA"
-  },
-  {
-    "city": "Larochelle, France",
-    "name": "LRH"
-  },
-  {
-    "city": "Las Palmas, Spain",
-    "name": "LPA"
-  },
-  {
-    "city": "Las Piedras, Venezuela",
-    "name": "LSP"
-  },
-  {
-    "city": "Las Vegas, NV",
-    "name": "LAS"
-  },
-  {
-    "city": "Latakia, Syria",
-    "name": "LTK"
-  },
-  {
-    "city": "Latrobe, PA",
-    "name": "LBE"
-  },
-  {
-    "city": "Laucala Island, Fiji",
-    "name": "LUC"
-  },
-  {
-    "city": "Launceston, TS, Australia",
-    "name": "LST"
-  },
-  {
-    "city": "Laurel, MS",
-    "name": "PIB"
-  },
-  {
-    "city": "Laverton, WA, Australia",
-    "name": "LVO"
-  },
-  {
-    "city": "Lawas, Malaysia",
-    "name": "LWY"
-  },
-  {
-    "city": "Lawton, OK",
-    "name": "LAW"
-  },
-  {
-    "city": "Le Havre, France",
-    "name": "LEH"
-  },
-  {
-    "city": "Le Mans, France",
-    "name": "ZLN"
-  },
-  {
-    "city": "Le Puy, France",
-    "name": "LPY"
-  },
-  {
-    "city": "Le Touquet, France",
-    "name": "LTQ"
-  },
-  {
-    "city": "Leaf Rapids, MB",
-    "name": "YLR"
-  },
-  {
-    "city": "Learmonth, WA, Australia",
-    "name": "LEA"
-  },
-  {
-    "city": "Lebanon, NH",
-    "name": "LEB"
-  },
-  {
-    "city": "Leeds, United Kingdom",
-    "name": "LBA"
-  },
-  {
-    "city": "Legaspi, Philippines",
-    "name": "LGP"
-  },
-  {
-    "city": "Leh, India",
-    "name": "IXL"
-  },
-  {
-    "city": "Leinster, WA, Australia",
-    "name": "LER"
-  },
-  {
-    "city": "Leipzig, Germany",
-    "name": "LEJ"
-  },
-  {
-    "city": "Leknes, Norway",
-    "name": "LKN"
-  },
-  {
-    "city": "Lemnos, Greece",
-    "name": "LXS"
-  },
-  {
-    "city": "Leon, Mexico",
-    "name": "BJX"
-  },
-  {
-    "city": "Leonora, WA, Australia",
-    "name": "LNO"
-  },
-  {
-    "city": "Lethbridge, AB",
-    "name": "YQL"
-  },
-  {
-    "city": "Leticia, Colombia",
-    "name": "LET"
-  },
-  {
-    "city": "Levelock, AK",
-    "name": "KLL"
-  },
-  {
-    "city": "Lewisburg, WV",
-    "name": "LWB"
-  },
-  {
-    "city": "Lewiston, ID",
-    "name": "LWS"
-  },
-  {
-    "city": "Lewistown, MT",
-    "name": "LWT"
-  },
-  {
-    "city": "Lexington, KY",
-    "name": "LEX"
-  },
-  {
-    "city": "Lhasa, China",
-    "name": "LXA"
-  },
-  {
-    "city": "Lianyungang, China",
-    "name": "LYG"
-  },
-  {
-    "city": "Liberal, KS",
-    "name": "LBL"
-  },
-  {
-    "city": "Liberia, Costa Rica",
-    "name": "LIR"
-  },
-  {
-    "city": "Libreville, Gabon",
-    "name": "LBV"
-  },
-  {
-    "city": "Lichinga, Mozambique",
-    "name": "VXC"
-  },
-  {
-    "city": "Liege, Belgium",
-    "name": "LGG"
-  },
-  {
-    "city": "Lifa, New Caledonia",
-    "name": "LIF"
-  },
-  {
-    "city": "Lightning Ridge, NS, Australia",
-    "name": "LHG"
-  },
-  {
-    "city": "Lihir Island, Papua New Guinea",
-    "name": "LNV"
-  },
-  {
-    "city": "Lihue, HI - Island of Kaui",
-    "name": "LIH"
-  },
-  {
-    "city": "Lijiang City, China",
-    "name": "LJG"
-  },
-  {
-    "city": "Likiep Island, Marshall Islands",
-    "name": "LIK"
-  },
-  {
-    "city": "Lille, France - Lesquin",
-    "name": "LIL"
-  },
-  {
-    "city": "Lille, France - Rail service",
-    "name": "XDB"
-  },
-  {
-    "city": "Lilongwe, Malawi",
-    "name": "LLW"
-  },
-  {
-    "city": "Lima, Peru",
-    "name": "LIM"
-  },
-  {
-    "city": "Limbang, Malaysia",
-    "name": "LMN"
-  },
-  {
-    "city": "Limoges, France",
-    "name": "LIG"
-  },
-  {
-    "city": "Lincoln, NE",
-    "name": "LNK"
-  },
-  {
-    "city": "Lindeman Island, QL, Australia",
-    "name": "LDC"
-  },
-  {
-    "city": "Lindi, Tanzania",
-    "name": "LDI"
-  },
-  {
-    "city": "Linkoping, Sweden",
-    "name": "LPI"
-  },
-  {
-    "city": "Linyi, China",
-    "name": "LYI"
-  },
-  {
-    "city": "Linz, Austria",
-    "name": "LNZ"
-  },
-  {
-    "city": "Lisbon, Portugal",
-    "name": "LIS"
-  },
-  {
-    "city": "Lismore, NS, Australia",
-    "name": "LSY"
-  },
-  {
-    "city": "Little Rock, AR",
-    "name": "LIT"
-  },
-  {
-    "city": "Liuzhou, China",
-    "name": "LZH"
-  },
-  {
-    "city": "Liverpool, United Kingdom",
-    "name": "LPL"
-  },
-  {
-    "city": "Livingstone, Zambia",
-    "name": "LVI"
-  },
-  {
-    "city": "Lizard Island, QL, Australia",
-    "name": "LZR"
-  },
-  {
-    "city": "Ljubliana, Slovenia",
-    "name": "LJU"
-  },
-  {
-    "city": "Lloydminister, AB",
-    "name": "YLL"
-  },
-  {
-    "city": "Lockhart River, Australia",
-    "name": "IRG"
-  },
-  {
-    "city": "Loen, Marshall Islands",
-    "name": "LOF"
-  },
-  {
-    "city": "Loja, Ecuador",
-    "name": "LOH"
-  },
-  {
-    "city": "Lome, Togo",
-    "name": "LFW"
-  },
-  {
-    "city": "London, ON - Municipal Airport",
-    "name": "YXU"
-  },
-  {
-    "city": "London, ON - Rail service",
-    "name": "XDQ"
-  },
-  {
-    "city": "London, United Kingdom - All airports",
-    "name": "LON"
-  },
-  {
-    "city": "London, United Kingdom - Biggin Hill",
-    "name": "BQH"
-  },
-  {
-    "city": "London, United Kingdom - Gatwick",
-    "name": "LGW"
-  },
-  {
-    "city": "London, United Kingdom - Heathrow",
-    "name": "LHR"
-  },
-  {
-    "city": "London, United Kingdom - London City",
-    "name": "LCY"
-  },
-  {
-    "city": "London, United Kingdom - Luton",
-    "name": "LTN"
-  },
-  {
-    "city": "London, United Kingdom - Stansted",
-    "name": "STN"
-  },
-  {
-    "city": "Londonderry, United Kingdom",
-    "name": "LDY"
-  },
-  {
-    "city": "London-Paddington, United Kingdom - Rail service",
-    "name": "QQP"
-  },
-  {
-    "city": "Londrina, PR, Brazil",
-    "name": "LDB"
-  },
-  {
-    "city": "Long Apung, Indonesia",
-    "name": "LPU"
-  },
-  {
-    "city": "Long Banga, Malaysia",
-    "name": "LBP"
-  },
-  {
-    "city": "Long Bawan, Indonesia",
-    "name": "LBW"
-  },
-  {
-    "city": "Long Beach, CA",
-    "name": "LGB"
-  },
-  {
-    "city": "Long Island, Australia",
-    "name": "HAP"
-  },
-  {
-    "city": "Long Island/Deadmans Cay, Bahamas",
-    "name": "LGI"
-  },
-  {
-    "city": "Long Lellang, Malaysia",
-    "name": "LGL"
-  },
-  {
-    "city": "Long Seridan, Malaysia",
-    "name": "ODN"
-  },
-  {
-    "city": "Longana, Vanuatu",
-    "name": "LOD"
-  },
-  {
-    "city": "Longreach, QL, Australia",
-    "name": "LRE"
-  },
-  {
-    "city": "Longview, TX",
-    "name": "GGG"
-  },
-  {
-    "city": "Longyearbyen, Svalbard & Jan Mayen Island",
-    "name": "LYR"
-  },
-  {
-    "city": "Lonorore, Vanuatu",
-    "name": "LNE"
-  },
-  {
-    "city": "Lopez Island, WA",
-    "name": "LPS"
-  },
-  {
-    "city": "Lord Howe Island, NS, Australia",
-    "name": "LDH"
-  },
-  {
-    "city": "Loreto, Mexico",
-    "name": "LTO"
-  },
-  {
-    "city": "Lorient, France",
-    "name": "LRT"
-  },
-  {
-    "city": "Los Angeles, CA",
-    "name": "LAX"
-  },
-  {
-    "city": "Los Cabos, Mexico",
-    "name": "SJD"
-  },
-  {
-    "city": "Los Mochis, Mexico",
-    "name": "LMM"
-  },
-  {
-    "city": "Losuia, Papua New Guinea",
-    "name": "LSA"
-  },
-  {
-    "city": "Louisville, KY",
-    "name": "SDF"
-  },
-  {
-    "city": "Lourdes/Tarbes, France",
-    "name": "LDE"
-  },
-  {
-    "city": "Loveland/Fort Collins, CO - Bus service",
-    "name": "QWF"
-  },
-  {
-    "city": "Loveland/Fort Collins, CO - Municipal Airport",
-    "name": "FNL"
-  },
-  {
-    "city": "Lozaro Cardenas, Mexico",
-    "name": "LZC"
-  },
-  {
-    "city": "Luanda, Angola",
-    "name": "LAD"
-  },
-  {
-    "city": "Luanda, Angola",
-    "name": "LAD"
-  },
-  {
-    "city": "Luang Namtha, Laos",
-    "name": "LXG"
-  },
-  {
-    "city": "Luang Prabang, Laos",
-    "name": "LPQ"
-  },
-  {
-    "city": "Lubbock, TX",
-    "name": "LBB"
-  },
-  {
-    "city": "Lucknow, India",
-    "name": "LKO"
-  },
-  {
-    "city": "Luderitz, Namibia",
-    "name": "LUD"
-  },
-  {
-    "city": "Lugano, Switzerland",
-    "name": "LUG"
-  },
-  {
-    "city": "Lugansk, Uganda",
-    "name": "VSG"
-  },
-  {
-    "city": "Lukla, Nepal",
-    "name": "LUA"
-  },
-  {
-    "city": "Lulea, Sweden",
-    "name": "LLA"
-  },
-  {
-    "city": "Lumbashi, Congo",
-    "name": "FBM"
-  },
-  {
-    "city": "Luoyang, China",
-    "name": "LYA"
-  },
-  {
-    "city": "Lusaka, Zambia",
-    "name": "LUN"
-  },
-  {
-    "city": "Lutselke/Snowdrift, NT",
-    "name": "YSG"
-  },
-  {
-    "city": "Luwuk, Indonesia",
-    "name": "LUW"
-  },
-  {
-    "city": "Luxembourg, Luxembourg",
-    "name": "LUX"
-  },
-  {
-    "city": "Luxi, China",
-    "name": "LUM"
-  },
-  {
-    "city": "Luxor, Egypt",
-    "name": "LXR"
-  },
-  {
-    "city": "Luzhou, China",
-    "name": "LZO"
-  },
-  {
-    "city": "Lvov, Ukraine",
-    "name": "LWO"
-  },
-  {
-    "city": "Lyoksele, Sweden",
-    "name": "LYC"
-  },
-  {
-    "city": "Lyon, France - Lyon Part-Dieu Rail service",
-    "name": "XYD"
-  },
-  {
-    "city": "Lyon, France - Satolas",
-    "name": "LYS"
-  },
-  {
-    "city": "Maastricht, Netherlands",
-    "name": "MST"
-  },
-  {
-    "city": "Mabuiag Island, QL, Australia",
-    "name": "UBB"
-  },
-  {
-    "city": "Macapa, AP, Brazil",
-    "name": "MCP"
-  },
-  {
-    "city": "Macas, Ecuador",
-    "name": "XMS"
-  },
-  {
-    "city": "Macau, China",
-    "name": "MFM"
-  },
-  {
-    "city": "Maceio, AL, Brazil",
-    "name": "MCZ"
-  },
-  {
-    "city": "Machala, Ecuador",
-    "name": "MCH"
-  },
-  {
-    "city": "Mackay, QL, Australia",
-    "name": "MKY"
-  },
-  {
-    "city": "Macon, GA",
-    "name": "MCN"
-  },
-  {
-    "city": "Madang, Papua New Guinea",
-    "name": "MAG"
-  },
-  {
-    "city": "Madinah, Saudi Arabia",
-    "name": "MED"
-  },
-  {
-    "city": "Madison, WI",
-    "name": "MSN"
-  },
-  {
-    "city": "Madras, OR",
-    "name": "MDJ"
-  },
-  {
-    "city": "Madrid, Spain",
-    "name": "MAD"
-  },
-  {
-    "city": "Madurai, India",
-    "name": "IXM"
-  },
-  {
-    "city": "Mae Hong Son, Thailand",
-    "name": "HGN"
-  },
-  {
-    "city": "Mae Sot, Thailand",
-    "name": "MAQ"
-  },
-  {
-    "city": "Maewo, Vanuatu",
-    "name": "MWF"
-  },
-  {
-    "city": "Mafia, Tanzania",
-    "name": "MFA"
-  },
-  {
-    "city": "Magadan, Russia",
-    "name": "GDX"
-  },
-  {
-    "city": "Magnitogorsk, Russia",
-    "name": "MQF"
-  },
-  {
-    "city": "Mahanoro, Madagascar",
-    "name": "VVB"
-  },
-  {
-    "city": "Mahe Island, Seychelles",
-    "name": "SEZ"
-  },
-  {
-    "city": "Maintirano, Madagascar",
-    "name": "MXT"
-  },
-  {
-    "city": "Maio, Cape Verde",
-    "name": "MMO"
-  },
-  {
-    "city": "Majkin, Marshall Islands",
-    "name": "MJE"
-  },
-  {
-    "city": "Majunga, Madagascar",
-    "name": "MJN"
-  },
-  {
-    "city": "Majuro, Marshall Islands",
-    "name": "MAJ"
-  },
-  {
-    "city": "Makale, Ethiopia",
-    "name": "MQX"
-  },
-  {
-    "city": "Makhachkala, Russia",
-    "name": "MCX"
-  },
-  {
-    "city": "Makokou, Gabon",
-    "name": "MKU"
-  },
-  {
-    "city": "Makung, Taiwan",
-    "name": "MZG"
-  },
-  {
-    "city": "Malabo, Equatorial Guinea",
-    "name": "SSG"
-  },
-  {
-    "city": "Malacca, Malaysia",
-    "name": "MKZ"
-  },
-  {
-    "city": "Malaga, Spain",
-    "name": "AGP"
-  },
-  {
-    "city": "Malakai, Sudan",
-    "name": "MAK"
-  },
-  {
-    "city": "Malargue, MD, Argentina",
-    "name": "LGS"
-  },
-  {
-    "city": "Malatya, Turkey",
-    "name": "MLX"
-  },
-  {
-    "city": "Male, Maldives",
-    "name": "MLE"
-  },
-  {
-    "city": "Malindi, Kenya",
-    "name": "MYD"
-  },
-  {
-    "city": "Malmo, Sweden",
-    "name": "MMX"
-  },
-  {
-    "city": "Maloelap Island, Marshall Islands",
-    "name": "MAV"
-  },
-  {
-    "city": "Malololailai, Fiji",
-    "name": "PTF"
-  },
-  {
-    "city": "Malta, Malta",
-    "name": "MLA"
-  },
-  {
-    "city": "Mampikony, Madagascar",
-    "name": "WMP"
-  },
-  {
-    "city": "Mana Island, Fiji",
-    "name": "MNF"
-  },
-  {
-    "city": "Manado, Indonesia",
-    "name": "MDC"
-  },
-  {
-    "city": "Managua, Nicaragua",
-    "name": "MGA"
-  },
-  {
-    "city": "Manakara, Madagascar",
-    "name": "WVK"
-  },
-  {
-    "city": "Mananara, Madagascar",
-    "name": "WMR"
-  },
-  {
-    "city": "Manang, Nepal",
-    "name": "NGX"
-  },
-  {
-    "city": "Mananjary, Madagascar",
-    "name": "MNJ"
-  },
-  {
-    "city": "Manaus, AM, Brazil",
-    "name": "MAO"
-  },
-  {
-    "city": "Manchester, NH",
-    "name": "MHT"
-  },
-  {
-    "city": "Manchester, United Kingdom",
-    "name": "MAN"
-  },
-  {
-    "city": "Mandalay, Myanmar",
-    "name": "MDL"
-  },
-  {
-    "city": "Mandritsara, Madagascar",
-    "name": "WMA"
-  },
-  {
-    "city": "Mangaia Island, Cook Islands",
-    "name": "MGS"
-  },
-  {
-    "city": "Mangalore, India",
-    "name": "IXE"
-  },
-  {
-    "city": "Mangrove Cay, Bahamas",
-    "name": "MAY"
-  },
-  {
-    "city": "Mangu, Zambia",
-    "name": "MNR"
-  },
-  {
-    "city": "Manguna, Papua New Guinea",
-    "name": "MFO"
-  },
-  {
-    "city": "Manhattan, KS",
-    "name": "MHK"
-  },
-  {
-    "city": "Manihi, French Polynesia",
-    "name": "XMH"
-  },
-  {
-    "city": "Manihiki Island, Cook Islands",
-    "name": "MHX"
-  },
-  {
-    "city": "Manila, Philippines",
-    "name": "MNL"
-  },
-  {
-    "city": "Maningrioa, NT, Australia",
-    "name": "MNG"
-  },
-  {
-    "city": "Manistee, MI",
-    "name": "MBL"
-  },
-  {
-    "city": "Manizales, Colombia",
-    "name": "MZL"
-  },
-  {
-    "city": "Manja, Madagascar",
-    "name": "MJA"
-  },
-  {
-    "city": "Mankato, MN",
-    "name": "MKT"
-  },
-  {
-    "city": "Manley Hot Springs, AK",
-    "name": "MLY"
-  },
-  {
-    "city": "Mannheim, Germany",
-    "name": "MHG"
-  },
-  {
-    "city": "Manokotak, AK",
-    "name": "KMO"
-  },
-  {
-    "city": "Manokwari, Indonesia",
-    "name": "MKW"
-  },
-  {
-    "city": "Manston, United Kingdom",
-    "name": "MSE"
-  },
-  {
-    "city": "Manta, Ecuador",
-    "name": "MEC"
-  },
-  {
-    "city": "Manus Island, Papua New Guinea",
-    "name": "MAS"
-  },
-  {
-    "city": "Manzanillo, Cuba",
-    "name": "MZO"
-  },
-  {
-    "city": "Manzanillo, Mexico",
-    "name": "ZLO"
-  },
-  {
-    "city": "Manzini, Swaziland",
-    "name": "MTS"
-  },
-  {
-    "city": "Mao, Chad",
-    "name": "AMO"
-  },
-  {
-    "city": "Maota Savaii Is, Western Samoa",
-    "name": "MXS"
-  },
-  {
-    "city": "Maputo, Mozambique",
-    "name": "MPM"
-  },
-  {
-    "city": "Mar Del Plata, BA, Argentina",
-    "name": "MDQ"
-  },
-  {
-    "city": "Mara Lodges, Kenya",
-    "name": "MRE"
-  },
-  {
-    "city": "Maraba, PA, Brazil",
-    "name": "MAB"
-  },
-  {
-    "city": "Maracaibo, Venezuela",
-    "name": "MAR"
-  },
-  {
-    "city": "Maracay, Venezuela",
-    "name": "MYC"
-  },
-  {
-    "city": "Mare, New Caledonia",
-    "name": "MEE"
-  },
-  {
-    "city": "Margate, South Africa",
-    "name": "MGH"
-  },
-  {
-    "city": "Maribor, Slovenia",
-    "name": "MBX"
-  },
-  {
-    "city": "Mariehamn, Finland",
-    "name": "MHQ"
-  },
-  {
-    "city": "Marietta, OH/Parkersburg, WV",
-    "name": "PKB"
-  },
-  {
-    "city": "Mariitsoq, Greenland",
-    "name": "JSU"
-  },
-  {
-    "city": "Marilia, SP, Brazil",
-    "name": "MII"
-  },
-  {
-    "city": "Maringa, PR, Brazil",
-    "name": "MGF"
-  },
-  {
-    "city": "Marion, IL",
-    "name": "MWA"
-  },
-  {
-    "city": "Mariupol, Ukraine",
-    "name": "MPW"
-  },
-  {
-    "city": "Maroantsetra, Madagascar",
-    "name": "WMN"
-  },
-  {
-    "city": "Marova, Cameroon",
-    "name": "MVR"
-  },
-  {
-    "city": "Marquette, MI",
-    "name": "MQT"
-  },
-  {
-    "city": "Marseille, France",
-    "name": "MRS"
-  },
-  {
-    "city": "Marsh Harbour, Bahamas",
-    "name": "MHH"
-  },
-  {
-    "city": "Marshall, AK",
-    "name": "MLL"
-  },
-  {
-    "city": "Martha's Vineyard, MA",
-    "name": "MVY"
-  },
-  {
-    "city": "Martinsburg, PA",
-    "name": "AOO"
-  },
-  {
-    "city": "Marudi, Malaysia",
-    "name": "MUR"
-  },
-  {
-    "city": "Maryborough, QL, Australia",
-    "name": "MBH"
-  },
-  {
-    "city": "Mary's Harbour, NL",
-    "name": "YMH"
-  },
-  {
-    "city": "Masbate, Philippines",
-    "name": "MBT"
-  },
-  {
-    "city": "Maseru, Lesotho",
-    "name": "MSU"
-  },
-  {
-    "city": "Mashad, Iran",
-    "name": "MHD"
-  },
-  {
-    "city": "Mason City, IA",
-    "name": "MCW"
-  },
-  {
-    "city": "Massena, NY",
-    "name": "MSS"
-  },
-  {
-    "city": "Matamoros, Mexico",
-    "name": "MAM"
-  },
-  {
-    "city": "Mataram, Indonesia",
-    "name": "AMI"
-  },
-  {
-    "city": "Matsumoto, Japan",
-    "name": "MMJ"
-  },
-  {
-    "city": "Matsuyama, Japan",
-    "name": "MYJ"
-  },
-  {
-    "city": "Maturin, Venezuela",
-    "name": "MUN"
-  },
-  {
-    "city": "Maui, HI",
-    "name": "OGG"
-  },
-  {
-    "city": "Mauke Island, Cook Islands",
-    "name": "MUK"
-  },
-  {
-    "city": "Maulmyine, Myanmar",
-    "name": "MNU"
-  },
-  {
-    "city": "Maumere, Indonesia",
-    "name": "MOF"
-  },
-  {
-    "city": "Maun, Botswana",
-    "name": "MUB"
-  },
-  {
-    "city": "Maupiti, French Polynesia",
-    "name": "MAU"
-  },
-  {
-    "city": "Mauritius, Mauritius",
-    "name": "MRU"
-  },
-  {
-    "city": "Maxville, ON - Rail service",
-    "name": "XID"
-  },
-  {
-    "city": "Mayaguana, Bahamas",
-    "name": "MYG"
-  },
-  {
-    "city": "Mayaguez, Puerto Rico",
-    "name": "MAZ"
-  },
-  {
-    "city": "Mazatlan, Mexico",
-    "name": "MZT"
-  },
-  {
-    "city": "Mbandaka, Congo",
-    "name": "MDK"
-  },
-  {
-    "city": "Mbuji Mayi, Congo",
-    "name": "MJM"
-  },
-  {
-    "city": "Mcallen, TX",
-    "name": "MFE"
-  },
-  {
-    "city": "Mcarthur River, NT, Australia",
-    "name": "MCV"
-  },
-  {
-    "city": "Mccook, NE",
-    "name": "MCK"
-  },
-  {
-    "city": "Mcgrath, AK",
-    "name": "MCG"
-  },
-  {
-    "city": "Medan, Indonesia",
-    "name": "MES"
-  },
-  {
-    "city": "Medellin, Colombia - Enrique Olaya Herrera",
-    "name": "EOH"
-  },
-  {
-    "city": "Medellin, Colombia - Jose Marie Cordova",
-    "name": "MDE"
-  },
-  {
-    "city": "Medford, OR",
-    "name": "MFR"
-  },
-  {
-    "city": "Medicine Hat, AB",
-    "name": "YXH"
-  },
-  {
-    "city": "Meekatharra, WA, Australia",
-    "name": "MKR"
-  },
-  {
-    "city": "Mehamn, Norway",
-    "name": "MEH"
-  },
-  {
-    "city": "Meixian, China",
-    "name": "MXZ"
-  },
-  {
-    "city": "Mejit Island, Marshall Islands",
-    "name": "MJB"
-  },
-  {
-    "city": "Mekane Selam, Ethiopia",
-    "name": "MKS"
-  },
-  {
-    "city": "Mekoryuk, AK",
-    "name": "MYU"
-  },
-  {
-    "city": "Melbourne, FL",
-    "name": "MLB"
-  },
-  {
-    "city": "Melbourne, Victoria, Australia",
-    "name": "MEL"
-  },
-  {
-    "city": "Melilla, Spain",
-    "name": "MLN"
-  },
-  {
-    "city": "Melville, SK - Rail service",
-    "name": "XEK"
-  },
-  {
-    "city": "Memanbetsu, Japan",
-    "name": "MMB"
-  },
-  {
-    "city": "Memphis, TN",
-    "name": "MEM"
-  },
-  {
-    "city": "Mendi, Ethiopia",
-    "name": "NDM"
-  },
-  {
-    "city": "Mendi, Papua New Guinea",
-    "name": "MDU"
-  },
-  {
-    "city": "Mendoza, MD, Argentina",
-    "name": "MDZ"
-  },
-  {
-    "city": "Menorca, Spain",
-    "name": "MAH"
-  },
-  {
-    "city": "Menyamya, Papua New Guinea",
-    "name": "MYX"
-  },
-  {
-    "city": "Merauke, Indonesia",
-    "name": "MKQ"
-  },
-  {
-    "city": "Merave, Sudan",
-    "name": "MWE"
-  },
-  {
-    "city": "Merced, CA",
-    "name": "MCE"
-  },
-  {
-    "city": "Merdey, Indonesia",
-    "name": "RDE"
-  },
-  {
-    "city": "Merida, Mexico",
-    "name": "MID"
-  },
-  {
-    "city": "Merida, Venezuela",
-    "name": "MRD"
-  },
-  {
-    "city": "Meridian, MS",
-    "name": "MEI"
-  },
-  {
-    "city": "Merimbula, NS, Australia",
-    "name": "MIM"
-  },
-  {
-    "city": "Mersa Matruh, Egypt",
-    "name": "MUH"
-  },
-  {
-    "city": "Metlakatla, AK",
-    "name": "MTM"
-  },
-  {
-    "city": "Metz/Nancy, France",
-    "name": "ETZ"
-  },
-  {
-    "city": "Mexicali, Mexico",
-    "name": "MXL"
-  },
-  {
-    "city": "Mexico City, Mexico",
-    "name": "MEX"
-  },
-  {
-    "city": "Meyers Chuck, AK",
-    "name": "WMK"
-  },
-  {
-    "city": "Mfume, Zambia",
-    "name": "MFU"
-  },
-  {
-    "city": "Miami, FL - International",
-    "name": "MIA"
-  },
-  {
-    "city": "Miami, FL - Sea Plane Base",
-    "name": "MPB"
-  },
-  {
-    "city": "Miandrivazo, Madagascar",
-    "name": "ZVA"
-  },
-  {
-    "city": "Middle Caicos, Turks and Caicos",
-    "name": "MDS"
-  },
-  {
-    "city": "Midland, MI",
-    "name": "MBS"
-  },
-  {
-    "city": "Midland/Odessa, TX",
-    "name": "MAF"
-  },
-  {
-    "city": "Midway Island, US Minor Outlying Islands",
-    "name": "MDY"
-  },
-  {
-    "city": "Mikkeli, Finland",
-    "name": "MIK"
-  },
-  {
-    "city": "Mikonos, Greece",
-    "name": "JMK"
-  },
-  {
-    "city": "Milan, Italy - Linate",
-    "name": "LIN"
-  },
-  {
-    "city": "Milan, Italy - Malpensa",
-    "name": "MXP"
-  },
-  {
-    "city": "Milan, Italy - Orio Al Serio",
-    "name": "BGY"
-  },
-  {
-    "city": "Milan, Italy - Parma",
-    "name": "PMF"
-  },
-  {
-    "city": "Mildura, VI, Australia",
-    "name": "MQL"
-  },
-  {
-    "city": "Miles City, MT",
-    "name": "MLS"
-  },
-  {
-    "city": "Mili Island, Marshall Islands",
-    "name": "MIJ"
-  },
-  {
-    "city": "Milingimbi, NT, Australia",
-    "name": "MGT"
-  },
-  {
-    "city": "Milwaukee, WI",
-    "name": "MKE"
-  },
-  {
-    "city": "Minami Daito, Japan",
-    "name": "MMD"
-  },
-  {
-    "city": "Minatitla, Mexico",
-    "name": "MTT"
-  },
-  {
-    "city": "Mindiptana, Indonesia",
-    "name": "MDP"
-  },
-  {
-    "city": "Mineralnye Vody, Russia",
-    "name": "MRV"
-  },
-  {
-    "city": "Minneapolis, MN",
-    "name": "MSP"
-  },
-  {
-    "city": "Minot, ND",
-    "name": "MOT"
-  },
-  {
-    "city": "Minsk, Belarus - Minsk International 1",
-    "name": "MHP"
-  },
-  {
-    "city": "Minsk, Belarus - Minsk International 2",
-    "name": "MSQ"
-  },
-  {
-    "city": "Minto, AK",
-    "name": "MNT"
-  },
-  {
-    "city": "Miramichi, NB - Rail service",
-    "name": "XEY"
-  },
-  {
-    "city": "Miri, Malaysia",
-    "name": "MYY"
-  },
-  {
-    "city": "Mirnyj, Russia",
-    "name": "MJZ"
-  },
-  {
-    "city": "Misawa, Japan",
-    "name": "MSJ"
-  },
-  {
-    "city": "Misima Island, Papua New Guinea",
-    "name": "MIS"
-  },
-  {
-    "city": "Mission, TX",
-    "name": "MFE"
-  },
-  {
-    "city": "Missoula, MT",
-    "name": "MSO"
-  },
-  {
-    "city": "Misurata, Libya",
-    "name": "MRA"
-  },
-  {
-    "city": "Mitiaro Island, Cook Islands",
-    "name": "MOI"
-  },
-  {
-    "city": "MiyakeJima, Japan",
-    "name": "MYE"
-  },
-  {
-    "city": "Miyako Jima, Japan",
-    "name": "MMY"
-  },
-  {
-    "city": "Mizan Teferi, Ethiopia",
-    "name": "MTF"
-  },
-  {
-    "city": "Mo I Rana, Norway",
-    "name": "MQN"
-  },
-  {
-    "city": "Moa, Cuba",
-    "name": "MOA"
-  },
-  {
-    "city": "Moab, UT",
-    "name": "CNY"
-  },
-  {
-    "city": "Moala, Fiji",
-    "name": "MFJ"
-  },
-  {
-    "city": "Moanamani, Indonesia",
-    "name": "ONI"
-  },
-  {
-    "city": "Moanda, Congo",
-    "name": "MNB"
-  },
-  {
-    "city": "Moanda, Gabon",
-    "name": "MFF"
-  },
-  {
-    "city": "Mobile, AL",
-    "name": "MOB"
-  },
-  {
-    "city": "Modesto, CA",
-    "name": "MOD"
-  },
-  {
-    "city": "Mogadishu, Somalia",
-    "name": "MGQ"
-  },
-  {
-    "city": "Mohenjodaro, Denmark",
-    "name": "MJD"
-  },
-  {
-    "city": "Mokpo, South Korea",
-    "name": "MPK"
-  },
-  {
-    "city": "Mokuti Lodge, Namibia",
-    "name": "OKU"
-  },
-  {
-    "city": "Molde, Norway",
-    "name": "MOL"
-  },
-  {
-    "city": "Moline, IL",
-    "name": "MLI"
-  },
-  {
-    "city": "Mombasa, Kenya",
-    "name": "MBA"
-  },
-  {
-    "city": "Monastir, Tunisia",
-    "name": "MIR"
-  },
-  {
-    "city": "Monbetsu, Japan",
-    "name": "MBE"
-  },
-  {
-    "city": "Monclova, Mexico",
-    "name": "LOV"
-  },
-  {
-    "city": "Moncton, NB - Airport",
-    "name": "YQM"
-  },
-  {
-    "city": "Moncton, NB - Rail service",
-    "name": "XDP"
-  },
-  {
-    "city": "Monkey Mia, WA, Australia",
-    "name": "MJK"
-  },
-  {
-    "city": "Mono, Solomon Islands",
-    "name": "MNY"
-  },
-  {
-    "city": "Monroe, LA",
-    "name": "MLU"
-  },
-  {
-    "city": "Monrovia, Liberia",
-    "name": "ROB"
-  },
-  {
-    "city": "Mont Joli, QC",
-    "name": "YYY"
-  },
-  {
-    "city": "Monte Carlo, Monaco",
-    "name": "MCM"
-  },
-  {
-    "city": "Monte Dourado, PA, Brazil",
-    "name": "MEU"
-  },
-  {
-    "city": "Montego Bay, Jamaica",
-    "name": "MBJ"
-  },
-  {
-    "city": "Monterey, CA",
-    "name": "MRY"
-  },
-  {
-    "city": "Monteria, Colombia",
-    "name": "MTR"
-  },
-  {
-    "city": "Monterrey, Mexico",
-    "name": "MTY"
-  },
-  {
-    "city": "Montes Claros, MG, Brazil",
-    "name": "MOC"
-  },
-  {
-    "city": "Montevideo, Uruguay",
-    "name": "MVD"
-  },
-  {
-    "city": "Montgomery, AL",
-    "name": "MGM"
-  },
-  {
-    "city": "Montpellier, France",
-    "name": "MPL"
-  },
-  {
-    "city": "Montreal, QC - all airports",
-    "name": "YMQ"
-  },
-  {
-    "city": "Montreal, QC - Dorval",
-    "name": "YUL"
-  },
-  {
-    "city": "Montreal, QC - Dorval Rail service",
-    "name": "XAX"
-  },
-  {
-    "city": "Montreal, QC - Downtown Rail service",
-    "name": "YMY"
-  },
-  {
-    "city": "Montreal, QC - Mirabel",
-    "name": "YMX"
-  },
-  {
-    "city": "Montreal, QC - St Lambert Rail service",
-    "name": "XLM"
-  },
-  {
-    "city": "Montrose, CO",
-    "name": "MTJ"
-  },
-  {
-    "city": "Montserrat, Montserrat",
-    "name": "MNI"
-  },
-  {
-    "city": "Moorea, French Polynesia",
-    "name": "MOZ"
-  },
-  {
-    "city": "Moosonee, ON",
-    "name": "YMO"
-  },
-  {
-    "city": "Mopti, Mali",
-    "name": "MZI"
-  },
-  {
-    "city": "Mora, Sweden",
-    "name": "MXX"
-  },
-  {
-    "city": "Morafenobe, Madagascar",
-    "name": "TVA"
-  },
-  {
-    "city": "Morambe, Madagascar",
-    "name": "MXM"
-  },
-  {
-    "city": "Moranbah, QL, Australia",
-    "name": "MOV"
-  },
-  {
-    "city": "Moree, NS, Australia",
-    "name": "MRZ"
-  },
-  {
-    "city": "Morelia, Mexico",
-    "name": "MLM"
-  },
-  {
-    "city": "Morgantown, WV",
-    "name": "MGW"
-  },
-  {
-    "city": "Morioka, Japan",
-    "name": "HNA"
-  },
-  {
-    "city": "Mornington, QL, Australia",
-    "name": "ONG"
-  },
-  {
-    "city": "Moro, Papua New Guinea",
-    "name": "MXH"
-  },
-  {
-    "city": "Morondava, Madagascar",
-    "name": "MOQ"
-  },
-  {
-    "city": "Moroni, Comoros",
-    "name": "HAH"
-  },
-  {
-    "city": "Moruya, NS, Australia",
-    "name": "MYA"
-  },
-  {
-    "city": "Moscow, Russia - all locations",
-    "name": "MOW"
-  },
-  {
-    "city": "Moscow, Russia - Bykovo",
-    "name": "BKA"
-  },
-  {
-    "city": "Moscow, Russia - Domodedovo",
-    "name": "DME"
-  },
-  {
-    "city": "Moscow, Russia - Sheremetyevo",
-    "name": "SVO"
-  },
-  {
-    "city": "Moscow, Russia - Vnukovo",
-    "name": "VKO"
-  },
-  {
-    "city": "Moses Lake, WA",
-    "name": "MWH"
-  },
-  {
-    "city": "Mosjoen, Norway",
-    "name": "MJF"
-  },
-  {
-    "city": "Mostar, Bosnia and Herzegovina",
-    "name": "OMO"
-  },
-  {
-    "city": "Mota Lava, Vanuatu",
-    "name": "MTV"
-  },
-  {
-    "city": "Mouila, Gabon",
-    "name": "MJL"
-  },
-  {
-    "city": "Mount Cook, New Zealand",
-    "name": "MON"
-  },
-  {
-    "city": "Mount Gambier, SA, Australia",
-    "name": "MGB"
-  },
-  {
-    "city": "Mount Hagen, Papua New Guinea",
-    "name": "HGU"
-  },
-  {
-    "city": "Mount Hotham, VI, Australia",
-    "name": "MHU"
-  },
-  {
-    "city": "Mount Isa, Australia",
-    "name": "ISA"
-  },
-  {
-    "city": "Mount Keith, WA, Australia",
-    "name": "WME"
-  },
-  {
-    "city": "Mount Magnet, WA, Australia",
-    "name": "MMG"
-  },
-  {
-    "city": "Mount Pleasant, Falkland Islands",
-    "name": "MPN"
-  },
-  {
-    "city": "Mountain Home, AR",
-    "name": "WMH"
-  },
-  {
-    "city": "Mountain Village, AK",
-    "name": "MOU"
-  },
-  {
-    "city": "Mpacha, Namibia",
-    "name": "MPA"
-  },
-  {
-    "city": "Mtwara, Tanzania",
-    "name": "MYW"
-  },
-  {
-    "city": "Mucuri, BA, Brazil",
-    "name": "MVS"
-  },
-  {
-    "city": "Mudanjiang, China",
-    "name": "MDG"
-  },
-  {
-    "city": "Mudgee, Australia",
-    "name": "DGE"
-  },
-  {
-    "city": "Muenster, Germany",
-    "name": "FMO"
-  },
-  {
-    "city": "Mukan, Malaysia",
-    "name": "MKM"
-  },
-  {
-    "city": "Mulhouse, France",
-    "name": "MLH"
-  },
-  {
-    "city": "Mulia, Indonesia",
-    "name": "LII"
-  },
-  {
-    "city": "Multan, Pakistan",
-    "name": "MUX"
-  },
-  {
-    "city": "Mulu, Malaysia",
-    "name": "MZV"
-  },
-  {
-    "city": "Mumbai, India",
-    "name": "BOM"
-  },
-  {
-    "city": "Munda, Solomon Islands",
-    "name": "MUA"
-  },
-  {
-    "city": "Munich, Germany",
-    "name": "MUC"
-  },
-  {
-    "city": "Murcia, Spain",
-    "name": "MJV"
-  },
-  {
-    "city": "Murmansk, Russia",
-    "name": "MMK"
-  },
-  {
-    "city": "Murray Island, QL, Australia",
-    "name": "MYI"
-  },
-  {
-    "city": "Mus, Turkey",
-    "name": "MSR"
-  },
-  {
-    "city": "Muscat, Oman",
-    "name": "MCT"
-  },
-  {
-    "city": "Muscle Shoals, AL",
-    "name": "MSL"
-  },
-  {
-    "city": "Muskegon, MI",
-    "name": "MKG"
-  },
-  {
-    "city": "Muskrat Dam, ON",
-    "name": "MSA"
-  },
-  {
-    "city": "Musoma, Tanzania",
-    "name": "MUZ"
-  },
-  {
-    "city": "Muzaffarabad, Pakistan",
-    "name": "MFG"
-  },
-  {
-    "city": "Mwanza, Tanzania",
-    "name": "MWZ"
-  },
-  {
-    "city": "Myeik, Myanmar",
-    "name": "MGZ"
-  },
-  {
-    "city": "Myitkyina, Myanmar",
-    "name": "MYT"
-  },
-  {
-    "city": "Myrtle Beach, SC",
-    "name": "MYR"
-  },
-  {
-    "city": "Mytilene, Greece",
-    "name": "MJT"
-  },
-  {
-    "city": "Mzuzu, Malawi",
-    "name": "ZZU"
-  },
-  {
-    "city": "Nabire, Indonesia",
-    "name": "NBX"
-  },
-  {
-    "city": "Nacala, Mozambique",
-    "name": "MNC"
-  },
-  {
-    "city": "Nadar, Morocco",
-    "name": "NDR"
-  },
-  {
-    "city": "Nadi, Fiji",
-    "name": "NAN"
-  },
-  {
-    "city": "Nadym, Russia",
-    "name": "NYM"
-  },
-  {
-    "city": "Naga, Philippines",
-    "name": "WNP"
-  },
-  {
-    "city": "Nagasaki, Japan",
-    "name": "NGS"
-  },
-  {
-    "city": "Nagoya, Japan - Chubu CentrAir Intl",
-    "name": "NGO"
-  },
-  {
-    "city": "Nagoya, Japan - Nagoya Komaki APT",
-    "name": "NGO"
-  },
-  {
-    "city": "Nagpur, India",
-    "name": "NAG"
-  },
-  {
-    "city": "Nain, NL",
-    "name": "YDP"
-  },
-  {
-    "city": "Nairobi, Kenya - Jomo Kenyatta Intl",
-    "name": "NBO"
-  },
-  {
-    "city": "Nairobi, Kenya - Wilson",
-    "name": "WIL"
-  },
-  {
-    "city": "Nakhichevan, Azerbaijan",
-    "name": "NAJ"
-  },
-  {
-    "city": "Nakhon Ratchosima, Thailand",
-    "name": "NAK"
-  },
-  {
-    "city": "Nakhon Si Thammarat, Thailand",
-    "name": "NST"
-  },
-  {
-    "city": "Nakina, ON",
-    "name": "YQN"
-  },
-  {
-    "city": "Nalchik, Russia",
-    "name": "NAL"
-  },
-  {
-    "city": "Namangan, Uzbekistan",
-    "name": "NMA"
-  },
-  {
-    "city": "Namatana, Papua New Guinea",
-    "name": "ATN"
-  },
-  {
-    "city": "Namorik Island, Marshall Islands",
-    "name": "NDK"
-  },
-  {
-    "city": "Nampula, Mozambique",
-    "name": "APL"
-  },
-  {
-    "city": "Namsos, Norway",
-    "name": "OSY"
-  },
-  {
-    "city": "Namudi, Papua New Guinea",
-    "name": "NDI"
-  },
-  {
-    "city": "Nan, Thailand",
-    "name": "NNT"
-  },
-  {
-    "city": "Nanaimo, BC - Cassidy Airport",
-    "name": "YCD"
-  },
-  {
-    "city": "Nanaimo, BC - Harbour Airport",
-    "name": "ZNA"
-  },
-  {
-    "city": "Nanchong, China",
-    "name": "NAO"
-  },
-  {
-    "city": "Nanisivik, NU",
-    "name": "YSR"
-  },
-  {
-    "city": "Nanking/Nanjing, China",
-    "name": "NKG"
-  },
-  {
-    "city": "Nanning, China",
-    "name": "NNG"
-  },
-  {
-    "city": "Nanortalik, Greenland",
-    "name": "JNN"
-  },
-  {
-    "city": "Nantes, France - Nantes Atlantique",
-    "name": "NTE"
-  },
-  {
-    "city": "Nantes, France - Rail service",
-    "name": "QJZ"
-  },
-  {
-    "city": "Nantong, China",
-    "name": "NTG"
-  },
-  {
-    "city": "Nantucket, MA",
-    "name": "ACK"
-  },
-  {
-    "city": "Nanyang, China",
-    "name": "NNY"
-  },
-  {
-    "city": "Nanyuki, Kenya",
-    "name": "NYK"
-  },
-  {
-    "city": "Napakiak, AK",
-    "name": "WNA"
-  },
-  {
-    "city": "Napanee, ON - Rail service",
-    "name": "XIF"
-  },
-  {
-    "city": "Napaskiak, AK",
-    "name": "PKA"
-  },
-  {
-    "city": "Napier-Hastings, New Zealand",
-    "name": "NPE"
-  },
-  {
-    "city": "Naples, FL",
-    "name": "APF"
-  },
-  {
-    "city": "Naples, Italy",
-    "name": "NAP"
-  },
-  {
-    "city": "Narathiwat, Thailand",
-    "name": "NAW"
-  },
-  {
-    "city": "Narrabri, NS, Australia",
-    "name": "NAA"
-  },
-  {
-    "city": "Narsaq, Greenland",
-    "name": "JNS"
-  },
-  {
-    "city": "Narsarsuaq, Greenland",
-    "name": "UAK"
-  },
-  {
-    "city": "Narvik, Norway",
-    "name": "NVK"
-  },
-  {
-    "city": "Naryan-Mar, Russia",
-    "name": "NNM"
-  },
-  {
-    "city": "Nashville, TN",
-    "name": "BNA"
-  },
-  {
-    "city": "Nassau, Bahamas - Paradise Island",
-    "name": "NAS"
-  },
-  {
-    "city": "Natadi, Congo",
-    "name": "MAT"
-  },
-  {
-    "city": "Natal, RN, Brazil",
-    "name": "NAT"
-  },
-  {
-    "city": "Natashquan, QC",
-    "name": "YNA"
-  },
-  {
-    "city": "Naukiti, AK",
-    "name": "NKI"
-  },
-  {
-    "city": "Nauru Island, Nauru",
-    "name": "INU"
-  },
-  {
-    "city": "Navegantes, SC, Brazil",
-    "name": "NVT"
-  },
-  {
-    "city": "Nawabshah, Pakistan",
-    "name": "WNS"
-  },
-  {
-    "city": "NayUrengoy, Russia",
-    "name": "NUX"
-  },
-  {
-    "city": "Ndjamena, Chad",
-    "name": "NDJ"
-  },
-  {
-    "city": "Ndola, Zambia",
-    "name": "NLA"
-  },
-  {
-    "city": "Neerlerit Inaat, Greenland",
-    "name": "CNP"
-  },
-  {
-    "city": "Nefteyugansk, Russia",
-    "name": "NFG"
-  },
-  {
-    "city": "Neghelli, Ethiopia",
-    "name": "EGL"
-  },
-  {
-    "city": "Negril, Jamaica",
-    "name": "NEG"
-  },
-  {
-    "city": "Neiva, Colombia",
-    "name": "NVA"
-  },
-  {
-    "city": "Nejran, Saudi Arabia",
-    "name": "EAM"
-  },
-  {
-    "city": "Nelso, New Zealand",
-    "name": "NSN"
-  },
-  {
-    "city": "Nelson Lagoon, AK",
-    "name": "NLG"
-  },
-  {
-    "city": "Nelspruit, South Africa",
-    "name": "NLP"
-  },
-  {
-    "city": "Nema, Mauritania",
-    "name": "EMN"
-  },
-  {
-    "city": "Nemiscau, QC",
-    "name": "YNS"
-  },
-  {
-    "city": "Neryjungri, Russia",
-    "name": "NER"
-  },
-  {
-    "city": "Neuquen, NE, Argentina",
-    "name": "NQN"
-  },
-  {
-    "city": "Nevis, St. Kitts and Nevis",
-    "name": "NEV"
-  },
-  {
-    "city": "New Carlisle, QC - Rail service",
-    "name": "XEL"
-  },
-  {
-    "city": "New Chenega, AK",
-    "name": "NCN"
-  },
-  {
-    "city": "New Haven, CT",
-    "name": "HVN"
-  },
-  {
-    "city": "New Koliganek, AK",
-    "name": "KGK"
-  },
-  {
-    "city": "New London/Groton",
-    "name": "GON"
-  },
-  {
-    "city": "New London/Groton",
-    "name": "GON"
-  },
-  {
-    "city": "New Orleans, LA",
-    "name": "MSY"
-  },
-  {
-    "city": "New Plymouth, New Zealand",
-    "name": "NPL"
-  },
-  {
-    "city": "New Richmond, QC - Rail service",
-    "name": "XEM"
-  },
-  {
-    "city": "New Stuyahok, AK",
-    "name": "KNW"
-  },
-  {
-    "city": "New York, NY - All airports",
-    "name": "NYC"
-  },
-  {
-    "city": "New York, NY - Kennedy",
-    "name": "JFK"
-  },
-  {
-    "city": "New York, NY - La Guardia",
-    "name": "LGA"
-  },
-  {
-    "city": "Newark, NJ",
-    "name": "EWR"
-  },
-  {
-    "city": "Newburgh/Stewart Field, NY",
-    "name": "SWF"
-  },
-  {
-    "city": "Newcastle, New South Wales, Australia",
-    "name": "NTL"
-  },
-  {
-    "city": "Newcastle, New South Wales, Australia - Belmont",
-    "name": "BEO"
-  },
-  {
-    "city": "Newcastle, United Kingdom",
-    "name": "NCL"
-  },
-  {
-    "city": "Newman, WA, Australia",
-    "name": "ZNE"
-  },
-  {
-    "city": "Newport News, VA",
-    "name": "PHF"
-  },
-  {
-    "city": "Newquay, United Kingdom",
-    "name": "NQY"
-  },
-  {
-    "city": "Newtok, AK",
-    "name": "WWT"
-  },
-  {
-    "city": "Ngaoundere, Cameroon",
-    "name": "NGE"
-  },
-  {
-    "city": "Ngau Island, Fiji",
-    "name": "NGI"
-  },
-  {
-    "city": "Ngukurr, NT, Australia",
-    "name": "RPM"
-  },
-  {
-    "city": "Nha Trang, Viet Nam",
-    "name": "NHA"
-  },
-  {
-    "city": "Niagara Falls, ON - Rail service",
-    "name": "XLV"
-  },
-  {
-    "city": "Niamey, Niger",
-    "name": "NIM"
-  },
-  {
-    "city": "Nice, France",
-    "name": "NCE"
-  },
-  {
-    "city": "Nicosia, Cyprus",
-    "name": "NIC"
-  },
-  {
-    "city": "Nightmute, AK",
-    "name": "NME"
-  },
-  {
-    "city": "Nikolai, AK",
-    "name": "NIB"
-  },
-  {
-    "city": "Nikolski, AK",
-    "name": "IKO"
-  },
-  {
-    "city": "Nimes, France",
-    "name": "FNI"
-  },
-  {
-    "city": "Ningbo, China",
-    "name": "NGB"
-  },
-  {
-    "city": "Nioko, Congo",
-    "name": "NIX"
-  },
-  {
-    "city": "Niuafo'ou, Tonga",
-    "name": "NFO"
-  },
-  {
-    "city": "Niuatoputapu, Tonga",
-    "name": "NTT"
-  },
-  {
-    "city": "Niue Island, Niue",
-    "name": "IUE"
-  },
-  {
-    "city": "Nizhnevartovsk, Russia",
-    "name": "NJC"
-  },
-  {
-    "city": "Nizhniy Novgorod, Russia",
-    "name": "GOJ"
-  },
-  {
-    "city": "Noatak, AK",
-    "name": "WTK"
-  },
-  {
-    "city": "Nojabrxsk, Russia",
-    "name": "NOJ"
-  },
-  {
-    "city": "Nome, AK",
-    "name": "OME"
-  },
-  {
-    "city": "Nondalton, AK",
-    "name": "NNL"
-  },
-  {
-    "city": "Noorvik, AK",
-    "name": "ORV"
-  },
-  {
-    "city": "Noranda/Rouyn, QC",
-    "name": "YUY"
-  },
-  {
-    "city": "Norderney, Germany",
-    "name": "NRD"
-  },
-  {
-    "city": "Nordholz-Speika, Germany",
-    "name": "NDZ"
-  },
-  {
-    "city": "Norfolk Island, Norfolk Island",
-    "name": "NLK"
-  },
-  {
-    "city": "Norfolk, NE",
-    "name": "OFK"
-  },
-  {
-    "city": "Norfolk, VA",
-    "name": "ORF"
-  },
-  {
-    "city": "Noril'sk, Russia",
-    "name": "NSK"
-  },
-  {
-    "city": "Norman Wells, NT",
-    "name": "YVQ"
-  },
-  {
-    "city": "Normanton, QL, Australia",
-    "name": "NTN"
-  },
-  {
-    "city": "Norrkoping, Sweden",
-    "name": "NRK"
-  },
-  {
-    "city": "Norsup, Vanuatu",
-    "name": "NUS"
-  },
-  {
-    "city": "North Bay, ON",
-    "name": "YYB"
-  },
-  {
-    "city": "North Bend, OR",
-    "name": "OTH"
-  },
-  {
-    "city": "North Caicos, Turks and Caicos Islands",
-    "name": "NCA"
-  },
-  {
-    "city": "North Eleuthera, Bahamas",
-    "name": "ELH"
-  },
-  {
-    "city": "North Platte, NE",
-    "name": "LBF"
-  },
-  {
-    "city": "North Ronaldsay, United Kingdom",
-    "name": "NRL"
-  },
-  {
-    "city": "North Spirit Lake, ON",
-    "name": "YNO"
-  },
-  {
-    "city": "Northway, AK",
-    "name": "ORT"
-  },
-  {
-    "city": "Norway House, MB",
-    "name": "YNE"
-  },
-  {
-    "city": "Norwich, United Kingdom",
-    "name": "NWI"
-  },
-  {
-    "city": "Nosara Beach, Costa Rica",
-    "name": "NOB"
-  },
-  {
-    "city": "Nossi-be, Madagascar",
-    "name": "NOS"
-  },
-  {
-    "city": "Nottingham, United Kingdom",
-    "name": "EMA"
-  },
-  {
-    "city": "Nouadhiba, Mauritania",
-    "name": "NDB"
-  },
-  {
-    "city": "Nouakchott, Mauritania",
-    "name": "NKC"
-  },
-  {
-    "city": "Noumea, New Caledonia - Magenta",
-    "name": "GEA"
-  },
-  {
-    "city": "Noumea, New Caledonia - Tontouta",
-    "name": "NOU"
-  },
-  {
-    "city": "Novgorod, Russia",
-    "name": "NVR"
-  },
-  {
-    "city": "Novokuznetsk, Russia",
-    "name": "NOZ"
-  },
-  {
-    "city": "Novosibirsk, Russia - Tolmachevo",
-    "name": "OVB"
-  },
-  {
-    "city": "Nueva Gerona, Cuba",
-    "name": "GER"
-  },
-  {
-    "city": "Nuevo Laredo, Mexico",
-    "name": "NLD"
-  },
-  {
-    "city": "Nuiqsut, AK",
-    "name": "NUI"
-  },
-  {
-    "city": "Nuku Hiva, French Polynesia",
-    "name": "NHV"
-  },
-  {
-    "city": "Nuku'Alofa, Tonga",
-    "name": "TBU"
-  },
-  {
-    "city": "Nukus, Uzbekistan",
-    "name": "NCU"
-  },
-  {
-    "city": "Nulato, AK",
-    "name": "NUL"
-  },
-  {
-    "city": "Numbulwar, NT, Australia",
-    "name": "NUB"
-  },
-  {
-    "city": "Nunapitchuk, AK",
-    "name": "NUP"
-  },
-  {
-    "city": "Nunukan, Indonesia",
-    "name": "NNX"
-  },
-  {
-    "city": "Nuremberg, Germany",
-    "name": "NUE"
-  },
-  {
-    "city": "Nuremberg, Germany - Rail service",
-    "name": "ZAQ"
-  },
-  {
-    "city": "Nuuk, Greenland",
-    "name": "GOH"
-  },
-  {
-    "city": "Nyala, Sudan",
-    "name": "UYL"
-  },
-  {
-    "city": "Nyaung, Myanmar",
-    "name": "NYU"
-  },
-  {
-    "city": "Nyngan, NS, Australia",
-    "name": "NYN"
-  },
-  {
-    "city": "Oakland, CA",
-    "name": "OAK"
-  },
-  {
-    "city": "Oaxaca, Mexico",
-    "name": "OAX"
-  },
-  {
-    "city": "Obano, Indonesia",
-    "name": "OBD"
-  },
-  {
-    "city": "Obihiro, Japan",
-    "name": "OBO"
-  },
-  {
-    "city": "Ocho Rios, Jamaica",
-    "name": "OCJ"
-  },
-  {
-    "city": "Odense, Denmark",
-    "name": "ZBQ"
-  },
-  {
-    "city": "Odessa, Ukraine",
-    "name": "ODS"
-  },
-  {
-    "city": "Odessa/Midland, TX",
-    "name": "MAF"
-  },
-  {
-    "city": "Ogdensburg, NY",
-    "name": "OGS"
-  },
-  {
-    "city": "Ogoki, ON",
-    "name": "YOG"
-  },
-  {
-    "city": "Ohrid, Macedonia",
-    "name": "OHD"
-  },
-  {
-    "city": "Oita, Japan",
-    "name": "OIT"
-  },
-  {
-    "city": "Okaba, Indonedia",
-    "name": "OKQ"
-  },
-  {
-    "city": "Okayama, Japan",
-    "name": "OKJ"
-  },
-  {
-    "city": "Okhotsk, Russia",
-    "name": "OHO"
-  },
-  {
-    "city": "Okinawa, Japan",
-    "name": "OKA"
-  },
-  {
-    "city": "Oklahoma City, OK",
-    "name": "OKC"
-  },
-  {
-    "city": "Okoshiri, Japan",
-    "name": "OIR"
-  },
-  {
-    "city": "Oksibil, Indonesia",
-    "name": "OKL"
-  },
-  {
-    "city": "Olbia, Italy",
-    "name": "OLB"
-  },
-  {
-    "city": "Old Crow, YT",
-    "name": "YOC"
-  },
-  {
-    "city": "Olpoi, Vanuatu",
-    "name": "OLJ"
-  },
-  {
-    "city": "Olympic Dam, SA, Australia",
-    "name": "OLP"
-  },
-  {
-    "city": "Omaha, NE",
-    "name": "OMA"
-  },
-  {
-    "city": "Omboue, Gabon",
-    "name": "OMB"
-  },
-  {
-    "city": "Omsk, Russia",
-    "name": "OMS"
-  },
-  {
-    "city": "Ondangwa, Namibia",
-    "name": "OND"
-  },
-  {
-    "city": "Ontario, CA",
-    "name": "ONT"
-  },
-  {
-    "city": "Opapamiska Lake, ON",
-    "name": "YBS"
-  },
-  {
-    "city": "Oradea, Romania",
-    "name": "OMR"
-  },
-  {
-    "city": "Oran, Algeria",
-    "name": "ORN"
-  },
-  {
-    "city": "Orange County, CA",
-    "name": "SNA"
-  },
-  {
-    "city": "Orange, New South Wales, Australia",
-    "name": "OAG"
-  },
-  {
-    "city": "Oranjemund, Namibia",
-    "name": "OMD"
-  },
-  {
-    "city": "Orebro, Sweeden - Obrebro-Bofors",
-    "name": "ORB"
-  },
-  {
-    "city": "Orenburg, Russia",
-    "name": "REN"
-  },
-  {
-    "city": "Orlando, FL - Herndon",
-    "name": "ORL"
-  },
-  {
-    "city": "Orlando, FL - International",
-    "name": "MCO"
-  },
-  {
-    "city": "Ormara, Pakistan",
-    "name": "ORW"
-  },
-  {
-    "city": "Ornskoldsvik, Sweden",
-    "name": "OER"
-  },
-  {
-    "city": "Orsk, Russia",
-    "name": "OSW"
-  },
-  {
-    "city": "Orsta-Volda, Norway",
-    "name": "HOV"
-  },
-  {
-    "city": "Osaka, Japan - all airports",
-    "name": "OSA"
-  },
-  {
-    "city": "Osaka, Japan - Itami",
-    "name": "ITM"
-  },
-  {
-    "city": "Osaka, Japan - Kansai Intl",
-    "name": "KIX"
-  },
-  {
-    "city": "Oshawa, ON",
-    "name": "YOO"
-  },
-  {
-    "city": "Oshima, Japan",
-    "name": "OIM"
-  },
-  {
-    "city": "Oshkosh, WI",
-    "name": "OSH"
-  },
-  {
-    "city": "Osijek, Croatia",
-    "name": "OSI"
-  },
-  {
-    "city": "Oskarshamn, Sweden",
-    "name": "OSK"
-  },
-  {
-    "city": "Oslo, Norway",
-    "name": "OSL"
-  },
-  {
-    "city": "Ostersund, Sweden",
-    "name": "OSD"
-  },
-  {
-    "city": "Ostrava, Czech Republic",
-    "name": "OSR"
-  },
-  {
-    "city": "Ottawa, ON - International",
-    "name": "YOW"
-  },
-  {
-    "city": "Ottawa, ON - Rail service",
-    "name": "XDS"
-  },
-  {
-    "city": "Ottumwa, IA",
-    "name": "OTM"
-  },
-  {
-    "city": "Otu, Colombia",
-    "name": "OTU"
-  },
-  {
-    "city": "Ouagadougou, Burkina Faso",
-    "name": "OUA"
-  },
-  {
-    "city": "Ouargla, Algeria",
-    "name": "OGX"
-  },
-  {
-    "city": "Ouarzazate, Morocco",
-    "name": "OZZ"
-  },
-  {
-    "city": "Oudomxay, Laos",
-    "name": "ODY"
-  },
-  {
-    "city": "Oujda, Morocco",
-    "name": "OUD"
-  },
-  {
-    "city": "Oulu, Finland",
-    "name": "OUL"
-  },
-  {
-    "city": "Ouvea, New Caledonia",
-    "name": "UVE"
-  },
-  {
-    "city": "Ovda, Israel",
-    "name": "VDA"
-  },
-  {
-    "city": "Owensboro, KY",
-    "name": "OWB"
-  },
-  {
-    "city": "Oxford House, MB",
-    "name": "YOH"
-  },
-  {
-    "city": "Oxnard/Ventura, CA",
-    "name": "OXR"
-  },
-  {
-    "city": "Oyem, Gabon",
-    "name": "OYE"
-  },
-  {
-    "city": "Paama, Vanuatu",
-    "name": "PBJ"
-  },
-  {
-    "city": "Paamiut, Greenland",
-    "name": "JFR"
-  },
-  {
-    "city": "Padang, Indonesia",
-    "name": "PDG"
-  },
-  {
-    "city": "Paderborn, Germany",
-    "name": "PAD"
-  },
-  {
-    "city": "Paducah, KY",
-    "name": "PAH"
-  },
-  {
-    "city": "Page, AZ",
-    "name": "PGA"
-  },
-  {
-    "city": "Pago Pago, American Samoa",
-    "name": "PPG"
-  },
-  {
-    "city": "Pakse, Laos",
-    "name": "PKZ"
-  },
-  {
-    "city": "Pakuashipi, QC",
-    "name": "YIF"
-  },
-  {
-    "city": "Pakuba, Uganda",
-    "name": "PAF"
-  },
-  {
-    "city": "Palacios, Honduras",
-    "name": "PCH"
-  },
-  {
-    "city": "Palang Karaya, Indonesia",
-    "name": "PKY"
-  },
-  {
-    "city": "Palanga, Lithuania",
-    "name": "PLQ"
-  },
-  {
-    "city": "Palembang, Indonesia",
-    "name": "PLM"
-  },
-  {
-    "city": "Palenque, Mexico",
-    "name": "PQM"
-  },
-  {
-    "city": "Palermo, Sicily, Italy",
-    "name": "PMO"
-  },
-  {
-    "city": "Palm Springs, CA",
-    "name": "PSP"
-  },
-  {
-    "city": "Palma Mallorca, Spain and Canary Islands",
-    "name": "PMI"
-  },
-  {
-    "city": "Palmar, Costa Rica",
-    "name": "PMZ"
-  },
-  {
-    "city": "Palmas, TO, Brazil",
-    "name": "PMW"
-  },
-  {
-    "city": "Palmerston North, New Zealand",
-    "name": "PMR"
-  },
-  {
-    "city": "Palu, Indonesia",
-    "name": "PLW"
-  },
-  {
-    "city": "Pamplona, Spain",
-    "name": "PNA"
-  },
-  {
-    "city": "Panama City, FL",
-    "name": "PFN"
-  },
-  {
-    "city": "Panama City, Panama - Paitilla",
-    "name": "PAC"
-  },
-  {
-    "city": "Panama City, Panama - Tocumen Intl",
-    "name": "PTY"
-  },
-  {
-    "city": "Pangkalanboun, Indonesia",
-    "name": "PKN"
-  },
-  {
-    "city": "Pangkalpinang, Indonesia",
-    "name": "PGK"
-  },
-  {
-    "city": "Pangnirtung, NU",
-    "name": "YXP"
-  },
-  {
-    "city": "Panjger, Pakistan",
-    "name": "PJG"
-  },
-  {
-    "city": "Pantelleria, Italy",
-    "name": "PNL"
-  },
-  {
-    "city": "Papa Westray, United Kingdom",
-    "name": "PPW"
-  },
-  {
-    "city": "Papeete, French Polynesia",
-    "name": "PPT"
-  },
-  {
-    "city": "Paphos, Cyprus",
-    "name": "PFO"
-  },
-  {
-    "city": "Para Chinar, Pakistan",
-    "name": "PAJ"
-  },
-  {
-    "city": "Paraburdoo, WA, Australia",
-    "name": "PBO"
-  },
-  {
-    "city": "Paradise Island, Bahamas",
-    "name": "PID"
-  },
-  {
-    "city": "Paramaribo, Suriname - Zanderij Intl",
-    "name": "PBM"
-  },
-  {
-    "city": "Paramaribo, Suriname - Zorg En Hoop",
-    "name": "ORG"
-  },
-  {
-    "city": "Parana, ER, Argentina",
-    "name": "PRA"
-  },
-  {
-    "city": "Parasi, Solomon Islands",
-    "name": "PRS"
-  },
-  {
-    "city": "Parent, QC - Rail service",
-    "name": "XFE"
-  },
-  {
-    "city": "Paris, France - All airports",
-    "name": "PAR"
-  },
-  {
-    "city": "Paris, France - Beauvais-Tille",
-    "name": "BVA"
-  },
-  {
-    "city": "Paris, France - Charles Degaulle",
-    "name": "CDG"
-  },
-  {
-    "city": "Paris, France - Orly",
-    "name": "ORY"
-  },
-  {
-    "city": "Parkersburg, WV/Marietta, OH",
-    "name": "PKB"
-  },
-  {
-    "city": "Parksville, BC - Rail service",
-    "name": "XPB"
-  },
-  {
-    "city": "Parma/Milan, Italy",
-    "name": "PMF"
-  },
-  {
-    "city": "Parnaiba, PI, Brazil",
-    "name": "PHB"
-  },
-  {
-    "city": "Paro, Bhutan",
-    "name": "PBH"
-  },
-  {
-    "city": "Pasco, WA",
-    "name": "PSC"
-  },
-  {
-    "city": "Pasni, Pakistan",
-    "name": "PSI"
-  },
-  {
-    "city": "Paso de Los Libres, Argentina",
-    "name": "AOL"
-  },
-  {
-    "city": "Passo Fundo, RS, Brazil",
-    "name": "PFB"
-  },
-  {
-    "city": "Pasto, Colombia",
-    "name": "PSO"
-  },
-  {
-    "city": "Patna, India",
-    "name": "PAT"
-  },
-  {
-    "city": "Patras, Greece",
-    "name": "GPA"
-  },
-  {
-    "city": "Pau, France",
-    "name": "PUF"
-  },
-  {
-    "city": "Paulatuk, NT",
-    "name": "YPC"
-  },
-  {
-    "city": "Pavlodar, Kazakhstan",
-    "name": "PWQ"
-  },
-  {
-    "city": "Peace River, AB",
-    "name": "YPE"
-  },
-  {
-    "city": "Peawanuck, ON",
-    "name": "YPO"
-  },
-  {
-    "city": "Pechora, Russia",
-    "name": "PEX"
-  },
-  {
-    "city": "Pedro Bay, AK",
-    "name": "PDB"
-  },
-  {
-    "city": "Pekanbaru, Indonesia",
-    "name": "PKU"
-  },
-  {
-    "city": "Pelican, AK",
-    "name": "PEC"
-  },
-  {
-    "city": "Pellston, MI",
-    "name": "PLN"
-  },
-  {
-    "city": "Pelotas, RS, Brazil",
-    "name": "PET"
-  },
-  {
-    "city": "Pemba, Mozambique",
-    "name": "POL"
-  },
-  {
-    "city": "Pemba, Tanzania - Wawi",
-    "name": "PMA"
-  },
-  {
-    "city": "Pembroke, ON",
-    "name": "YTA"
-  },
-  {
-    "city": "Penang, Malaysia",
-    "name": "PEN"
-  },
-  {
-    "city": "Pendleton, OR",
-    "name": "PDT"
-  },
-  {
-    "city": "Penrhyn Island, Cook Islands",
-    "name": "PYE"
-  },
-  {
-    "city": "Pensacola, FL",
-    "name": "PNS"
-  },
-  {
-    "city": "Penticton, BC",
-    "name": "YYF"
-  },
-  {
-    "city": "Penzance, United Kingdom",
-    "name": "PZE"
-  },
-  {
-    "city": "Peoria, IL",
-    "name": "PIA"
-  },
-  {
-    "city": "Perce, QC - Rail service",
-    "name": "XFG"
-  },
-  {
-    "city": "Pereira, Colombia",
-    "name": "PEI"
-  },
-  {
-    "city": "Perigueux, France",
-    "name": "PGX"
-  },
-  {
-    "city": "Perito Moreno, SC, Argentina",
-    "name": "PMQ"
-  },
-  {
-    "city": "Perm, Russia",
-    "name": "PEE"
-  },
-  {
-    "city": "Perpignan, France",
-    "name": "PGF"
-  },
-  {
-    "city": "Perryville, AK",
-    "name": "KPV"
-  },
-  {
-    "city": "Perth, Western Australia, Australia",
-    "name": "PER"
-  },
-  {
-    "city": "Perugia, Italy",
-    "name": "PEG"
-  },
-  {
-    "city": "Pescara, Italy",
-    "name": "PSR"
-  },
-  {
-    "city": "Peshawar, Pakistan",
-    "name": "PEW"
-  },
-  {
-    "city": "Petersburg, AK",
-    "name": "PSG"
-  },
-  {
-    "city": "Petrolina, PE, Brazil",
-    "name": "PNZ"
-  },
-  {
-    "city": "Petropaulousk-Kamchats, Russia",
-    "name": "PKC"
-  },
-  {
-    "city": "Petrozavodsk, Russia",
-    "name": "PES"
-  },
-  {
-    "city": "Phalaborwa, South Africa",
-    "name": "PHW"
-  },
-  {
-    "city": "Philadelphia, PA - International",
-    "name": "PHL"
-  },
-  {
-    "city": "Philadelphia, PA - Trenton/Mercer NJ",
-    "name": "TTN"
-  },
-  {
-    "city": "Phitsanulok, Thailand",
-    "name": "PHS"
-  },
-  {
-    "city": "Phnom Penh, Cambodia",
-    "name": "PNH"
-  },
-  {
-    "city": "Phoenix, AZ",
-    "name": "PHX"
-  },
-  {
-    "city": "Phrae, Thailand",
-    "name": "PRH"
-  },
-  {
-    "city": "Phu Quoc, Viet Nam - Duong Dang",
-    "name": "PQC"
-  },
-  {
-    "city": "Phuket, Thailand",
-    "name": "HKT"
-  },
-  {
-    "city": "Pickle Lake, ON",
-    "name": "YPL"
-  },
-  {
-    "city": "Pico Island, Portugal",
-    "name": "PIX"
-  },
-  {
-    "city": "Piedras Negras, Mexico",
-    "name": "PDS"
-  },
-  {
-    "city": "Pierre, SD",
-    "name": "PIR"
-  },
-  {
-    "city": "Pietermaritzburg, South Africa",
-    "name": "PZB"
-  },
-  {
-    "city": "Pietersburb, South Africa",
-    "name": "PTG"
-  },
-  {
-    "city": "Pikangikum, ON",
-    "name": "YPM"
-  },
-  {
-    "city": "Pilot Point, AK",
-    "name": "PIP"
-  },
-  {
-    "city": "Pilot Point, AK - Ugashnik Bay",
-    "name": "UGB"
-  },
-  {
-    "city": "Pilot Station, AK",
-    "name": "PQS"
-  },
-  {
-    "city": "Pingtung, Taiwan",
-    "name": "PIF"
-  },
-  {
-    "city": "Pisa, Italy - Gal Galilei",
-    "name": "PSA"
-  },
-  {
-    "city": "Pittsburgh, PA",
-    "name": "PIT"
-  },
-  {
-    "city": "Pituffik, Greenland",
-    "name": "THU"
-  },
-  {
-    "city": "Piura, Peru",
-    "name": "PIU"
-  },
-  {
-    "city": "Placencia, Belize",
-    "name": "PLJ"
-  },
-  {
-    "city": "Platinum, AK",
-    "name": "PTU"
-  },
-  {
-    "city": "Plattsburgh, NY",
-    "name": "PLB"
-  },
-  {
-    "city": "Pleiku, Viet Nam",
-    "name": "PXU"
-  },
-  {
-    "city": "Plettenburg Bay, South Africa",
-    "name": "PBZ"
-  },
-  {
-    "city": "Plymouth, United Kingdom",
-    "name": "PLH"
-  },
-  {
-    "city": "Pocatello, ID",
-    "name": "PIH"
-  },
-  {
-    "city": "Podgoriea, Serbia and Montenegro - Golubovci",
-    "name": "TGD"
-  },
-  {
-    "city": "Pohnpei, Micronesia",
-    "name": "PNI"
-  },
-  {
-    "city": "Point Baker, AK",
-    "name": "KPB"
-  },
-  {
-    "city": "Point Hope, AK",
-    "name": "PHO"
-  },
-  {
-    "city": "Point Lay, AK",
-    "name": "PIZ"
-  },
-  {
-    "city": "Pointe Noire, Congo",
-    "name": "PNR"
-  },
-  {
-    "city": "Pointe-a-Pitre, Guadeloupe",
-    "name": "PTP"
-  },
-  {
-    "city": "Pointe-aux-Trembles, QC - Rail service",
-    "name": "XPX"
-  },
-  {
-    "city": "Points North Landing, SK",
-    "name": "YNL"
-  },
-  {
-    "city": "Poitiers, France - Biard",
-    "name": "PIS"
-  },
-  {
-    "city": "Poitiers, France - Rail service",
-    "name": "XOP"
-  },
-  {
-    "city": "Pokhara, Nepal",
-    "name": "PKR"
-  },
-  {
-    "city": "Poltava, Ukraine",
-    "name": "PLV"
-  },
-  {
-    "city": "Polyarnyj, Russia",
-    "name": "PYJ"
-  },
-  {
-    "city": "Ponca City, OK",
-    "name": "PNC"
-  },
-  {
-    "city": "Ponce, Puerto Rico",
-    "name": "PSE"
-  },
-  {
-    "city": "Ponce, Puerto Rico",
-    "name": "PSE"
-  },
-  {
-    "city": "Pond Inlet, NU",
-    "name": "YIO"
-  },
-  {
-    "city": "Ponta Delgada, Portugal",
-    "name": "PDL"
-  },
-  {
-    "city": "Ponta Pora, MS, Brazil",
-    "name": "PMG"
-  },
-  {
-    "city": "Pontianak, Indonesia",
-    "name": "PNK"
-  },
-  {
-    "city": "Poplar Hill, ON",
-    "name": "YHP"
-  },
-  {
-    "city": "Popondetta, Papua New Guinea",
-    "name": "PNP"
-  },
-  {
-    "city": "Popraol/Tatry, Slovakia",
-    "name": "TAT"
-  },
-  {
-    "city": "Porbandar, India",
-    "name": "PBD"
-  },
-  {
-    "city": "Pori, Finland",
-    "name": "POR"
-  },
-  {
-    "city": "Porlamar, Venezuela",
-    "name": "PMV"
-  },
-  {
-    "city": "Port Alberni, BC",
-    "name": "YPB"
-  },
-  {
-    "city": "Port Alsworth, AK",
-    "name": "PTA"
-  },
-  {
-    "city": "Port Angeles, WA",
-    "name": "CLM"
-  },
-  {
-    "city": "Port Antonio, Jamaica",
-    "name": "POT"
-  },
-  {
-    "city": "Port Arthur/Beaumont, TX",
-    "name": "BPT"
-  },
-  {
-    "city": "Port Au Prince, Haiti",
-    "name": "PAP"
-  },
-  {
-    "city": "Port Augusta, SA, Australia",
-    "name": "PUG"
-  },
-  {
-    "city": "Port Berge, Madagascar",
-    "name": "WPB"
-  },
-  {
-    "city": "Port Blair, India",
-    "name": "IXZ"
-  },
-  {
-    "city": "Port Clarence, AK",
-    "name": "KPC"
-  },
-  {
-    "city": "Port Elizabeth, South Africa",
-    "name": "PLZ"
-  },
-  {
-    "city": "Port Gentil, Gabon",
-    "name": "POG"
-  },
-  {
-    "city": "Port Harcourt, Nigeria",
-    "name": "PHC"
-  },
-  {
-    "city": "Port Hardy, BC",
-    "name": "YZT"
-  },
-  {
-    "city": "Port Headland, WA, Australia",
-    "name": "PHE"
-  },
-  {
-    "city": "Port Heiden, AK",
-    "name": "PTH"
-  },
-  {
-    "city": "Port Hope Simpson, NL",
-    "name": "YHA"
-  },
-  {
-    "city": "Port Lincoln, SA, Australia",
-    "name": "PLO"
-  },
-  {
-    "city": "Port Macquarie, NS, Australia",
-    "name": "PQQ"
-  },
-  {
-    "city": "Port Meiner, QC",
-    "name": "YPN"
-  },
-  {
-    "city": "Port Moller, AK",
-    "name": "PML"
-  },
-  {
-    "city": "Port Moresby, Papua New Guinea",
-    "name": "POM"
-  },
-  {
-    "city": "Port of Spain, Trinidad",
-    "name": "POS"
-  },
-  {
-    "city": "Port Protection, AK",
-    "name": "PPV"
-  },
-  {
-    "city": "Port Stanley, Falkland Islands",
-    "name": "PSY"
-  },
-  {
-    "city": "Port Sudan, Sudan",
-    "name": "PZU"
-  },
-  {
-    "city": "Port Vila, Vanuatu",
-    "name": "VLI"
-  },
-  {
-    "city": "Portage Creek, AK",
-    "name": "PCA"
-  },
-  {
-    "city": "Portland, ME",
-    "name": "PWM"
-  },
-  {
-    "city": "Portland, OR",
-    "name": "PDX"
-  },
-  {
-    "city": "Portland, VI, Australia",
-    "name": "PTJ"
-  },
-  {
-    "city": "Porto Alegre, RS, Brazil",
-    "name": "POA"
-  },
-  {
-    "city": "Porto Santo, Portugal",
-    "name": "PXO"
-  },
-  {
-    "city": "Porto Seguro, Brazil",
-    "name": "BPS"
-  },
-  {
-    "city": "Porto Velho, RO, Brazil",
-    "name": "PVH"
-  },
-  {
-    "city": "Porto, Portugal",
-    "name": "OPO"
-  },
-  {
-    "city": "Portoviejo, Ecuador",
-    "name": "PVO"
-  },
-  {
-    "city": "Portsmouth, NH",
-    "name": "PSM"
-  },
-  {
-    "city": "Posadas, MI, Argentina",
-    "name": "PSS"
-  },
-  {
-    "city": "Postville, NL",
-    "name": "YSO"
-  },
-  {
-    "city": "Poughkeepsie, NY",
-    "name": "POU"
-  },
-  {
-    "city": "Povungnituk, QC",
-    "name": "YPX"
-  },
-  {
-    "city": "Powell River, BC",
-    "name": "YPW"
-  },
-  {
-    "city": "Poza Rico, Mexico",
-    "name": "PAZ"
-  },
-  {
-    "city": "Poznan, Poland",
-    "name": "POZ"
-  },
-  {
-    "city": "Prague, Czech Republic",
-    "name": "PRG"
-  },
-  {
-    "city": "Praia, Cape Verde",
-    "name": "RAI"
-  },
-  {
-    "city": "Pres. Roque Saenz Pena, CH, Argentina",
-    "name": "PRQ"
-  },
-  {
-    "city": "Prescott, AZ",
-    "name": "PRC"
-  },
-  {
-    "city": "Prescott, ON - Rail service",
-    "name": "XII"
-  },
-  {
-    "city": "Presidente Prudente, SP, Brazil",
-    "name": "PPB"
-  },
-  {
-    "city": "Presque Isle, ME",
-    "name": "PQI"
-  },
-  {
-    "city": "Preveza/Lefkas, Greece",
-    "name": "PVK"
-  },
-  {
-    "city": "Prince Albert, SK",
-    "name": "YPA"
-  },
-  {
-    "city": "Prince George, BC",
-    "name": "YXS"
-  },
-  {
-    "city": "Prince George, BC - Rail service",
-    "name": "XDV"
-  },
-  {
-    "city": "Prince Rupert, BC - Digby Island Airport",
-    "name": "YPR"
-  },
-  {
-    "city": "Prince Rupert, BC - Rail service",
-    "name": "XDW"
-  },
-  {
-    "city": "Princeton, WV",
-    "name": "BLF"
-  },
-  {
-    "city": "Pristina, Serbia and Montenegro",
-    "name": "PRN"
-  },
-  {
-    "city": "Proserpine, QL, Australia",
-    "name": "PPP"
-  },
-  {
-    "city": "Providence, RI",
-    "name": "PVD"
-  },
-  {
-    "city": "Providenciales, Turks and Caicos Islands",
-    "name": "PLS"
-  },
-  {
-    "city": "Provincetown, MA",
-    "name": "PVC"
-  },
-  {
-    "city": "Prudhoe Bay/Deadhorse, AK",
-    "name": "SCC"
-  },
-  {
-    "city": "Pucallpa, Peru",
-    "name": "PCL"
-  },
-  {
-    "city": "Puebla, Mexico",
-    "name": "PBC"
-  },
-  {
-    "city": "Pueblo, CO",
-    "name": "PUB"
-  },
-  {
-    "city": "Puerto Ayacucha, Venezuela",
-    "name": "PYH"
-  },
-  {
-    "city": "Puerto Berria, Colombia",
-    "name": "PBE"
-  },
-  {
-    "city": "Puerto del Rosario, Spain",
-    "name": "FUE"
-  },
-  {
-    "city": "Puerto Deseado, SC, Argentina",
-    "name": "PUD"
-  },
-  {
-    "city": "Puerto Escondido, Mexico",
-    "name": "PXM"
-  },
-  {
-    "city": "Puerto Jimenez, Costa Rica",
-    "name": "PJM"
-  },
-  {
-    "city": "Puerto Lempira, Honduras",
-    "name": "PEU"
-  },
-  {
-    "city": "Puerto Madryn, CB, Argentina",
-    "name": "PMY"
-  },
-  {
-    "city": "Puerto Maldonado, Peru",
-    "name": "PEM"
-  },
-  {
-    "city": "Puerto Montt, Chile",
-    "name": "PMC"
-  },
-  {
-    "city": "Puerto Ordaz, Venezuela",
-    "name": "PZO"
-  },
-  {
-    "city": "Puerto Plata, Dominican Republic",
-    "name": "POP"
-  },
-  {
-    "city": "Puerto Princesa, Philippines",
-    "name": "PPS"
-  },
-  {
-    "city": "Puerto Suarez, Bolivia",
-    "name": "PSZ"
-  },
-  {
-    "city": "Puerto Vallarta, Mexico",
-    "name": "PVR"
-  },
-  {
-    "city": "Pukatawagan, MB -",
-    "name": "XPK"
-  },
-  {
-    "city": "Pula, Croatia",
-    "name": "PUY"
-  },
-  {
-    "city": "Pullman, WA",
-    "name": "PUW"
-  },
-  {
-    "city": "Pune, India",
-    "name": "PNQ"
-  },
-  {
-    "city": "Punta Arenas, Chile",
-    "name": "PUQ"
-  },
-  {
-    "city": "Punta Cana, Dominican Republic",
-    "name": "PUJ"
-  },
-  {
-    "city": "Punta Del Este, Uruguay",
-    "name": "PDP"
-  },
-  {
-    "city": "Punta Gorda, Belize",
-    "name": "PND"
-  },
-  {
-    "city": "Punta Islita, Costa Rica",
-    "name": "PBP"
-  },
-  {
-    "city": "Puttaparthi, India",
-    "name": "PUT"
-  },
-  {
-    "city": "Putussibau, Indonesia",
-    "name": "PSU"
-  },
-  {
-    "city": "Pyongyang, North Korea",
-    "name": "FNJ"
-  },
-  {
-    "city": "Qaisumah, Saudi Arabia",
-    "name": "AQI"
-  },
-  {
-    "city": "Qaqortoq, Greenland",
-    "name": "JJU"
-  },
-  {
-    "city": "Qiemo, China",
-    "name": "IQM"
-  },
-  {
-    "city": "Qikiqtarjuaq, NU",
-    "name": "YVM"
-  },
-  {
-    "city": "Qingdao, China",
-    "name": "TAO"
-  },
-  {
-    "city": "Qiqihar, China",
-    "name": "NDG"
-  },
-  {
-    "city": "Qualicum, BC",
-    "name": "XQU"
-  },
-  {
-    "city": "Quaqtaq, QC",
-    "name": "YQC"
-  },
-  {
-    "city": "Quebec, QC - Charny Rail service",
-    "name": "YFZ"
-  },
-  {
-    "city": "Quebec, QC - International Airport",
-    "name": "YQB"
-  },
-  {
-    "city": "Quebec, QC - Levis Rail service",
-    "name": "XLK"
-  },
-  {
-    "city": "Quebec, QC - Quebec Station Rail service",
-    "name": "XLJ"
-  },
-  {
-    "city": "Quebec, QC - Sainte-Foy Rail service",
-    "name": "XFY"
-  },
-  {
-    "city": "Queenstown, New Zealand",
-    "name": "ZQN"
-  },
-  {
-    "city": "Quelimane, Mozambique",
-    "name": "UEL"
-  },
-  {
-    "city": "Quepos, Costa Rica",
-    "name": "XQP"
-  },
-  {
-    "city": "Queretaro, Mexico",
-    "name": "QRO"
-  },
-  {
-    "city": "Quesnel, BC",
-    "name": "YQZ"
-  },
-  {
-    "city": "Quetta, Pakistan",
-    "name": "UET"
-  },
-  {
-    "city": "Qui Nhon, Viet Nam",
-    "name": "UIH"
-  },
-  {
-    "city": "Quibdo, Colombia",
-    "name": "UIB"
-  },
-  {
-    "city": "Quimper, France",
-    "name": "UIP"
-  },
-  {
-    "city": "Quincy, IL",
-    "name": "UIN"
-  },
-  {
-    "city": "Quinhagak, AK",
-    "name": "KWN"
-  },
-  {
-    "city": "Quipi, QL, Australia",
-    "name": "ULP"
-  },
-  {
-    "city": "Quito, Ecuador",
-    "name": "UIO"
-  },
-  {
-    "city": "Rabaraba, Papua New Guinea",
-    "name": "RBP"
-  },
-  {
-    "city": "Rabat, Morocco",
-    "name": "RBA"
-  },
-  {
-    "city": "Rabaul, Papua New Guinea",
-    "name": "RAB"
-  },
-  {
-    "city": "Rach Gia, Viet Nam",
-    "name": "VKG"
-  },
-  {
-    "city": "Raduzhnyi, Russia",
-    "name": "RAT"
-  },
-  {
-    "city": "Rae Lakes, NT",
-    "name": "YRA"
-  },
-  {
-    "city": "Rafha, Saudi Arabia",
-    "name": "RAH"
-  },
-  {
-    "city": "Rafsanjan, Iran",
-    "name": "RJN"
-  },
-  {
-    "city": "Raiatea, French Polynesia",
-    "name": "RFP"
-  },
-  {
-    "city": "Rainbow Lake, AB",
-    "name": "YOP"
-  },
-  {
-    "city": "Rajkot, India",
-    "name": "RAJ"
-  },
-  {
-    "city": "Rajshahi, Bangladesh",
-    "name": "RJH"
-  },
-  {
-    "city": "Raleigh/Durham, NC",
-    "name": "RDU"
-  },
-  {
-    "city": "Ramato, Solomon Islands",
-    "name": "RBV"
-  },
-  {
-    "city": "Ramingining, NT, Australia",
-    "name": "RAM"
-  },
-  {
-    "city": "Rampart, AK",
-    "name": "RMP"
-  },
-  {
-    "city": "Ranchi, India",
-    "name": "IXR"
-  },
-  {
-    "city": "Rankin Inlet, NU",
-    "name": "YRT"
-  },
-  {
-    "city": "Ranong, Thailand",
-    "name": "UNN"
-  },
-  {
-    "city": "Rapid City, SD",
-    "name": "RAP"
-  },
-  {
-    "city": "Rarotonga, Cook Islands",
-    "name": "RAR"
-  },
-  {
-    "city": "Ras Al Khaimah, United Arab Emirates",
-    "name": "RKT"
-  },
-  {
-    "city": "Rasht, Iran",
-    "name": "RAS"
-  },
-  {
-    "city": "Ratanakiri, Cambodia",
-    "name": "RBE"
-  },
-  {
-    "city": "Rawala Kot, Pakistan",
-    "name": "RAZ"
-  },
-  {
-    "city": "Reading, PA",
-    "name": "RDG"
-  },
-  {
-    "city": "Rebun, Japan",
-    "name": "RBJ"
-  },
-  {
-    "city": "Recife, PE, Brazil",
-    "name": "REC"
-  },
-  {
-    "city": "Reconquista, SF, Argentina",
-    "name": "RCQ"
-  },
-  {
-    "city": "Red Devil, AK",
-    "name": "RDV"
-  },
-  {
-    "city": "Red Lake, ON",
-    "name": "YRL"
-  },
-  {
-    "city": "Red Sucker Lake, MB",
-    "name": "YRS"
-  },
-  {
-    "city": "Redding, CA",
-    "name": "RDD"
-  },
-  {
-    "city": "Redmond, OR",
-    "name": "RDM"
-  },
-  {
-    "city": "Reggio Calabria, Italy",
-    "name": "REG"
-  },
-  {
-    "city": "Regina, SK",
-    "name": "YQR"
-  },
-  {
-    "city": "Rennell, Solomon Islands",
-    "name": "RNL"
-  },
-  {
-    "city": "Rennes, France",
-    "name": "RNS"
-  },
-  {
-    "city": "Reno, NV",
-    "name": "RNO"
-  },
-  {
-    "city": "Repulse Bay, NU",
-    "name": "YUT"
-  },
-  {
-    "city": "Resistencia, CW, Argentina",
-    "name": "RES"
-  },
-  {
-    "city": "Resolute, NU",
-    "name": "YRB"
-  },
-  {
-    "city": "Reus, Spain and Canary Islands",
-    "name": "REU"
-  },
-  {
-    "city": "Reykjavik, Iceland",
-    "name": "KEF"
-  },
-  {
-    "city": "Reynossa, Mexico",
-    "name": "REX"
-  },
-  {
-    "city": "Rhinelander, WI,",
-    "name": "RHI"
-  },
-  {
-    "city": "Rhodes, Gabon",
-    "name": "RHO"
-  },
-  {
-    "city": "Ribeirao Preto, SP, Brazil",
-    "name": "RAO"
-  },
-  {
-    "city": "Riberalta, Bolivia",
-    "name": "RIB"
-  },
-  {
-    "city": "Richards Bay, South Africa",
-    "name": "RCB"
-  },
-  {
-    "city": "Richmond, QL, Australia",
-    "name": "RCM"
-  },
-  {
-    "city": "Richmond, VA",
-    "name": "RIC"
-  },
-  {
-    "city": "Riga, Latvia",
-    "name": "RIX"
-  },
-  {
-    "city": "Rigolet, NL",
-    "name": "YRG"
-  },
-  {
-    "city": "Rijeka, Croatia",
-    "name": "RJK"
-  },
-  {
-    "city": "Rimini, Italy",
-    "name": "RMI"
-  },
-  {
-    "city": "Rimouski, QC",
-    "name": "YXK"
-  },
-  {
-    "city": "Rio Branco, AC, Brazil",
-    "name": "RBR"
-  },
-  {
-    "city": "Rio Cuarto, CD, Argentina",
-    "name": "RCU"
-  },
-  {
-    "city": "Rio De Janeiro, RJ, Brazil",
-    "name": "GIG"
-  },
-  {
-    "city": "Rio Gallegos, Argentina - Internacional",
-    "name": "RGL"
-  },
-  {
-    "city": "Rio Grande, RS, Brazil",
-    "name": "RIG"
-  },
-  {
-    "city": "Rio Grande, TF, Argentina",
-    "name": "RGA"
-  },
-  {
-    "city": "Rio Mayo, CB, Argentina",
-    "name": "ROY"
-  },
-  {
-    "city": "Rio Verde, GO, Brazil",
-    "name": "RVD"
-  },
-  {
-    "city": "Riohacha, Colombia",
-    "name": "RCH"
-  },
-  {
-    "city": "Rishiri, Japan",
-    "name": "RIS"
-  },
-  {
-    "city": "Riverton, WY",
-    "name": "RIW"
-  },
-  {
-    "city": "Riviere-a-Pierre, QC - Rail service",
-    "name": "XRP"
-  },
-  {
-    "city": "Riyadh, Saudi Arabia",
-    "name": "RUH"
-  },
-  {
-    "city": "Riyan Mukalla, Yemen",
-    "name": "RIY"
-  },
-  {
-    "city": "Roane, France",
-    "name": "RNE"
-  },
-  {
-    "city": "Roanoke, VA",
-    "name": "ROA"
-  },
-  {
-    "city": "Roatan, Honduras",
-    "name": "RTB"
-  },
-  {
-    "city": "Roberval, QC",
-    "name": "YRJ"
-  },
-  {
-    "city": "Roch Gia, Viet Nam",
-    "name": "VKG"
-  },
-  {
-    "city": "Roche Harbor, WA",
-    "name": "RCE"
-  },
-  {
-    "city": "Rochester, MN",
-    "name": "RST"
-  },
-  {
-    "city": "Rochester, NY",
-    "name": "ROC"
-  },
-  {
-    "city": "Rock Sound, Bahamas",
-    "name": "RSD"
-  },
-  {
-    "city": "Rock Springs, WY",
-    "name": "RKS"
-  },
-  {
-    "city": "Rockford, IL - Park&Ride Bus",
-    "name": "ZRF"
-  },
-  {
-    "city": "Rockford, IL - Van Galder Bus",
-    "name": "ZRK"
-  },
-  {
-    "city": "Rockhampton, QL, Australia",
-    "name": "ROK"
-  },
-  {
-    "city": "Rockland, ME",
-    "name": "RKD"
-  },
-  {
-    "city": "Rodez, France",
-    "name": "RDZ"
-  },
-  {
-    "city": "Rodrigues Island, Mauritius",
-    "name": "RRG"
-  },
-  {
-    "city": "Roervik, Norway",
-    "name": "RVK"
-  },
-  {
-    "city": "Rognan, Norway",
-    "name": "ZXM"
-  },
-  {
-    "city": "Roma, QL, Australia",
-    "name": "RMA"
-  },
-  {
-    "city": "Rome, Italy - All airports",
-    "name": "ROM"
-  },
-  {
-    "city": "Rome, Italy - Ciampino",
-    "name": "CIA"
-  },
-  {
-    "city": "Rome, Italy - Leonardo Da Vinci/Fiumicino",
-    "name": "FCO"
-  },
-  {
-    "city": "Rongelap Island, Marshall Islands",
-    "name": "RNP"
-  },
-  {
-    "city": "Ronneby, Sweden",
-    "name": "RNB"
-  },
-  {
-    "city": "Roros, Norway",
-    "name": "RRS"
-  },
-  {
-    "city": "Rorutu, French Polynesia",
-    "name": "RUR"
-  },
-  {
-    "city": "Rosario, SF, Argentina",
-    "name": "ROS"
-  },
-  {
-    "city": "Rosario, WA",
-    "name": "RSJ"
-  },
-  {
-    "city": "Rosh Pina, Iceland",
-    "name": "RPN"
-  },
-  {
-    "city": "Rost, Norway",
-    "name": "RET"
-  },
-  {
-    "city": "Rostock-Laage, Germany",
-    "name": "RLG"
-  },
-  {
-    "city": "Rostov, Russia",
-    "name": "ROV"
-  },
-  {
-    "city": "Roswell, NM",
-    "name": "ROW"
-  },
-  {
-    "city": "Rota, Northern Mariana Islands",
-    "name": "ROP"
-  },
-  {
-    "city": "Rotorua, New Zealand",
-    "name": "ROT"
-  },
-  {
-    "city": "Rotterdam, Netherlands",
-    "name": "RTM"
-  },
-  {
-    "city": "Rouen, France",
-    "name": "URO"
-  },
-  {
-    "city": "Round Lake, ON",
-    "name": "ZRJ"
-  },
-  {
-    "city": "Rouyn/Noranda, QC",
-    "name": "YUY"
-  },
-  {
-    "city": "Rovaniemi, Finland",
-    "name": "RVN"
-  },
-  {
-    "city": "Ruby, AK",
-    "name": "RBY"
-  },
-  {
-    "city": "Russian Mission, AK",
-    "name": "RSH"
-  },
-  {
-    "city": "Rutland, VT",
-    "name": "RUT"
-  },
-  {
-    "city": "S. Cristobal del Casas, Mexico",
-    "name": "SZT"
-  },
-  {
-    "city": "Saarbruecken, Germany",
-    "name": "QFZ"
-  },
-  {
-    "city": "Sachigo Lake, ON",
-    "name": "ZPB"
-  },
-  {
-    "city": "Sachs Harbour, NT",
-    "name": "YSY"
-  },
-  {
-    "city": "Sackville, NB - Rail service",
-    "name": "XKV"
-  },
-  {
-    "city": "Sacramento, CA",
-    "name": "SMF"
-  },
-  {
-    "city": "Saginaw, MI",
-    "name": "MBS"
-  },
-  {
-    "city": "Saint Cloud, MN",
-    "name": "STC"
-  },
-  {
-    "city": "Saint Croix, U.S. Virgin Islands",
-    "name": "STX"
-  },
-  {
-    "city": "Saint George Island, AK",
-    "name": "STG"
-  },
-  {
-    "city": "Saint George, UT",
-    "name": "SGU"
-  },
-  {
-    "city": "Saint Hyacinthe, QC - Rail service",
-    "name": "XIM"
-  },
-  {
-    "city": "Saint John, NB",
-    "name": "YSJ"
-  },
-  {
-    "city": "Saint Johns, NL",
-    "name": "YYT"
-  },
-  {
-    "city": "Saint Leonard, NB",
-    "name": "YSL"
-  },
-  {
-    "city": "Saint Louis, MO",
-    "name": "STL"
-  },
-  {
-    "city": "Saint Lucia, ST. LUCIA",
-    "name": "SLU"
-  },
-  {
-    "city": "Saint Maarten, Netherlands Antilles",
-    "name": "SXM"
-  },
-  {
-    "city": "Saint Mary's, AK",
-    "name": "KSM"
-  },
-  {
-    "city": "Saint Michael, AK",
-    "name": "SMK"
-  },
-  {
-    "city": "Saint Paul Island, AK",
-    "name": "SNP"
-  },
-  {
-    "city": "Saint Petersburg, Russia - Pulkovo",
-    "name": "LED"
-  },
-  {
-    "city": "Saint Thomas, U.S. Virgin Islands",
-    "name": "STT"
-  },
-  {
-    "city": "Saint Tropez, France",
-    "name": "XPZ"
-  },
-  {
-    "city": "Saint Tropez, France - La Mole",
-    "name": "LTT"
-  },
-  {
-    "city": "Saipan, Northern Mariana Islands",
-    "name": "SPN"
-  },
-  {
-    "city": "Sakon Nakhon, Thailand",
-    "name": "SNO"
-  },
-  {
-    "city": "Salehard, Russia",
-    "name": "SLY"
-  },
-  {
-    "city": "Salem, OR",
-    "name": "SLE"
-  },
-  {
-    "city": "Salina, KS",
-    "name": "SLN"
-  },
-  {
-    "city": "Salisbury-Ocean City, MD",
-    "name": "SBY"
-  },
-  {
-    "city": "Salluit, QC",
-    "name": "YZG"
-  },
-  {
-    "city": "Salt Cay, Turks and Caicos Islands",
-    "name": "SLX"
-  },
-  {
-    "city": "Salt Lake City, UT",
-    "name": "SLC"
-  },
-  {
-    "city": "Saltillo, Mexico",
-    "name": "SLW"
-  },
-  {
-    "city": "Salvadore, BA, Brazil",
-    "name": "SSA"
-  },
-  {
-    "city": "Salzburg, Austria",
-    "name": "SZG"
-  },
-  {
-    "city": "Samara, Russia",
-    "name": "KUF"
-  },
-  {
-    "city": "Sambaua, Madagascar",
-    "name": "SVB"
-  },
-  {
-    "city": "Samburu, Kenya",
-    "name": "UAS"
-  },
-  {
-    "city": "Samos, Greece",
-    "name": "SMI"
-  },
-  {
-    "city": "San Andres Island, Colombia",
-    "name": "ADZ"
-  },
-  {
-    "city": "San Angelo, TX",
-    "name": "SJT"
-  },
-  {
-    "city": "San Antonio Oesta, RN, Argentina",
-    "name": "OES"
-  },
-  {
-    "city": "San Antonio, TX",
-    "name": "SAT"
-  },
-  {
-    "city": "San Antonio, Venezuela",
-    "name": "SVZ"
-  },
-  {
-    "city": "San Carlos, Argentina",
-    "name": "BRC"
-  },
-  {
-    "city": "San Diego, CA",
-    "name": "SAN"
-  },
-  {
-    "city": "San Francisco, CA",
-    "name": "SFO"
-  },
-  {
-    "city": "San Jose, CA",
-    "name": "SJC"
-  },
-  {
-    "city": "San Jose, Costa Rica - Juan Santa Maria",
-    "name": "SJO"
-  },
-  {
-    "city": "San Jose, Costa Rica - Tobias Bolanos Int'l",
-    "name": "SYQ"
-  },
-  {
-    "city": "San Juan, Puerto Rico",
-    "name": "SJU"
-  },
-  {
-    "city": "San Juan, Puerto Rico",
-    "name": "SJU"
-  },
-  {
-    "city": "San Juan, SJ, Argentina",
-    "name": "UAQ"
-  },
-  {
-    "city": "San Julian, SC, Argentina",
-    "name": "ULA"
-  },
-  {
-    "city": "San Luis Obispo, CA",
-    "name": "SBP"
-  },
-  {
-    "city": "San Luis Potosi, Mexico",
-    "name": "SLP"
-  },
-  {
-    "city": "San Luis, SL, Argentina",
-    "name": "LUQ"
-  },
-  {
-    "city": "San Marino, San Marino",
-    "name": "SAI"
-  },
-  {
-    "city": "San Martin De Los Andes, Argentina",
-    "name": "CPC"
-  },
-  {
-    "city": "San Miguel, Panama",
-    "name": "NMG"
-  },
-  {
-    "city": "San Pedro Sula, Honduras",
-    "name": "SAP"
-  },
-  {
-    "city": "San Rafael, Argentina",
-    "name": "AFA"
-  },
-  {
-    "city": "San Salvador, Bahamas",
-    "name": "ZSA"
-  },
-  {
-    "city": "San Salvador, El Salvador",
-    "name": "SAL"
-  },
-  {
-    "city": "San Sebastian, Spain",
-    "name": "EAS"
-  },
-  {
-    "city": "Sana'a, Yemen",
-    "name": "SAH"
-  },
-  {
-    "city": "Sand Point, AK",
-    "name": "SDP"
-  },
-  {
-    "city": "Sanday, United Kingdom",
-    "name": "NDY"
-  },
-  {
-    "city": "Sandy Lake, ON",
-    "name": "ZSJ"
-  },
-  {
-    "city": "Sanford, FL",
-    "name": "SFB"
-  },
-  {
-    "city": "Sanikiluaq, NU",
-    "name": "YSK"
-  },
-  {
-    "city": "Santa Ana, CA",
-    "name": "SNA"
-  },
-  {
-    "city": "Santa Ana, Solomon Islands",
-    "name": "NNB"
-  },
-  {
-    "city": "Santa Barbara, CA",
-    "name": "SBA"
-  },
-  {
-    "city": "Santa Barbara, Ed, Venezuela",
-    "name": "STB"
-  },
-  {
-    "city": "Santa Cruz De La Palma, Spain and Canary Islands - La Palma",
-    "name": "SPC"
-  },
-  {
-    "city": "Santa Cruz, Bolivia",
-    "name": "VVI"
-  },
-  {
-    "city": "Santa Fe, NM",
-    "name": "SAF"
-  },
-  {
-    "city": "Santa Maria, Brazil",
-    "name": "RIA"
-  },
-  {
-    "city": "Santa Maria, CA",
-    "name": "SMX"
-  },
-  {
-    "city": "Santa Maria, Portugal",
-    "name": "SMA"
-  },
-  {
-    "city": "Santa Marta, Colombia",
-    "name": "SMR"
-  },
-  {
-    "city": "Santa Rosa, CA",
-    "name": "STS"
-  },
-  {
-    "city": "Santa Rosa, LP, Argentina",
-    "name": "RSA"
-  },
-  {
-    "city": "Santarem, PA, Brazil",
-    "name": "STM"
-  },
-  {
-    "city": "Sante Marie, Madagascar",
-    "name": "SMS"
-  },
-  {
-    "city": "Santiago, Chile",
-    "name": "SCL"
-  },
-  {
-    "city": "Santiago, Dominican Republic",
-    "name": "STI"
-  },
-  {
-    "city": "Santo Angelo, Brazil",
-    "name": "GEL"
-  },
-  {
-    "city": "Santo Antao, Cape Verde",
-    "name": "NTO"
-  },
-  {
-    "city": "Santo Domingo, Dominican Republic - Herrera",
-    "name": "HEX"
-  },
-  {
-    "city": "Santo Domingo, Dominican Republic - Las Americas",
-    "name": "SDQ"
-  },
-  {
-    "city": "Santo Domingo, Venezuela",
-    "name": "STD"
-  },
-  {
-    "city": "Sanya, China",
-    "name": "SYX"
-  },
-  {
-    "city": "Sao Nicolau, Cape Verde",
-    "name": "SNE"
-  },
-  {
-    "city": "Sao Paulo, Brazil - Congonhas",
-    "name": "CGH"
-  },
-  {
-    "city": "Sao Paulo, Brazil - Guarulhos Intl",
-    "name": "GRU"
-  },
-  {
-    "city": "Sao Paulo, Brazil - Viracopos",
-    "name": "VCP"
-  },
-  {
-    "city": "Sao Tome Is., Sao Tome and Principe",
-    "name": "TMS"
-  },
-  {
-    "city": "Sao Vicente, Cape Verde",
-    "name": "VXE"
-  },
-  {
-    "city": "Sapporo, Japan - Chitose",
-    "name": "CTS"
-  },
-  {
-    "city": "Sapporo, Japan - Okadama",
-    "name": "OKD"
-  },
-  {
-    "city": "Sara, Vanuatu",
-    "name": "SSR"
-  },
-  {
-    "city": "Saranac Lake, NY",
-    "name": "SLK"
-  },
-  {
-    "city": "Sarasota, FL",
-    "name": "SRQ"
-  },
-  {
-    "city": "Saratov, Russia",
-    "name": "RTW"
-  },
-  {
-    "city": "Sarmi, Indonesia",
-    "name": "ZRM"
-  },
-  {
-    "city": "Sarnia, ON",
-    "name": "YZR"
-  },
-  {
-    "city": "Sarnia, ON - Rail service",
-    "name": "XDX"
-  },
-  {
-    "city": "Saskatoon, SK",
-    "name": "YXE"
-  },
-  {
-    "city": "Satu Mare, Romania",
-    "name": "SUJ"
-  },
-  {
-    "city": "Satwag, Papua New Guinea",
-    "name": "SWG"
-  },
-  {
-    "city": "Sau Luiz, MA, Brazil",
-    "name": "SLZ"
-  },
-  {
-    "city": "Sault Ste Marie, MI,",
-    "name": "CIU"
-  },
-  {
-    "city": "Sault Ste-Marie, ON",
-    "name": "YAM"
-  },
-  {
-    "city": "Saumlaki, Indonesia",
-    "name": "SXK"
-  },
-  {
-    "city": "Savannah, GA",
-    "name": "SAV"
-  },
-  {
-    "city": "Savannakhet, Laos",
-    "name": "ZVK"
-  },
-  {
-    "city": "Savonlinna, Finland",
-    "name": "SVL"
-  },
-  {
-    "city": "Savoonga, AK",
-    "name": "SVA"
-  },
-  {
-    "city": "Savusavu, Fiji",
-    "name": "SVU"
-  },
-  {
-    "city": "Sayaboury, Laos",
-    "name": "ZBY"
-  },
-  {
-    "city": "Scammon Bay, AK",
-    "name": "SCM"
-  },
-  {
-    "city": "Schefferville, QC",
-    "name": "YKL"
-  },
-  {
-    "city": "Scottsbluff, NE",
-    "name": "BFF"
-  },
-  {
-    "city": "Scranton, PA",
-    "name": "AVP"
-  },
-  {
-    "city": "Seattle, WA - Lake Union SPB",
-    "name": "LKE"
-  },
-  {
-    "city": "Seattle, WA - Seattle/Tacoma International",
-    "name": "SEA"
-  },
-  {
-    "city": "Sege, Solomon Islands",
-    "name": "EGM"
-  },
-  {
-    "city": "Seiyun, Yemen",
-    "name": "GXF"
-  },
-  {
-    "city": "Selawik, AK",
-    "name": "WLK"
-  },
-  {
-    "city": "Selje, Norway",
-    "name": "QFK"
-  },
-  {
-    "city": "Semarang, Indonesia",
-    "name": "SRG"
-  },
-  {
-    "city": "Senggo, Indonesia",
-    "name": "ZEG"
-  },
-  {
-    "city": "Senneterre, QC - Rail service",
-    "name": "XFK"
-  },
-  {
-    "city": "Seoul, South Korea - All Airports",
-    "name": "SEL"
-  },
-  {
-    "city": "Seoul, South Korea - Gimpo International",
-    "name": "GMP"
-  },
-  {
-    "city": "Seoul, South Korea - Incheon International",
-    "name": "ICN"
-  },
-  {
-    "city": "Sept-Iles, QC",
-    "name": "YZV"
-  },
-  {
-    "city": "Servi, Indonesia",
-    "name": "ZRI"
-  },
-  {
-    "city": "Sesriem, Namibia",
-    "name": "SZM"
-  },
-  {
-    "city": "Sevilla, Spain and Canary Islands",
-    "name": "SVQ"
-  },
-  {
-    "city": "Seward, AK",
-    "name": "SWD"
-  },
-  {
-    "city": "Shageluk, AK",
-    "name": "SHX"
-  },
-  {
-    "city": "Shaktoolik, AK",
-    "name": "SKK"
-  },
-  {
-    "city": "Shamattawa, MB",
-    "name": "ZTM"
-  },
-  {
-    "city": "Shanghai, China",
-    "name": "PVG"
-  },
-  {
-    "city": "Shannon, Ireland",
-    "name": "SNN"
-  },
-  {
-    "city": "Shantou, China",
-    "name": "SWA"
-  },
-  {
-    "city": "Sharm El Sheikh, Egypt",
-    "name": "SSH"
-  },
-  {
-    "city": "Shawinigan, QC - Rail service",
-    "name": "XFL"
-  },
-  {
-    "city": "Shawnigan, BC - Rail service",
-    "name": "XFM"
-  },
-  {
-    "city": "Sheffield, United Kingdom",
-    "name": "SZD"
-  },
-  {
-    "city": "Sheffield/Florence/Muscle Shoals, AL",
-    "name": "MSL"
-  },
-  {
-    "city": "Sheldon Point, AK",
-    "name": "SXP"
-  },
-  {
-    "city": "Shenzhen, China",
-    "name": "SZX"
-  },
-  {
-    "city": "Sheridan, WY",
-    "name": "SHR"
-  },
-  {
-    "city": "Shetland Islands, United Kingdom - Lerwick/Tingwall",
-    "name": "LWK"
-  },
-  {
-    "city": "Shetland Islands, United Kingdom - Sumburgh",
-    "name": "LSI"
-  },
-  {
-    "city": "Shillavo, Ethiopia",
-    "name": "HIL"
-  },
-  {
-    "city": "Shimkent, Kazakhstan",
-    "name": "CIT"
-  },
-  {
-    "city": "Shiraz, Iran",
-    "name": "SYZ"
-  },
-  {
-    "city": "Shishmaref, AK",
-    "name": "SHH"
-  },
-  {
-    "city": "Shonai, Japan",
-    "name": "SYO"
-  },
-  {
-    "city": "Shreveport, LA",
-    "name": "SHV"
-  },
-  {
-    "city": "Shungnak, AK",
-    "name": "SHG"
-  },
-  {
-    "city": "Shute Harbor, Australia",
-    "name": "JHQ"
-  },
-  {
-    "city": "Siem Reap, Cambodia",
-    "name": "REP"
-  },
-  {
-    "city": "Silchar, India",
-    "name": "IXS"
-  },
-  {
-    "city": "Silver City, NM",
-    "name": "SVC"
-  },
-  {
-    "city": "Simao, China",
-    "name": "SYM"
-  },
-  {
-    "city": "Sinak, Indonesia",
-    "name": "NKD"
-  },
-  {
-    "city": "Singapore, Singapore - Changi",
-    "name": "SIN"
-  },
-  {
-    "city": "Singapore, Singapore - Seletar",
-    "name": "XSP"
-  },
-  {
-    "city": "Sintang, Indonesia",
-    "name": "SQG"
-  },
-  {
-    "city": "Sioux City, IA",
-    "name": "SUX"
-  },
-  {
-    "city": "Sioux Falls, SD",
-    "name": "FSD"
-  },
-  {
-    "city": "Sioux Lookout, ON",
-    "name": "YXL"
-  },
-  {
-    "city": "Sisimiut, Greenland",
-    "name": "JHS"
-  },
-  {
-    "city": "Sitka, AK",
-    "name": "SIT"
-  },
-  {
-    "city": "Sittwe, Myanmar",
-    "name": "AKY"
-  },
-  {
-    "city": "Sivas, Turkey",
-    "name": "VAS"
-  },
-  {
-    "city": "Skagway, AK",
-    "name": "SGY"
-  },
-  {
-    "city": "Skiathos, Greece",
-    "name": "JSI"
-  },
-  {
-    "city": "Skopie, Macedonia",
-    "name": "FYROM"
-  },
-  {
-    "city": "Skovde, Sweden",
-    "name": "KVB"
-  },
-  {
-    "city": "Skukuza, South Africa",
-    "name": "SZK"
-  },
-  {
-    "city": "Sleetmore, AK",
-    "name": "SLQ"
-  },
-  {
-    "city": "Sligo, Ireland",
-    "name": "SXL"
-  },
-  {
-    "city": "Smith Falls, ON",
-    "name": "YSH"
-  },
-  {
-    "city": "Smithers, BC",
-    "name": "YYD"
-  },
-  {
-    "city": "Snare Lake, NT",
-    "name": "YFJ"
-  },
-  {
-    "city": "Soalala, Madagascar",
-    "name": "DWB"
-  },
-  {
-    "city": "Soderham, Sweden",
-    "name": "SOO"
-  },
-  {
-    "city": "Sofia, Bulgaria",
-    "name": "SOF"
-  },
-  {
-    "city": "Sognolal, Norway",
-    "name": "SOG"
-  },
-  {
-    "city": "Solo City, Indonesia",
-    "name": "SOC"
-  },
-  {
-    "city": "Son-La, Viet Nam - Na-San",
-    "name": "SQH"
-  },
-  {
-    "city": "Sorkjosen, Norway",
-    "name": "SOJ"
-  },
-  {
-    "city": "Sorocaba, Brazil",
-    "name": "SOD"
-  },
-  {
-    "city": "South Andros, Bahamas",
-    "name": "TZN"
-  },
-  {
-    "city": "South Bend, IN",
-    "name": "SBN"
-  },
-  {
-    "city": "South Caicos, Turks and Caicos Islands",
-    "name": "XSC"
-  },
-  {
-    "city": "South Hampton, United Kingdom",
-    "name": "SOU"
-  },
-  {
-    "city": "South Indian Lake, MB",
-    "name": "XSI"
-  },
-  {
-    "city": "South Molle Island, QL, Australia",
-    "name": "SOI"
-  },
-  {
-    "city": "South Naknek, AK",
-    "name": "WSN"
-  },
-  {
-    "city": "Southern Pines, NC",
-    "name": "SOP"
-  },
-  {
-    "city": "Spartanburg/Greenville, SC",
-    "name": "GSP"
-  },
-  {
-    "city": "Split, Croatia",
-    "name": "SPU"
-  },
-  {
-    "city": "Spokane, WA",
-    "name": "GEG"
-  },
-  {
-    "city": "Spring Point, Bahamas",
-    "name": "AXP"
-  },
-  {
-    "city": "Springfield, IL",
-    "name": "SPI"
-  },
-  {
-    "city": "Springfield, MO",
-    "name": "SGF"
-  },
-  {
-    "city": "Srinagar, India",
-    "name": "SXR"
-  },
-  {
-    "city": "St Anthony, NL",
-    "name": "YAY"
-  },
-  {
-    "city": "St Catharines, ON",
-    "name": "YCM"
-  },
-  {
-    "city": "St Denis de la Reunion, Reunion",
-    "name": "RUN"
-  },
-  {
-    "city": "St Kitts, St Kitts and Nevis",
-    "name": "SKB"
-  },
-  {
-    "city": "St Marys, ON - Rail service",
-    "name": "XIO"
-  },
-  {
-    "city": "St Petersburg/Clearwater, FL",
-    "name": "PIE"
-  },
-  {
-    "city": "St Pierre, St Pierre and Miquelon",
-    "name": "FSP"
-  },
-  {
-    "city": "St Vincent, Saint Vincent and the Grenadines",
-    "name": "SVD"
-  },
-  {
-    "city": "St. Croix Island, U.S. Virgin Islands",
-    "name": "STX"
-  },
-  {
-    "city": "St. Etienne, France",
-    "name": "EBU"
-  },
-  {
-    "city": "St. Eustatius, Netherlands Antilles",
-    "name": "EUX"
-  },
-  {
-    "city": "St. Lucia, St. Lucia",
-    "name": "UVF"
-  },
-  {
-    "city": "St. Lucia, St. Lucia - Hawnorra",
-    "name": "UVF"
-  },
-  {
-    "city": "St. Petersburg, Russia",
-    "name": "LED"
-  },
-  {
-    "city": "St. Pierre de la Reunion, Reunion",
-    "name": "ZSE"
-  },
-  {
-    "city": "St. Thomas Island, U.S. Virgin Islands",
-    "name": "STT"
-  },
-  {
-    "city": "State College/University Park, PA",
-    "name": "SCE"
-  },
-  {
-    "city": "Staunton, VA",
-    "name": "SHD"
-  },
-  {
-    "city": "Stavanger, Norway",
-    "name": "SVG"
-  },
-  {
-    "city": "Stavropol, Russia",
-    "name": "STW"
-  },
-  {
-    "city": "Ste Therese Point, MB",
-    "name": "YST"
-  },
-  {
-    "city": "Steamboat Springs, CO",
-    "name": "SBS"
-  },
-  {
-    "city": "Stebbins, AK",
-    "name": "WBB"
-  },
-  {
-    "city": "Stella Maris, Bahamas",
-    "name": "SML"
-  },
-  {
-    "city": "Stephenville, NL",
-    "name": "YJT"
-  },
-  {
-    "city": "Stevens Point/Wausau, WI",
-    "name": "CWA"
-  },
-  {
-    "city": "Stevens Village, AK",
-    "name": "SVS"
-  },
-  {
-    "city": "Stewart Field/Newburgh, NY",
-    "name": "SWF"
-  },
-  {
-    "city": "Stockholm, Sweden - All airports",
-    "name": "STO"
-  },
-  {
-    "city": "Stockholm, Sweden - Arlanda",
-    "name": "ARN"
-  },
-  {
-    "city": "Stockholm, Sweden - Bromma",
-    "name": "BMA"
-  },
-  {
-    "city": "Stockton, CA",
-    "name": "SCK"
-  },
-  {
-    "city": "Stony Rapids, SK",
-    "name": "YSF"
-  },
-  {
-    "city": "Stony River, AK",
-    "name": "SRV"
-  },
-  {
-    "city": "Stornoway, United Kingdom",
-    "name": "SYY"
-  },
-  {
-    "city": "Storuman, Sweden",
-    "name": "SQO"
-  },
-  {
-    "city": "Strasbourg, France - Bus service",
-    "name": "XER"
-  },
-  {
-    "city": "Strasbourg, France - Entzheim",
-    "name": "SXB"
-  },
-  {
-    "city": "Strathroy, ON - Rail service",
-    "name": "XTY"
-  },
-  {
-    "city": "Stronsay, United Kingdom",
-    "name": "SOY"
-  },
-  {
-    "city": "Stung Treng, Cambodia",
-    "name": "TNX"
-  },
-  {
-    "city": "Stuttgart, Germany - Echterdingen",
-    "name": "STR"
-  },
-  {
-    "city": "Stuttgart, Germany - Rail service",
-    "name": "ZWS"
-  },
-  {
-    "city": "Suavanao, Solomon Islands",
-    "name": "VAO"
-  },
-  {
-    "city": "Sucre, Bolivia",
-    "name": "SRE"
-  },
-  {
-    "city": "Sudbury, ON",
-    "name": "YSB"
-  },
-  {
-    "city": "Sudbury, ON - Rail service",
-    "name": "XDY"
-  },
-  {
-    "city": "Sue Island, QL, Australia",
-    "name": "SYU"
-  },
-  {
-    "city": "Sui, Pakistan",
-    "name": "SUL"
-  },
-  {
-    "city": "Sukhotthai, Thailand",
-    "name": "THS"
-  },
-  {
-    "city": "Summer Beaver, ON",
-    "name": "SUR"
-  },
-  {
-    "city": "Sun City, South Africa",
-    "name": "NTY"
-  },
-  {
-    "city": "Sun Valley, ID",
-    "name": "SUN"
-  },
-  {
-    "city": "Sunshine Coast, QL, Australia",
-    "name": "MCY"
-  },
-  {
-    "city": "Surabaya, Indonesia",
-    "name": "SUB"
-  },
-  {
-    "city": "Surat Thani, Thailand",
-    "name": "URT"
-  },
-  {
-    "city": "Suva, Fiji",
-    "name": "SUV"
-  },
-  {
-    "city": "Sveg, Sweden",
-    "name": "EVG"
-  },
-  {
-    "city": "Svolvaer, Norway",
-    "name": "SVJ"
-  },
-  {
-    "city": "Swan River, MB",
-    "name": "ZJN"
-  },
-  {
-    "city": "Sydney, New South Wales, Australia",
-    "name": "SYD"
-  },
-  {
-    "city": "Sydney, NS",
-    "name": "YQY"
-  },
-  {
-    "city": "Sylhet, Bangladesh",
-    "name": "ZYL"
-  },
-  {
-    "city": "Syracuse, NY",
-    "name": "SYR"
-  },
-  {
-    "city": "Szczecin, Poland",
-    "name": "SZZ"
-  },
-  {
-    "city": "Taba, Egypt",
-    "name": "TCP"
-  },
-  {
-    "city": "Tabarka, Tunisia",
-    "name": "TBJ"
-  },
-  {
-    "city": "Tabatinga, AM, Brazil",
-    "name": "TBT"
-  },
-  {
-    "city": "Tabora, Tanzania",
-    "name": "TBO"
-  },
-  {
-    "city": "Tabriz, Iran",
-    "name": "TBZ"
-  },
-  {
-    "city": "Tabubil, Papua New Guinea",
-    "name": "TBG"
-  },
-  {
-    "city": "Tabuk, Saudi Arabia",
-    "name": "TUU"
-  },
-  {
-    "city": "Tacheng, China",
-    "name": "TCG"
-  },
-  {
-    "city": "Tachilek, Myanmar",
-    "name": "THL"
-  },
-  {
-    "city": "Tacloban, Philippines",
-    "name": "TAC"
-  },
-  {
-    "city": "Tacna, Peru",
-    "name": "TCQ"
-  },
-  {
-    "city": "Tadoule Lake, MB",
-    "name": "XTL"
-  },
-  {
-    "city": "Taichung, Taiwan",
-    "name": "TXG"
-  },
-  {
-    "city": "Taif, Saudi Arabia",
-    "name": "TIF"
-  },
-  {
-    "city": "Tainan, Taiwan",
-    "name": "TNN"
-  },
-  {
-    "city": "Taipei, Taiwan - Chiang Kai Shek",
-    "name": "TPE"
-  },
-  {
-    "city": "Taipei, Taiwan - Sung Shan",
-    "name": "TSA"
-  },
-  {
-    "city": "Taitung, Taiwan",
-    "name": "TTT"
-  },
-  {
-    "city": "Taiyuan, China",
-    "name": "TYN"
-  },
-  {
-    "city": "Taiz, Yemen",
-    "name": "TAI"
-  },
-  {
-    "city": "Takotna, AK",
-    "name": "TCT"
-  },
-  {
-    "city": "Talkeetna, AK",
-    "name": "TKA"
-  },
-  {
-    "city": "Tallahassee, FL",
-    "name": "TLH"
-  },
-  {
-    "city": "Tallinn, Estonia",
-    "name": "TLL"
-  },
-  {
-    "city": "Taloyoak, NU",
-    "name": "YYH"
-  },
-  {
-    "city": "Tamanrasset, Algeria",
-    "name": "TMR"
-  },
-  {
-    "city": "Tamarindo, Costa Rica",
-    "name": "TNO"
-  },
-  {
-    "city": "Tamatave, Madagascar",
-    "name": "TMM"
-  },
-  {
-    "city": "Tambohorano, Madagascar",
-    "name": "WTA"
-  },
-  {
-    "city": "Tambolaka, Indonesia",
-    "name": "TMC"
-  },
-  {
-    "city": "Tambor, Costa Rica",
-    "name": "TMU"
-  },
-  {
-    "city": "Tampa, FL",
-    "name": "TPA"
-  },
-  {
-    "city": "Tampere, Finland",
-    "name": "TMP"
-  },
-  {
-    "city": "Tampico, Mexico",
-    "name": "TAM"
-  },
-  {
-    "city": "Tamworth, NS, Australia",
-    "name": "TMW"
-  },
-  {
-    "city": "Tanahmerah, Indonesia",
-    "name": "TMH"
-  },
-  {
-    "city": "Tanana, AK",
-    "name": "TAL"
-  },
-  {
-    "city": "Tangier, Morocco",
-    "name": "TNG"
-  },
-  {
-    "city": "Tanjung Pandan, Indonesia",
-    "name": "TJQ"
-  },
-  {
-    "city": "Tanjung Selor, Indonesia",
-    "name": "TJS"
-  },
-  {
-    "city": "Tanna, Vanuatu",
-    "name": "TAH"
-  },
-  {
-    "city": "Taos, NM",
-    "name": "TSM"
-  },
-  {
-    "city": "Tapachula, Mexico",
-    "name": "TAP"
-  },
-  {
-    "city": "Tarakan, Indonesia",
-    "name": "TRK"
-  },
-  {
-    "city": "Taramajma, Japan",
-    "name": "TRA"
-  },
-  {
-    "city": "Taranto, Italy",
-    "name": "TAR"
-  },
-  {
-    "city": "Tarapoto, Peru",
-    "name": "TPP"
-  },
-  {
-    "city": "Tarawa, Kiribati",
-    "name": "TRW"
-  },
-  {
-    "city": "Taree, NS, Australia",
-    "name": "TRO"
-  },
-  {
-    "city": "Tari, Papua New Guinea",
-    "name": "TIZ"
-  },
-  {
-    "city": "Tarija, Bolivia",
-    "name": "TJA"
-  },
-  {
-    "city": "Tashkent, Uzbekistan",
-    "name": "TAS"
-  },
-  {
-    "city": "Tasiujuaq, QC",
-    "name": "YTQ"
-  },
-  {
-    "city": "Tatitlek, AK",
-    "name": "TEK"
-  },
-  {
-    "city": "Taupo, New Zealand",
-    "name": "TUO"
-  },
-  {
-    "city": "Tauranga, New Zealand",
-    "name": "TRG"
-  },
-  {
-    "city": "Taveuni, Fiji",
-    "name": "TVU"
-  },
-  {
-    "city": "Tawau, Malaysia",
-    "name": "TWU"
-  },
-  {
-    "city": "Tbessa, Algeria",
-    "name": "TEE"
-  },
-  {
-    "city": "Tbilisi, Georgia",
-    "name": "TBS"
-  },
-  {
-    "city": "Tchibanga, Gabon",
-    "name": "TCH"
-  },
-  {
-    "city": "Te Anau, New Zealand",
-    "name": "TEU"
-  },
-  {
-    "city": "Teesside, United Kingdom",
-    "name": "MME"
-  },
-  {
-    "city": "Tefe, AM, Brazil",
-    "name": "TFF"
-  },
-  {
-    "city": "Tegucigalpa, Honduras",
-    "name": "TGU"
-  },
-  {
-    "city": "Tehran, Iran - Mehrabad",
-    "name": "THR"
-  },
-  {
-    "city": "Tekadu, Papua New Guinea",
-    "name": "TKB"
-  },
-  {
-    "city": "Tel Aviv, Israel",
-    "name": "TLV"
-  },
-  {
-    "city": "Teller Mission, AK",
-    "name": "KTS"
-  },
-  {
-    "city": "Telluride, CO",
-    "name": "TEX"
-  },
-  {
-    "city": "Tembagapura, Indonesia",
-    "name": "TIM"
-  },
-  {
-    "city": "Teminabuan, Indonesia",
-    "name": "TXM"
-  },
-  {
-    "city": "Temuco, Chile",
-    "name": "ZCO"
-  },
-  {
-    "city": "Tenakee Springs, AK",
-    "name": "TKE"
-  },
-  {
-    "city": "Tenerife, Spain and Canary Islands - Norte Los Rodeos",
-    "name": "TFN"
-  },
-  {
-    "city": "Tenerife, Spain and the Canary Islands - Sur Reina Sofia",
-    "name": "TFS"
-  },
-  {
-    "city": "Tennant Creek, NT, Australia",
-    "name": "TCA"
-  },
-  {
-    "city": "Tepic, Mexico",
-    "name": "TPQ"
-  },
-  {
-    "city": "Terceira Island, Portugal",
-    "name": "TER"
-  },
-  {
-    "city": "Teresina, PI, Brazil",
-    "name": "THE"
-  },
-  {
-    "city": "Termez, Uzbekistan",
-    "name": "TMJ"
-  },
-  {
-    "city": "Ternate, Indonesia",
-    "name": "TTE"
-  },
-  {
-    "city": "Terrace, BC",
-    "name": "YXT"
-  },
-  {
-    "city": "Terre Haute, IN",
-    "name": "HUF"
-  },
-  {
-    "city": "Tetabedi, Papua New Guinea",
-    "name": "TDB"
-  },
-  {
-    "city": "Tete, Mozambique",
-    "name": "TET"
-  },
-  {
-    "city": "Tete-a-La Baleine, QC",
-    "name": "ZTB"
-  },
-  {
-    "city": "Tetlin, AK",
-    "name": "TEH"
-  },
-  {
-    "city": "Tetuan, Morocco",
-    "name": "TTU"
-  },
-  {
-    "city": "Texarkana, AR",
-    "name": "TXK"
-  },
-  {
-    "city": "Tezpur, India",
-    "name": "TEZ"
-  },
-  {
-    "city": "Thandwe, Myanmar",
-    "name": "SNW"
-  },
-  {
-    "city": "Thangool, QL, Australia",
-    "name": "THG"
-  },
-  {
-    "city": "Thargomindah, QL, Australia",
-    "name": "XTG"
-  },
-  {
-    "city": "The Bight, Bahamas",
-    "name": "TBI"
-  },
-  {
-    "city": "The Pas, MB",
-    "name": "YQD"
-  },
-  {
-    "city": "The Pas, MB - Rail service",
-    "name": "XDZ"
-  },
-  {
-    "city": "Thessaloniki, Greece",
-    "name": "SKG"
-  },
-  {
-    "city": "Thicket Portage, MB",
-    "name": "YTD"
-  },
-  {
-    "city": "Thief River Falls, MN",
-    "name": "TVF"
-  },
-  {
-    "city": "Thira, Greece",
-    "name": "JTR"
-  },
-  {
-    "city": "Thiruvananthapuram, India",
-    "name": "TRV"
-  },
-  {
-    "city": "Thompson, MB",
-    "name": "YTH"
-  },
-  {
-    "city": "Thorne Bay, AK",
-    "name": "KTB"
-  },
-  {
-    "city": "Thorshofn, Iceland",
-    "name": "THO"
-  },
-  {
-    "city": "Thunder Bay, ON",
-    "name": "YQT"
-  },
-  {
-    "city": "Thursday Island, QL, Australia",
-    "name": "TIS"
-  },
-  {
-    "city": "Tianjn, China",
-    "name": "TSN"
-  },
-  {
-    "city": "Tiaret, Algeria",
-    "name": "TID"
-  },
-  {
-    "city": "Tiga, New Caledonia",
-    "name": "TGJ"
-  },
-  {
-    "city": "Tijuana, Mexico",
-    "name": "TIJ"
-  },
-  {
-    "city": "Tikehau Atoll, French Polynesia",
-    "name": "TIH"
-  },
-  {
-    "city": "Tiksi, Russia",
-    "name": "IKS"
-  },
-  {
-    "city": "Timaru, New Zealand",
-    "name": "TIU"
-  },
-  {
-    "city": "Timimoun, Algeria",
-    "name": "TMX"
-  },
-  {
-    "city": "Timmins, ON",
-    "name": "YTS"
-  },
-  {
-    "city": "Timosoara, Romania",
-    "name": "TSR"
-  },
-  {
-    "city": "Tin City, AK",
-    "name": "TNC"
-  },
-  {
-    "city": "Tindouf, Algeria",
-    "name": "TIN"
-  },
-  {
-    "city": "Tinian, Northern Mariana Islands",
-    "name": "TIQ"
-  },
-  {
-    "city": "Tioljikja, Mauritania",
-    "name": "TIY"
-  },
-  {
-    "city": "Tioman, Malaysia",
-    "name": "TOD"
-  },
-  {
-    "city": "Tippi, Ethiopia",
-    "name": "TIE"
-  },
-  {
-    "city": "Tirana, Albania",
-    "name": "TIA"
-  },
-  {
-    "city": "Tiree, United Kingdom",
-    "name": "TRE"
-  },
-  {
-    "city": "Tirgu Mures, Romania",
-    "name": "TGM"
-  },
-  {
-    "city": "Tiruchirapally, India",
-    "name": "TRZ"
-  },
-  {
-    "city": "Tirupati, India",
-    "name": "TIR"
-  },
-  {
-    "city": "Tivat, Serbia and Montenegro",
-    "name": "TIV"
-  },
-  {
-    "city": "Tlemcen, Algeria",
-    "name": "TLM"
-  },
-  {
-    "city": "Tobago, Trinidad and Tobago",
-    "name": "TAB"
-  },
-  {
-    "city": "Tobruk, Libya",
-    "name": "TOB"
-  },
-  {
-    "city": "Tofino, BC,",
-    "name": "YAZ"
-  },
-  {
-    "city": "Togiak Village, AK",
-    "name": "TOG"
-  },
-  {
-    "city": "Tok, AK",
-    "name": "TKJ"
-  },
-  {
-    "city": "Toksook Bay, AK",
-    "name": "OOK"
-  },
-  {
-    "city": "Tokunoshima, Japan",
-    "name": "TKN"
-  },
-  {
-    "city": "Tokushima, Japan",
-    "name": "TKS"
-  },
-  {
-    "city": "Tokyo, Japan - All airports",
-    "name": "TYO"
-  },
-  {
-    "city": "Tokyo, Japan - Haneda",
-    "name": "HND"
-  },
-  {
-    "city": "Tokyo, Japan - Narita",
-    "name": "NRT"
-  },
-  {
-    "city": "Toledo, OH",
-    "name": "TOL"
-  },
-  {
-    "city": "Toledo, PR, Brazil",
-    "name": "TOW"
-  },
-  {
-    "city": "Toluco, Mexico",
-    "name": "TLC"
-  },
-  {
-    "city": "Tom Price, WA, Australia",
-    "name": "TPR"
-  },
-  {
-    "city": "Tomanggong, Malaysia",
-    "name": "TMG"
-  },
-  {
-    "city": "Tombouctou, Mali",
-    "name": "TOM"
-  },
-  {
-    "city": "Tomsk, Russia",
-    "name": "TOF"
-  },
-  {
-    "city": "Tongliao, China",
-    "name": "TGO"
-  },
-  {
-    "city": "Tongoa, Vanuatu",
-    "name": "TGH"
-  },
-  {
-    "city": "Toowoomba, QL, Australia",
-    "name": "TWB"
-  },
-  {
-    "city": "Topeka, KS",
-    "name": "FOE"
-  },
-  {
-    "city": "Toronto, ON - Downtown Rail service",
-    "name": "YBZ"
-  },
-  {
-    "city": "Toronto, ON - Guildwood Rail service",
-    "name": "XLQ"
-  },
-  {
-    "city": "Toronto, ON - International",
-    "name": "YYZ"
-  },
-  {
-    "city": "Toronto, ON - Toronto Island Airport",
-    "name": "YTZ"
-  },
-  {
-    "city": "Torp Airport Oslo, Norway - Sandefjord",
-    "name": "TRF"
-  },
-  {
-    "city": "Torreon, Mexico",
-    "name": "TRC"
-  },
-  {
-    "city": "Torres, Vanuatu",
-    "name": "TOH"
-  },
-  {
-    "city": "Torsby, Sweden",
-    "name": "TYF"
-  },
-  {
-    "city": "Tortola, British Virgin Islands",
-    "name": "TOV"
-  },
-  {
-    "city": "Tortoli, Italy",
-    "name": "TTB"
-  },
-  {
-    "city": "Tortuquero, Costa Rica",
-    "name": "TTQ"
-  },
-  {
-    "city": "Tottori, Japan",
-    "name": "TTJ"
-  },
-  {
-    "city": "Touho, New Caledonia",
-    "name": "TOU"
-  },
-  {
-    "city": "Toulon, France",
-    "name": "TLN"
-  },
-  {
-    "city": "Toulouse, France",
-    "name": "TLS"
-  },
-  {
-    "city": "Tours, France",
-    "name": "TUF"
-  },
-  {
-    "city": "Tours, France - Rail service",
-    "name": "XSH"
-  },
-  {
-    "city": "Townsville, QL, Australia",
-    "name": "TSV"
-  },
-  {
-    "city": "Toyama, Japan",
-    "name": "TOY"
-  },
-  {
-    "city": "Tozeur, Tunisia",
-    "name": "TOE"
-  },
-  {
-    "city": "Trabzon, Turkey",
-    "name": "TZX"
-  },
-  {
-    "city": "Trang, Thailand",
-    "name": "TST"
-  },
-  {
-    "city": "Trapani, Italy",
-    "name": "TPS"
-  },
-  {
-    "city": "Traralgon, VI, Australia",
-    "name": "TGN"
-  },
-  {
-    "city": "Traverse City, MI",
-    "name": "TVC"
-  },
-  {
-    "city": "Treasure Cay, Bahamas",
-    "name": "TCB"
-  },
-  {
-    "city": "Trelew, CB, Argentina",
-    "name": "REL"
-  },
-  {
-    "city": "Trenton/Mercer, NJ",
-    "name": "TTN"
-  },
-  {
-    "city": "Trieste, Italy",
-    "name": "TRS"
-  },
-  {
-    "city": "Trinidad, Bolivia",
-    "name": "TDD"
-  },
-  {
-    "city": "Trinidad, Trinidad and Tobago",
-    "name": "POS"
-  },
-  {
-    "city": "Tripoli, Libya",
-    "name": "TIP"
-  },
-  {
-    "city": "Trollhattan, Sweden",
-    "name": "THN"
-  },
-  {
-    "city": "Trombetas, PA, Brazil",
-    "name": "TMT"
-  },
-  {
-    "city": "Tromso, Norway",
-    "name": "TOS"
-  },
-  {
-    "city": "Trondheim, Norway",
-    "name": "TRD"
-  },
-  {
-    "city": "Trujillo, Honduras",
-    "name": "TJI"
-  },
-  {
-    "city": "Trujillo, Peru",
-    "name": "TRU"
-  },
-  {
-    "city": "Truk, Micronesia",
-    "name": "TKK"
-  },
-  {
-    "city": "Truro, NS - Rail service",
-    "name": "XLZ"
-  },
-  {
-    "city": "Tsaratanana, Madagascar",
-    "name": "TTS"
-  },
-  {
-    "city": "Tsiroanomandidy, Madagascar",
-    "name": "WTS"
-  },
-  {
-    "city": "Tsumeb, Namibia",
-    "name": "TSB"
-  },
-  {
-    "city": "Tsushima, Japan",
-    "name": "TSJ"
-  },
-  {
-    "city": "Tubuai, French Polynesia",
-    "name": "TUB"
-  },
-  {
-    "city": "Tucson, AZ",
-    "name": "TUS"
-  },
-  {
-    "city": "Tucuman, TU, Argentina",
-    "name": "TUC"
-  },
-  {
-    "city": "Tucupita, Venezuela",
-    "name": "TUV"
-  },
-  {
-    "city": "Tucurui, PA, Brazil",
-    "name": "TUR"
-  },
-  {
-    "city": "Tufi, Papua New Guinea",
-    "name": "TFI"
-  },
-  {
-    "city": "Tuguegarao, Philippines",
-    "name": "TUG"
-  },
-  {
-    "city": "Tuktoyaktuk, NT",
-    "name": "YUB"
-  },
-  {
-    "city": "Tulcan, Ecuador",
-    "name": "TUA"
-  },
-  {
-    "city": "Tulear, Madagascar",
-    "name": "TLE"
-  },
-  {
-    "city": "Tulita/Fort Norman, NT",
-    "name": "ZFN"
-  },
-  {
-    "city": "Tulsa, OK",
-    "name": "TUL"
-  },
-  {
-    "city": "Tuluksak, AK",
-    "name": "TLT"
-  },
-  {
-    "city": "Tum, Ethiopia",
-    "name": "TUJ"
-  },
-  {
-    "city": "Tumaco, Colombia",
-    "name": "TCO"
-  },
-  {
-    "city": "Tumbes, Peru",
-    "name": "TBP"
-  },
-  {
-    "city": "Tunis, Tunisia",
-    "name": "TUN"
-  },
-  {
-    "city": "Tuntutuliak, AK",
-    "name": "WTL"
-  },
-  {
-    "city": "Tununak, AK",
-    "name": "TNK"
-  },
-  {
-    "city": "Tunxi, China",
-    "name": "TXN"
-  },
-  {
-    "city": "Tupelo, MS",
-    "name": "TUP"
-  },
-  {
-    "city": "Turaif, Saudi Arabia",
-    "name": "TUI"
-  },
-  {
-    "city": "Turbat, Pakistan",
-    "name": "TUK"
-  },
-  {
-    "city": "Turin, Italy",
-    "name": "TRN"
-  },
-  {
-    "city": "Turku, Finland",
-    "name": "TKU"
-  },
-  {
-    "city": "Tuscaloosa, AL",
-    "name": "TCL"
-  },
-  {
-    "city": "Tuxtla Gutierrez, Mexico",
-    "name": "TGZ"
-  },
-  {
-    "city": "Twin Falls, ID",
-    "name": "TWF"
-  },
-  {
-    "city": "Twin Hills, AK",
-    "name": "TWA"
-  },
-  {
-    "city": "Tyler, TX",
-    "name": "TYR"
-  },
-  {
-    "city": "Tyumen, Russia",
-    "name": "TJM"
-  },
-  {
-    "city": "Ube, Japan",
-    "name": "UBJ"
-  },
-  {
-    "city": "Uberaba, MG, Brazil",
-    "name": "UBA"
-  },
-  {
-    "city": "Uberlandia, MG, Brazil",
-    "name": "UDI"
-  },
-  {
-    "city": "Ubon Ratchathani, Thailand",
-    "name": "UBP"
-  },
-  {
-    "city": "Udaipur, India",
-    "name": "UDR"
-  },
-  {
-    "city": "Udon Thani, Thailand",
-    "name": "UTH"
-  },
-  {
-    "city": "Ufa, Russia",
-    "name": "UFA"
-  },
-  {
-    "city": "Ujae Island, Marshall Islands",
-    "name": "UJE"
-  },
-  {
-    "city": "Ujung Pandang, Indonesia",
-    "name": "UPG"
-  },
-  {
-    "city": "Ukhta, Russia",
-    "name": "UCT"
-  },
-  {
-    "city": "Ulaanbaatar, Mongolia",
-    "name": "ULN"
-  },
-  {
-    "city": "Ulanhot, China",
-    "name": "HLH"
-  },
-  {
-    "city": "Ulan-Ude, Russia",
-    "name": "UUD"
-  },
-  {
-    "city": "Ulei, Vanuatu",
-    "name": "ULB"
-  },
-  {
-    "city": "Uliastai, Mongolia",
-    "name": "ULY"
-  },
-  {
-    "city": "Ulithi, Micronesia",
-    "name": "ULI"
-  },
-  {
-    "city": "Ulsan, South Korea",
-    "name": "USN"
-  },
-  {
-    "city": "Ulundi, South Africa",
-    "name": "ULD"
-  },
-  {
-    "city": "Umea, Sweden",
-    "name": "UME"
-  },
-  {
-    "city": "Umiujag, QC",
-    "name": "YUD"
-  },
-  {
-    "city": "Umtata, South Africa",
-    "name": "UTT"
-  },
-  {
-    "city": "Unalakleet, AK",
-    "name": "UNK"
-  },
-  {
-    "city": "Upernavik, Greenland",
-    "name": "JUV"
-  },
-  {
-    "city": "Upington, South Africa",
-    "name": "UTN"
-  },
-  {
-    "city": "Uraj, Russia",
-    "name": "URJ"
-  },
-  {
-    "city": "Uralsk, Kazakhstan",
-    "name": "URA"
-  },
-  {
-    "city": "Uranium City, SK",
-    "name": "YBE"
-  },
-  {
-    "city": "Urbana/Champaign, IL",
-    "name": "CMI"
-  },
-  {
-    "city": "Urgench, Uzbekistan",
-    "name": "UGC"
-  },
-  {
-    "city": "Urmieh, Iran",
-    "name": "OMH"
-  },
-  {
-    "city": "Uroubi, Papua New Guinea",
-    "name": "URU"
-  },
-  {
-    "city": "Uruapan, Mexico",
-    "name": "UPN"
-  },
-  {
-    "city": "Uruguaiana, RS, Brazil",
-    "name": "URG"
-  },
-  {
-    "city": "Urumqi, China",
-    "name": "URC"
-  },
-  {
-    "city": "Useless Loop, WA, Australia",
-    "name": "USL"
-  },
-  {
-    "city": "Ushuaia, TF, Argentina",
-    "name": "USH"
-  },
-  {
-    "city": "Usinsk, Russia",
-    "name": "USK"
-  },
-  {
-    "city": "Ust-Ilimsk, Russia",
-    "name": "UIK"
-  },
-  {
-    "city": "Ust-Kamenogorsk, Kazakhstan",
-    "name": "UKK"
-  },
-  {
-    "city": "Utapao, Thailand",
-    "name": "UTP"
-  },
-  {
-    "city": "Utica, NY",
-    "name": "UCA"
-  },
-  {
-    "city": "Utila, Honduras",
-    "name": "UII"
-  },
-  {
-    "city": "Utirik Island, Marshall Islands",
-    "name": "UTK"
-  },
-  {
-    "city": "Utopia Creek, AK",
-    "name": "UTO"
-  },
-  {
-    "city": "Uummannaq, Greeland",
-    "name": "UMD"
-  },
-  {
-    "city": "Uzhgorod, Ukraine",
-    "name": "UDJ"
-  },
-  {
-    "city": "V.C. Bird International, Antigua & Barbuda",
-    "name": "ANU"
-  },
-  {
-    "city": "Vaasa, Finland",
-    "name": "VAA"
-  },
-  {
-    "city": "Vadodara, India",
-    "name": "BDQ"
-  },
-  {
-    "city": "Vadso, Norway",
-    "name": "VDS"
-  },
-  {
-    "city": "Vail, CO - Eagle County Airport",
-    "name": "EGE"
-  },
-  {
-    "city": "Vail, CO - Van service",
-    "name": "QBF"
-  },
-  {
-    "city": "Valdez, AK",
-    "name": "VDZ"
-  },
-  {
-    "city": "Valdivia, Chile",
-    "name": "ZAL"
-  },
-  {
-    "city": "Val-d'Or, QC",
-    "name": "YVO"
-  },
-  {
-    "city": "Valdosta, GA",
-    "name": "VLD"
-  },
-  {
-    "city": "Valencia, Spain",
-    "name": "VLC"
-  },
-  {
-    "city": "Valencia, Venezuela",
-    "name": "VLN"
-  },
-  {
-    "city": "Valenciennes, France",
-    "name": "XVS"
-  },
-  {
-    "city": "Valera, Venezuela",
-    "name": "VLV"
-  },
-  {
-    "city": "Valesdir, Vanuatu",
-    "name": "VLS"
-  },
-  {
-    "city": "Valladolid, Spain and Canary Islands",
-    "name": "VLL"
-  },
-  {
-    "city": "Valledupar, Colombia",
-    "name": "VUP"
-  },
-  {
-    "city": "Valparaiso, FL",
-    "name": "VPS"
-  },
-  {
-    "city": "Valverde, Spain and Canary Islands - Hierro",
-    "name": "VDE"
-  },
-  {
-    "city": "Van, Turkey",
-    "name": "VAN"
-  },
-  {
-    "city": "Vancouver, BC",
-    "name": "YVR"
-  },
-  {
-    "city": "Vancouver, BC - Coal Harbour",
-    "name": "CXH"
-  },
-  {
-    "city": "Vancouver, BC - International",
-    "name": "YVR"
-  },
-  {
-    "city": "Vancouver, BC - Rail service",
-    "name": "XEA"
-  },
-  {
-    "city": "Vanimo, Papua New Guinea",
-    "name": "VAI"
-  },
-  {
-    "city": "Vanuabalavu, Fiji",
-    "name": "VBV"
-  },
-  {
-    "city": "Varadero, Cuba",
-    "name": "VRA"
-  },
-  {
-    "city": "Varanasi, India",
-    "name": "VNS"
-  },
-  {
-    "city": "Vardoe, Norway",
-    "name": "VAW"
-  },
-  {
-    "city": "Varginha, MG, Brazil",
-    "name": "VAG"
-  },
-  {
-    "city": "Varkaus, Finland",
-    "name": "VRK"
-  },
-  {
-    "city": "Varna, Bulgaria",
-    "name": "VAR"
-  },
-  {
-    "city": "Vasteras, Sweden",
-    "name": "VST"
-  },
-  {
-    "city": "Vatomatry, Madagascar",
-    "name": "VAT"
-  },
-  {
-    "city": "Vava'u, Tonga",
-    "name": "VAV"
-  },
-  {
-    "city": "Vaxjo, Sweden",
-    "name": "VXO"
-  },
-  {
-    "city": "Venetie, AK",
-    "name": "VEE"
-  },
-  {
-    "city": "Venice, Italy - Marco Polo",
-    "name": "VCE"
-  },
-  {
-    "city": "Venice, Italy - Treviso",
-    "name": "TSF"
-  },
-  {
-    "city": "Ventura/Oxnard, CA",
-    "name": "OXR"
-  },
-  {
-    "city": "Veracruz, Mexico",
-    "name": "VER"
-  },
-  {
-    "city": "Vernal, UT",
-    "name": "VEL"
-  },
-  {
-    "city": "Verona, Italy",
-    "name": "VRN"
-  },
-  {
-    "city": "Vestmannaeyjar, Iceland",
-    "name": "VEY"
-  },
-  {
-    "city": "Victoria Falls, Zimbabwe",
-    "name": "VFA"
-  },
-  {
-    "city": "Victoria River Downs, NT, Australia",
-    "name": "VCD"
-  },
-  {
-    "city": "Victoria, BC - Inner Harbor",
-    "name": "YWH"
-  },
-  {
-    "city": "Victoria, BC - International",
-    "name": "YYJ"
-  },
-  {
-    "city": "Victoria, TX",
-    "name": "VCT"
-  },
-  {
-    "city": "Viedma, RN, Argentina",
-    "name": "VDM"
-  },
-  {
-    "city": "Vienna, Austria",
-    "name": "VIE"
-  },
-  {
-    "city": "Vientiane, Laos - Wattay",
-    "name": "VTE"
-  },
-  {
-    "city": "Vieques, Puerto Rico",
-    "name": "VQS"
-  },
-  {
-    "city": "Vigo, Spain",
-    "name": "VGO"
-  },
-  {
-    "city": "Vilanculos, Mozambique",
-    "name": "VNX"
-  },
-  {
-    "city": "Vilhelmina, Sweden",
-    "name": "VHM"
-  },
-  {
-    "city": "Vilhena, Brazil",
-    "name": "BVH"
-  },
-  {
-    "city": "Villa Gesell, BA, Argentina",
-    "name": "VLG"
-  },
-  {
-    "city": "Villa Mercedes, SL, Argentina",
-    "name": "VME"
-  },
-  {
-    "city": "Villahermosa, Mexico",
-    "name": "VSA"
-  },
-  {
-    "city": "Vilnius, Lithuania",
-    "name": "VNO"
-  },
-  {
-    "city": "Vinh City, Viet Nam",
-    "name": "VII"
-  },
-  {
-    "city": "Virgin Gorda, British Virgin Islands",
-    "name": "VIJ"
-  },
-  {
-    "city": "Visalia, CA",
-    "name": "VIS"
-  },
-  {
-    "city": "Visby, Sweden",
-    "name": "VBY"
-  },
-  {
-    "city": "Vishakhapatnam, India",
-    "name": "VTZ"
-  },
-  {
-    "city": "Vitebsk, Belarus",
-    "name": "VTB"
-  },
-  {
-    "city": "Vitoria da Conquista, BA, Brazil",
-    "name": "VDC"
-  },
-  {
-    "city": "Vitoria, Spain and Canary Islands",
-    "name": "VIT"
-  },
-  {
-    "city": "Vivigani, Papua New Guinea",
-    "name": "VIV"
-  },
-  {
-    "city": "Vladikavkaz, Russia",
-    "name": "OGZ"
-  },
-  {
-    "city": "Vladivostok, Russia",
-    "name": "VVO"
-  },
-  {
-    "city": "Vohemar, Madagascar",
-    "name": "VOH"
-  },
-  {
-    "city": "Volgodonsk, Russia",
-    "name": "VLK"
-  },
-  {
-    "city": "Volgograd, Russia",
-    "name": "VOG"
-  },
-  {
-    "city": "Vopnafjordur, Iceland",
-    "name": "VPN"
-  },
-  {
-    "city": "Vorkuta, Russia",
-    "name": "VKT"
-  },
-  {
-    "city": "Voronezh, Russia",
-    "name": "VOZ"
-  },
-  {
-    "city": "Wabush, NL",
-    "name": "YWK"
-  },
-  {
-    "city": "Waco, TX",
-    "name": "ACT"
-  },
-  {
-    "city": "Wadi Ad Dawasir, Saudi Arabia",
-    "name": "WAE"
-  },
-  {
-    "city": "Wadi Halfa, Sudan",
-    "name": "WHF"
-  },
-  {
-    "city": "Wagethe, Indonesia",
-    "name": "WET"
-  },
-  {
-    "city": "Wagga Wagga, NS, Australia",
-    "name": "WGA"
-  },
-  {
-    "city": "Wahai, Indonesia",
-    "name": "WBA"
-  },
-  {
-    "city": "Waingapo, Indonesia",
-    "name": "WGP"
-  },
-  {
-    "city": "Wainwright, AK",
-    "name": "AIN"
-  },
-  {
-    "city": "Wakkanai, Japan",
-    "name": "WKJ"
-  },
-  {
-    "city": "Walaha, Vanuatu",
-    "name": "WLH"
-  },
-  {
-    "city": "Wales, AK",
-    "name": "WAA"
-  },
-  {
-    "city": "Walgett, NS, Australia",
-    "name": "WGE"
-  },
-  {
-    "city": "Walla Walla, WA",
-    "name": "ALW"
-  },
-  {
-    "city": "Wallis Island, Wallis and Futuna Islands",
-    "name": "WLS"
-  },
-  {
-    "city": "Walvis Bay, Namibia",
-    "name": "WVB"
-  },
-  {
-    "city": "Wamena, Indonesia",
-    "name": "WMX"
-  },
-  {
-    "city": "Wanaka, New Zealand",
-    "name": "WKA"
-  },
-  {
-    "city": "Wanganui, New Zealand",
-    "name": "WAG"
-  },
-  {
-    "city": "Wangerooge, Germany",
-    "name": "AGE"
-  },
-  {
-    "city": "Wanigela, Papua New Guinea",
-    "name": "AGL"
-  },
-  {
-    "city": "Wanxian, China",
-    "name": "WXN"
-  },
-  {
-    "city": "Warsaw, Poland",
-    "name": "WAW"
-  },
-  {
-    "city": "Washington DC - All airports",
-    "name": "WAS"
-  },
-  {
-    "city": "Washington DC - Dulles",
-    "name": "IAD"
-  },
-  {
-    "city": "Washington DC - National",
-    "name": "DCA"
-  },
-  {
-    "city": "Wasior, Indonesia",
-    "name": "WSR"
-  },
-  {
-    "city": "Waskaganish, QC",
-    "name": "YKQ"
-  },
-  {
-    "city": "Wasu, Papua New Guinea",
-    "name": "WSU"
-  },
-  {
-    "city": "Waterfall, AK",
-    "name": "KWF"
-  },
-  {
-    "city": "Waterford, Ireland",
-    "name": "WAT"
-  },
-  {
-    "city": "Waterloo, IA",
-    "name": "ALO"
-  },
-  {
-    "city": "Watertown, NY",
-    "name": "ART"
-  },
-  {
-    "city": "Watertown, SD",
-    "name": "ATY"
-  },
-  {
-    "city": "Watford, ON - Rail service",
-    "name": "XWA"
-  },
-  {
-    "city": "Wau, Papua New Guinea",
-    "name": "WUG"
-  },
-  {
-    "city": "Wau, Sudan",
-    "name": "WUU"
-  },
-  {
-    "city": "Wausau/Stevens Point, WI",
-    "name": "CWA"
-  },
-  {
-    "city": "Webequie, ON",
-    "name": "YWP"
-  },
-  {
-    "city": "Wedau, Papua New Guinea",
-    "name": "WED"
-  },
-  {
-    "city": "Wedjh, Saudi Arabia",
-    "name": "EJH"
-  },
-  {
-    "city": "Weihai, China",
-    "name": "WEH"
-  },
-  {
-    "city": "Weipa, QL, Australia",
-    "name": "WEI"
-  },
-  {
-    "city": "Wellington, New Zealand",
-    "name": "WLG"
-  },
-  {
-    "city": "Wemindji, QC",
-    "name": "YNC"
-  },
-  {
-    "city": "Wenatchee, WA",
-    "name": "EAT"
-  },
-  {
-    "city": "Wenzhou, China",
-    "name": "WNZ"
-  },
-  {
-    "city": "West Palm Beach, FL",
-    "name": "PBI"
-  },
-  {
-    "city": "West Yellowstone, MT",
-    "name": "WYS"
-  },
-  {
-    "city": "Westchester County, NY",
-    "name": "HPN"
-  },
-  {
-    "city": "Westerland, Germany",
-    "name": "GWT"
-  },
-  {
-    "city": "Westerly, RI",
-    "name": "WST"
-  },
-  {
-    "city": "Westport, New Zealand",
-    "name": "WSZ"
-  },
-  {
-    "city": "Westray, United Kingdom",
-    "name": "WRY"
-  },
-  {
-    "city": "Westsound, WA",
-    "name": "WSX"
-  },
-  {
-    "city": "Wewak, Papua New Guinea",
-    "name": "WWK"
-  },
-  {
-    "city": "Weymont, QC - Rail service",
-    "name": "XFQ"
-  },
-  {
-    "city": "Wha Ti/Lac La Martre, NT",
-    "name": "YLE"
-  },
-  {
-    "city": "Whakatane, New Zealand",
-    "name": "WHK"
-  },
-  {
-    "city": "Whale Cove, NU",
-    "name": "YXN"
-  },
-  {
-    "city": "Whale Pass, AK",
-    "name": "WWP"
-  },
-  {
-    "city": "Whangarei, New Zealand",
-    "name": "WRE"
-  },
-  {
-    "city": "White Mountain, AK",
-    "name": "WMO"
-  },
-  {
-    "city": "White River, ON",
-    "name": "YWR"
-  },
-  {
-    "city": "White River, VT",
-    "name": "LEB"
-  },
-  {
-    "city": "Whitehorse, YT",
-    "name": "YXY"
-  },
-  {
-    "city": "Whyalla, SA, Australia",
-    "name": "WYA"
-  },
-  {
-    "city": "Wichita Falls, TX",
-    "name": "SPS"
-  },
-  {
-    "city": "Wichita, KS",
-    "name": "ICT"
-  },
-  {
-    "city": "Wick, United Kingdom",
-    "name": "WIC"
-  },
-  {
-    "city": "Wilhelmshaven, Germany",
-    "name": "WVN"
-  },
-  {
-    "city": "Wilkes Barre, PA",
-    "name": "AVP"
-  },
-  {
-    "city": "Williams Harbour, NL",
-    "name": "YWM"
-  },
-  {
-    "city": "Williams Lake, BC",
-    "name": "YWL"
-  },
-  {
-    "city": "Williamsburg, VA",
-    "name": "PHF"
-  },
-  {
-    "city": "Williamsport, PA",
-    "name": "IPT"
-  },
-  {
-    "city": "Williston, ND",
-    "name": "ISN"
-  },
-  {
-    "city": "Wilmington, NC",
-    "name": "ILM"
-  },
-  {
-    "city": "Wiluna, WA, Australia",
-    "name": "WUN"
-  },
-  {
-    "city": "Windarra, QL, Australia",
-    "name": "WNR"
-  },
-  {
-    "city": "Windsor Locks, CT",
-    "name": "BDL"
-  },
-  {
-    "city": "Windsor, ON",
-    "name": "YQG"
-  },
-  {
-    "city": "Windsor, ON - Rail service",
-    "name": "XEC"
-  },
-  {
-    "city": "Winnipeg, MB - International",
-    "name": "YWG"
-  },
-  {
-    "city": "Winnipeg, MB - Rail service",
-    "name": "XEF"
-  },
-  {
-    "city": "Winton, QL, Australia",
-    "name": "WIN"
-  },
-  {
-    "city": "Woja, Marshall Islands",
-    "name": "WJA"
-  },
-  {
-    "city": "Wollaston Lake, SK",
-    "name": "ZWL"
-  },
-  {
-    "city": "Wonan, Taiwan",
-    "name": "WOT"
-  },
-  {
-    "city": "WonJu, South Korea",
-    "name": "WJU"
-  },
-  {
-    "city": "Woodstock, ON - Rail service",
-    "name": "XIP"
-  },
-  {
-    "city": "Worcester, MA",
-    "name": "ORH"
-  },
-  {
-    "city": "Worland, WY",
-    "name": "WRL"
-  },
-  {
-    "city": "Wotho Island, Marshall Islands",
-    "name": "WTO"
-  },
-  {
-    "city": "Wotje Island, Marshall Islands",
-    "name": "WTE"
-  },
-  {
-    "city": "Wrangell, AK",
-    "name": "WRG"
-  },
-  {
-    "city": "Wroclaw, Poland",
-    "name": "WRO"
-  },
-  {
-    "city": "Wudinna, SA, Australia",
-    "name": "WUD"
-  },
-  {
-    "city": "Wuhan, China",
-    "name": "WUH"
-  },
-  {
-    "city": "Wunnummin Lake, ON",
-    "name": "WNN"
-  },
-  {
-    "city": "Wuyishan, China",
-    "name": "WUS"
-  },
-  {
-    "city": "Wyndham, WA, Australia",
-    "name": "WYN"
-  },
-  {
-    "city": "Wyoming, ON - Rail service",
-    "name": "XWY"
-  },
-  {
-    "city": "Xi An, China - Xianyang",
-    "name": "XIY"
-  },
-  {
-    "city": "Xiamen, China",
-    "name": "XMN"
-  },
-  {
-    "city": "Xiangfan, China",
-    "name": "XFN"
-  },
-  {
-    "city": "Xichang, China",
-    "name": "XIC"
-  },
-  {
-    "city": "Xieng Khouang, Laos",
-    "name": "XKH"
-  },
-  {
-    "city": "Xilinhot, China",
-    "name": "XIL"
-  },
-  {
-    "city": "Xining, China",
-    "name": "XNN"
-  },
-  {
-    "city": "Xuzhou, China",
-    "name": "XUZ"
-  },
-  {
-    "city": "Yakima, WA",
-    "name": "YKM"
-  },
-  {
-    "city": "Yakutat, AK",
-    "name": "YAK"
-  },
-  {
-    "city": "Yakutsk, Russia",
-    "name": "YKS"
-  },
-  {
-    "city": "Yalumet, Papua New Guinea",
-    "name": "KYX"
-  },
-  {
-    "city": "Yam Island, QL, Australia",
-    "name": "XMY"
-  },
-  {
-    "city": "Yamagata, Japan",
-    "name": "GAJ"
-  },
-  {
-    "city": "Yan'an, China",
-    "name": "ENY"
-  },
-  {
-    "city": "Yanbu, Saudi Arabia",
-    "name": "YNB"
-  },
-  {
-    "city": "Yancheng, China",
-    "name": "YNZ"
-  },
-  {
-    "city": "Yandina, Solomon Islands",
-    "name": "XYA"
-  },
-  {
-    "city": "Yangon, Myanmar",
-    "name": "RGN"
-  },
-  {
-    "city": "Yanji, China",
-    "name": "YNJ"
-  },
-  {
-    "city": "Yantai, China",
-    "name": "YNT"
-  },
-  {
-    "city": "Yaounde, Cameroon",
-    "name": "YAO"
-  },
-  {
-    "city": "Yap, Micronesia",
-    "name": "YAP"
-  },
-  {
-    "city": "Yarmouth, NS",
-    "name": "YQI"
-  },
-  {
-    "city": "Yaroslavl, Russia",
-    "name": "IAR"
-  },
-  {
-    "city": "Yazd, Iran",
-    "name": "AZD"
-  },
-  {
-    "city": "Yelimane, Mali",
-    "name": "EYL"
-  },
-  {
-    "city": "Yellowknife, NT",
-    "name": "YZF"
-  },
-  {
-    "city": "Yellowstone/Cody, WY",
-    "name": "COD"
-  },
-  {
-    "city": "Yeosu, South Korea",
-    "name": "RSU"
-  },
-  {
-    "city": "Yerevan, Armenia",
-    "name": "EVN"
-  },
-  {
-    "city": "Yibin, China",
-    "name": "YBP"
-  },
-  {
-    "city": "Yichang, China",
-    "name": "YIH"
-  },
-  {
-    "city": "Yinchuan, China",
-    "name": "INC"
-  },
-  {
-    "city": "Yining, China",
-    "name": "YIN"
-  },
-  {
-    "city": "Yiwu, China",
-    "name": "YIW"
-  },
-  {
-    "city": "Yogyakarta, Indonesia",
-    "name": "JOG"
-  },
-  {
-    "city": "Yonago, Japan",
-    "name": "YGJ"
-  },
-  {
-    "city": "Yonaguni Jima, Japan",
-    "name": "OGN"
-  },
-  {
-    "city": "York Landing, MB",
-    "name": "ZAC"
-  },
-  {
-    "city": "Yorke Island, QL, Australia",
-    "name": "OKR"
-  },
-  {
-    "city": "Yoronjima, Japan",
-    "name": "RNJ"
-  },
-  {
-    "city": "Youngstown, OH",
-    "name": "YNG"
-  },
-  {
-    "city": "Yulin, China",
-    "name": "UYN"
-  },
-  {
-    "city": "Yuma, AZ",
-    "name": "YUM"
-  },
-  {
-    "city": "Yuzhno-Sakhalinsk, Russia",
-    "name": "UUS"
-  },
-  {
-    "city": "Zadar, Croatia",
-    "name": "ZAD"
-  },
-  {
-    "city": "Zagreb, Croatia",
-    "name": "ZAG"
-  },
-  {
-    "city": "Zahedan, Iran",
-    "name": "ZAH"
-  },
-  {
-    "city": "Zakinthos Island, Greece",
-    "name": "ZTH"
-  },
-  {
-    "city": "Zamboanga, Philippines",
-    "name": "ZAM"
-  },
-  {
-    "city": "Zanzibar, Tanzania - Kisauni",
-    "name": "ZNZ"
-  },
-  {
-    "city": "Zaporozhye, Ukraine",
-    "name": "OZH"
-  },
-  {
-    "city": "Zaragoza, Spain and Canary Islands",
-    "name": "ZAZ"
-  },
-  {
-    "city": "Zhanjiang, China",
-    "name": "ZHA"
-  },
-  {
-    "city": "Zhaotong, China",
-    "name": "ZAT"
-  },
-  {
-    "city": "Zhengzha, China",
-    "name": "CGO"
-  },
-  {
-    "city": "Zhob, Pakistan",
-    "name": "PZH"
-  },
-  {
-    "city": "Zhoushan, China",
-    "name": "HSN"
-  },
-  {
-    "city": "Zhuhai, China",
-    "name": "ZUH"
-  },
-  {
-    "city": "Zielana, Poland",
-    "name": "IEG"
-  },
-  {
-    "city": "Zihuatanejo/Ixtapa, Mexico",
-    "name": "ZIH"
-  },
-  {
-    "city": "Zouerate, Mauritania",
-    "name": "OUZ"
-  },
-  {
-    "city": "Zugapa, Indonesia",
-    "name": "UGU"
-  },
-  {
-    "city": "Zurich, Switzerland",
-    "name": "ZRH"
-  }
 ]

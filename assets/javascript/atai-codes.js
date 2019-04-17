@@ -1,4 +1,4 @@
-var ataiCodes = [
+var iataCodes = [
   {
     "city": "Aalborg",
     "county": "Denmark",

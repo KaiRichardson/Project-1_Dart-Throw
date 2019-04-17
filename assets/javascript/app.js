@@ -1,3 +1,10 @@
+$("#second_section").hide();
+$("#third_section").hide();
+$("#forth_section").hide();
+$("#third_btn").hide();
+$("#second_btn").hide();
+$("#forth_btn").hide();
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyBrbkBG7yWT3b_SyomTkIvRR42M1JMo-Rk",
@@ -78,10 +85,10 @@ var dist = 0;
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
-//implementing slow window scroll
+//implementing slow window scroll header
 window.onscroll = function () { scrollFunc() };
 
-//funct for scroll
+//funct for scroll header
 function scrollFunc() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -91,7 +98,7 @@ function scrollFunc() {
 }
 
 //animate scroll when a button in clicked
-$(".scrollBtn").on("click", function () {
+$(".scrollBtn").on("mouseup", function () {
   $('html,body').animate({
     scrollTop: $($(this).attr('href')).offset().top
   },
@@ -99,7 +106,7 @@ $(".scrollBtn").on("click", function () {
 });
 
 //ON-CLICK FOR USER'S TRIP DETAILS//
-$("#search_btn").on("click", function () {
+$("#search_btn").on("mousedown", function () {
 
   var userFrom = $("#origin_input").val();
   var userLeave = $("#leave_input").val();
@@ -112,6 +119,9 @@ $("#search_btn").on("click", function () {
     startTrip: userLeave,
     endTrip: userBack,
   });
+
+  $("#third_section").show(500);
+  $("#third_btn").show(500);
 })
 
 //ON-CLICK FOR FAQ TO FIREBASE//
@@ -251,41 +261,60 @@ function addCity() {
 
 //--------random city location buttons--------
 //on click of location btn 0
-$(document).on("click", "#btn0Loca", function () {
+$(document).on("mousedown", "#btn0Loca", function () {
+  $("#second_section").show();
+  $("#second_btn").show();
+});
+
+$(document).on("mouseup", "#btn0Loca", function () {
   mymap.flyTo([cityArr[0].lat, cityArr[0].lng], 10, {
     animate: true,
     duration: 5 // in seconds
   });
+
   dist = getDistance(cityArr[0].lat, cityArr[0].lng);
-  console.log(dist);
+
+  $("#to_city").text(cityArr[0].city);
   $("#avg_dist").text(Math.round(dist * 0.000621371));
   $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
 });
 
 //on click of location btn 1
-$(document).on("click", "#btn1Loca", function () {
+$(document).on("mousedown", "#btn1Loca", function () {
+  $("#second_section").fadein();
+  $("#second_btn").fadein();
+});
+
+$(document).on("mouseup", "#btn1Loca", function () {
   mymap.flyTo([cityArr[1].lat, cityArr[1].lng], 10, {
     animate: true,
     duration: 5 // in seconds
   });
-  $("#to_city").text(cityArr[1].city);
+
   dist = getDistance(cityArr[1].lat, cityArr[1].lng)
-  console.log(dist);
+
+  $("#to_city").text(cityArr[1].city);
   $("#avg_dist").text(Math.round(dist * 0.000621371));
   $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
 });
 
 //on click of location btn 2
-$(document).on("click", "#btn2Loca", function () {
+$(document).on("mousedown", "#btn2Loca", function () {
+  $("#second_section").show();
+  $("#second_btn").show();
+});
+
+$(document).on("mouseup", "#btn2Loca", function () {
   mymap.flyTo([cityArr[2].lat, cityArr[2].lng], 10, {
     animate: true,
     duration: 5 // in seconds
   });
-  $("#to_city").text(cityArr[2].city);
+
   dist = getDistance(cityArr[2].lat, cityArr[2].lng)
-  console.log(dist);
+
+  $("#to_city").text(cityArr[2].city);
   $("#avg_dist").text(Math.round(dist * 0.000621371));
   $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
@@ -293,7 +322,10 @@ $(document).on("click", "#btn2Loca", function () {
 
 //--------random city detail buttons--------
 //on click of detail btn 0
-$(document).on("click", "#btn0", function () {
+$(document).on("mousedown", "#btn0", function () {
+  $("#forth_section").show();
+  $("#forth_btn").show();
+
   toIata = cityArr[0].iata;
   locationPic(cityArr[0].country);
   $("#population").text(cityArr[0].pop)
@@ -301,7 +333,10 @@ $(document).on("click", "#btn0", function () {
 });
 
 //on click of detail btn 1
-$(document).on("click", "#btn1", function () {
+$(document).on("mousedown", "#btn1", function () {
+  $("#forth_section").show();
+  $("#forth_btn").show();
+
   toIata = cityArr[1].iata;
   locationPic(cityArr[1].country);
   $("#population").text(cityArr[1].pop)
@@ -309,7 +344,10 @@ $(document).on("click", "#btn1", function () {
 });
 
 //on click of detail btn 2
-$(document).on("click", "#btn2", function () {
+$(document).on("mousedown", "#btn2", function () {
+  $("#forth_section").show();
+  $("#forth_btn").show();
+
   toIata = cityArr[2].iata;
   locationPic(cityArr[2].country);
   $("#population").text(cityArr[2].pop)
@@ -352,10 +390,10 @@ function locationPic(countryIn) {
     url: queryURL,
     method: "GET"
   }).then(function (response) {
-      $("#detailPic0").attr("src", response.results[0].urls.raw);
-      $("#detailPic1").attr("src", response.results[1].urls.raw);
-      $("#detailPic2").attr("src", response.results[2].urls.raw);
-    });
+    $("#detailPic0").attr("src", response.results[0].urls.raw);
+    $("#detailPic1").attr("src", response.results[1].urls.raw);
+    $("#detailPic2").attr("src", response.results[2].urls.raw);
+  });
 };
 
 //on click of search btn, load 3 random cities

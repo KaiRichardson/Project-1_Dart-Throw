@@ -63,6 +63,8 @@ var leaveDate = 0;
 var backDate = 0;
 var returning = 1;
 
+var wikiName = "";
+
 var fare = 0;
 var dist = 0;
 
@@ -123,13 +125,17 @@ database.ref().on("value", function (snapshot) {
       startLng = cityNames[i].lng;
     }
   }
-  
-  leaveDate = dateSwitch(startTrip);
-  backDate = dateSwitch(endTrip);
 
-  console.log(fromIata);
-  console.log(startLat);
-  console.log(startLng);
+  leaveDate = startTrip.replace(/-/g, "");
+  backDate = endTrip.replace(/-/g, "");
+
+  // leaveDate = startTrip.replace(/(..).(..).(....)/, "$3$1$2");
+  // backDate = endTrip.replace(/(..).(..).(....)/, "$3$1$2");
+  // leaveDate = dateSwitch(startTrip);
+  // backDate = dateSwitch(endTrip);
+
+  console.log(leaveDate);
+  console.log(backDate);
 
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
@@ -233,7 +239,7 @@ function randCity() {
     cityArr[i].lat = cityNames[cityNum].lat;
     cityArr[i].lng = cityNames[cityNum].lng;
     // cityArr[i].iata = result.iata;
-    cityArr[i].pop = cityNames[cityNum].lng;
+    cityArr[i].pop = cityNames[cityNum].population;
 
     for (var j = 0; j < iataCodes.length; j++) {
       if (iataCodes[j].city === cityArr[i].city) {
@@ -273,9 +279,9 @@ $(document).on("click", "#btn0Loca", function () {
   });
   dist = getDistance(cityArr[0].lat, cityArr[0].lng);
   console.log(dist);
-  Fare = 50 + (dist * 0.11)
+  // Fare = 50 + (dist * 0.11)
   $("#avg_dist").text(Math.round(dist * 0.000621371));
-  $("#avg_ttime").text(550 / Math.round(dist * 0.000621371));
+  $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
 });
 
@@ -287,9 +293,9 @@ $(document).on("click", "#btn1Loca", function () {
   $("#to_city").text(cityArr[1].city);
   dist = getDistance(cityArr[1].lat, cityArr[1].lng)
   console.log(dist);
-  Fare = 50 + (dist * 0.11)
+  // Fare = 50 + (dist * 0.11)
   $("#avg_dist").text(Math.round(dist * 0.000621371));
-  $("#avg_ttime").text(550 * dist);
+  $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
 });
 
@@ -301,9 +307,9 @@ $(document).on("click", "#btn2Loca", function () {
   $("#to_city").text(cityArr[2].city);
   dist = getDistance(cityArr[2].lat, cityArr[2].lng)
   console.log(dist);
-  Fare = 50 + (dist * 0.11)
+  // Fare = 50 + (dist * 0.11)
   $("#avg_dist").text(Math.round(dist * 0.000621371));
-  $("#avg_ttime").text(550 / Math.round(dist * 0.000621371));
+  $("#avg_ttime").text(Math.round(dist / 804672));
   $("#avg_price").text(50 + (Math.round(dist * 0.000621371) * 0.11));
 });
 
@@ -311,27 +317,37 @@ $(document).on("click", "#btn0", function () {
   toIata = cityArr[0].iata;
   locationPic(cityArr[0].country);
 $("#population").text(cityArr[0].pop)
+  wikiName = cityArr[0].city;
 });
 
 $(document).on("click", "#btn1", function () {
   toIata = cityArr[1].iata;
   locationPic(cityArr[1].country);
   $("#population").text(cityArr[1].pop)
+  wikiName = cityArr[1].city;
+
 });
 
 $(document).on("click", "#btn2", function () {
   toIata = cityArr[2].iata;
   locationPic(cityArr[2].country);
   $("#population").text(cityArr[2].pop)
+  wikiName = cityArr[2].city;
+
 });
 
-function dateSwitch(input) {
-  var output = input.replace(/(..).(..).(....)/, "$3$1$2");
-  return output;
-}
+// function dateSwitch(input) {
+//   var output = input.replace(/(..).(..).(....)/, "$3$1$2");
+//   return output;
+// }
 
 
 $(document).on("click", "#flight-submit-button", function () {
+
+  if ($('#checkBox').is(":checked"))
+{
+  returning = 0;
+}
 
   if (returning = 0) {
     window.open("https://www.skyscanner.com/transport/flights/" + fromIata + "/" + toIata + "/" + leaveDate + "/?adults=1&children=0&adultsv2=1&childrenv2=&infants=0&cabinclass=economy" + "&rtn=" + returning + "&preferdirects=false&outboundaltsenabled=true&inboundaltsenabled=true&ref=home#results");
@@ -339,6 +355,11 @@ $(document).on("click", "#flight-submit-button", function () {
   } else {
     window.open("https://www.skyscanner.com/transport/flights/" + fromIata + "/" + toIata + "/" + leaveDate + "/" + backDate + "/?adults=1&children=0&adultsv2=1&childrenv2=&infants=0&cabinclass=economy" + "&rtn=" + returning + "&preferdirects=false&outboundaltsenabled=true&inboundaltsenabled=true&ref=home#results");
   }
+});
+
+$(document).on("click", "#wiki_btn", function () {
+
+    window.open("https://en.wikipedia.org/wiki/" + wikiName);
 });
 
 

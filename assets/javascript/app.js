@@ -1,18 +1,18 @@
 function fbFunc() {
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
-      authDomain: "dart-throw.firebaseapp.com",
-      databaseURL: "https://dart-throw.firebaseio.com",
-      projectId: "dart-throw",
-      storageBucket: "dart-throw.appspot.com",
-      messagingSenderId: "554192496798"
+        apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
+        authDomain: "dart-throw.firebaseapp.com",
+        databaseURL: "https://dart-throw.firebaseio.com",
+        projectId: "dart-throw",
+        storageBucket: "dart-throw.appspot.com",
+        messagingSenderId: "554192496798"
     };
     firebase.initializeApp(config);
-  
+
     var database = firebase.database();
-  };
-  
+};
+
 
 var cityArr = [{
     city: "",
@@ -58,9 +58,10 @@ function myFunction() {
     }
 }
 
-$(".scrollBtn").click(function() {
+$(".scrollBtn").click(function () {
     $('html,body').animate({
-        scrollTop: $($(this).attr('href')).offset().top},
+        scrollTop: $($(this).attr('href')).offset().top
+    },
         'slow');
 });
 
@@ -127,7 +128,6 @@ function addCity() {
 }
 
 
-
 $(document).on("click", "#btn0Loca", function () {
     mymap.flyTo([cityArr[0].lat, cityArr[0].lng], 10, {
         animate: true,
@@ -150,65 +150,45 @@ $(document).on("click", "#btn2Loca", function () {
 });
 
 $(document).on("click", "#btn0", function () {
-  gotToSkyscanner(cityArr[0].lat, cityArr[0].lng);
-  localStorage.setItem("city", cityArr[0].city);
-  localStorage.setItem("country", cityArr[0].country);
-  window.location.replace("./billing.html");
-  locationPic();
-  console.log('');
+    //   gotToSkyscanner(cityArr[0].lat, cityArr[0].lng);
+    // localStorage.setItem$(this).attr("country")("city", cityArr[0].city);
+    // localStorage.setItem("country", cityArr[0].country);
+    locationPic(cityArr[0].country);
 });
 
 $(document).on("click", "#btn1", function () {
-  gotToSkyscanner(cityArr[1].lat, cityArr[1].lng);
-  localStorage.setItem("city", cityArr[1].city);
-  localStorage.setItem("country", cityArr[1].country);
-  window.location.replace("./billing.html");
-locationPic();
+    //   gotToSkyscanner(cityArr[1].lat, cityArr[1].lng);
+    // localStorage.setItem("city", cityArr[1].city);
+    // localStorage.setItem("country", cityArr[1].country);
+    locationPic(cityArr[1].country);
 });
 
 $(document).on("click", "#btn2", function () {
-  gotToSkyscanner(cityArr[2].lat, cityArr[2].lng);
-  localStorage.setItem("city", cityArr[2].city);
-  localStorage.setItem("country", cityArr[2].country);
-  window.location.replace("./billing.html");
-  locationPic();
+    // gotToSkyscanner(cityArr[2].lat, cityArr[2].lng);
+    // localStorage.setItem("city", cityArr[2].city);
+    // localStorage.setItem("country", cityArr[2].country);
+    locationPic(cityArr[2].country);
 });
 
-function gotToSkyscanner(lat, lng) {
+// 
 
-    var wikiQueryURL = "https://iatacodes.org/api/v6/nearby?api_key=8c7d3c54-01d7-4d9e-86f9-30c23824d802&lat=" + lat + "lng=" + lng + "&distance=1000";
+// https://www.skyscanner.com/transport/flights
+// /sea(starting point IATA code)
+// /anc(destination IATA code)
+// /190814(leaving date YY/MM/DD)
+// /190822(return date YY/MM/DD)
+// /?adults=1
+// &children=0
+// &adultsv2=1
+// &childrenv2=
+// &infants=0
+// &cabinclass=economy
+// &rtn=1 (boolian, 0=no return)
+// &preferdirects=false
+// &outboundaltsenabled=false
+// &inboundaltsenabled=false
+// &ref=home#results
 
-    $.ajax({
-        url: wikiQueryURL,
-        method: "GET"
-    }).then(function (response) {
-
-        console.log(response);
-
-
-        var destination;
-
-        window.open("https://www.skyscanner.com/transport/flights/" + + "/" + + "/" + + "/" + + "/" + + "/");
-
-    });
-
-    // https://www.skyscanner.com/transport/flights
-    // /sea(starting point IATA code)
-    // /anc(destination IATA code)
-    // /190814(leaving date YY/MM/DD)
-    // /190822(return date YY/MM/DD)
-    // /?adults=1
-    // &children=0
-    // &adultsv2=1
-    // &childrenv2=
-    // &infants=0
-    // &cabinclass=economy
-    // &rtn=1 (boolian, 0=no return)
-    // &preferdirects=false
-    // &outboundaltsenabled=false
-    // &inboundaltsenabled=false
-    // &ref=home#results
-}
 
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -220,44 +200,40 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 
 
-function locationPic() {
-    for (let i = 0; i < cityArr.length; i++) {
+function locationPic(countryIn) {
+    // for (let i = 0; i < cityArr.length; i++) {
 
 
     // var randCitySplit = cityArr[i].city;
+    console.log(countryIn);
+    var APIkey = "71bffe063e7e7b08081853a39bb1a26e324af8bafbf84cb28f79e4f75b19cab6";
 
-        var APIkey = "71bffe063e7e7b08081853a39bb1a26e324af8bafbf84cb28f79e4f75b19cab6";
-
-    var queryURL = "https://api.unsplash.com/search/photos?query=" + localStorage.getItem("country") + "&client_id=" + APIkey;
+    var queryURL = "https://api.unsplash.com/search/photos?query=" + countryIn + "&client_id=" + APIkey;
     console.log("my query is:" + queryURL);
 
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        })
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
 
-            .then(function (response) {
-                // var results = response.data;
+        .then(function (response) {
+            // var results = response.data;
 
-        console.log("this is locationPic function:" + response);
-        // console.log(results);
+            // console.log("this is locationPic function:" + response);
+            // console.log(results);
+            console.log("this is response" + response.results[0].urls.small);
 
-                // if I dont get any results from city I want an ajax call for the country. I can get the city name by randCitySplit[0], and country from randCitySplit[1]
-                // if (randCitySplit[0]) {};
+            // cityPic = response.results[0].urls.large;
+            // console.log("This is cityPic:" + cityPic);
 
-
-
-        cityPic = response.results[0].urls.raw;
-        // console.log("This is cityPic:" + cityPic);
-        $("#detailPic" + i).attr("src", cityPic);
-
-        // ("<div class='carousel-item active'><img src='assets/images/clouds-background.jpeg' class='d-block w-100' alt='...'></div>");
-        // $("#deal-pic1").attr("src", cityPic);
-        // $("#deal-pic2").attr("src", cityPic);
+            $("#detailPic0").attr("src", response.results[0].urls.raw);
+            $("#detailPic1").attr("src", response.results[1].urls.raw);
+            $("#detailPic2").attr("src", response.results[2].urls.raw);
 
 
-            });
-    }
+
+        });
+    // }
 };
 

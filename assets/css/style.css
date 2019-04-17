@@ -124,6 +124,13 @@ city info with pictures slides */
 
 .carousel-inner {
     border-radius: 10px 10px 0px 0px;
+   height: 400px;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+    
 }
 
 #flight-submit-button {

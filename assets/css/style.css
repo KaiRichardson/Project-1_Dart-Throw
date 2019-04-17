@@ -28,6 +28,7 @@ head with date search */
 #search_btn {
     width: 100px;
     margin: 20px;
+    border-radius: 4px;
 }
 
 .firstLabels {

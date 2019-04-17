@@ -11,6 +11,11 @@
 
     var database = firebase.database();
 
+    var startCity = "";
+    var startTrip = "";
+    var endTrip = "";
+
+
     //ON-CLICK FOR USER'S TRIP DETAILS//
     $("#search_btn").on("click", function(){
         
@@ -38,7 +43,30 @@
     })
     });
 
+    database.ref().on("value", function(snapshot) {
 
+        // If Firebase has a highPrice and highBidder stored, update our client-side variables
+        if (snapshot.child("startCity").exists() && snapshot.child("startTrip").exists() && snapshot.child("endTrip").exists()) {
+          // Set the variables for highBidder/highPrice equal to the stored values.
+          startCity = snapshot.val().startCity;
+          startTrip = snapshot.val().startTrip;
+          endTrip = snapshot.val().endTrip;
+        }
+      
+        // If Firebase does not have highPrice and highBidder values stored, they remain the same as the
+        // values we set when we initialized the variables.
+        // In either case, we want to log the values to console and display them on the page.
+        console.log("this is startCity " + startCity);
+        console.log("this is startTrip " + startTrip);
+        console.log("this is endTrip " + endTrip);
+        
+        $("#from_city").text(startCity);
+        // $("").text(highPrice);
+      
+        // If any errors are experienced, log them to console.
+      }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code);
+      });
 
      
 
@@ -179,12 +207,13 @@ function addCity() {
   $("#deal-pic2").attr("src", cityArr[2].thumb);
 }
 
+
+
 $(document).on("click", "#btn0Loca", function () {
   mymap.flyTo([cityArr[0].lat, cityArr[0].lng], 10, {
     animate: true,
     duration: 5 // in seconds
   });
-
 });
 
 $(document).on("click", "#btn1Loca", function () {
@@ -192,6 +221,8 @@ $(document).on("click", "#btn1Loca", function () {
     animate: true,
     duration: 5 // in seconds
   });
+  $("#to_city").text(cityArr[1].city);
+  $("#avg_price").text()
 });
 
 $(document).on("click", "#btn2Loca", function () {
@@ -199,6 +230,7 @@ $(document).on("click", "#btn2Loca", function () {
     animate: true,
     duration: 5 // in seconds
   });
+  $("#to_city").text(cityArr[2].city);
 });
 
 $(document).on("click", "#btn0", function () {
@@ -231,25 +263,6 @@ $(document).on("click", "#flight-submit-button", function () {
     window.open("https://www.skyscanner.com/transport/flights/" + fromIata + "/" + toIata + "/" + leaveDate + "/" + backDate + "/?adults=1&children=0&adultsv2=1&childrenv2=&infants=0&cabinclass=economy" + "&rtn=" + returning + "&preferdirects=false&outboundaltsenabled=true&inboundaltsenabled=true&ref=home#results");
   }
 });
-
-// https://www.skyscanner.com/transport/flights
-// /sea(starting point IATA code)
-// /anc(destination IATA code)
-// /190814(leaving date YY/MM/DD)
-// /190822(return date YY/MM/DD)
-
-// /?adults=1
-// &children=0
-// &adultsv2=1
-// &childrenv2=
-// &infants=0
-// &cabinclass=economy
-
-// &rtn=1 (boolian, 0=no return)
-// &preferdirects=false
-// &outboundaltsenabled=true
-// &inboundaltsenabled=true
-// &ref=home#results
 
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

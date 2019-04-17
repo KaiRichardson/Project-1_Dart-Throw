@@ -1,18 +1,47 @@
-function fbFunc() {
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyBcNpHMMSe4lQub_7xxEFkyepK1H8ObAdE",
-        authDomain: "dart-throw.firebaseapp.com",
-        databaseURL: "https://dart-throw.firebaseio.com",
-        projectId: "dart-throw",
-        storageBucket: "dart-throw.appspot.com",
-        messagingSenderId: "554192496798"
-    };
-    firebase.initializeApp(config);
+
+      // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrbkBG7yWT3b_SyomTkIvRR42M1JMo-Rk",
+    authDomain: "dart-throw-75c09.firebaseapp.com",
+    databaseURL: "https://dart-throw-75c09.firebaseio.com",
+    projectId: "dart-throw-75c09",
+    storageBucket: "dart-throw-75c09.appspot.com",
+    messagingSenderId: "559350308558"
+  };
+  firebase.initializeApp(config);
 
     var database = firebase.database();
-};
 
+    //ON-CLICK FOR USER'S TRIP DETAILS//
+    $("#search_btn").on("click", function(){
+        
+        var userFrom =  $("#origin_input").val();
+        var userLeave = $("#leave_input").val();
+        var userBack = $("#return_input").val();
+
+        database.ref().set({
+            startCity: userFrom,
+            startTrip: userLeave,
+            endTrip: userBack,
+        });
+    
+    })
+    //ON-CLICK FOR FAQ TO FIREBASE//
+    $("#faq-button").on("click", function(){
+
+        var userEmail = $("#faq-email").val();
+        var userQuestion = $("#faq-question").val();
+    
+        database.ref().set({
+            faqEmail: userEmail,
+            faqQuestion: userQuestion,
+
+    })
+    });
+
+
+
+     
 
 var cityArr = [{
     city: "",

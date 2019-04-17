@@ -16,161 +16,303 @@
     <title>Home</title>
 </head>
 
-<body id="body">
-    <!-- HEADER -->
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container-jumbo">
-                <h1 class="display-4">Dart Throw</h1>
-                <p class="lead">Your dream destination awaits..</p>
+<body>
+
+    <!-- FISRT SECTION -->
+    <div id="first_section">
+        <div class="container" id="inner_1">
+            <div id="main_head">
+                    <h1 class="display-4" id="main_title">Dart Throw</h1>
+                    <p class="lead">Your dream destination awaits..</p>
             </div>
-        </div>
 
-        <!-- USER DART THROW SECTION  -->
-        <div id="row0" class="row">
-            <div class="col-md-12">
-                <div class="card text-center">
-                    <div id="card-header" class="card-header">
-
-                    </div>
-                    <div class="card-body">
-                        <div id="mapid"></div>
-                        <p>Throw the dart at the globe to discover your dream getaway.</p>
-                        <!-- <a href="#" class="btn btn-info">Take Me There</a> -->
-                    </div>
-
+            <!-- inputs from user to firebase  -->
+            <form class="form-row" id="formGroup">
+                <div class="col-md-1">
+                    <label class="firstLabels" for="leave_input">From:</label>
                 </div>
-            </div>
-        </div>
-
-        <!-- FEATURED DEALS (THERE WILL BE 3 DEALS THAT WILL POPULATE) -->
-        <div id="row1" class="row">
-            <div class="col-md-4">
-                <div class="card0" style="width: 18rem;">
-                    <img id="deal-pic0" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 id="city0" class="card-title">RANDOM CITY</h5>
-                        <p id="text0" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-info" id="btn0">Details</a>
-                        <a href="#" class="btn btn-info" id="btn0Loca">location</a>
-                    </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="origin_input" placeholder="Where are you? (City)">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card1" style="width: 18rem;">
-                    <img id="deal-pic1" src="#https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg" class=
-                        "card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 id="city1" class="card-title">RANDOM CITY</h5>
-                        <p id="text1" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-info" id="btn1">Details</a>
-                        <a href="#" class="btn btn-info" id="btn1Loca">location</a>
-                    </div>
+                <div class="col-md-1">
+                    <label class="firstLabels" for="leave_input">Leave:</label>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card2" style="width: 18rem;">
-                    <img id="deal-pic2" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 id="city2" class="card-title">RANDOM CITY</h5>
-                        <p id="text2" class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-info" id="btn2">Details</a>
-                        <a href="#" class="btn btn-info" id="btn2Loca">location</a>
-                    </div>
+                <div class="col-md-2">
+                    <input type="date" class="form-control" id="leave_input">
                 </div>
-            </div>
-        </div>
-
-        <!-- HEADLINES  -->
-        <div id="row2" class="row">
-            <div class="col-md-6">
-                <h1>Create a Trip</h1>
-            </div>
-            <div class="col-md-6">
-                <h1>Contact us</h1>
-            </div>
-        </div>
-
-
-
-        <div id="row3" class="row">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Origin</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Destination</label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="City">
-                    </div>
+                <div class="col-md-1">
+                    <label class="firstLabels" for="return_input">Back:</label>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Departing</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="mm/dd/yyyy">
+                <div class="col-md-2">
+                    <input type="date" class="form-control" id="return_input">
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Returning</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="mm/dd/yyyy">
+                <div class="col-md-2">
+                    <a type="submit" class="btn btn-info scrollBtn" id="search_btn" href="#third_section">Search</a>
                 </div>
-
-                <div class="form-group col-md-8">
-                    <label for="inputState">Number of Travelers</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            I would like to add a hotel
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-info">Search</button>
             </form>
+        </div>
+    </div>
 
-            <div class="col-sm-6">
-                <div id="contact" class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">Contact
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">FAQ</button>
-                    <button type="button" class="list-group-item list-group-item-action">About us</button>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header" id="myHeader">
+        <a class="navbar-brand scrollBtn" href="#first_section">Dart Throw</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active scrollBtn" href="#first_section">Home</a>
+                <a class="nav-item nav-link scrollBtn" href="#forth_section">Details</a>
+                <a class="nav-item nav-link scrollBtn" href="#fith_section">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECOND SECTION  -->
+    <div id="second_section">
+        <div class="container">
+            <!-- MAP AND DATA -->
+            <div id="row0" class="row">
+                <!-- map -->
+                <div class="col-md-8">
+                    <div id="mapid"></div>
+                </div>
+                <!-- data -->
+                <div class="col-md-4 info_div">
+                    <div id="avgPrice">Avg. Info For A Direct Flight</div>
+                    <div>From <span id="from_city"></span> To <span id="to_city"></span></div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>Avg Price</div>
+                            <hr>
+                            <b><span id="avg_price">$100 - $200</span></b>
+                        </div>
+                        <div class="col-md-6">
+                            <div>Distance</div>
+                            <hr>
+                            <b><span id="avg_dist">1000</span> Miles</b>
+                        </div>
+                    </div>
+                    <div class="row info_row">
+                        <div class="col-md-6">
+                            <div>Travle Time</div>
+                            <hr>
+                            <b><span id="avg_ttime">5</span> Hours</b>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <div>Distance</div>
+                            <hr>
+                            <b><span id="avg_price">$100 - $200</span></b>                         -->
+                        </div>
+                    </div>
 
                 </div>
             </div>
+        </div>
+    </div>
 
+    <!-- THIRD SECTION -->
+    <div id="third_section">
+        <div class="container">
+            <div id="header_3">
+                <h2>Dope Destinations we picked for you!</h2>
+            </div>
+            <!-- FEATURED DEALS (THERE WILL BE 3 DEALS THAT WILL POPULATE) -->
+            <div id="row1" class="row">
+                <div class="col-md-3 randLocCard">
+                    <div class="card0">
+                        <img id="deal-pic0" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
+                            class="card-img-top" alt="city_image">
+                        <div class="card-body">
+                            <h5 id="city0" class="card-title"></h5>
+                            <p id="text0" class="card-text"></p>
+                            <a href="#forth_section" class="btn btn-info scrollBtn" id="btn0">Details</a>
+                            <a href="#second_section" class="btn btn-info scrollBtn" id="btn0Loca">location</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 randLocCard">
+                    <div class="card1">
+                        <img id="deal-pic1" src="#https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
+                            class="card-img-top" alt="city_image">
+                        <div class="card-body">
+                            <h5 id="city1" class="card-title"></h5>
+                            <p id="text1" class="card-text"></p>
+                            <a href="#forth_section" class="btn btn-info scrollBtn" id="btn1">Details</a>
+                            <a href="#second_section" class="btn btn-info scrollBtn" id="btn1Loca">location</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 randLocCard">
+                    <div class="card2">
+                        <img id="deal-pic2" src="https://www.decathlon.co.uk/media/840/8402856/big_1422751.jpg"
+                            class="card-img-top" alt="city_image">
+                        <div class="card-body">
+                            <h5 id="city2" class="card-title"></h5>
+                            <p id="text2" class="card-text"></p>
+                            <a href="#forth_section" class="btn btn-info scrollBtn" id="btn2">Details</a>
+                            <a href="#second_section" class="btn btn-info scrollBtn" id="btn2Loca">location</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FORTH SECTION -->
+    <div id="forth_section">
+        <!-- Details -->
+        <div class="container">
+            <div id="row0" class="row">
+                <!-- destination info -->
+                <div class="col-md-4 info_div">
+                    <h1 class="display-4">Details</h1>
+                    <p class="lead">I can hear your excitement from here!</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>Population</div>
+                            <hr>
+                            <b><span id="avg_price">4.5</span></b>
+                        </div>
+                        <div class="col-md-6">
+                            <div>Size</div>
+                            <hr>
+                            <b><span id="avg_dist">1000</span> Square Miles</b>
+                        </div>
+                    </div>
+                    <div class="row info_row">
+                        <div class="col-md-6">
+                            <div>Tourist Arrivals</div>
+                            <hr>
+                            <b><span id="avg_ttime">35</span> Million</b>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-info" id="wiki_btn">Wiki Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- destination slides -->
+                <div class="col-md-8" id="slide_show">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/clouds-background.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/clouds-background.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/clouds-background.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn btn-info" id="flight-submit-button">Take Me There</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FITH SECTION -->
+    <div id="fith_section">
+        <!-- FAQ -->
+        <div class="container">
+            <div id="faq_head">
+                <h1 class="display-4">FAQ</h1>
+            </div>
+
+            <div id="faq" class="faq-content">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <p>Q: How do you contact us?</p>
+                        <p>A: You can reach us at (206)-555-4949 between the hours of: M-F 8:00AM-5:00PM</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Q: Can I get a refund if I decide to cancel my trip last minute?</p>
+                        <p>A: Once you purchase your trip, you have 48 hours after your purchase to be elgible for a
+                            full
+                            refund. If
+                            by any chance you are in need to cancel after the 48 hour period, you must contact our
+                            office
+                            and define
+                            your reason for you cancellation. </p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Q: I purchased my trip but I did not get a confirmation email.</p>
+                        <p>A: Please allow 24-48 hours for a confirmation email to be sent to you which will entail trip
+                            details.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Q: Is there another way of contacting Dart Throw?</p>
+                        <p>A: Aside from our phone number (206)-555-4949, you can reach us at contact@dartthrow.com</p>
+                    </li>
+
+                    <li class="list-group-item">
+                        <p>Q: Can I transfer my ticket to another person's name? </p>
+                        <p>A: There will be a $200 fee for transferring a trip to another person's name.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <footer class="footer">
-            <div class="container" id="footer-text">
-                <p class="text-muted">Travel Boiz Inc. 2019</p>
+        <!-- SIXTH SECTION -->
+        <div id="sixth_section">
+            <!-- CONTACT -->
+            <div class="container">
+                <form>
+                    <div class="submission-section">
+                        <div class="">
+                            <label for="exampleFormControlInput1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@mail.com">
+                        </div>
+                        <div class="">
+                            <label for="exampleFormControlTextarea1">Questions? Concerns?</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                </form>
+                <div>
+                    <button id="faq-button" type="button" class="btn btn-info">Submit</button>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+            <p>Travel Boiz Inc. 2019</p>
+    </footer>
 
 
-        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
-        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-            crossorigin=""></script>
-        <script type="text/javascript" src="./assets/javascript/city-names.js"></script>
-        <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <script type="text/javascript" src="./assets/javascript/city-names.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

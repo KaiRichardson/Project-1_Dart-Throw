@@ -14,7 +14,7 @@
     var startCity = "";
     var startTrip = "";
     var endTrip = "";
-    
+
 
     //ON-CLICK FOR USER'S TRIP DETAILS//
     $("#search_btn").on("click", function(){
@@ -77,7 +77,8 @@ var cityArr = [{
   lng: 0,
   info: "",
   thumb: "",
-  atai: ""
+  atai: "",
+  pop: 0
 },
 {
   city: "",
@@ -86,7 +87,8 @@ var cityArr = [{
   lng: 0,
   info: "",
   thumb: "",
-  atai: ""
+  atai: "",
+  pop: 0
 },
 {
   city: "",
@@ -95,7 +97,8 @@ var cityArr = [{
   lng: 0,
   info: "",
   thumb: "",
-  atai: ""
+  atai: "",
+  pop: 0
 }];
 
 var randName = "";
@@ -104,11 +107,14 @@ var randDetails = "";
 var cityPic = "";
 var mymap = L.map('mapid').setView([39.597811, 3.078442], 1);
 
-var fromIata = "sea";
-var toIata = "anc";
-var leaveDate = 190814;
-var backDate = 190822;
-var returning = 1;
+var date1 = "";
+
+// var fromIata = startCity;
+// var toIata = "";
+// var leaveDate = dateSwitch(startTrip);
+// var backDate = dateSwitch(endTrip);
+// var returning = 1;
+
 
 window.onscroll = function () { scrollFunc() };
 
@@ -176,6 +182,8 @@ function randCity() {
     cityArr[i].lat = cityNames[cityNum].lat;
     cityArr[i].lng = cityNames[cityNum].lng;
     cityArr[i].atai = String(result['0']);
+    cityArr[i].pop = cityNames[cityNum].lng;
+
     console.log(String(result['0'])); 
     console.log(cityArr[i].country); 
   }
@@ -206,7 +214,6 @@ $(document).on("click", "#btn0Loca", function () {
     animate: true,
     duration: 5 // in seconds
   });
-  $("#to_city").text(cityArr[0].city);
 });
 
 $(document).on("click", "#btn1Loca", function () {
@@ -232,14 +239,19 @@ $(document).on("click", "#btn0", function () {
 });
 
 $(document).on("click", "#btn1", function () {
-  toIata = cityArr[0].atai;
+  toIata = cityArr[1].atai;
   locationPic(cityArr[1].country);
 });
 
 $(document).on("click", "#btn2", function () {
-  toIata = cityArr[0].atai;
+  toIata = cityArr[2].atai;
   locationPic(cityArr[2].country);
 });
+
+function dateSwitch(input) {
+  var output = input.replace(/(..).(..).(....)/, "$3$1$2");
+  return output;
+}
 
 
 $(document).on("click", "#flight-submit-button", function () {

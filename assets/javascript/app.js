@@ -1,9 +1,9 @@
-$("#second_section").hide();
-$("#third_section").hide();
-$("#forth_section").hide();
-$("#third_btn").hide();
-$("#second_btn").hide();
-$("#forth_btn").hide();
+$("#second_section").slideUp();
+$("#third_section").slideUp();
+$("#forth_section").slideUp();
+$("#third_btn").slideUp();
+$("#second_btn").slideUp();
+$("#forth_btn").slideUp();
 
 // Initialize Firebase
 var config = {
@@ -108,20 +108,40 @@ $(".scrollBtn").on("mouseup", function () {
 //ON-CLICK FOR USER'S TRIP DETAILS//
 $("#search_btn").on("mousedown", function () {
 
-  var userFrom = $("#origin_input").val();
-  var userLeave = $("#leave_input").val();
-  var userBack = $("#return_input").val();
+  if ($("#origin_input").val() === "") {
+    $("#isEmptyFrom").text("*please add your location*");
+    $("#isEmptyLeave").text("")
+    $("#isEmptyBack").text("")
 
-  var userFromUpper = userFrom.charAt(0).toUpperCase() + userFrom.slice(1);
+  } else if ($("#leave_input").val() === "") {
+    $("#isEmptyLeave").text("*please add leaving date*");
+    $("#isEmptyFrom").text("")
+    $("#isEmptyBack").text("")
 
-  database.ref().set({
-    startCity: userFromUpper,
-    startTrip: userLeave,
-    endTrip: userBack,
-  });
+  } else if ($("#return_input").val() === "") {
+    $("#isEmptyBack").text("*please add return date or click box*");
+    $("#isEmptyFrom").text("")
+    $("#isEmptyLeave").text("")
+  } else {
+    $("#isEmptyFrom").text("")
+    $("#isEmptyLeave").text("")
+    $("#isEmptyBack").text("")
 
-  $("#third_section").show(500);
-  $("#third_btn").show(500);
+    var userFrom = $("#origin_input").val();
+    var userLeave = $("#leave_input").val();
+    var userBack = $("#return_input").val();
+
+    var userFromUpper = userFrom.charAt(0).toUpperCase() + userFrom.slice(1);
+
+    database.ref().set({
+      startCity: userFromUpper,
+      startTrip: userLeave,
+      endTrip: userBack,
+    });
+
+    $("#third_section").slideDown("fast");
+    $("#third_btn").slideDown("fast");
+  }
 })
 
 //ON-CLICK FOR FAQ TO FIREBASE//
@@ -262,8 +282,8 @@ function addCity() {
 //--------random city location buttons--------
 //on click of location btn 0
 $(document).on("mousedown", "#btn0Loca", function () {
-  $("#second_section").show();
-  $("#second_btn").show();
+  $("#second_section").slideDown("slow");
+  $("#second_btn").slideDown("slow");
 });
 
 $(document).on("mouseup", "#btn0Loca", function () {
@@ -282,8 +302,8 @@ $(document).on("mouseup", "#btn0Loca", function () {
 
 //on click of location btn 1
 $(document).on("mousedown", "#btn1Loca", function () {
-  $("#second_section").fadein();
-  $("#second_btn").fadein();
+  $("#second_section").slideDown("slow");
+  $("#second_btn").slideDown("slow");
 });
 
 $(document).on("mouseup", "#btn1Loca", function () {
@@ -302,8 +322,8 @@ $(document).on("mouseup", "#btn1Loca", function () {
 
 //on click of location btn 2
 $(document).on("mousedown", "#btn2Loca", function () {
-  $("#second_section").show();
-  $("#second_btn").show();
+  $("#second_section").slideDown("slow");
+  $("#second_btn").slideDown("slow");
 });
 
 $(document).on("mouseup", "#btn2Loca", function () {
@@ -323,8 +343,8 @@ $(document).on("mouseup", "#btn2Loca", function () {
 //--------random city detail buttons--------
 //on click of detail btn 0
 $(document).on("mousedown", "#btn0", function () {
-  $("#forth_section").show();
-  $("#forth_btn").show();
+  $("#forth_section").slideDown("fast");
+  $("#forth_btn").slideDown("fast");
 
   toIata = cityArr[0].iata;
   locationPic(cityArr[0].country);
@@ -334,8 +354,8 @@ $(document).on("mousedown", "#btn0", function () {
 
 //on click of detail btn 1
 $(document).on("mousedown", "#btn1", function () {
-  $("#forth_section").show();
-  $("#forth_btn").show();
+  $("#forth_section").slideDown("fast");
+  $("#forth_btn").slideDown("fast");
 
   toIata = cityArr[1].iata;
   locationPic(cityArr[1].country);
@@ -345,8 +365,8 @@ $(document).on("mousedown", "#btn1", function () {
 
 //on click of detail btn 2
 $(document).on("mousedown", "#btn2", function () {
-  $("#forth_section").show();
-  $("#forth_btn").show();
+  $("#forth_section").slideDown("fast");
+  $("#forth_btn").slideDown("fast");
 
   toIata = cityArr[2].iata;
   locationPic(cityArr[2].country);

@@ -14,6 +14,10 @@ head with date search */
     height: auto;
 }
 
+.userVal{
+color: red;
+font-size: 15px;
+}
 #main_head {
     text-align: center;
     padding: 60px;
@@ -59,8 +63,8 @@ head with date search */
     width: 100%;
 }
 
-.sticky+#second_section {
-    padding-top: 60px;
+.sticky+#third_section {
+    padding-top: 100px;
 }
 
 /* SECOND SECTION

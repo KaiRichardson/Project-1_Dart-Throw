@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <!-- FISRT SECTION -->
     <div id="first_section">
         <div class="container" id="inner_1">
@@ -34,19 +33,22 @@
                 </div>
                 <div class="col-md-3">
                     <input type="text" class="form-control" id="origin_input" placeholder="Where are you? (City)">
+                    <span id="isEmptyFrom" class="userVal"></span>
                 </div>
                 <div class="col-md-1">
                     <label class="firstLabels" for="leave_input">Leave:</label>
                 </div>
                 <div class="col-md-2">
                     <input type="date" class="form-control" id="leave_input">
+                    <span id="isEmptyLeave" class="userVal"></span>
                 </div>
                 <div class="col-md-1">
                     <label class="firstLabels" for="return_input">Back:</label>
                 </div>
                 <div class="col-md-2">
                     <input type="date" class="form-control" id="return_input">
-                    <input type="checkbox" name="returning" id="checkBox"> I'm not coming back...
+                    <span id="isEmptyBack" class="userVal"></span><br>
+                    <!-- <input type="checkbox" name="returning" id="checkBox"> I'm not coming back... -->
                 </div>
                 <div class="col-md-2">
                     <a type="submit" class="btn btn-light scrollBtn" id="search_btn" href="#third_section">Search</a>

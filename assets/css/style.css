@@ -14,6 +14,10 @@ head with date search */
     height: auto;
 }
 
+.userVal{
+color: red;
+font-size: 15px;
+}
 #main_head {
     text-align: center;
     padding: 60px;
@@ -59,16 +63,25 @@ head with date search */
     width: 100%;
 }
 
-.sticky+#second_section {
-    padding-top: 60px;
+.sticky+#third_section {
+    padding-top: 100px;
 }
 
 /* SECOND SECTION
 map with flight info */
 
 #second_section {
-    background-color: beige;
+    background: url("../images/city-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
     padding: 50px 0;
+}
+
+#location_div {
+    background-color: beige;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
 }
 
 #mapid {
@@ -89,16 +102,13 @@ map with flight info */
 picked destinations with info */
 
 #third_section {
-    background: url("../images/city-beach.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+    background-color: beige;
     text-align: center;
     padding: 30px 0 50px 0;
 }
 
-#header_3{
-padding: 20px;
+#header_3 {
+    padding: 20px;
 }
 
 .randLocCard {
@@ -126,13 +136,12 @@ city info with pictures slides */
 
 .carousel-inner {
     border-radius: 10px 10px 0px 0px;
-   height: 400px;
+    height: 400px;
 }
 
-.carousel-item img{
+.carousel-item img {
     object-fit: cover;
     height: 400px;
-    
 }
 
 #flight-submit-button {
@@ -162,7 +171,6 @@ FAQ */
     padding: 60px 0 20px 0;
     color: white;
     text-align: center;
-
 }
 
 #faq {
@@ -197,7 +205,6 @@ contact form */
     text-align: center;
     padding: 20px 0;
 }
-
 
 /* BILLING PAGE */
 
